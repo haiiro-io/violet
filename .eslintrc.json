@@ -6,5 +6,9 @@
   "extends": [
     "plugin:vue/recommended",
     "typescript"
-  ]
+  ],
+  "rules": {
+    "typescript/no-use-before-define": 0,
+    "typescript/explicit-member-accessibility": 0
+  }
 }

@@ -1,6 +1,6 @@
-import Vuex from 'vuex'
-import * as root from './root'
-import * as people from './modules/people'
+import Vuex from 'vuex';
+import * as root from './root';
+import * as people from './modules/people';
 
 // More info about store: https://vuex.vuejs.org/en/core-concepts.html
 // See https://nuxtjs.org/guide/vuex-store#classic-mode
@@ -12,10 +12,10 @@ import * as people from './modules/people'
   // mutations: Modify the state
 
 interface ModulesStates {
-  people: people.State
+  people: people.State;
 }
 
-export type RootState = root.State & ModulesStates
+export type RootState = root.State & ModulesStates;
 
 const createStore = () => {
   return new Vuex.Store({
@@ -26,7 +26,7 @@ const createStore = () => {
     modules: {
       [people.name]: people
     }
-  })
-}
+  });
+};
 
-export default createStore
+export default createStore;
