@@ -9,10 +9,10 @@
     "vuex-class": "^0.3.0"
   },
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
+    "dev": "$(yarn bin)/nuxt",
+    "build": "$(yarn bin)/nuxt build",
+    "start": "$(yarn bin)/nuxt start",
+    "generate": "$(yarn bin)/nuxt generate",
     "lint": "$(yarn bin)/eslint './!(node_modules)/**/*.+(ts|vue)'"
   },
   "devDependencies": {
