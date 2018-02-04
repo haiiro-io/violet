@@ -3,12 +3,36 @@
   "parserOptions": {
     "parser": "typescript-eslint-parser"
   },
-  "extends": [
-    "plugin:vue/recommended",
+  "plugins": [
     "typescript"
   ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:vue/recommended"
+  ],
   "rules": {
-    "typescript/no-use-before-define": 0,
-    "typescript/explicit-member-accessibility": 0
+    "semi": "error",
+    "no-undef": "off",
+    "no-unused-vars": "off",
+    "require-jsdoc": "error",
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "quotes": ["error", "single", { "avoidEscape": true }],
+    "typescript/no-namespace": ["error", { "allowDeclarations": true }],
+    "typescript/interface-name-prefix": "error",
+    "typescript/member-delimiter-style": "error",
+    "typescript/type-annotation-spacing": "error",
+    "typescript/no-triple-slash-reference": "error",
+    "typescript/adjacent-overload-signatures": "error",
+    "typescript/no-angle-bracket-type-assertion": "error",
+    "typescript/member-ordering": ["error", { "default": [
+      "static-field",
+      "private-field",
+      "protected-field",
+      "public-field",
+      "constructor",
+      "public-method",
+      "protected-method",
+      "private-method"
+    ]}]
   }
 }
