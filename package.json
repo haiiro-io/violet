@@ -13,11 +13,11 @@
     "vuex-class": "^0.3.0"
   },
   "scripts": {
-    "dev": "$(yarn bin)/nuxt",
-    "build": "$(yarn bin)/nuxt build",
-    "start": "$(yarn bin)/nuxt start",
-    "generate": "$(yarn bin)/nuxt generate",
-    "lint": "$(yarn bin)/eslint './!(node_modules)/**/*.+(ts|vue)'"
+    "dev": "$(npm bin)/nuxt",
+    "build": "$(npm bin)/nuxt build",
+    "start": "$(npm bin)/nuxt start",
+    "generate": "$(npm bin)/nuxt generate",
+    "lint": "$(npm bin)/eslint './!(node_modules)/**/*.+(ts|vue)'"
   },
   "devDependencies": {
     "eslint": "^4.16.0",
