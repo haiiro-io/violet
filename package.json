@@ -1,6 +1,10 @@
 {
   "version": "0.0.1",
   "private": true,
+  "engines": {
+    "node": ">=8.0.0",
+    "npm": ">=5.0.0"
+  },
   "dependencies": {
     "axios": "^0.17.1",
     "nuxt": "^1.2.1",
