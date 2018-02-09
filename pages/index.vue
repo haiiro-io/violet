@@ -16,12 +16,12 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
-import Component from 'nuxt-class-component';
-import Card from '~/components/Card.vue';
-import { State, Getter, namespace } from 'vuex-class';
+import Vue from "vue";
+import Component from "nuxt-class-component";
+import Card from "~/components/Card.vue";
+import { State, Getter, namespace } from "vuex-class";
 
-import * as people from '~/store/modules/people';
+import * as people from "~/store/modules/people";
 
 const PeopleState = namespace(people.name, State);
 const PeopleGetter = namespace(people.name, Getter);

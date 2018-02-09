@@ -1,7 +1,7 @@
-import { GetterTree, ActionContext, ActionTree, MutationTree } from 'vuex';
-import axios from '~/plugins/axios';
-import { RootState } from 'store';
-import * as people from './modules/people';
+import { GetterTree, ActionContext, ActionTree, MutationTree } from "vuex";
+import axios from "~/plugins/axios";
+import { RootState } from "store";
+import * as people from "./modules/people";
 
 export const types = {};
 

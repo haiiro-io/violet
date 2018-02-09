@@ -1,11 +1,11 @@
-import { ActionTree, MutationTree, GetterTree, ActionContext } from 'vuex';
-import { RootState } from 'store';
+import { ActionTree, MutationTree, GetterTree, ActionContext } from "vuex";
+import { RootState } from "store";
 
-export const name = 'people';
+export const name = "people";
 
 export const types = {
-  SELECT: 'SELECT',
-  SET: 'SET'
+  SELECT: "SELECT",
+  SET: "SET"
 };
 
 export interface PersonContact {
@@ -47,7 +47,7 @@ export const state = (): State => ({
 export const getters: GetterTree<State, RootState> = {
   selectedPerson: state => {
     const p = state.people.find(person => person.id === state.selected);
-    return p ? p : { first_name: 'Please,', last_name: 'select someone' };
+    return p ? p : { first_name: "Please,", last_name: "select someone" };
   }
 };
 
