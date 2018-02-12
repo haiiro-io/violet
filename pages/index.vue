@@ -37,3 +37,13 @@ export default class extends Vue {
   @PeopleGetter selectedPerson
 }
 </script>
+
+<style lang="postcss">
+:root {
+  --mainColor: red;
+}
+
+.f1 {
+  color: var(--mainColor);
+}
+</style>
