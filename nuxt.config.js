@@ -18,7 +18,7 @@ module.exports = {
   /*
   ** Build configuration
   */
-  css: ['~/assets/css/main.css'],
+  css: [],
   build: {
     vendor: ['axios', 'vuex-class', 'nuxt-class-component']
   },
