@@ -38,6 +38,7 @@
       "public-method",
       "protected-method",
       "private-method"
-    ]}]
+    ]}],
+    "vue/script-indent": ["error", 2, { "baseIndent": 1 } ]
   }
 }

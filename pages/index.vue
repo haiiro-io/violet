@@ -16,26 +16,26 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-import Component from "nuxt-class-component";
-import Card from "~/components/Card.vue";
-import { State, Getter, namespace } from "vuex-class";
+  import Vue from "vue";
+  import Component from "nuxt-class-component";
+  import Card from "~/components/Card.vue";
+  import { State, Getter, namespace } from "vuex-class";
 
-import * as people from "~/store/modules/people";
+  import * as people from "~/store/modules/people";
 
-const PeopleState = namespace(people.name, State);
-const PeopleGetter = namespace(people.name, Getter);
+  const PeopleState = namespace(people.name, State);
+  const PeopleGetter = namespace(people.name, Getter);
 
 @Component({
   components: {
     Card
   }
 })
-export default class extends Vue {
-  @PeopleState selected
-  @PeopleState people
-  @PeopleGetter selectedPerson
-}
+  export default class extends Vue {
+    @PeopleState selected
+    @PeopleState people
+    @PeopleGetter selectedPerson
+  }
 </script>
 
 <style lang="postcss">
