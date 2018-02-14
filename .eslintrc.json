@@ -7,10 +7,15 @@
     "typescript"
   ],
   "extends": [
-    "eslint:recommended",
     "plugin:vue/recommended"
   ],
   "rules": {
+    "indent-legacy": ["error", 2, {
+      "VariableDeclarator": 1,
+      "outerIIFEBody": 1,
+      "MemberExpression": 1,
+      "CallExpression": { "arguments": 1 }
+    }],
     "semi": "error",
     "no-undef": "off",
     "no-unused-vars": "off",
