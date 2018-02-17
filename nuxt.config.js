@@ -1,3 +1,4 @@
+const builtAt = new Date().toISOString();
 module.exports = {
   env: {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000'
@@ -6,10 +7,26 @@ module.exports = {
     title: 'Haiji Haiiro / Namika Hamasaki',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Planning/Design works by Haiji Haiiro' }
+      { name: 'viewport', content: 'width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' },
+      { hid: 'description', name: 'description', content: 'Planning/Design works by Haiji Haiiro' },
+      { name: 'msapplication-TileColor', content: '#ffffff' },
+      { name: 'msapplication-TileImage', content: '/favicons/mstile-144x144.png' },
+      { name: 'theme-color', content: '#c1c1c1' },
+      { name: 'author', content: 'Haiji Haiiro / Namika Hamasaki' }, // should be switched by domain
+      { name: 'robots', content: 'noindex nofollow' }, // switch after launch
+      { name: 'og:url', content: 'https://haiji.co' }, // should be switched by domain
+      { name: 'og:type', content: 'profile' },
+      { name: 'og:title', content: 'Haiji Haiiro / Namika Hamasaki' }, // should be switched by domain
+      { name: 'og:description', content: 'Works by Haiji Haiiro' }, // should be switched by domain
+      { name: 'og:image', content: 'https://new.haiji.co/ogp_1200x630.jpg' }, // should be switched by domain
+      { name: 'og:updated_time', content: builtAt },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:site', content: '@haiji505' },
+      { name: 'twitter:description', content: 'Works by Haiji Haiiro' }, // should be switched by domain
+      { name: 'twitter:image', content: 'https://haiji.co/ogp_1200x630.jpg' } // should be switched by domain
     ],
     link: [
+      { rel: 'canonical', href: 'https://haiji.co' }, // should be switched by domain
       { rel: 'icon', type: 'image/png', href: '/favicons/favicon-16x16.png', sizes: '16x16' },
       { rel: 'icon', type: 'image/png', href: '/favicons/favicon-32x32.png', sizes: '32x32' },
       { rel: 'icon', type: 'image/png', href: '/favicons/favicon-48x48.png', sizes: '48x48' },
