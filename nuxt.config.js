@@ -68,6 +68,7 @@ module.exports = {
   },
   modules: ['~/modules/typescript'],
   generate: {
+    fallback: true,
     routes: [
       '/works/signifiant'
     ]
