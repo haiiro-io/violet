@@ -1,4 +1,4 @@
-# Research
+## Research
 
 To start, I researched and placed logos of global and Japanese investment funds in the four-quadrant.
 

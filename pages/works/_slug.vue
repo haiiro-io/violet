@@ -1,13 +1,14 @@
 <template>
   <div>
     Here's {{$route.params.slug}} work
-    <p>{{markdown}}</p>
+    <div v-html="markdown"></div>
   </div>
 </template>
 
 <script lang="ts">
   import Vue from "vue";
   import Component from "nuxt-class-component";
+  import MarkdownIt from "markdown-it";
 
   import signifiant from "~/contents/works/signifiant.md";
 
@@ -15,10 +16,12 @@
     "signifiant"
   ];
 
+  const markdownRender = new MarkdownIt();
+
   @Component
   export default class PageSelectedWork extends Vue {
     get markdown (): string {
-      return signifiant;
+      return markdownRender.render(signifiant);
     }
 
     validate ({ params }): boolean {
