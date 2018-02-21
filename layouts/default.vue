@@ -5,7 +5,10 @@
 </template>
 
 <style lang="postcss">
-.container {
-  width: 100%;
-}
+  @import url("https://use.typekit.net/sff2rot.css");
+
+  .container {
+    font-family: "objektiv-mk2";
+    width: 100%;
+  }
 </style>
