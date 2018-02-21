@@ -21,10 +21,8 @@
       return signifiant;
     }
 
-    fetch ({ redirect, params }): void {
-      if (works.indexOf(params.slug) === -1) {
-        return redirect("/");
-      }
+    validate ({ params }): boolean {
+      return (works.indexOf(params.slug) > -1);
     }
   }
 </script>
