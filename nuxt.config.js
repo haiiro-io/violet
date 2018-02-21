@@ -1,4 +1,6 @@
 const builtAt = new Date().toISOString();
+const path = require('path');
+
 module.exports = {
   env: {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000'
@@ -54,7 +56,15 @@ module.exports = {
   */
   css: [],
   build: {
-    vendor: ['axios', 'vuex-class', 'nuxt-class-component']
+    vendor: ['axios', 'vuex-class', 'nuxt-class-component'],
+    extend (config, { isDev, isClient }) {
+      config.module.rules.push({
+        test: /\.md$/,
+        loader: 'raw-loader',
+        include: path.resolve(__dirname, 'contents/works')
+      });
+      config.resolve.extensions.push('.md');
+    }
   },
   modules: ['~/modules/typescript']
 }

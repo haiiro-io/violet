@@ -28,6 +28,7 @@
     "eslint-plugin-typescript": "^0.8.1",
     "eslint-plugin-vue": "^4.2.2",
     "markdown-it": "^8.4.0",
+    "raw-loader": "^0.5.1",
     "ts-loader": "^3.4.0",
     "typescript": "~2.7.1",
     "typescript-eslint-parser": "^13.0.0"
