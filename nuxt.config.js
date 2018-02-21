@@ -66,5 +66,10 @@ module.exports = {
       config.resolve.extensions.push('.md');
     }
   },
-  modules: ['~/modules/typescript']
+  modules: ['~/modules/typescript'],
+  generate: {
+    routes: [
+      '/works/signifiant'
+    ]
+  }
 }
