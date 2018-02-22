@@ -11,21 +11,23 @@
   import MarkdownIt from "markdown-it";
 
   import signifiant from "~/contents/works/signifiant.md";
+  import laughly from "~/contents/works/laughly.md";
 
-  const works = [
-    "signifiant"
-  ];
+  const works = {
+    signifiant,
+    laughly
+  };
 
   const markdownRender = new MarkdownIt();
 
   @Component
   export default class PageSelectedWork extends Vue {
     get markdown (): string {
-      return markdownRender.render(signifiant);
+      return markdownRender.render(works[this.$route.params.slug]);
     }
 
     validate ({ params }): boolean {
-      return (works.indexOf(params.slug) > -1);
+      return (Object.keys(works).indexOf(params.slug) > -1);
     }
   }
 </script>
