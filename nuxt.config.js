@@ -70,7 +70,9 @@ module.exports = {
   generate: {
     fallback: true,
     routes: [
-      '/works/signifiant'
+      '/about',
+      '/works/signifiant',
+      '/works/laughly'
     ]
   }
 }
