@@ -64,6 +64,21 @@ module.exports = {
         include: path.resolve(__dirname, 'contents/works')
       });
       config.resolve.extensions.push('.md');
+    },
+    postcss: {
+      plugins: {
+        'postcss-cssnext': {
+          features: {
+            customProperties: {
+              variables: {
+                'background-gray': '#DFE0E0',
+                'main-text': '#555555',
+                'sub-text': '#999999'
+              }
+            }
+          }
+        }
+      }
     }
   },
   modules: ['~/modules/typescript'],

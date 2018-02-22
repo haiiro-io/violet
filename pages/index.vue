@@ -1,5 +1,5 @@
 <template>
-  <section class="index">
+  <section>
     <h1>Here's new haiji.co</h1>
     <ul>
       <li>
