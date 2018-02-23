@@ -10,8 +10,8 @@
   import Component from "nuxt-class-component";
   import MarkdownIt from "markdown-it";
 
-  import signifiant from "~/contents/works/signifiant.md";
-  import laughly from "~/contents/works/laughly.md";
+  import signifiant from "~/contents/works/en/signifiant.md";
+  import laughly from "~/contents/works/ja/laughly.md";
 
   const works = {
     signifiant,
