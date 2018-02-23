@@ -88,7 +88,7 @@ module.exports = {
       }
     }
   },
-  plugins: ['~/plugins/i18n.js'],
+  plugins: ['~/plugins/i18n'],
   modules: ['~/modules/typescript'],
   generate: {
     fallback: true,
