@@ -56,12 +56,19 @@ module.exports = {
   */
   css: [],
   build: {
-    vendor: ['axios', 'vuex-class', 'nuxt-class-component'],
+    vendor: ['axios', 'vuex-class', 'nuxt-class-component', 'vue-i18n'],
     extend (config, { isDev, isClient }) {
       config.module.rules.push({
         test: /\.md$/,
         loader: 'raw-loader',
         include: path.resolve(__dirname, 'contents/works')
+      }, {
+        test: /\.yaml$/,
+        loaders: [
+          'json-loader',
+          'yaml-loader'
+        ],
+        include: path.resolve(__dirname, 'locales')
       });
       config.resolve.extensions.push('.md');
     },
@@ -81,6 +88,7 @@ module.exports = {
       }
     }
   },
+  plugins: ['~/plugins/i18n.js'],
   modules: ['~/modules/typescript'],
   generate: {
     fallback: true,

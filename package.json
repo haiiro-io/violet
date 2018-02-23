@@ -31,6 +31,8 @@
     "raw-loader": "^0.5.1",
     "ts-loader": "^3.4.0",
     "typescript": "~2.7.1",
-    "typescript-eslint-parser": "^13.0.0"
+    "typescript-eslint-parser": "^13.0.0",
+    "vue-i18n": "^7.4.2",
+    "yaml-loader": "^0.5.0"
   }
 }

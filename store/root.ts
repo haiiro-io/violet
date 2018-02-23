@@ -1,13 +1,19 @@
 import { GetterTree, ActionContext, ActionTree, MutationTree } from "vuex";
-import axios from "~/plugins/axios";
 import { RootState } from "store";
-import * as people from "./modules/people";
 
-export const types = {};
+export type AvailableLocale = "en" | "ja";
 
-export interface State {}
+export const types = {
+  SET_LOCALE: "SET_LOCALE"
+};
 
-export const state = (): State => ({});
+export interface State {
+  locale: AvailableLocale;
+}
+
+export const state = (): State => ({
+  locale: "en"
+});
 
 export const getters: GetterTree<State, RootState> = {};
 
@@ -20,4 +26,8 @@ export const actions: Actions<State, RootState> = {
   }
 };
 
-export const mutations: MutationTree<State> = {};
+export const mutations: MutationTree<State> = {
+  [types.SET_LOCALE](state, locale: AvailableLocale) {
+    state.locale = locale;
+  }
+};
