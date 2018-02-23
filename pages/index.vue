@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h1>{{$t("index.greeting")}}</h1>
+    <h1>{{ $t("index.greeting") }}</h1>
     <ul>
       <li>
         <nuxt-link to="/about">About</nuxt-link>

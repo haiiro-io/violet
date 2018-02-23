@@ -1,7 +1,7 @@
 <template>
   <div>
-    Here's {{$route.params.slug}} work
-    <div v-html="markdown"></div>
+    Here's {{ $route.params.slug }} work
+    <div v-html="markdown"/>
   </div>
 </template>
 
