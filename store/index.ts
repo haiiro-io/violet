@@ -1,9 +1,9 @@
 import Vuex from "vuex";
 import * as root from "./root";
-import * as people from "./modules/people";
+import * as works from "./modules/works";
 
 interface ModulesStates {
-  people: people.State;
+  people: works.State;
 }
 
 export type RootState = root.State & ModulesStates;
@@ -15,7 +15,7 @@ const createStore = () => {
     mutations: root.mutations,
     actions: root.actions,
     modules: {
-      [people.name]: people
+      [works.name]: works
     }
   });
 };
