@@ -1,3 +1,17 @@
+---
+title: Signifiant Branding
+year: 2017
+owner: Signifiant, Inc.
+role: Branding Designer
+related:
+  - wonolo
+  - finery
+  - amazarashi
+description: |
+  hogehoge
+  fugafuga
+---
+
 ## Research
 
 To start, I researched and placed logos of global and Japanese investment funds in the four-quadrant.

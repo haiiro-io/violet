@@ -11,7 +11,7 @@
   import MarkdownIt from "markdown-it";
 
   import signifiant from "~/contents/works/en/signifiant.md";
-  import laughly from "~/contents/works/ja/laughly.md";
+  import laughly from "~/contents/works/en/laughly.md";
 
   const works = {
     signifiant: signifiant.body,

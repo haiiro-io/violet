@@ -1,3 +1,18 @@
+---
+title: Laughly
+year: 2018
+owner: Laughly, Inc.
+role: UX/UI Designer
+related: 
+  - wonolo
+  - finery
+  - amazarashi
+description: |
+  Laughly is an audio-based comedy streaming app. Their aims to become a platform to create and promote comedic brands at an individual or organizational level. They desired to integrate both audio and video formats into the app and to bring the audience and comedian together to create a social community.
+  
+  I tackled the issues with designing the new structure of channel page. Also, I lead the design team making hi-fidelity and prototype.
+---
+
 ## User Insight
 
 We kicked off the project by interviewing for people who are using Laughly or love comedy. If Laughly started to provide comedy video, they said they would watch the video. On the other hand, they were feeling comfortable with listening audio in the background for a car in commute.
