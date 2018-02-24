@@ -1,5 +1,10 @@
+interface FrontMatterContent {
+  attributes: any;
+  body: string;
+}
+
 declare module "*.md" {
-  const content: string;
+  const content: FrontMatterContent;
   export default content;
 }
 

@@ -60,7 +60,10 @@ module.exports = {
     extend (config, { isDev, isClient }) {
       config.module.rules.push({
         test: /\.md$/,
-        loader: 'raw-loader',
+        loaders: [
+          'json-loader',
+          'front-matter-loader'
+        ],
         include: path.resolve(__dirname, 'contents/works')
       }, {
         test: /\.yaml$/,

@@ -14,8 +14,8 @@
   import laughly from "~/contents/works/ja/laughly.md";
 
   const works = {
-    signifiant,
-    laughly
+    signifiant: signifiant.body,
+    laughly: laughly.body
   };
 
   const markdownRender = new MarkdownIt();
