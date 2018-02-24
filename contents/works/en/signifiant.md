@@ -3,6 +3,8 @@ title: Signifiant Branding
 year: 2017
 owner: Signifiant, Inc.
 role: Branding Designer
+color:
+  - #000000
 related:
   - wonolo
   - finery
