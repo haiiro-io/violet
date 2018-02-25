@@ -10,7 +10,8 @@
   import Component from "nuxt-class-component";
   import MarkdownIt from "markdown-it";
   import { Getter, namespace } from "vuex-class";
-  const WorksGetter = namespace("works", Getter);
+  import { name as WorksNamespace } from "../../store/modules/works";
+  const WorksGetter = namespace(WorksNamespace, Getter);
   const markdownRender = new MarkdownIt();
 
   @Component
