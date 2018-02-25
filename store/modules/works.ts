@@ -47,20 +47,19 @@ export const getters: GetterTree<State, RootState> = {
 };
 
 export interface Actions<S, R> extends ActionTree<S, R> {
-  initializeWorksFromAttributes (S, attributes): void;
+  initializeWorksFromAttributes (context: ActionContext<S, R>): void;
 }
-
-const workFromFrontMatter = (name, frontmatter) => {
-  const attr = frontmatter.attributes;
-  attr.name = name;
-  attr.body = frontmatter.body;
-  return new Work(attr);
-};
 
 export const actions: Actions<State, RootState> = {
   initializeWorksFromAttributes ({ commit }) {
     LANGS.forEach((lang) => {
-      const works = Object.keys(importsByLang[lang]).map(key => workFromFrontMatter(key, importsByLang.en[key]));
+      const works = Object.keys(importsByLang[lang]).map((key) => {
+        const frontmatter = importsByLang.en[key];
+        const attr = frontmatter.attributes;
+        attr.name = key;
+        attr.body = frontmatter.body;
+        return new Work(attr);
+      });
       commit(
         types.INITIALIZE,
         { works, lang }
