@@ -39,10 +39,18 @@ export const state = (): State => ({
 });
 
 export const getters: GetterTree<State, RootState> = {
-  pick: (state) => (name: string): Work | undefined => {
-    return state.en.find((work) => {
-      return work.name === name;
-    });
+  pick: (state, _getters, rootState) => (name: string): Work | undefined => {
+    const preferedLocale = rootState.locale;
+    let picked: Work | undefined;
+    const pickFromLocale = (locale: LANG) => {
+      return state[locale].find(work => work.name === name);
+    };
+    return pickFromLocale(preferedLocale) ||
+      LANGS.filter(
+        lang => lang != preferedLocale
+      ).reduce(
+        (res, fallbackLocale) => res || pickFromLocale(fallbackLocale), undefined
+      );
   }
 };
 
@@ -54,7 +62,7 @@ export const actions: Actions<State, RootState> = {
   initializeWorksFromAttributes ({ commit }) {
     LANGS.forEach((lang) => {
       const works = Object.keys(importsByLang[lang]).map((key) => {
-        const frontmatter = importsByLang.en[key];
+        const frontmatter = importsByLang[lang][key];
         const attr = frontmatter.attributes;
         attr.name = key;
         attr.body = frontmatter.body;
