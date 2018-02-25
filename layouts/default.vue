@@ -21,7 +21,6 @@
   }
 </script>
 
-
 <style lang="postcss">
   @import url("https://use.typekit.net/sff2rot.css");
 
