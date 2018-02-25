@@ -4,14 +4,17 @@ year: 2018
 owner: Laughly, Inc.
 role: UX/UI Design
 related:
+  - weekend-creator
+  - libz-career
   - wonolo
-  - finery
-  - amazarashi
 colors:
-  - #fff0e1
-  - #cb7663
-  - #000000
-  - #f5f5f5
+  - #fdde0e
+  - #373737
+  - #717171
+  - #247885
+  - #484848
+  - #252525
+  - #C23535
 description: |
   Laughly is an audio-based comedy streaming app. They aim to become a platform that creates and promotes comedic brands at an individual or organizational level. They desired to integrate both audio and video formats into the app, and to bring the audience and comedian together to create a social community. I tackled designing the new channel page structure and led the design team through high-fidelity and prototyping.
 ---

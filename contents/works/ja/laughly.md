@@ -4,14 +4,17 @@ year: 2018
 owner: Laughly, Inc.
 role: UX/UI デザイン
 related:
+  - weekend-creator
+  - libz-career
   - wonolo
-  - finery
-  - amazarashi
 colors:
-  - #fff0e1
-  - #cb7663
-  - #000000
-  - #f5f5f5
+  - #fdde0e
+  - #373737
+  - #717171
+  - #247885
+  - #484848
+  - #252525
+  - #C23535
 description: |
   Laughlyはコメディーに特化したストーリミングアプリです。これまで音声のみの配信でしたが、映像フォーマットを統合し、ソーシャルコミュニティを作ることが彼らの次の課題でした。リサーチから、チャンネルページの新しい設計、そして8人のデザイナーを牽引しながらプロトタイプを作りを行いました。
 ---
