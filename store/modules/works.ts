@@ -50,6 +50,9 @@ export const getters: GetterTree<State, RootState> = {
       ).reduce(
         (res, fallbackLocale) => res || pickFromLocale(fallbackLocale), undefined
       );
+  },
+  list: (state, _getters, rootState): Work[] => {
+    return state[rootState.locale];
   }
 };
 
