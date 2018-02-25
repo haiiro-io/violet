@@ -2,7 +2,7 @@
 title: Laughly
 year: 2018
 owner: Laughly, Inc.
-role: UX/UI デザイナー
+role: UX/UI デザイン
 related:
   - wonolo
   - finery
