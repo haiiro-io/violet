@@ -5,8 +5,7 @@ import Work from "../../lib/work";
 
 declare const require: any;
 
-type LANG = "en" | "ja";
-const LANGS: LANG[] = ["en", "ja"];
+const LANGS: AvailableLocale[] = ["en", "ja"];
 type ImportedFrontMatters = { [name: string]: FrontMatterContent };
 const importsByLang: {
   [lang: string]: ImportedFrontMatters
@@ -42,7 +41,7 @@ export const getters: GetterTree<State, RootState> = {
   pick: (state, _getters, rootState) => (name: string): Work | undefined => {
     const preferedLocale = rootState.locale;
     let picked: Work | undefined;
-    const pickFromLocale = (locale: LANG) => {
+    const pickFromLocale = (locale: AvailableLocale) => {
       return state[locale].find(work => work.name === name);
     };
     return pickFromLocale(preferedLocale) ||

@@ -1,8 +1,6 @@
 import { GetterTree, ActionContext, ActionTree, MutationTree } from "vuex";
 import { RootState } from "store";
 
-export type AvailableLocale = "en" | "ja";
-
 export const types = {
   SET_LOCALE: "SET_LOCALE"
 };

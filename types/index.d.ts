@@ -3,6 +3,8 @@ interface FrontMatterContent {
   body: string;
 }
 
+type AvailableLocale = "en" | "ja";
+
 declare module "*.md" {
   const content: FrontMatterContent;
   export default content;
