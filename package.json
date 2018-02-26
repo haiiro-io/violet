@@ -17,9 +17,11 @@
   },
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
+    "dev:en": "BUILD_LOCALE=en nuxt",
+    "dev:ja": "BUILD_LOCALE=ja nuxt",
     "generate": "nuxt generate",
+    "generate:en": "BUILD_LOCALE=en nuxt generate",
+    "generate:ja": "BUILD_LOCALE=ja nuxt generate",
     "lint": "eslint './!(node_modules)/**/*.+(ts|vue)'",
     "format": "eslint './!(node_modules)/**/*.+(ts|vue)' --fix"
   },
