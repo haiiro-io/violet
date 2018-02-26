@@ -1,6 +1,8 @@
 import { GetterTree, ActionContext, ActionTree, MutationTree } from "vuex";
 import { RootState } from "store";
 
+  declare const process: any;
+
 export const types = {
   SET_LOCALE: "SET_LOCALE"
 };
@@ -10,7 +12,7 @@ export interface State {
 }
 
 export const state = (): State => ({
-  locale: "en"
+  locale: process.env.buildLocale || "en"
 });
 
 export const getters: GetterTree<State, RootState> = {};

@@ -3,7 +3,8 @@ const path = require('path');
 
 module.exports = {
   env: {
-    baseUrl: process.env.BASE_URL || 'http://localhost:3000'
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000',
+    buildLocale: process.env.BUILD_LOCALE || 'en'
   },
   head: {
     title: 'Haiji Haiiro / Namika Hamasaki',
