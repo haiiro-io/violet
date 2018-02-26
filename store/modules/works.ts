@@ -3,8 +3,6 @@ import { RootState } from "store";
 
 import Work from "../../lib/work";
 
-declare const require: any;
-
 const LANGS: AvailableLocale[] = ["en", "ja"];
 type ImportedFrontMatters = { [name: string]: FrontMatterContent };
 const importsByLang: {
