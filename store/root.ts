@@ -1,7 +1,6 @@
 import { GetterTree, ActionContext, ActionTree, MutationTree } from "vuex";
 import { RootState } from "store";
 
-  declare const process: any;
 
 export const types = {
   SET_LOCALE: "SET_LOCALE"

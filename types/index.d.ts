@@ -3,6 +3,13 @@ interface FrontMatterContent {
   body: string;
 }
 
+declare const process: {
+  env: {
+    baseUrl:  string;
+    buildLocale: "en" | "ja";
+  }
+};
+
 type AvailableLocale = "en" | "ja";
 
 declare module "*.md" {

@@ -9,8 +9,6 @@
   import Component from "nuxt-class-component";
   import { Mutation } from "vuex-class";
 
-  declare const process: any;
-
   @Component
   export default class RootLayout extends Vue {
     @Mutation ("SET_LOCALE") setLocale;
