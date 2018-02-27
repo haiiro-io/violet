@@ -3,7 +3,7 @@ interface FrontMatterContent {
   body: string;
 }
 
-declare const process: {
+declare var process: {
   env: {
     baseUrl:  string;
     buildLocale: "en" | "ja";
