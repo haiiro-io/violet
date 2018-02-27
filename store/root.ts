@@ -11,7 +11,7 @@ export interface State {
 }
 
 export const state = (): State => ({
-  locale: process.env.buildLocale || "en"
+  locale: process.env.buildLocale
 });
 
 export const getters: GetterTree<State, RootState> = {};
