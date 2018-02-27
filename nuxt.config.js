@@ -82,9 +82,9 @@ module.exports = {
           features: {
             customProperties: {
               variables: {
-                'background-gray': '#DFE0E0',
-                'main-text': '#555555',
-                'sub-text': '#999999'
+                'skyhai': '#DFE0E0',
+                'konezumi': '#555555',
+                'nibihai': '#999999'
               }
             }
           }

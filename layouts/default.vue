@@ -18,12 +18,12 @@
 
   body {
     margin: 0;
-    background-color: var(--background-gray);
+    background-color: var(--skyhai);
   }
 
   .container {
     font-family: "objektiv-mk2";
-    color: var(--main-text);
+    color: var(--konezumi);
     width: 100%;
   }
 </style>
