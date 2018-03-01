@@ -1,6 +1,8 @@
 <template>
   <div class="container">
-    <a href="/"><haiiro-icon /></a>
+    <nuxt-link to="/">
+      <haiiro-icon />
+    </nuxt-link>
     <nuxt/>
   </div>
 </template>
