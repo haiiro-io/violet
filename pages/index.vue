@@ -19,7 +19,7 @@
   import { name as WorksNamespace } from "~/store/modules/works";
   const WorksGetter = namespace(WorksNamespace, Getter);
 
-@Component
+  @Component
   export default class extends Vue {
     @WorksGetter list;
   }

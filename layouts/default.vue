@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <a href="/"><haiiro-icon /></a>
     <nuxt/>
   </div>
 </template>
@@ -8,7 +9,9 @@
   import Vue from "vue";
   import Component from "nuxt-class-component";
 
-  @Component
+  import HaiiroIcon from "../components/HaiiroIcon.vue";
+
+  @Component({ components: { HaiiroIcon } })
   export default class RootLayout extends Vue {
   }
 </script>
@@ -25,5 +28,11 @@
     font-family: "objektiv-mk2";
     color: var(--konezumi);
     width: 100%;
+  }
+</style>
+
+<style lang="postcss" scoped>
+  .container a {
+    width: 93px;
   }
 </style>
