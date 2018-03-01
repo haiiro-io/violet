@@ -8,13 +8,13 @@ related:
   - libz-career
   - wonolo
 colors:
-  - #fdde0e
-  - #373737
-  - #717171
-  - #247885
-  - #484848
-  - #252525
-  - #C23535
+  - "#fdde0e"
+  - "#373737"
+  - "#717171"
+  - "#247885"
+  - "#484848"
+  - "#252525"
+  - "#C23535"
 description: |
   Laughly is an audio-based comedy streaming app. They aim to become a platform that creates and promotes comedic brands at an individual or organizational level. They desired to integrate both audio and video formats into the app, and to bring the audience and comedian together to create a social community. I tackled designing the new channel page structure and led the design team through high-fidelity and prototyping.
 ---

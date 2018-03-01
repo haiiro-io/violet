@@ -2,9 +2,7 @@
   <div>
     {{ $route.params.slug }} @ {{ work.owner }}, {{ work.year }}
     <p>{{ work.description }}</p>
-    <ul v-for="color in work.colors" v-bind:key="color">
-      <li>Color: {{ color }}</li>
-    </ul>
+    <p>{{ work.colors.join(" / ") }}</p>
     <div v-html="markdown"/>
   </div>
 </template>

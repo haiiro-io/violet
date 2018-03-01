@@ -4,11 +4,11 @@ year: 2017
 owner: LiB, Inc.
 role: UX/UI Design
 colors:
-  - #fff6f6
-  - #f93346
-  - #333333
-  - #1c81f6
-  - #e3f5ff
+  - "#fff6f6"
+  - "#f93346"
+  - "#333333"
+  - "#1c81f6"
+  - "#e3f5ff"
 related:
   - wonolo
   - weekend-creator

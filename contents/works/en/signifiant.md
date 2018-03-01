@@ -4,9 +4,9 @@ year: 2017
 owner: Signifiant, Inc.
 role: Art Direction, Graphic Design, Web Design
 colors:
-  - #00b2b2
-  - #373938
-  - #ffffff
+  - "#00b2b2"
+  - "#373938"
+  - "#ffffff"
 related:
   - wonolo
   - finery
