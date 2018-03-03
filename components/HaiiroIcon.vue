@@ -4,13 +4,15 @@
     :width="totalWidth"
     :height="totalHeight"
     :viewBox="viewBox">
-    <rect id="h-0-0" x="0"            y="0"         :width="size" :height="size" :fill="colors[0]" />
-    <rect id="h-0-1" x="0"            :y="size"     :width="size" :height="size" :fill="colors[1]" />
-    <rect id="h-0-2" x="0"            :y="size * 2" :width="size" :height="size" :fill="colors[2]" />
-    <rect id="h-1-1" :x="size"        :y="size"     :width="size" :height="size" :fill="colors[3]" />
-    <rect id="h-2-0" :x="size * 2.1"  y="0"         :width="size" :height="size" :fill="colors[4]" />
-    <rect id="h-2-1" :x="size * 2.1"  :y="size"     :width="size" :height="size" :fill="colors[5]" />
-    <rect id="h-2-2" :x="size * 2.1"  :y="size * 2" :width="size" :height="size" :fill="colors[6]" />
+    <rect
+      v-for="rect in rectangles"
+      :key="rect.id"
+      :id="rect.id"
+      :x="rect.x"
+      :y="rect.y"
+      :width="rect.width"
+      :height="rect.height"
+      :fill="rect.color" />
   </svg>
 </template>
 
@@ -34,6 +36,7 @@
     size: number;
     width: number;
     height: number;
+    colors: string[];
 
     get viewBox (): string {
       return `0 0 ${this.totalWidth} ${this.totalHeight}`;
@@ -45,6 +48,21 @@
 
     get totalHeight (): number {
       return this.size * 3;
+    }
+
+    get rectangles () {
+      const base =  { width: this.size, height: this.size };
+      const rightColX = this.size * 2.1;
+      const bottomRowY = this.size * 2;
+      return [
+        { ...base, id: "h-0-0", x: "0",       y: "0",         color: this.colors[0] },
+        { ...base, id: "h-0-1", x: "0",       y: this.size,   color: this.colors[1] },
+        { ...base, id: "h-0-2", x: "0",       y: bottomRowY,  color: this.colors[2] },
+        { ...base, id: "h-1-1", x: this.size, y: this.size,   color: this.colors[3] },
+        { ...base, id: "h-2-0", x: rightColX, y: "0",         color: this.colors[4] },
+        { ...base, id: "h-2-1", x: rightColX, y: this.size,   color: this.colors[5] },
+        { ...base, id: "h-2-2", x: rightColX, y: bottomRowY,  color: this.colors[6] }
+      ];
     }
   }
 </script>
