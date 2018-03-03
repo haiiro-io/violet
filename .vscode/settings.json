@@ -1,0 +1,11 @@
+{
+  "tslint.enable": false,
+  "eslint.enable": true,
+  "eslint.options": {
+    "extensions": [".ts", ".vue"]
+  },
+  "eslint.validate": [
+    "vue",
+    "typescript"
+  ]
+}
