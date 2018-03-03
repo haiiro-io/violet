@@ -5,8 +5,10 @@
       <li>
         <nuxt-link to="/about">About</nuxt-link>
       </li>
-      <li v-for="work in list" :key="work.name">
-        <nuxt-link :to="`/works/${work.name}`">{{work.title}}</nuxt-link>
+      <li
+        v-for="work in list"
+        :key="work.name">
+        <nuxt-link :to="`/works/${work.name}`">{{ work.title }}</nuxt-link>
       </li>
     </ul>
   </section>

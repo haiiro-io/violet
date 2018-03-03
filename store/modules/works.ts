@@ -7,7 +7,7 @@ const LANGS: AvailableLocale[] = ["en", "ja"];
 type ImportedFrontMatters = { [name: string]: FrontMatterContent };
 const importsByLang: {
   [lang: string]: ImportedFrontMatters
-} = { en: {}, ja: {} };
+  } = { en: {}, ja: {} };
 
 const importAll = (resolve) => {
   resolve.keys().forEach((key) => {
@@ -77,7 +77,7 @@ export const actions: Actions<State, RootState> = {
 };
 
 export const mutations: MutationTree<State> = {
-  [types.INITIALIZE](state, payload :{ works: Work[], lang: string }) {
+  [types.INITIALIZE](state, payload: { works: Work[], lang: string }) {
     state[payload.lang] = payload.works;
   }
 };
