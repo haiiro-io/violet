@@ -1,6 +1,6 @@
 <script lang="ts">
   import Vue from "vue";
-  import VueWithCompiler from "vue/dist/vue";
+  import VueWithCompiler from "vue/dist/vue.esm";
   import Component from "nuxt-class-component";
 
   import HaiiroIcon from "./HaiiroIcon.vue";
@@ -19,7 +19,7 @@
     }
   })
   export default class DynamicMarkdown extends Vue {
-    templateRender: any;
+    templateRender;
     markdown: string;
 
     render (h) {
