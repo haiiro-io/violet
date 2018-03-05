@@ -3,34 +3,33 @@
     {{ $route.params.slug }} @ {{ work.owner }}, {{ work.year }}
     <p>{{ work.description }}</p>
     <p>{{ work.colors.join(" / ") }}</p>
-    <div v-html="markdown"/>
+    <no-ssr>
+      <dynamic-markdown :markdown="work.body"/>
+    </no-ssr>
   </div>
 </template>
 
 <script lang="ts">
   import Vue from "vue";
   import Component from "nuxt-class-component";
-  import MarkdownIt from "markdown-it";
   import { Getter, namespace } from "vuex-class";
 
   import Work from "../../lib/work";
+  import DynamicMarkdown from "../../components/DynamicMarkdown.vue";
 
   import { name as WorksNamespace } from "../../store/modules/works";
 
   const WorksGetter = namespace(WorksNamespace, Getter);
-  const markdownRender = new MarkdownIt();
 
-  @Component
+  @Component({
+    components: { DynamicMarkdown }
+  })
   export default class PageSelectedWork extends Vue {
     @WorksGetter pick;
 
     get work (): Work {
       const slug = this.$route.params.slug;
       return this.pick(slug);
-    }
-
-    get markdown (): string {
-      return markdownRender.render(this.work.body);
     }
 
     validate ({ store, params }): boolean {
