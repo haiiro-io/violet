@@ -3,14 +3,14 @@ title: Signifiant Branding
 year: 2017
 owner: Signifiant, Inc.
 role: Art Direction, Graphic Design, Web Design
-colors:
-  - "#00b2b2"
-  - "#373938"
-  - "#ffffff"
 related:
   - wonolo
   - finery
   - amazarashi
+colors:
+  - "#00b2b2"
+  - "#373938"
+  - "#ffffff"
 description: |
   I designed and developed the branding for Signifiant, a company founded with a mission to support post-IPO startups. They aim to convey management wisdom and to diffuse various management philosophy. The project included the logo, brand guideline, business card, and the full website design for their media platform.
 ---

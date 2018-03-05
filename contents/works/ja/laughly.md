@@ -25,8 +25,7 @@ description: |
 
 まず、Laughlyのユーザーとコメディー好きな人のユーザーリサーチからプロジェクトを開始させました。もしLaughlyがコメディの映像の配信を開始したら、彼らは映像を見たいと言う意見が多くあがりました。一方で、彼らは通勤時の車の中でBGMとして音声を楽しんでいました。
 
-![laughly_02.jpg](https://user-images.githubusercontent.com/818309/36506171-a1af8988-170a-11e8-9f12-7e23172a3fb3.jpg)
-*課題：どのようにユーザーは音声と映像を切り替える？*
+![laughly_02.jpg 課題：どのようにユーザーは音声と映像を切り替える？](https://user-images.githubusercontent.com/818309/36506171-a1af8988-170a-11e8-9f12-7e23172a3fb3.jpg)
 
 ## チャンネルナビゲーション
 

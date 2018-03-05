@@ -3,14 +3,14 @@ title: Signifiant ブランディング
 year: 2017
 owner: シニフィアン株式会社
 role: Art Direction, Graphic Design, Web Design
-colors:
-  - #00b2b2
-  - #373938
-  - #ffffff
 related:
   - wonolo
   - finery
   - amazarashi
+colors:
+  - "#00b2b2"
+  - "#373938"
+  - "#ffffff"
 description: |
   Post-IPO Startupの経営をテーマに掲げるシニフィアン株式会社のコーポレートアイデンティティの策定を行いました。彼らのミッションは経営知とさまざまな経営哲学を伝えることです。ロゴやブランドガイドライン、そして彼らのメディア「Signifiant Style」のロゴとウェブサイトの制作も行いました。
 ---

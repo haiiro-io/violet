@@ -3,16 +3,16 @@ title: LiBzCAREER
 year: 2017
 owner: LiB, Inc.
 role: UX/UI Design
+related:
+  - wonolo
+  - weekend-creator
+  - remote-style
 colors:
   - "#fff6f6"
   - "#f93346"
   - "#333333"
   - "#1c81f6"
   - "#e3f5ff"
-related:
-  - wonolo
-  - weekend-creator
-  - remote-style
 description: |
   LiBzCAREER is a job search marketplace tailored to help women in Japan make the career move that’s right for them. I joined as a product designer to renew and improve the usability of the platform. When I joined the company, it had been 2 years since the product launched. There weren't any design rules implemented. So my first challenge was to develop a set of clear design guidelines to construct the brand, and allow the team to design more efficiently and consistently.
 ---
@@ -27,7 +27,7 @@ LiBzCAREER is on web and iOS, and each platform used different colors for some e
 
 ## Job Search
 
-The companies mission is to provide a role model for women. Unfortunately, the ratio of females in manager position is low in Japan. In the job offer detail screen, we showed the ratio of females in managerial positions, the rate of employees taking child-care leave, and testimonials with real employees.
+The company's mission is to provide a role model for women. Unfortunately, the ratio of females in manager position is low in Japan. In the job offer detail screen, we showed the ratio of females in managerial positions, the rate of employees taking child-care leave, and testimonials with real employees.
 Working women often face issues with the workplace when they approach a life event. We decided to provide a functionality in which they can search for jobs by several purposes for a need of a career change. (For example: To come back from maternity leave / To keep working while raising children / To build new skills in another industry)
 
 ![libzcareer_03.jpg](https://mir-s3-cdn-cf.behance.net/project_modules/max_3840/bd6e7860419071.5a4c94f24132a.jpg)

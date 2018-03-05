@@ -1,16 +1,17 @@
 ---
 title: Logofolio
 year: 2016-2018
+owner: 
 role: Brand Identity, Graphic Design
 related:
   - weekend-creator
   - libz-career
   - wonolo
 colors:
-  - #373737
-  - #717171
-  - #484848
-  - #252525
+  - "#373737"
+  - "#717171"
+  - "#484848"
+  - "#252525"
 description: |
   These are my logo design collection for a variety of clients.  It is always challenging and fun for me to express worldview of brands with typography, metaphor.
 ---

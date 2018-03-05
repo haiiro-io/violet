@@ -1,16 +1,17 @@
 ---
 title: ロゴフォリオ
 year: 2016-2018
+owner: 
 role: Brand Identity, Graphic Design
 related:
   - weekend-creator
   - libz-career
   - wonolo
 colors:
-  - #373737
-  - #717171
-  - #484848
-  - #252525
+  - "#373737"
+  - "#717171"
+  - "#484848"
+  - "#252525"
 description: |
   さまざまなクライアントのために制作したロゴの一覧です。ブランドの世界観を象徴する形やタイポグラフィー、メタファーを探ることは私にとってチャレンジであり、とても楽しいパートです。
 ---
