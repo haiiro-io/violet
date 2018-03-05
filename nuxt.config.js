@@ -101,7 +101,6 @@ module.exports = {
       '/works/signifiant',
       '/works/laughly',
       '/works/libzcareer',
-      '/works/laughly',
       '/works/logofolio'
     ]
   }
