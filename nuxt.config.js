@@ -99,7 +99,10 @@ module.exports = {
     routes: [
       '/about',
       '/works/signifiant',
-      '/works/laughly'
+      '/works/laughly',
+      '/works/libzcareer',
+      '/works/laughly',
+      '/works/logofolio'
     ]
   }
 }
