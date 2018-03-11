@@ -59,6 +59,10 @@ module.exports = {
   build: {
     vendor: ['axios', 'vuex-class', 'nuxt-class-component', 'vue-i18n'],
     extend (config, { isDev, isClient }) {
+      // remove existing url-loader settings once, for giving svg specific loader
+      const rule = config.module.rules.find(r => r.test.toString() === '/\\.(png|jpe?g|gif|svg)$/');
+      config.module.rules.splice(config.module.rules.indexOf(rule), 1);
+
       config.module.rules.push({
         test: /\.md$/,
         loaders: [
@@ -73,6 +77,17 @@ module.exports = {
           'yaml-loader'
         ],
         include: path.resolve(__dirname, 'locales')
+      }, {
+        test: /\.(png|jpe?g|gif)$/,
+        loader: 'url-loader',
+        query: {
+          limit: 1000, // 1KO
+          name: 'img/[name].[hash:7].[ext]'
+        }
+      }, {
+        test: /\.svg$/,
+        loader: 'svg-sprite-loader',
+        include: path.resolve(__dirname, 'assets/icons')
       });
       config.resolve.extensions.push('.md');
     },

@@ -4,6 +4,17 @@
       <haiiro-icon />
     </nuxt-link>
     <nuxt/>
+    <svg-icon name="dribbble" />
+    <svg-icon name="instagram" />
+    <svg-icon name="linkedin" />
+    <svg-icon name="github" />
+    <svg-icon name="twitter" />
+    <svg-icon name="500px" />
+    <svg-icon name="behance" />
+    <svg-icon name="medium" />
+    <svg-icon name="hatenablog" />
+    <svg-icon name="facebook" />
+    <svg-icon name="amazon" />
   </div>
 </template>
 
@@ -12,8 +23,9 @@
   import Component from "nuxt-class-component";
 
   import HaiiroIcon from "../components/HaiiroIcon.vue";
+  import SvgIcon from "../components/SvgIcon.vue";
 
-  @Component({ components: { HaiiroIcon } })
+  @Component({ components: { HaiiroIcon, SvgIcon } })
   export default class RootLayout extends Vue {
   }
 </script>
@@ -36,5 +48,10 @@
 <style lang="postcss" scoped>
   .container a {
     width: 93px;
+  }
+  svg.svgIcon {
+    width: 30px;
+    height: 30px;
+    fill: var(--nibihai);
   }
 </style>

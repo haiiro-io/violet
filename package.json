@@ -32,6 +32,7 @@
     "eslint-plugin-vue": "^4.2.2",
     "front-matter-loader": "^0.2.0",
     "markdown-it": "^8.4.0",
+    "svg-sprite-loader": "^3.7.0",
     "ts-loader": "^3.4.0",
     "typescript": "~2.7.1",
     "typescript-eslint-parser": "^13.0.0",
