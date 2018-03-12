@@ -67,7 +67,7 @@
   }
 </script>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
   svg.haiiroIcon {
     display: inline-block;
   }
