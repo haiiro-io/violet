@@ -19,28 +19,15 @@
 </template>
 
 <script lang="ts">
-  import Vue from "vue";
   import Component from "nuxt-class-component";
+  import PageBase from "../lib/page-base";
   import { Getter, namespace } from "vuex-class";
   import { name as WorksNamespace } from "~/store/modules/works";
   const WorksGetter = namespace(WorksNamespace, Getter);
 
   @Component
-  export default class extends Vue {
+  export default class PageIndex extends PageBase {
     @WorksGetter list;
-
-    head () {
-      return {
-        meta: [
-          { name: "og:image", content: this.ogImage },
-          { name: "twitter:image", content: this.ogImage }
-        ]
-      };
-    }
-
-    get ogImage (): string {
-      return `${process.env.baseUrl}/images/ogp_1200x630.jpg`;
-    }
 
     workImage (name): string {
       return `/images/works/${name}_thumbnail.jpg`;

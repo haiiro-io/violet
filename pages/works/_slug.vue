@@ -11,32 +11,22 @@
 </template>
 
 <script lang="ts">
-  import Vue from "vue";
+  import PageBase from "../../lib/page-base";
   import Component from "nuxt-class-component";
   import { Getter, namespace } from "vuex-class";
 
-  import { Work } from "../../store/modules/works";
   import DynamicMarkdown from "../../components/DynamicMarkdown.vue";
   import WorkMedia from "../../components/WorkMedia.vue";
 
+  import { Work } from "../../store/modules/works";
   import { name as WorksNamespace } from "../../store/modules/works";
-
   const WorksGetter = namespace(WorksNamespace, Getter);
 
   @Component({
     components: { DynamicMarkdown, WorkMedia }
   })
-  export default class PageSelectedWork extends Vue {
+  export default class PageSelectedWork extends PageBase {
     @WorksGetter pick;
-
-    head () {
-      return {
-        meta: [
-          { name: "og:image", content: this.ogImage },
-          { name: "twitter:image", content: this.ogImage }
-        ]
-      };
-    }
 
     get ogImage (): string {
       return `${process.env.baseUrl}/images/works/${this.work.image.og || this.work.name + "_og.jpg"}`;
