@@ -1,7 +1,19 @@
 import { ActionTree, MutationTree, GetterTree, ActionContext } from "vuex";
 import { RootState } from "store";
 
-import Work from "../../lib/work";
+export interface Work {
+  name: string;
+  title: string;
+  year: number;
+  owner: string;
+  colors: string[];
+  description: string;
+  body: string;
+  image: {
+    main: string;
+    og: string;
+  };
+}
 
 const LANGS: AvailableLocale[] = ["en", "ja"];
 type ImportedFrontMatters = { [name: string]: FrontMatterContent };
@@ -61,12 +73,22 @@ export interface Actions<S, R> extends ActionTree<S, R> {
 export const actions: Actions<State, RootState> = {
   initializeWorksFromAttributes ({ commit }) {
     LANGS.forEach((lang) => {
-      const works = Object.keys(importsByLang[lang]).map((key) => {
+      const works = Object.keys(importsByLang[lang]).map((key): Work => {
         const frontmatter = importsByLang[lang][key];
         const attr = frontmatter.attributes;
-        attr.name = key;
-        attr.body = frontmatter.body;
-        return new Work(attr);
+        return {
+          name: key,
+          title: attr.title,
+          year: attr.year,
+          owner: attr.owner,
+          colors: attr.colors,
+          description: attr.description,
+          body: frontmatter.body,
+          image: {
+            main: attr.image && attr.image.main,
+            og: attr.image && attr.image.og
+          }
+        };
       });
       commit(
         types.INITIALIZE,

@@ -19,8 +19,6 @@ description: |
   Laughly is an audio-based comedy streaming app. They aim to become a platform that creates and promotes comedic brands at an individual or organizational level. They desired to integrate both audio and video formats into the app, and to bring the audience and comedian together to create a social community. I tackled designing the new channel page structure and led the design team through high-fidelity and prototyping.
 ---
 
-<work-img work="laughly" name="main" />
-
 ## User Insight
 
 We kicked off the project by interviewing people who use Laughly or love comedy. Users said that if Laughly started providing video content, they would gladly watch. Users also told us that they usually listened to the audio in the background while performing other actions such as while driving during their commute.
