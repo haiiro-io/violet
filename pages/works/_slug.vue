@@ -29,6 +29,19 @@
   export default class PageSelectedWork extends Vue {
     @WorksGetter pick;
 
+    head () {
+      return {
+        meta: [
+          { name: "og:image", content: this.ogImage },
+          { name: "twitter:image", content: this.ogImage }
+        ]
+      };
+    }
+
+    get ogImage (): string {
+      return `${process.env.baseUrl}/images/works/${this.work.image.og || this.work.name + "_og.jpg"}`;
+    }
+
     get work (): Work {
       const slug = this.$route.params.slug;
       return this.pick(slug);

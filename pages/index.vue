@@ -24,6 +24,19 @@
   @Component
   export default class extends Vue {
     @WorksGetter list;
+
+    head () {
+      return {
+        meta: [
+          { name: "og:image", content: this.ogImage },
+          { name: "twitter:image", content: this.ogImage }
+        ]
+      };
+    }
+
+    get ogImage (): string {
+      return `${process.env.baseUrl}/images/ogp_1200x630.jpg`;
+    }
   }
 </script>
 

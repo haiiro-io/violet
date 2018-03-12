@@ -21,12 +21,10 @@ module.exports = {
       { name: 'og:type', content: 'profile' },
       { name: 'og:title', content: 'Haiji Haiiro / Namika Hamasaki' }, // should be switched by domain
       { name: 'og:description', content: 'Works by Haiji Haiiro' }, // should be switched by domain
-      { name: 'og:image', content: 'https://new.haiji.co/ogp_1200x630.jpg' }, // should be switched by domain
       { name: 'og:updated_time', content: builtAt },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:site', content: '@haiji505' },
       { name: 'twitter:description', content: 'Works by Haiji Haiiro' }, // should be switched by domain
-      { name: 'twitter:image', content: 'https://haiji.co/ogp_1200x630.jpg' } // should be switched by domain
     ],
     link: [
       { rel: 'canonical', href: 'https://haiji.co' }, // should be switched by domain

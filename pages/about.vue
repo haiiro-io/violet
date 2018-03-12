@@ -10,6 +10,18 @@
 
   @Component
   export default class PageAbout extends Vue {
+    head () {
+      return {
+        meta: [
+          { name: "og:image", content: this.ogImage },
+          { name: "twitter:image", content: this.ogImage }
+        ]
+      };
+    }
+
+    get ogImage (): string {
+      return `${process.env.baseUrl}/images/ogp_1200x630.jpg`;
+    }
   }
 </script>
 
