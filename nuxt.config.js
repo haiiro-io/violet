@@ -105,10 +105,14 @@ module.exports = {
     fallback: true,
     routes: [
       '/about',
-      '/works/signifiant',
+      '/works/amazarashi',
+      '/works/googleplay-game-effect',
       '/works/laughly',
       '/works/libzcareer',
-      '/works/logofolio'
+      '/works/logofolio',
+      '/works/pockemon-go',
+      '/works/signifiant',
+      '/works/stimpacks'
     ]
   }
 }
