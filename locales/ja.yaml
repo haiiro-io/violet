@@ -1,4 +1,11 @@
 index:
+  title: 灰色ハイジのポートフォリオ
+  author: 灰色ハイジ
+  description: 灰色ハイジのポートフォリオ
   greeting: サンフランシスコを拠点とするプロダクトデザイナーの灰色ハイジです。
 about:
-  name: 灰色ハイジ
+  title: 灰色ハイジのプロフィール
+works:
+  title: "%{name} — 灰色ハイジ"
+contact:
+  title: 灰色ハイジへの問い合わせ

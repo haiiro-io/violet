@@ -11,20 +11,14 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' },
-      { hid: 'description', name: 'description', content: 'Planning/Design works by Haiji Haiiro' },
       { name: 'msapplication-TileColor', content: '#ffffff' },
       { name: 'msapplication-TileImage', content: '/favicons/mstile-144x144.png' },
       { name: 'theme-color', content: '#c1c1c1' },
-      { name: 'author', content: 'Haiji Haiiro / Namika Hamasaki' }, // should be switched by domain
       { name: 'robots', content: 'noindex nofollow' }, // switch after launch
-      { name: 'og:url', content: 'https://haiji.co' }, // should be switched by domain
       { name: 'og:type', content: 'profile' },
-      { name: 'og:title', content: 'Haiji Haiiro / Namika Hamasaki' }, // should be switched by domain
-      { name: 'og:description', content: 'Works by Haiji Haiiro' }, // should be switched by domain
       { name: 'og:updated_time', content: builtAt },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:site', content: '@haiji505' },
-      { name: 'twitter:description', content: 'Works by Haiji Haiiro' }, // should be switched by domain
     ],
     link: [
       { rel: 'canonical', href: 'https://haiji.co' }, // should be switched by domain

@@ -11,6 +11,7 @@
 </template>
 
 <script lang="ts">
+  import VueI18n from "vue-i18n";
   import PageBase from "../../lib/page-base";
   import Component from "nuxt-class-component";
   import { Getter, namespace } from "vuex-class";
@@ -27,6 +28,10 @@
   })
   export default class PageSelectedWork extends PageBase {
     @WorksGetter pick;
+
+    get pageTitle (): VueI18n.LocaleMessage {
+      return this.$t("works.title", { name: this.work.title });
+    }
 
     get ogImage (): string {
       return `${process.env.baseUrl}/images/works/${this.work.image.og || this.work.name + "_og.jpg"}`;
