@@ -9,6 +9,10 @@
         v-for="work in list"
         :key="work.name">
         <nuxt-link :to="`/works/${work.name}`">{{ work.title }}</nuxt-link>
+        <img
+          class="workThumbnail"
+          :src="workImage(work.name)"
+        >
       </li>
     </ul>
   </section>
@@ -37,8 +41,15 @@
     get ogImage (): string {
       return `${process.env.baseUrl}/images/ogp_1200x630.jpg`;
     }
+
+    workImage (name): string {
+      return `/images/works/${name}_thumbnail.jpg`;
+    }
   }
 </script>
 
 <style lang="postcss">
+  img.workThumbnail {
+    width: 400px;
+  }
 </style>
