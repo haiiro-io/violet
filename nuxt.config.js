@@ -110,7 +110,7 @@ module.exports = {
       '/works/laughly',
       '/works/libzcareer',
       '/works/logofolio',
-      '/works/pockemon-go',
+      '/works/pokemon-go',
       '/works/signifiant',
       '/works/stimpacks'
     ]
