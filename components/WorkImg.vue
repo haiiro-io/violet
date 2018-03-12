@@ -12,17 +12,9 @@
 
   @Component({
     props: {
-      work: {
-        type: String,
-        required: true
-      },
       name: {
-        type: Number,
-        required: true
-      },
-      ext: {
         type: String,
-        default: () => 'jpg',
+        required: true
       },
       alt: {
         type: String
@@ -35,7 +27,8 @@
     ext: string;
 
     get imagePath (): string {
-      return `/images/works/${this.work}_${this.name}.${this.ext}`;
+      const slug = this.$route.params.slug;
+      return `/images/works/${slug}_${this.name}`;
     }
   }
 </script>

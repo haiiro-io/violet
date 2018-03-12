@@ -23,11 +23,11 @@ description: |
 
 We kicked off the project by interviewing people who use Laughly or love comedy. Users said that if Laughly started providing video content, they would gladly watch. Users also told us that they usually listened to the audio in the background while performing other actions such as while driving during their commute.
 
-<work-img work="laughly" name="scene" alt="Issue: How can users switch between consuming video and audio easily?" />
+<work-img name="scene.jpg" alt="Issue: How can users switch between consuming video and audio easily?" />
 
 ## Channel Navigation
 
-<work-img work="laughly" name="channel_navigation" />
+<work-img name="channnel_navigation.jpg" />
 
 On top of video, Laughly has several types of other content to keep in mind which include albums, podcasts, playlists. My design focused on how to organize the different type of contents to cater to an audience.
 I designed and iterated channel navigation. The design decision was prioritizing to separate types of content into ALL, AUDIO and VIDEO based on the user insight.
@@ -42,7 +42,7 @@ Ver4: The final design, modified the filter button.
 
 ## Thumbnail
 
-<work-img work="laughly" name="thumbnail" />
+<work-img name="thumbnail.jpg" />
 
 Audio and video formats had to be distinguished for combining these on one screen. The critical difference between audio and video formats is the ratio of the thumbnail image size, and the presence of a play button.
 
@@ -58,18 +58,18 @@ In a media player, the review feature shows up at the half of screen to read rev
 
 ### Review button
 
-<work-img work="laughly" name="review_button" />
+<work-img name="review_button.jpg" />
 
 Users found that the Write Review button was too hidden, which would deter them from engaging with it without being prompted. I moved the Write Review button to next to the rating on the playlist page. This made the button easier to find, and allowed users to go directly to the review page to write.
 
 ## Design System
 
-<work-img work="laughly" name="design_system" ext="png" />
+<work-img name="design_system.png" />
 
 I focused on mainly UI design, worked in Sketch, made the design system and bunch of components to allow 8 designers to design consistently.
 
 ### Sketch symbol
 
-<work-img work="laughly" name="sketch" ext="png" />
+<work-img name="sketch.png" />
 
 We had to make a lot of screens and iterate it frequently to validate usability. My challenge was making Sketch symbols that other designers can override the symbol easily and efficiently.
