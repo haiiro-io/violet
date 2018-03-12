@@ -1,9 +1,14 @@
 <template>
-  <img
-    class="workImg"
-    :alt="alt"
-    :src="path"
-  >
+  <video
+    class="workVideo"
+    width="100%"
+    autoplay
+    loop>
+    <source
+      :src="path"
+      type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 </template>
 
 <script lang="ts">
@@ -21,12 +26,12 @@
       }
     }
   })
-  export default class WorkImg extends Vue {
+  export default class WorkVideo extends Vue {
   }
 </script>
 
 <style lang="postcss" scoped>
-  img.workImg {
+  img.workVideo {
     width: 100%;
   }
 </style>

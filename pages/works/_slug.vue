@@ -3,7 +3,7 @@
     {{ $route.params.slug }} @ {{ work.owner }}, {{ work.year }}
     <p>{{ work.description }}</p>
     <p>{{ work.colors.join(" / ") }}</p>
-    <work-img name="main.jpg" />
+    <work-media name="main.jpg" />
     <no-ssr>
       <dynamic-markdown :markdown="work.body"/>
     </no-ssr>
@@ -17,14 +17,14 @@
 
   import { Work } from "../../store/modules/works";
   import DynamicMarkdown from "../../components/DynamicMarkdown.vue";
-  import WorkImg from "../../components/WorkImg.vue";
+  import WorkMedia from "../../components/WorkMedia.vue";
 
   import { name as WorksNamespace } from "../../store/modules/works";
 
   const WorksGetter = namespace(WorksNamespace, Getter);
 
   @Component({
-    components: { DynamicMarkdown, WorkImg }
+    components: { DynamicMarkdown, WorkMedia }
   })
   export default class PageSelectedWork extends Vue {
     @WorksGetter pick;
