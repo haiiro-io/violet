@@ -4,6 +4,7 @@
   import Component from "nuxt-class-component";
 
   import HaiiroIcon from "./HaiiroIcon.vue";
+  import WorkImg from "./WorkImg.vue";
 
   import { Watch } from "vue-property-decorator";
 
@@ -15,7 +16,7 @@
   @Component({
     props: ["markdown"],
     components: {
-      HaiiroIcon
+      HaiiroIcon, WorkImg
     }
   })
   export default class DynamicMarkdown extends Vue {
