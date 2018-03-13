@@ -2,7 +2,7 @@ index:
   title: Namika Hamasaki — Digital Product Designer
   author: Namika Hamasaki
   description: Namika is a digital product designer based in San Francisco. She focuses on UI design and branding.
-  greeting: Hello, I’m Namika, Product Designer based in San Francisco.
+  greeting: Hello, I’m {0}, Product Designer based in San Francisco.
 about:
   title: About — Namika Hamasaki
 works:
