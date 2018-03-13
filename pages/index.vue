@@ -1,7 +1,11 @@
 <template>
   <section class="pageIndex">
-    <h1>{{ $t("index.greeting") }}</h1>
-    <nuxt-link to="/about">About</nuxt-link>
+    <i18n
+      path="index.greeting"
+      tag="h1"
+      for="index.author">
+      <nuxt-link to="/about">{{ $t("index.author") }}</nuxt-link>
+    </i18n>
     <div id="works">
       <div
         v-for="work in list"
