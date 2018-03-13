@@ -1,10 +1,27 @@
 const builtAt = new Date().toISOString();
 const path = require('path');
 
+const orderedWorks = [
+  "laughly",
+  "finery",
+  "stimpacks",
+  "wonolo",
+  "pokemon-go",
+  "amazarashi",
+  "libzcareer",
+  "weekend-creator",
+  "signifiant",
+  "remote-style",
+  "dcf",
+  "googleplay-game-effect",
+  "logofolio"
+];
+
 module.exports = {
   env: {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000',
-    buildLocale: process.env.BUILD_LOCALE || 'en'
+    buildLocale: process.env.BUILD_LOCALE || 'en',
+    orderedWorks
   },
   head: {
     title: 'Haiji Haiiro / Namika Hamasaki',
@@ -105,14 +122,6 @@ module.exports = {
     fallback: true,
     routes: [
       '/about',
-      '/works/amazarashi',
-      '/works/googleplay-game-effect',
-      '/works/laughly',
-      '/works/libzcareer',
-      '/works/logofolio',
-      '/works/pokemon-go',
-      '/works/signifiant',
-      '/works/stimpacks'
-    ]
+    ].concat(orderedWorks.map(w => `/works/${w}`))
   }
 }

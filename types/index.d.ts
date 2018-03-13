@@ -7,6 +7,7 @@ declare var process: {
   env: {
     baseUrl:  string;
     buildLocale: "en" | "ja";
+    orderedWorks: string[];
   }
 };
 
