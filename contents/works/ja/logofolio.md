@@ -1,7 +1,7 @@
 ---
 title: ロゴフォリオ
 year: 2016-2018
-owner: 
+owner:
 role: Brand Identity, Graphic Design
 related:
   - weekend-creator
@@ -13,7 +13,7 @@ colors:
   - "#484848"
   - "#252525"
 description: |
-  さまざまなクライアントのために制作したロゴの一覧です。ブランドの世界観を象徴する形やタイポグラフィー、メタファーを探ることは私にとってチャレンジであり、とても楽しいパートです。
+  さまざまなクライアントのために制作したロゴの一覧です。
 ---
 
 ### Stimpacks
