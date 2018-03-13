@@ -1,20 +1,21 @@
 <template>
-  <section>
+  <section class="pageIndex">
     <h1>{{ $t("index.greeting") }}</h1>
-    <ul>
-      <li>
-        <nuxt-link to="/about">About</nuxt-link>
-      </li>
-      <li
+    <nuxt-link to="/about">About</nuxt-link>
+    <div id="works">
+      <div
         v-for="work in list"
-        :key="work.name">
-        <nuxt-link :to="`/works/${work.name}`">{{ work.title }}</nuxt-link>
-        <img
-          class="workThumbnail"
-          :src="workImage(work.name)"
-        >
-      </li>
-    </ul>
+        :key="work.name"
+        class="work">
+        <nuxt-link :to="`/works/${work.name}`">
+          <img
+            class="workThumbnail"
+            :src="workImage(work.name)"
+          >
+          <span>{{ work.title }}</span>
+        </nuxt-link>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -41,7 +42,25 @@
 </script>
 
 <style lang="postcss">
-  img.workThumbnail {
-    width: 400px;
+  section.pageIndex {
+  }
+
+  #works {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .work {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    & img.workThumbnail {
+      display: block;
+      width: 400px;
+      height: 225px;
+    }
+    & span {
+    }
   }
 </style>
