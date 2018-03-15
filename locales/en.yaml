@@ -1,3 +1,9 @@
+root:
+  copyright: © Namika Hamasaki 2014-%{year}
+  made_by:
+    kengo: Kengo
+    namika: Namika
+    message: Lovingly made by {namika} and {kengo}
 index:
   title: Namika Hamasaki — Digital Product Designer
   author: Namika Hamasaki

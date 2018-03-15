@@ -15,6 +15,23 @@
     <svg-icon name="hatenablog" />
     <svg-icon name="facebook" />
     <svg-icon name="amazon" />
+    <span v-t="{ path: 'root.copyright', args: { year: new Date().getFullYear() } }" />
+    <i18n
+      path="root.made_by.message"
+      tag="span">
+      <nuxt-link
+        to="/about"
+        place="namika">
+        {{ $t("root.made_by.namika") }}
+      </nuxt-link>
+      <a
+        href="https://hmsk.me"
+        target="_blank"
+        place="kengo">
+        {{ $t("root.made_by.kengo") }}
+      </a>
+    </i18n>
+
   </div>
 </template>
 
