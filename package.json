@@ -9,6 +9,7 @@
     "axios": "^0.17.1",
     "nuxt": "^1.3.0",
     "nuxt-class-component": "^1.2.0",
+    "vmark": "^0.1.2",
     "vue": "^2.5.13",
     "vue-class-component": "^6.1.2",
     "vue-property-decorator": "^6.0.0",
