@@ -4,9 +4,9 @@
     <p>{{ work.description }}</p>
     <p>{{ work.colors.join(" / ") }}</p>
     <work-media name="main.jpg" />
-    <no-ssr>
-      <dynamic-markdown :markdown="work.body"/>
-    </no-ssr>
+    <dynamic-markdown
+      :render-func="work.renderFunc"
+      :static-render-funcs="work.staticRenderFuncs" />
   </div>
 </template>
 

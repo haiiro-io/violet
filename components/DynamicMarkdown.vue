@@ -1,45 +1,30 @@
 <script lang="ts">
   import Vue from "vue";
-  import VueWithCompiler from "vue/dist/vue.esm";
   import Component from "nuxt-class-component";
 
   import HaiiroIcon from "./HaiiroIcon.vue";
   import WorkMedia from "./WorkMedia.vue";
 
-  import { Watch } from "vue-property-decorator";
-
-  import MarkdownIt from "markdown-it";
-  const markdownRender = new MarkdownIt({
-    html: true
-  });
-
   @Component({
-    props: ["markdown"],
+    props: ["renderFunc", "staticRenderFuncs"],
     components: {
       HaiiroIcon, WorkMedia
     }
   })
   export default class DynamicMarkdown extends Vue {
     templateRender;
-    markdown: string;
+    staticTemplateRenders;
+    renderFunc: string;
+    staticRenderFuncs: string;
 
     render (h) {
-      if (this.templateRender) {
-        return this.templateRender();
-      } else {
-        return h("div", "Looading");
-      }
+      return this.templateRender ? this.templateRender() : h("div", "Rendering");
     }
 
     created () {
-      const compiled = VueWithCompiler.compile(`<div>${markdownRender.render(this.markdown)}</div>`);
-      // https://forum.vuejs.org/t/vue-compile-what-is-staticrenderfns-render-vs-staticrenderfns/3950/7
-      // https://jsfiddle.net/Linusborg/1zdzu7k1/
-      this.templateRender = compiled.render;
-      this.$options.staticRenderFns = [];
-      for (const staticRenderFunction of compiled.staticRenderFns) {
-        this.$options.staticRenderFns.push(staticRenderFunction);
-      }
+      this.templateRender = new Function (`return ${this.renderFunc}`)();
+      this.staticTemplateRenders = new Function (`return ${this.staticRenderFuncs}`)();
+      this.$options.staticRenderFns = this.staticTemplateRenders;
     }
   }
 </script>
