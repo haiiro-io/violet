@@ -62,7 +62,7 @@
   }
 
   .container {
-    font-family: "objektiv-mk2","ryo-gothic-plusn",sans-serif;
+    font-family: "objektiv-mk2", "ryo-gothic-plusn", sans-serif;
     color: var(--konezumi);
     width: 100%;
   }
