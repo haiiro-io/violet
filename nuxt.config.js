@@ -64,7 +64,9 @@ module.exports = {
   /*
   ** Build configuration
   */
-  css: [],
+  css: [
+    { src: 'node_modules/modern-normalize/modern-normalize.css', lang: 'css' }
+  ],
   build: {
     vendor: ['axios', 'vuex-class', 'nuxt-class-component', 'vue-i18n'],
     extend (config, { isDev, isClient }) {
