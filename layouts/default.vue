@@ -42,21 +42,27 @@
   import HaiiroIcon from "../components/HaiiroIcon.vue";
   import SvgIcon from "../components/SvgIcon.vue";
 
+  declare const Typekit: any;
+
   @Component({ components: { HaiiroIcon, SvgIcon } })
   export default class RootLayout extends Vue {
+    beforeCreate () {
+      try {
+        Typekit.load({ async: true });
+      } catch (e) {
+      }
+    }
   }
 </script>
 
 <style lang="postcss">
-  @import url("https://use.typekit.net/sff2rot.css");
-
   body {
     margin: 0;
     background-color: var(--skyhai);
   }
 
   .container {
-    font-family: "objektiv-mk2";
+    font-family: "objektiv-mk2","ryo-gothic-plusn",sans-serif;
     color: var(--konezumi);
     width: 100%;
   }

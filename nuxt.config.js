@@ -55,6 +55,9 @@ module.exports = {
       { rel: 'apple-touch-icon', href: '/favicons/apple-touch-icon-180x180.png', sizes: '180x180' },
       { rel: 'mask-icon', type: 'image/png', href: '/favicons/safari-pinned-tab.svg', color: '#c1c1c1' },
       { rel: 'manifest', href: '/manifest.json' }
+    ],
+    script: [
+      { src: 'https://use.typekit.net/sff2rot.js', defer: true }
     ]
   },
   /*
