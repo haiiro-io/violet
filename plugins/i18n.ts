@@ -12,6 +12,7 @@ export default ({ app, store }) => {
     fallbackLocale: "en",
     messages: {
       en, ja
-    }
+    },
+    silentTranslationWarn: true
   });
 };
