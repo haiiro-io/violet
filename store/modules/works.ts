@@ -10,6 +10,7 @@ export interface Work {
   title: string;
   year: number;
   owner: string;
+  role: string;
   colors: string[];
   description: string;
   renderFunc: string;
@@ -104,6 +105,7 @@ export const actions: Actions<State, RootState> = {
           year: attr.year,
           owner: attr.owner,
           colors: attr.colors,
+          role: attr.role,
           description: attr.description,
           renderFunc: frontmatter.renderFunc,
           staticRenderFuncs: frontmatter.staticRenderFns,

@@ -16,7 +16,8 @@
             class="workThumbnail"
             :src="workImage(work.name)"
           >
-          <span>{{ work.title }}</span>
+          <span class="workTitle">{{ work.title }}</span>
+          <span class="workRole">{{ work.role }}</span>
         </nuxt-link>
       </div>
     </div>
@@ -50,21 +51,44 @@
   }
 
   #works {
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
+    width: 83%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+    grid-column-gap: 1.66%;
+    grid-row-gap: 100px;
   }
 
   .work {
     display: flex;
     flex-direction: column;
-    margin: 15px;
+    & a {
+      text-decoration: none;
+    }
     & img.workThumbnail {
       display: block;
-      width: 400px;
-      height: 225px;
+      width: 100%;
     }
     & span {
+      display: block;
+    }
+    & span.workTitle {
+      color: var(--konezumi);
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    & span.workRole {
+      color: var(--nibihai);
+      margin-top: 5px;
+      font-weight: normal;
+      font-size: 14px;
+    }
+  }
+
+  .work:hover {
+    & img.workThumbnail {
+      opacity: .8;
     }
   }
 </style>
