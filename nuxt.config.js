@@ -107,6 +107,7 @@ module.exports = {
     },
     postcss: {
       plugins: {
+        'postcss-import': {},
         'postcss-cssnext': {
           features: {
             customProperties: {

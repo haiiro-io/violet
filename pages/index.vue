@@ -47,16 +47,33 @@
 </script>
 
 <style lang="postcss">
+  @import "../assets/styles/custom-properties.postcss";
+
   section.pageIndex {
   }
 
   #works {
     width: 83%;
     margin: 0 auto;
+    @media (--narrow) {
+      width: 100%;
+      padding: 0 20px;
+      margin-bottom: 70px;
+    }
+
     display: grid;
     grid-template-columns: repeat(3, 4fr);
     grid-column-gap: 1.66%;
     grid-row-gap: 100px;
+    @media (--medium) {
+      grid-template-columns: repeat(2, 6fr);
+      grid-column-gap: 2.63%;
+    }
+    @media (--narrow) {
+      grid-template-columns: repeat(1, 12fr);
+      grid-column-gap: 0;
+      grid-row-gap: 40px;
+    }
   }
 
   .work {
