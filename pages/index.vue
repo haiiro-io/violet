@@ -50,16 +50,42 @@
   @import "../assets/styles/custom-properties.postcss";
 
   section.pageIndex {
-  }
-
-  #works {
     width: 83%;
     margin: 0 auto;
     @media (--narrow) {
       width: 100%;
       padding: 0 20px;
-      margin-bottom: 70px;
     }
+  }
+
+  h1 {
+    color: var(--konezumi);
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 54px;
+    margin-top: 300px;
+    margin-bottom: 170px;
+    @media (--narrow) {
+      font-size: 30px;
+      line-height: 48px;
+      margin-top: 150px;
+      margin-bottom: 85px;
+    }
+    & > a {
+      color: var(--konezumi);
+      display:inline-block;
+      border-bottom: 5px dotted var(--nibihai);
+      padding-bottom: 5px;
+      text-decoration: none;
+    }
+    & > a:hover {
+      color: var(--konezumi);
+      border-bottom: 5px dotted var(--konezumi);
+    }
+  }
+
+  #works {
+    margin-bottom: 70px;
 
     display: grid;
     grid-template-columns: repeat(3, 4fr);

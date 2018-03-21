@@ -1,8 +1,10 @@
 <template>
   <div class="container">
-    <nuxt-link to="/">
-      <haiiro-icon />
-    </nuxt-link>
+    <header>
+      <nuxt-link to="/">
+        <haiiro-icon :size="haiiroIconSize" />
+      </nuxt-link>
+    </header>
     <nuxt/>
     <svg-icon name="dribbble" />
     <svg-icon name="instagram" />
@@ -31,7 +33,6 @@
         {{ $t("root.made_by.kengo") }}
       </a>
     </i18n>
-
   </div>
 </template>
 
@@ -46,16 +47,37 @@
 
   @Component({ components: { HaiiroIcon, SvgIcon } })
   export default class RootLayout extends Vue {
+    haiiroIconSize: number = 0;
+
     beforeCreate () {
       try {
         Typekit.load({ async: true });
       } catch (e) {
       }
     }
+
+    mounted () {
+      this.updateHaiiroIconSize();
+      if (process.browser) {
+        window.addEventListener("resize", this.updateHaiiroIconSize);
+      }
+    }
+
+    updateHaiiroIconSize () {
+      this.haiiroIconSize = this.$el.clientWidth > 768 ? 30 : 22;
+    }
+
+    beforeDestroy () {
+      if (process.browser) {
+        window.removeEventListener("resize", this.updateHaiiroIconSize);
+      }
+    }
   }
 </script>
 
 <style lang="postcss">
+  @import "../assets/styles/custom-properties.postcss";
+
   body {
     margin: 0;
     background-color: var(--skyhai);
@@ -69,6 +91,18 @@
 </style>
 
 <style lang="postcss" scoped>
+  @import "../assets/styles/custom-properties.postcss";
+
+  header {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    padding: 40px 40px 0 40px;
+    @media (--narrow) {
+      padding: 20px 0 0 20px;
+    }
+  }
+
   .container a {
     width: 93px;
   }

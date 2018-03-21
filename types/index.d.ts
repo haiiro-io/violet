@@ -8,7 +8,8 @@ declare var process: {
     baseUrl:  string;
     buildLocale: "en" | "ja";
     orderedWorks: string[];
-  }
+  },
+  browser: boolean;
 };
 
 type AvailableLocale = "en" | "ja";
