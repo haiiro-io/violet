@@ -94,6 +94,9 @@
       margin-top: 10px;
       font-weight: bold;
       font-size: 16px;
+      @media (--wide) {
+        font-size: 18px;
+      }
     }
     & span.workRole {
       color: var(--nibihai);
