@@ -74,13 +74,15 @@
     & > a {
       color: var(--konezumi);
       display:inline-block;
-      border-bottom: 5px dotted var(--nibihai);
+      border-bottom: 5px dashed var(--nibihai);
       padding-bottom: 5px;
       text-decoration: none;
+      transition: ease 0.5s;
     }
     & > a:hover {
       color: var(--konezumi);
-      border-bottom: 5px dotted var(--konezumi);
+      border-bottom: 5px dashed var(--konezumi);
+      transition: ease 0.5s;
     }
   }
 
