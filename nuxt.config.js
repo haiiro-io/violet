@@ -113,6 +113,7 @@ module.exports = {
             customProperties: {
               variables: {
                 'skyhai': '#DFE0E0',
+                'soba': '#D8D8D8',
                 'konezumi': '#555555',
                 'nibihai': '#999999'
               }

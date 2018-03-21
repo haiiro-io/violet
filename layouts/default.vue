@@ -6,33 +6,46 @@
       </nuxt-link>
     </header>
     <nuxt/>
-    <svg-icon name="dribbble" />
-    <svg-icon name="instagram" />
-    <svg-icon name="linkedin" />
-    <svg-icon name="github" />
-    <svg-icon name="twitter" />
-    <svg-icon name="500px" />
-    <svg-icon name="behance" />
-    <svg-icon name="medium" />
-    <svg-icon name="hatenablog" />
-    <svg-icon name="facebook" />
-    <svg-icon name="amazon" />
-    <span v-t="{ path: 'root.copyright', args: { year: new Date().getFullYear() } }" />
-    <i18n
-      path="root.made_by.message"
-      tag="span">
-      <nuxt-link
-        to="/about"
-        place="namika">
-        {{ $t("root.made_by.namika") }}
-      </nuxt-link>
-      <a
-        href="https://hmsk.me"
-        target="_blank"
-        place="kengo">
-        {{ $t("root.made_by.kengo") }}
-      </a>
-    </i18n>
+    <footer>
+      <div id="exposures">
+        <div class="mainExposures">
+          <a
+            v-for="exp in mainExposures"
+            :key="exp[0]"
+            :href="exp[1]"
+            target="_blank">
+            <svg-icon :name="exp[0]" />
+          </a>
+        </div>
+        <div class="additionalExposures">
+          <a
+            v-for="exp in additionalExposures"
+            :key="exp[0]"
+            :href="exp[1]"
+            target="_blank">
+            <svg-icon :name="exp[0]" />
+          </a>
+        </div>
+      </div>
+      <div id="copyright">
+        <span v-t="{ path: 'root.copyright', args: { year: new Date().getFullYear() } }" />
+        <i18n
+          path="root.made_by.message"
+          tag="span">
+          <nuxt-link
+            to="/about"
+            place="namika">
+            {{ $t("root.made_by.namika") }}
+          </nuxt-link>
+          <a
+            href="https://hmsk.me"
+            target="_blank"
+            place="kengo">
+            {{ $t("root.made_by.kengo") }}
+          </a>
+        </i18n>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -72,6 +85,27 @@
         window.removeEventListener("resize", this.updateHaiiroIconSize);
       }
     }
+
+    get mainExposures () {
+      return [
+        ["dribbble", "https://dribbble.com/haiji505"],
+        ["instagram", "https://www.instagram.com/haiji505/"],
+        ["linkedin", "https://www.linkedin.com/in/namika-hamasaki/"],
+        ["github", "https://github.com/haiji505"],
+        ["twitter", "https://twitter.com/haiji505"]
+      ];
+    }
+
+    get additionalExposures () {
+      return [
+        ["500px", "https://500px.com/haiji505"],
+        ["behance", "https://www.behance.net/haiji505"],
+        ["medium", "https://medium.com/@haiji505"],
+        ["hatenablog", "http://blog.haiji.co/"],
+        ["facebook", "https://www.facebook.com/haiji505"],
+        ["amazon", "https://www.amazon.co.jp/registry/wishlist/31FH6CO5B6F8W"]
+      ];
+    }
   }
 </script>
 
@@ -104,11 +138,52 @@
   }
 
   .container a {
-    width: 93px;
   }
+
+  footer {
+    margin-top: 120px;
+    padding-top: 70px;
+    border-top: 2px solid var(--soba);
+    @media (--narrow) {
+      margin-top: 70px;
+    }
+  }
+
+  .mainExposures, .additionalExposures {
+    display: flex;
+    justify-content: center;
+    & svg {
+      margin: 0 10px;
+    }
+  }
+
+  .additionalExposures {
+    margin-top: 40px;
+  }
+
+  #copyright {
+    font-size: 12px;
+    text-align: center;
+    color: var(--nibihai);
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    & span {
+      display: block;
+    }
+    & a {
+      color: var(--nibihai);
+    }
+  }
+
   svg.svgIcon {
     width: 30px;
     height: 30px;
     fill: var(--nibihai);
+  }
+
+  svg.svgIcon:hover {
+    fill: var(--konezumi);
   }
 </style>
