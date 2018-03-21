@@ -19,24 +19,24 @@
 <script lang="ts">
   import Vue from "vue";
   import Component from "nuxt-class-component";
+  import { State, namespace } from "vuex-class";
+
+  import { name as PixelsNamespace } from "~/store/modules/pixels";
+  const PixelsState = namespace(PixelsNamespace, State);
 
   @Component({
     props: {
       size: {
         type: Number,
         default: 30
-      },
-      colors: {
-        type: Array,
-        default: () => ["#555", "#555", "#555", "#555", "#555", "#555", "#555"]
       }
     }
   })
   export default class HaiiroIcon extends Vue {
+    @PixelsState currentColors;
     size: number;
     width: number;
     height: number;
-    colors: string[];
 
     get viewBox (): string {
       return `0 0 ${this.totalWidth} ${this.totalHeight}`;
@@ -55,13 +55,13 @@
       const rightColX = this.size * 2.1;
       const bottomRowY = this.size * 2;
       return [
-        { ...base, id: "h-0-0", x: "0",       y: "0",         color: this.colors[0] },
-        { ...base, id: "h-0-1", x: "0",       y: this.size,   color: this.colors[1] },
-        { ...base, id: "h-0-2", x: "0",       y: bottomRowY,  color: this.colors[2] },
-        { ...base, id: "h-1-1", x: this.size, y: this.size,   color: this.colors[3] },
-        { ...base, id: "h-2-0", x: rightColX, y: "0",         color: this.colors[4] },
-        { ...base, id: "h-2-1", x: rightColX, y: this.size,   color: this.colors[5] },
-        { ...base, id: "h-2-2", x: rightColX, y: bottomRowY,  color: this.colors[6] }
+        { ...base, id: "h-0-0", x: "0",       y: "0",         color: this.currentColors[0] },
+        { ...base, id: "h-0-1", x: "0",       y: this.size,   color: this.currentColors[1] },
+        { ...base, id: "h-0-2", x: "0",       y: bottomRowY,  color: this.currentColors[2] },
+        { ...base, id: "h-1-1", x: this.size, y: this.size,   color: this.currentColors[3] },
+        { ...base, id: "h-2-0", x: rightColX, y: "0",         color: this.currentColors[4] },
+        { ...base, id: "h-2-1", x: rightColX, y: this.size,   color: this.currentColors[5] },
+        { ...base, id: "h-2-2", x: rightColX, y: bottomRowY,  color: this.currentColors[6] }
       ];
     }
   }
@@ -71,6 +71,9 @@
   svg.haiiroIcon {
     display: inline-block;
     transition: ease 0.5s;
+  }
+  rect {
+    transition: fill ease 0.75s;
   }
 </style>
 

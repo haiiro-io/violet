@@ -28,13 +28,21 @@
   import Component from "nuxt-class-component";
   import PageBase from "../lib/page-base";
   import { Work } from "../store/modules/works";
-  import { Getter, namespace } from "vuex-class";
+  import { Getter, Action, namespace } from "vuex-class";
   import { name as WorksNamespace } from "~/store/modules/works";
+  import { name as PixelsNamespace } from "~/store/modules/pixels";
   const WorksGetter = namespace(WorksNamespace, Getter);
+  const PixelsAction = namespace(PixelsNamespace, Action);
+
 
   @Component
   export default class PageIndex extends PageBase {
     @WorksGetter pick;
+    @PixelsAction setDefaultColors;
+
+    mounted () {
+      this.setDefaultColors();
+    }
 
     get list (): Work[] {
       return process.env.orderedWorks.map(name => this.pick(name));
