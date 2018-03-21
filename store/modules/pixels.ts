@@ -38,6 +38,10 @@ export const actions: Actions<State, RootState> = {
 
 export const mutations: MutationTree<State> = {
   [types.UPDATE_COLORS](state, colors: string[]) {
-    state.currentColors = colors;
+    const newColors: string[] = [];
+    for (let i = 0; i < 7; i++) {
+      newColors.push(colors[i%colors.length]);
+    }
+    state.currentColors = newColors;
   }
 };
