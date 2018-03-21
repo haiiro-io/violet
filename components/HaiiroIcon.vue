@@ -70,6 +70,7 @@
 <style lang="postcss" scoped>
   svg.haiiroIcon {
     display: inline-block;
+    transition: ease 0.5s;
   }
 </style>
 
