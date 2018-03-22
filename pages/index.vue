@@ -10,6 +10,8 @@
       <div
         v-for="work in list"
         :key="work.name"
+        @mouseover="onFocusWork(work)"
+        @mouseleave="onLeaveFocusWork"
         class="work">
         <nuxt-link :to="`/works/${work.name}`">
           <img
@@ -40,6 +42,7 @@
   export default class PageIndex extends PageBase {
     @WorksGetter pick;
     @PixelsAction setDefaultColors;
+    @PixelsAction setColors;
 
     mounted () {
       this.setDefaultColors();
@@ -51,6 +54,14 @@
 
     workImage (name): string {
       return `/images/works/${name}_thumbnail.jpg`;
+    }
+
+    onFocusWork (work: Work) {
+      this.setColors(work.colors);
+    }
+
+    onLeaveFocusWork () {
+      this.setDefaultColors();
     }
   }
 </script>
