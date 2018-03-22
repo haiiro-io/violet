@@ -4,14 +4,19 @@
       path="index.greeting.message"
       tag="h1"
       for="index.greeting.name">
-      <nuxt-link to="/about">{{ $t("index.greeting.name") }}</nuxt-link>
+      <nuxt-link
+        to="/about"
+        @mouseover.native="onFocusName"
+        @mouseleave.native="onLeaveFocus">
+        {{ $t("index.greeting.name") }}
+      </nuxt-link>
     </i18n>
     <div id="works">
       <div
         v-for="work in list"
         :key="work.name"
         @mouseover="onFocusWork(work)"
-        @mouseleave="onLeaveFocusWork"
+        @mouseleave="onLeaveFocus"
         class="work">
         <nuxt-link :to="`/works/${work.name}`">
           <img
@@ -56,11 +61,15 @@
       return `/images/works/${name}_thumbnail.jpg`;
     }
 
+    onFocusName () {
+      this.setColors(["#555"]);
+    }
+
     onFocusWork (work: Work) {
       this.setColors(work.colors);
     }
 
-    onLeaveFocusWork () {
+    onLeaveFocus () {
       this.setDefaultColors();
     }
   }
