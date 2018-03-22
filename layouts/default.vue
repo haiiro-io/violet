@@ -121,6 +121,15 @@
     font-family: "objektiv-mk2", "ryo-gothic-plusn", sans-serif;
     color: var(--konezumi);
     width: 100%;
+
+    & .outerMoat {
+      width: 83%;
+      margin: 0 auto;
+      @media (--narrow) {
+        width: 100%;
+        padding: 0 20px;
+      }
+    }
   }
 </style>
 

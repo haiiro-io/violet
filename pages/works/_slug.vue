@@ -1,13 +1,19 @@
 <template>
-  <div>
-    {{ $route.params.slug }} @ {{ work.owner }}, {{ work.year }}
-    <p>{{ work.description }}</p>
-    <p>{{ work.colors.join(" / ") }}</p>
-    <work-media name="main.jpg" />
-    <dynamic-markdown
-      :render-func="work.renderFunc"
-      :static-render-funcs="work.staticRenderFuncs" />
-  </div>
+  <section class="workSelected">
+    <work-media
+      name="main.jpg"
+      class="horizon"/>
+    <div class="outerMoat">
+      <h1>{{ work.title }}</h1>
+      {{ work.year }}
+      <p>{{ work.description }}</p>
+      <p>{{ work.owner }}</p>
+      <p>{{ work.role }}</p>
+      <dynamic-markdown
+        :render-func="work.renderFunc"
+        :static-render-funcs="work.staticRenderFuncs" />
+    </div>
+  </section>
 </template>
 
 <script lang="ts">
@@ -59,5 +65,8 @@
   }
 </script>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
+  section.workSelected {
+    padding-top: 170px;
+  }
 </style>

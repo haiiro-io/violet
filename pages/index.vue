@@ -1,5 +1,5 @@
 <template>
-  <section class="pageIndex">
+  <section class="pageIndex outerMoat">
     <i18n
       path="index.greeting.message"
       tag="h1"
@@ -77,15 +77,6 @@
 
 <style lang="postcss">
   @import "../assets/styles/custom-properties.postcss";
-
-  section.pageIndex {
-    width: 83%;
-    margin: 0 auto;
-    @media (--narrow) {
-      width: 100%;
-      padding: 0 20px;
-    }
-  }
 
   h1 {
     color: var(--konezumi);
