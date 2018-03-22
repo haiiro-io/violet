@@ -25,7 +25,8 @@
       "~/static/*": ["./static/*"],
       "~/store/*": ["./store/*"],
       "~/contents/works/*": ["./contents/works/*"],
-      "~/types/*": ["./types/*"]
+      "~/types/*": ["./types/*"],
+      "~/lib/*": ["./lib/*"]
     }
   }
 }

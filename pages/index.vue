@@ -26,8 +26,9 @@
 
 <script lang="ts">
   import Component from "nuxt-class-component";
-  import PageBase from "../lib/page-base";
-  import { Work } from "../store/modules/works";
+  import PageBase from "~/lib/page-base";
+  import { Work } from "~/store/modules/works";
+
   import { Getter, Action, namespace } from "vuex-class";
   import { name as WorksNamespace } from "~/store/modules/works";
   import { name as PixelsNamespace } from "~/store/modules/pixels";

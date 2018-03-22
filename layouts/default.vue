@@ -53,8 +53,8 @@
   import Vue from "vue";
   import Component from "nuxt-class-component";
 
-  import HaiiroIcon from "../components/HaiiroIcon.vue";
-  import SvgIcon from "../components/SvgIcon.vue";
+  import HaiiroIcon from "~/components/HaiiroIcon.vue";
+  import SvgIcon from "~/components/SvgIcon.vue";
 
   declare const Typekit: any;
 
