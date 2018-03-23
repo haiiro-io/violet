@@ -13,7 +13,6 @@
   })
   export default class DynamicMarkdown extends Vue {
     templateRender;
-    staticTemplateRenders;
     renderFunc: string;
     staticRenderFuncs: string;
 
@@ -23,8 +22,7 @@
 
     created () {
       this.templateRender = new Function(this.renderFunc)();
-      this.staticTemplateRenders = new Function(this.staticRenderFuncs)();
-      this.$options.staticRenderFns = this.staticTemplateRenders;
+      this.$options.staticRenderFns = new Function(this.staticRenderFuncs)();
     }
   }
 </script>
