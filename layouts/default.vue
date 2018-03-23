@@ -103,7 +103,7 @@
         ["medium", "https://medium.com/@haiji505"],
         ["hatenablog", "http://blog.haiji.co/"],
         ["facebook", "https://www.facebook.com/haiji505"],
-        ["amazon", "https://www.amazon.co.jp/registry/wishlist/31FH6CO5B6F8W"]
+        ["gift", "https://www.amazon.co.jp/registry/wishlist/31FH6CO5B6F8W"]
       ];
     }
   }
