@@ -79,11 +79,11 @@ module.exports = {
 
       config.module.rules.push({
         test: /\.md$/,
-        loaders: [
-          'json-loader',
-          'front-matter-loader'
-        ],
-        include: path.resolve(__dirname, 'contents/works')
+        loader: 'frontmatter-markdown-loader',
+        include: path.resolve(__dirname, 'contents/works'),
+        options: {
+          vue: true
+        }
       }, {
         test: /\.yaml$/,
         loaders: [

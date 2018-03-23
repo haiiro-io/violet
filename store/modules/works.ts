@@ -1,7 +1,4 @@
 import { ActionTree, MutationTree, GetterTree, ActionContext } from "vuex";
-import { compile } from "vue-template-compiler";
-import stripWith from "vue-template-es2015-compiler";
-import MarkdownIt from "markdown-it";
 import { RootState } from "store";
 import { VNode, CreateElement } from "vue";
 
@@ -27,10 +24,6 @@ interface FrontMatterContentWithRender extends FrontMatterContent {
   staticRenderFns: string;
 }
 
-const markdownRender = new MarkdownIt({
-  html: true
-});
-
 const LANGS: AvailableLocale[] = ["en", "ja"];
 type ImportedFrontMatters = { [name: string]: FrontMatterContentWithRender };
 const importsByLang: {
@@ -41,15 +34,6 @@ const importAll = (resolve) => {
   resolve.keys().forEach((key) => {
     const [_, lang, name] = key.match(/^\.\/(..)\/(.+)\.md$/);
     importsByLang[lang][name] = resolve(key);
-
-    const compiled = compile(`<div>${markdownRender.render(resolve(key).body)}</div>`);
-    importsByLang[lang][name].renderFunc = stripWith(`function render() { ${compiled.render} }`);
-
-    let staticRenderFns = "";
-    if (compiled.staticRenderFns.length > 0) {
-      staticRenderFns = stripWith(`[${compiled.staticRenderFns.map(fn => `function () { ${fn} }`).join(",")}]`);
-    }
-    importsByLang[lang][name].staticRenderFns = staticRenderFns;
   });
 };
 importAll(require.context("~/contents/works", true, /\.md$/));
@@ -107,8 +91,8 @@ export const actions: Actions<State, RootState> = {
           colors: attr.colors,
           role: attr.role,
           description: attr.description,
-          renderFunc: frontmatter.renderFunc,
-          staticRenderFuncs: frontmatter.staticRenderFns,
+          renderFunc: frontmatter.vue.render,
+          staticRenderFuncs: frontmatter.vue.staticRenderFns,
           image: {
             main: attr.image && attr.image.main,
             og: attr.image && attr.image.og

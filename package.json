@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "axios": "^0.17.1",
+    "frontmatter-markdown-loader": "github:hmsk/frontmatter-markdown-loader",
     "nuxt": "^1.3.0",
     "nuxt-class-component": "^1.2.0",
     "vue": "2.5.13",
@@ -30,7 +31,6 @@
     "eslint": "^4.16.0",
     "eslint-plugin-typescript": "^0.8.1",
     "eslint-plugin-vue": "^4.2.2",
-    "front-matter-loader": "^0.2.0",
     "markdown-it": "^8.4.0",
     "modern-normalize": "^0.4.0",
     "svg-sprite-loader": "^3.7.0",

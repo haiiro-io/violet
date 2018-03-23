@@ -22,8 +22,8 @@
     }
 
     created () {
-      this.templateRender = new Function (`return ${this.renderFunc}`)();
-      this.staticTemplateRenders = new Function (`return ${this.staticRenderFuncs}`)();
+      this.templateRender = new Function(this.renderFunc)();
+      this.staticTemplateRenders = new Function(this.staticRenderFuncs)();
       this.$options.staticRenderFns = this.staticTemplateRenders;
     }
   }

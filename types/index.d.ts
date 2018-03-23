@@ -1,6 +1,7 @@
 interface FrontMatterContent {
   attributes: any;
   body: string;
+  vue: any;
 }
 
 declare var process: {
