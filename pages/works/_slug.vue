@@ -72,16 +72,17 @@
 </script>
 
 <style lang="postcss" scoped>
+  @import "../../assets/styles/custom-properties.postcss";
+
   section.workSelected {
     padding-top: 170px;
   }
   h1 {
-    width: 100%;
     text-align: center;
     font-size: 48px;
     line-height: 54px;
     font-weight: bold;
-    margin: 120px 0 20px;
+    margin: 120px auto 20px;
   }
   .workSelected-year {
     font-size: 16px;
@@ -93,7 +94,7 @@
   }
   dl {
     width: 66.7%;
-    margin: 120px auto;
+    margin: 40px auto 120px;
   }
   dt {
     font-size: 16px;
@@ -102,8 +103,8 @@
   }
   dd {
     color: var(--konezumi);
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 16px;
+    line-height: 24px;
     margin-left: 0;
   }
   dd + dt {
@@ -113,7 +114,28 @@
     color: var(--konezumi);
     width: 66.7%;
     margin: 0 auto;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  @media (--medium) {
+    p, dl {
+      width: 83.3%;
+    }
+  }
+  @media (--narrow) {
+    p, dl {
+      width: 100%;
+    }
+    h1 {
+      font-size: 30px;
+      margin-top: 70px;
+      margin-bottom: 10px;
+    }
+    .workSelected-year {
+      margin-bottom: 40px;
+    }
+    dl {
+      margin-bottom: 70px;
+    }
   }
 </style>
