@@ -97,7 +97,7 @@
     }
     & > a {
       color: var(--konezumi);
-      display:inline-block;
+      display:inline;
       border-bottom: 4px dashed var(--nibihai);
       padding-bottom: 5px;
       text-decoration: none;
