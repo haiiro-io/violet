@@ -18,6 +18,15 @@
       <dynamic-markdown
         :render-func="work.renderFunc"
         :static-render-funcs="work.staticRenderFuncs" />
+      <div id="relatedWorks">
+        <span class="relatedWorks-header">{{ $t("works.see_more") }}</span>
+        <div class="relatedWorks-cards">
+          <card
+            v-for="relatedWork in relatedWorks"
+            :key="relatedWork.name"
+            :work="relatedWork" />
+        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -31,6 +40,7 @@
 
   import DynamicMarkdown from "~/components/DynamicMarkdown.vue";
   import WorkMedia from "~/components/WorkMedia.vue";
+  import Card from "~/components/Card.vue";
 
   import { Work } from "~/store/modules/works";
   import { name as WorksNamespace } from "~/store/modules/works";
@@ -39,7 +49,7 @@
   const PixelsAction = namespace(PixelsNamespace, Action);
 
   @Component({
-    components: { DynamicMarkdown, WorkMedia }
+    components: { DynamicMarkdown, WorkMedia, Card }
   })
   export default class PageSelectedWork extends PageBase {
     @WorksGetter pick;
@@ -67,6 +77,10 @@
 
     get mainImageName (): string {
       return this.work.image.main || "main.jpg";
+    }
+
+    get relatedWorks (): Work[] {
+      return this.work.related.map(related => this.pick(related)).filter(w => !!w);
     }
 
     validate ({ store, params }): boolean {
@@ -145,6 +159,35 @@
     }
     dl {
       margin-bottom: 70px;
+    }
+  }
+
+  #relatedWorks {
+    margin-top: 120px;
+  }
+
+  .relatedWorks-header {
+    font-size: 40px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    color: var(--nibihai);
+  }
+
+  .relatedWorks-cards {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+    grid-column-gap: 1.66%;
+    grid-row-gap: 100px;
+    @media (--medium) {
+      grid-template-columns: repeat(2, 6fr);
+      grid-column-gap: 2.63%;
+    }
+    @media (--narrow) {
+      grid-template-columns: repeat(1, 12fr);
+      grid-column-gap: 0;
+      grid-row-gap: 40px;
     }
   }
 </style>

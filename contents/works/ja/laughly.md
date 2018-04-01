@@ -5,7 +5,7 @@ owner: Laughly, Inc.
 role: UX/UI デザイン
 related:
   - weekend-creator
-  - libz-career
+  - libzcareer
   - wonolo
 colors:
   - "#fdde0e"

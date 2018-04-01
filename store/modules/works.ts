@@ -10,6 +10,7 @@ export interface Work {
   role: string;
   colors: string[];
   description: string;
+  related: string[];
   renderFunc: string;
   staticRenderFuncs: string;
   image: {
@@ -91,6 +92,7 @@ export const actions: Actions<State, RootState> = {
           colors: attr.colors,
           role: attr.role,
           description: attr.description,
+          related: attr.related,
           renderFunc: frontmatter.vue.render,
           staticRenderFuncs: frontmatter.vue.staticRenderFns,
           image: {

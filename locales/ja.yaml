@@ -16,5 +16,6 @@ works:
   title: "%{name} — 灰色ハイジ"
   product_owner: "プロダクトオーナー"
   role: "担当"
+  see_more: "他のも見る"
 contact:
   title: 灰色ハイジへの問い合わせ
