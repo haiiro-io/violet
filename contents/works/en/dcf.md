@@ -1,7 +1,7 @@
 ---
 title: Disco Curly Fries e-commerce
 year: 2016
-owner: Planeta/spice life, Inc.
+owner: Planeta / spice life, Inc.
 role: Web Design
 related:
   - remote-style
