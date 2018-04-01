@@ -6,27 +6,16 @@
       for="index.greeting.name">
       <nuxt-link
         to="/about"
-        @mouseover.native="onFocusName"
-        @mouseleave.native="onLeaveFocus">
+        @mouseover.native="setColors(['#555'])"
+        @mouseleave.native="setDefaultColors">
         {{ $t("index.greeting.name") }}
       </nuxt-link>
     </i18n>
     <div id="works">
-      <div
+      <card
         v-for="work in list"
         :key="work.name"
-        @mouseover="onFocusWork(work)"
-        @mouseleave="onLeaveFocus"
-        class="work">
-        <nuxt-link :to="`/works/${work.name}`">
-          <img
-            class="workThumbnail"
-            :src="workImage(work.name)"
-          >
-          <span class="workTitle">{{ work.title }}</span>
-          <span class="workRole">{{ work.role }}</span>
-        </nuxt-link>
-      </div>
+        :work="work" />
     </div>
   </section>
 </template>
@@ -42,8 +31,11 @@
   const WorksGetter = namespace(WorksNamespace, Getter);
   const PixelsAction = namespace(PixelsNamespace, Action);
 
+  import Card from "~/components/Card.vue";
 
-  @Component
+  @Component({
+    components: { Card }
+  })
   export default class PageIndex extends PageBase {
     @WorksGetter pick;
     @PixelsAction setDefaultColors;
@@ -55,22 +47,6 @@
 
     get list (): Work[] {
       return process.env.orderedWorks.map(name => this.pick(name));
-    }
-
-    workImage (name): string {
-      return `/images/works/${name}_thumbnail.jpg`;
-    }
-
-    onFocusName () {
-      this.setColors(["#555"]);
-    }
-
-    onFocusWork (work: Work) {
-      this.setColors(work.colors);
-    }
-
-    onLeaveFocus () {
-      this.setDefaultColors();
     }
   }
 </script>
@@ -125,42 +101,6 @@
       grid-template-columns: repeat(1, 12fr);
       grid-column-gap: 0;
       grid-row-gap: 40px;
-    }
-  }
-
-  .work {
-    display: flex;
-    flex-direction: column;
-    & a {
-      text-decoration: none;
-    }
-    & img.workThumbnail {
-      display: block;
-      width: 100%;
-    }
-    & span {
-      display: block;
-    }
-    & span.workTitle {
-      color: var(--konezumi);
-      margin-top: 10px;
-      font-weight: bold;
-      font-size: 16px;
-      @media (--wide) {
-        font-size: 18px;
-      }
-    }
-    & span.workRole {
-      color: var(--nibihai);
-      margin-top: 5px;
-      font-weight: normal;
-      font-size: 14px;
-    }
-  }
-
-  .work:hover {
-    & img.workThumbnail {
-      opacity: .8;
     }
   }
 </style>
