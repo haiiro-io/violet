@@ -5,10 +5,14 @@
       :name="mainImageName" />
     <div class="outerMoat">
       <h1>{{ work.title }}</h1>
-      {{ work.year }}
+      <span class="workSelected-year">{{ work.year }}</span>
       <p>{{ work.description }}</p>
-      <p>{{ work.owner }}</p>
-      <p>{{ work.role }}</p>
+      <dl class="workSelected-meta">
+        <dt>Product Owner</dt>
+        <dd>{{ work.owner }}</dd>
+        <dt>Role</dt>
+        <dd>{{ work.role }}</dd>
+      </dl>
       <dynamic-markdown
         :render-func="work.renderFunc"
         :static-render-funcs="work.staticRenderFuncs" />
@@ -70,5 +74,46 @@
 <style lang="postcss" scoped>
   section.workSelected {
     padding-top: 170px;
+  }
+  h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 48px;
+    line-height: 54px;
+    font-weight: bold;
+    margin: 120px 0 20px;
+  }
+  .workSelected-year {
+    font-size: 16px;
+    line-height: 24px;
+    display: block;
+    margin: 0 auto 120px;
+    text-align: center;
+    color: var(--nibihai);
+  }
+  dl {
+    width: 66.7%;
+    margin: 120px auto;
+  }
+  dt {
+    font-size: 16px;
+    color: var(--nibihai);
+    margin-bottom: 5px;
+  }
+  dd {
+    color: var(--konezumi);
+    font-size: 18px;
+    line-height: 27px;
+    margin-left: 0;
+  }
+  dd + dt {
+    margin-top: 20px;
+  }
+  p {
+    color: var(--konezumi);
+    width: 66.7%;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 27px;
   }
 </style>
