@@ -1,7 +1,7 @@
 ---
 title: Pokémon Go Teaser Movie
 year: 2015
-owner: The Pokémon Company/Niantic, Inc./Nintendo Co., Ltd.
+owner: The Pokémon Company / Niantic, Inc. / Nintendo Co., Ltd.
 role: Interactive Planning, UI Design
 related:
   - stimpacks

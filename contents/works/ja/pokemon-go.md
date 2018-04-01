@@ -1,7 +1,7 @@
 ---
 title: Pokémon Go ティザームービー
 year: 2015
-owner: 株式会社ポケモン/Niantic, Inc./任天堂株式会社
+owner: 株式会社ポケモン / Niantic, Inc. / 任天堂株式会社
 role: Interactive Planning, UI Design
 related:
   - stimpacks
