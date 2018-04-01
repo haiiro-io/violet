@@ -17,8 +17,6 @@ description: |
   LiBzCAREER is a job search marketplace tailored to help women in Japan make the career move that’s right for them. I joined as a product designer to renew and improve the usability of the platform. When I joined the company, it had been 2 years since the product launched. There weren't any design rules implemented. So my first challenge was to develop a set of clear design guidelines to construct the brand, and allow the team to design more efficiently and consistently.
 ---
 
-<haiiro-icon />
-
 ## Guidelines
 
 LiBzCAREER is on web and iOS, and each platform used different colors for some elements, such as unread messages. I defined the color palette, spacing rules, radius, and buttons. Lastly, I created design components that are shared across platforms and screens.
