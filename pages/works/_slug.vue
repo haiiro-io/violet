@@ -164,6 +164,10 @@
 
   #relatedWorks {
     margin-top: 120px;
+    @media (--narrow) {
+      padding: 0 20px;
+      margin-top: 70px;
+    }
   }
 
   .relatedWorks-header {
@@ -172,6 +176,9 @@
     display: block;
     text-align: center;
     color: var(--nibihai);
+    @media (--narrow) {
+      font-size: 32px;
+    }
   }
 
   .relatedWorks-cards {
