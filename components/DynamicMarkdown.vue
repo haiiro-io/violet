@@ -81,7 +81,7 @@
     padding-top: 80px;
   }
 
-  h2 + .workMedia {
+  h2 + .workMedia, h3 + .workMedia, h2 + h3 {
     padding-top: 0;
   }
 
@@ -100,7 +100,7 @@
       padding-top: 70px;
       font-size: 16px;
     }
-    .workMedia + h2 {
+    .workMedia + h2, .workMedia + h3 {
       padding-top: 30px;
     }
   }
