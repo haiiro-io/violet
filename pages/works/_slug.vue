@@ -10,9 +10,9 @@
       </h1>
       <p>{{ work.description }}</p>
       <dl class="workSelected-meta">
-        <dt>Product Owner:</dt>
+        <dt>{{ $t("works.product_owner") }}</dt>
         <dd>{{ work.owner }}</dd>
-        <dt>Role:</dt>
+        <dt>{{ $t("works.role") }}</dt>
         <dd>{{ work.role }}</dd>
       </dl>
       <dynamic-markdown

@@ -15,5 +15,7 @@ about:
   title: About — Namika Hamasaki
 works:
   title: "%{name} — Namika Hamasaki"
+  product_owner: "Product Owner:"
+  role: "Role:"
 contact:
   title: Contact — Namika Hamasaki

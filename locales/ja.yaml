@@ -14,5 +14,7 @@ about:
   title: 灰色ハイジのプロフィール
 works:
   title: "%{name} — 灰色ハイジ"
+  product_owner: "プロダクトオーナー"
+  role: "担当"
 contact:
   title: 灰色ハイジへの問い合わせ
