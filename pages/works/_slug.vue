@@ -1,8 +1,8 @@
 <template>
   <section class="workSelected">
     <work-media
-      name="main.jpg"
-      class="horizon"/>
+      class="horizon"
+      :name="mainImageName" />
     <div class="outerMoat">
       <h1>{{ work.title }}</h1>
       {{ work.year }}
@@ -17,6 +17,7 @@
 </template>
 
 <script lang="ts">
+  import mediumZoom from "medium-zoom";
   import VueI18n from "vue-i18n";
   import PageBase from "~/lib/page-base";
   import Component from "nuxt-class-component";
@@ -40,6 +41,7 @@
 
     mounted () {
       this.setColors(this.work.colors);
+      mediumZoom(".outerMoat .workImg");
     }
 
     get pageTitle (): VueI18n.LocaleMessage {

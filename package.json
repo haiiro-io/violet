@@ -8,6 +8,7 @@
   "dependencies": {
     "axios": "^0.17.1",
     "frontmatter-markdown-loader": "github:hmsk/frontmatter-markdown-loader",
+    "medium-zoom": "^0.4.0",
     "nuxt": "^1.3.0",
     "nuxt-class-component": "^1.2.0",
     "vue": "2.5.13",
