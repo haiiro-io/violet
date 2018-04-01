@@ -58,9 +58,9 @@ In a media player, the review feature shows up at the half of screen to read rev
 
 ### Review button
 
-<work-media name="review_button.jpg" />
-
 Users found that the Write Review button was too hidden, which would deter them from engaging with it without being prompted. I moved the Write Review button to next to the rating on the playlist page. This made the button easier to find, and allowed users to go directly to the review page to write.
+
+<work-media name="review_button.jpg" />
 
 ## Design System
 
@@ -73,3 +73,5 @@ I focused on mainly UI design, worked in Sketch, made the design system and bunc
 <work-media name="sketch.png" />
 
 We had to make a lot of screens and iterate it frequently to validate usability. My challenge was making Sketch symbols that other designers can override the symbol easily and efficiently.
+
+<work-button label="View Prototype" link="https://invis.io/R8G0YLOWE3Y">
