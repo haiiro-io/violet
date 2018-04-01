@@ -4,11 +4,12 @@
 
   import HaiiroIcon from "./HaiiroIcon.vue";
   import WorkMedia from "./WorkMedia.vue";
+  import WorkButton from "./WorkButton.vue";
 
   @Component({
     props: ["renderFunc", "staticRenderFuncs"],
     components: {
-      HaiiroIcon, WorkMedia
+      HaiiroIcon, WorkMedia, WorkButton
     }
   })
   export default class DynamicMarkdown extends Vue {
