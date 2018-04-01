@@ -78,6 +78,10 @@
 <style lang="postcss">
   @import "../assets/styles/custom-properties.postcss";
 
+  .pageIndex {
+    padding: 0 20px;
+  }
+
   h1 {
     color: var(--konezumi);
     font-size: 36px;

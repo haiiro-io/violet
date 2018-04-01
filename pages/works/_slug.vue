@@ -4,13 +4,15 @@
       class="horizon"
       :name="mainImageName" />
     <div class="outerMoat">
-      <h1>{{ work.title }}</h1>
-      <span class="workSelected-year">{{ work.year }}</span>
+      <h1>
+        {{ work.title }}
+        <span class="workSelected-year">{{ work.year }}</span>
+      </h1>
       <p>{{ work.description }}</p>
       <dl class="workSelected-meta">
-        <dt>Product Owner</dt>
+        <dt>Product Owner:</dt>
         <dd>{{ work.owner }}</dd>
-        <dt>Role</dt>
+        <dt>Role:</dt>
         <dd>{{ work.role }}</dd>
       </dl>
       <dynamic-markdown
@@ -77,39 +79,25 @@
   section.workSelected {
     padding-top: 170px;
   }
+
   h1 {
     text-align: center;
     font-size: 48px;
-    line-height: 54px;
+    line-height: 1.4;
     font-weight: bold;
-    margin: 120px auto 20px;
-  }
-  .workSelected-year {
-    font-size: 16px;
-    line-height: 24px;
-    display: block;
-    margin: 0 auto 120px;
-    text-align: center;
-    color: var(--nibihai);
-  }
-  dl {
-    width: 66.7%;
-    margin: 40px auto 120px;
-  }
-  dt {
-    font-size: 16px;
-    color: var(--nibihai);
-    margin-bottom: 5px;
-  }
-  dd {
+    margin: 120px auto 120px;
     color: var(--konezumi);
-    font-size: 16px;
-    line-height: 24px;
-    margin-left: 0;
+    & > .workSelected-year {
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 24px;
+      display: block;
+      margin-top: 20px;
+      text-align: center;
+      color: var(--nibihai);
+    }
   }
-  dd + dt {
-    margin-top: 20px;
-  }
+
   p {
     color: var(--konezumi);
     width: 66.7%;
@@ -117,22 +105,41 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  dl {
+    width: 66.7%;
+    margin: 40px auto 120px;
+    font-size: 16px;
+    line-height: 1.5;
+    & > dt {
+      color: var(--nibihai);
+      margin-bottom: 5px;
+    }
+    & > dd {
+      color: var(--konezumi);
+      margin-left: 0;
+    }
+    & > dd + dt {
+      margin-top: 20px;
+    }
+  }
+
   @media (--medium) {
     p, dl {
       width: 83.3%;
     }
   }
   @media (--narrow) {
-    p, dl {
+    h1, p, dl {
       width: 100%;
+      padding: 0 20px;
     }
     h1 {
       font-size: 30px;
-      margin-top: 70px;
-      margin-bottom: 10px;
-    }
-    .workSelected-year {
-      margin-bottom: 40px;
+      margin: 70px auto;
+      & > .workSelected-year {
+        margin-top: 10px;
+      }
     }
     dl {
       margin-bottom: 70px;

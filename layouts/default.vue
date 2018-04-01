@@ -127,7 +127,6 @@
       margin: 0 auto;
       @media (--narrow) {
         width: 100%;
-        padding: 0 20px;
       }
     }
   }
