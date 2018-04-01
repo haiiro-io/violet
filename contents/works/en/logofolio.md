@@ -1,11 +1,11 @@
 ---
 title: Logofolio
 year: 2016-2018
-owner: 
+owner:
 role: Brand Identity, Graphic Design
 related:
   - weekend-creator
-  - libz-career
+  - libzcareer
   - wonolo
 colors:
   - "#373737"

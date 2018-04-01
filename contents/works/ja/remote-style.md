@@ -5,7 +5,7 @@ owner: 株式会社キャスター
 role: Art Direction, Web Design
 related:
   - signifiant
-  - disco-curly-fries
+  - dcf
   - libzcareer
 colors:
   - "#d06150"

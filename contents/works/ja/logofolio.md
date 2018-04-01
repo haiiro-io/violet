@@ -5,7 +5,7 @@ owner:
 role: Brand Identity, Graphic Design
 related:
   - weekend-creator
-  - libz-career
+  - libzcareer
   - wonolo
 colors:
   - "#373737"
