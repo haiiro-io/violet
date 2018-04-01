@@ -47,7 +47,9 @@
 
     mounted () {
       this.setColors(this.work.colors);
-      mediumZoom(".outerMoat .workImg");
+      mediumZoom(".outerMoat .workImg", {
+        background: "#DFE0E0"
+      });
     }
 
     get pageTitle (): VueI18n.LocaleMessage {
