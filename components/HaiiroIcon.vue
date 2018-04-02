@@ -3,7 +3,9 @@
     class="haiiroIcon"
     :width="totalWidth"
     :height="totalHeight"
-    :viewBox="viewBox">
+    :viewBox="viewBox"
+    @mouseenter="hover"
+    @mouseleave="unhover">
     <rect
       v-for="rect in rectangles"
       :key="rect.id"
@@ -19,10 +21,11 @@
 <script lang="ts">
   import Vue from "vue";
   import Component from "nuxt-class-component";
-  import { State, namespace } from "vuex-class";
+  import { State, Action, namespace } from "vuex-class";
 
   import { name as PixelsNamespace } from "~/store/modules/pixels";
   const PixelsState = namespace(PixelsNamespace, State);
+  const PixelsAction = namespace(PixelsNamespace, Action);
 
   @Component({
     props: {
@@ -34,6 +37,8 @@
   })
   export default class HaiiroIcon extends Vue {
     @PixelsState currentColors;
+    @PixelsAction hover;
+    @PixelsAction unhover;
     size: number;
     width: number;
     height: number;
