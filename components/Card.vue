@@ -2,7 +2,7 @@
   <nuxt-link
     class="card"
     :to="`/work/${work.name}`"
-    @mouseover.native="onFocusWork"
+    @mouseenter.native="onFocusWork"
     @mouseleave.native="setDefaultColors">
     <img
       class="workThumbnail"

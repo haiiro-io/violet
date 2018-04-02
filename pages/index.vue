@@ -6,7 +6,7 @@
       for="index.greeting.name">
       <nuxt-link
         to="/about"
-        @mouseover.native="setColors(['#555'])"
+        @mouseenter.native="setColors(['#555'])"
         @mouseleave.native="setDefaultColors">
         {{ $t("index.greeting.name") }}
       </nuxt-link>
