@@ -23,10 +23,10 @@
 <script lang="ts">
   import Component from "nuxt-class-component";
   import PageBase from "~/lib/page-base";
-  import { Work } from "~/store/modules/works";
+  import { Work } from "~/store/modules/work";
 
   import { Getter, Action, namespace } from "vuex-class";
-  import { name as WorksNamespace } from "~/store/modules/works";
+  import { name as WorksNamespace } from "~/store/modules/work";
   import { name as PixelsNamespace } from "~/store/modules/pixels";
   const WorksGetter = namespace(WorksNamespace, Getter);
   const PixelsAction = namespace(PixelsNamespace, Action);

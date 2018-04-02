@@ -1,7 +1,7 @@
 <template>
   <nuxt-link
     class="card"
-    :to="`/works/${work.name}`"
+    :to="`/work/${work.name}`"
     @mouseover.native="onFocusWork"
     @mouseleave.native="setDefaultColors">
     <img
@@ -21,7 +21,7 @@
   import { name as PixelsNamespace } from "~/store/modules/pixels";
   const PixelsAction = namespace(PixelsNamespace, Action);
 
-  import { Work } from "~/store/modules/works";
+  import { Work } from "~/store/modules/work";
 
   @Component({
     props: {
@@ -37,7 +37,7 @@
     work: Work;
 
     get workImage (): string {
-      return `/images/works/${this.work.name}_thumbnail.jpg`;
+      return `/images/work/${this.work.name}_thumbnail.jpg`;
     }
 
     onFocusWork () {

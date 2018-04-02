@@ -40,7 +40,7 @@
 
     get mediaPath (): string {
       const slug = this.$route.params.slug;
-      return `/images/works/${slug}_${this.name}`;
+      return `/images/work/${slug}_${this.name}`;
     }
   }
 </script>

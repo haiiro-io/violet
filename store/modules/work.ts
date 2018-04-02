@@ -37,10 +37,10 @@ const importAll = (resolve) => {
     importsByLang[lang][name] = resolve(key);
   });
 };
-importAll(require.context("~/contents/works", true, /\.md$/));
+importAll(require.context("~/contents/work", true, /\.md$/));
 
 
-export const name = "works";
+export const name = "work";
 
 export const types = {
   INITIALIZE: "INITIALIZE"

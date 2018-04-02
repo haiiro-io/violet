@@ -10,16 +10,16 @@
       </h1>
       <p>{{ work.description }}</p>
       <dl class="workSelected-meta">
-        <dt>{{ $t("works.product_owner") }}</dt>
+        <dt>{{ $t("work.product_owner") }}</dt>
         <dd>{{ work.owner }}</dd>
-        <dt>{{ $t("works.role") }}</dt>
+        <dt>{{ $t("work.role") }}</dt>
         <dd>{{ work.role }}</dd>
       </dl>
       <dynamic-markdown
         :render-func="work.renderFunc"
         :static-render-funcs="work.staticRenderFuncs" />
       <div id="relatedWorks">
-        <span class="relatedWorks-header">{{ $t("works.see_more") }}</span>
+        <span class="relatedWorks-header">{{ $t("work.see_more") }}</span>
         <div class="relatedWorks-cards">
           <card
             v-for="relatedWork in relatedWorks"
@@ -42,8 +42,8 @@
   import WorkMedia from "~/components/WorkMedia.vue";
   import Card from "~/components/Card.vue";
 
-  import { Work } from "~/store/modules/works";
-  import { name as WorksNamespace } from "~/store/modules/works";
+  import { Work } from "~/store/modules/work";
+  import { name as WorksNamespace } from "~/store/modules/work";
   import { name as PixelsNamespace } from "~/store/modules/pixels";
   const WorksGetter = namespace(WorksNamespace, Getter);
   const PixelsAction = namespace(PixelsNamespace, Action);
@@ -63,11 +63,11 @@
     }
 
     get pageTitle (): VueI18n.LocaleMessage {
-      return this.$t("works.title", { name: this.work.title });
+      return this.$t("work.title", { name: this.work.title });
     }
 
     get ogImage (): string {
-      return `${process.env.baseUrl}/images/works/${this.work.image.og || this.work.name + "_og.jpg"}`;
+      return `${process.env.baseUrl}/images/work/${this.work.image.og || this.work.name + "_og.jpg"}`;
     }
 
     get work (): Work {
@@ -84,7 +84,7 @@
     }
 
     validate ({ store, params }): boolean {
-      return !!(store.getters["works/pick"](params.slug));
+      return !!(store.getters["work/pick"](params.slug));
     }
   }
 </script>

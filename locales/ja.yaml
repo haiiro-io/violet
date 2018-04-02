@@ -12,7 +12,7 @@ index:
     message: サンフランシスコを拠点とするプロダクトデザイナーの{0}です。
 about:
   title: 灰色ハイジのプロフィール
-works:
+work:
   title: "%{name} — 灰色ハイジ"
   product_owner: "プロダクトオーナー"
   role: "担当"

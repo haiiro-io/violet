@@ -86,7 +86,7 @@ module.exports = {
       config.module.rules.push({
         test: /\.md$/,
         loader: 'frontmatter-markdown-loader',
-        include: path.resolve(__dirname, 'contents/works'),
+        include: path.resolve(__dirname, 'contents/work'),
         options: {
           vue: true
         }
@@ -135,6 +135,6 @@ module.exports = {
     fallback: true,
     routes: [
       '/about',
-    ].concat(orderedWorks.map(w => `/works/${w}`))
+    ].concat(orderedWorks.map(w => `/work/${w}`))
   }
 }

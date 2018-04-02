@@ -13,7 +13,7 @@ index:
     message: Hello, I’m {0}, Product Designer based in San Francisco.
 about:
   title: About — Namika Hamasaki
-works:
+work:
   title: "%{name} — Namika Hamasaki"
   product_owner: "Product Owner:"
   role: "Role:"

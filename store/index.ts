@@ -1,10 +1,10 @@
 import Vuex from "vuex";
 import * as root from "./root";
-import * as works from "./modules/works";
+import * as work from "./modules/work";
 import * as pixels from "./modules/pixels";
 
 interface ModulesStates {
-  people: works.State;
+  people: work.State;
   pixels: pixels.State;
 }
 
@@ -17,7 +17,7 @@ const createStore = () => {
     mutations: root.mutations,
     actions: root.actions,
     modules: {
-      [works.name]: works,
+      [work.name]: work,
       [pixels.name]: pixels
     }
   });

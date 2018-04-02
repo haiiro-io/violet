@@ -22,7 +22,7 @@ export interface Actions<S, R> extends ActionTree<S, R> {
 
 export const actions: Actions<State, RootState> = {
   async nuxtServerInit({ dispatch }) {
-    dispatch("works/initializeWorksFromAttributes", {laughly: "laughly"});
+    dispatch("work/initializeWorksFromAttributes", {laughly: "laughly"});
   }
 };
 
