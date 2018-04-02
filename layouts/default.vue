@@ -1,10 +1,6 @@
 <template>
   <div class="container">
-    <header>
-      <nuxt-link to="/">
-        <haiiro-icon :size="haiiroIconSize" />
-      </nuxt-link>
-    </header>
+    <header-navigation />
     <nuxt/>
     <footer>
       <div id="exposures">
@@ -53,36 +49,18 @@
   import Vue from "vue";
   import Component from "nuxt-class-component";
 
-  import HaiiroIcon from "~/components/HaiiroIcon.vue";
+  import HeaderNavigation from "~/components/HeaderNavigation.vue";
   import SvgIcon from "~/components/SvgIcon.vue";
 
   declare const Typekit: any;
 
-  @Component({ components: { HaiiroIcon, SvgIcon } })
+  @Component({ components: { HeaderNavigation, SvgIcon } })
   export default class RootLayout extends Vue {
-    haiiroIconSize: number = 0;
 
     beforeCreate () {
       try {
         Typekit.load({ async: true });
       } catch (e) {
-      }
-    }
-
-    mounted () {
-      this.updateHaiiroIconSize();
-      if (process.browser) {
-        window.addEventListener("resize", this.updateHaiiroIconSize);
-      }
-    }
-
-    updateHaiiroIconSize () {
-      this.haiiroIconSize = this.$el.clientWidth > 768 ? 30 : 22;
-    }
-
-    beforeDestroy () {
-      if (process.browser) {
-        window.removeEventListener("resize", this.updateHaiiroIconSize);
       }
     }
 
@@ -134,16 +112,6 @@
 
 <style lang="postcss" scoped>
   @import "../assets/styles/custom-properties.postcss";
-
-  header {
-    top: 0;
-    width: 100%;
-    position: fixed;
-    padding: 40px 40px 0 40px;
-    @media (--narrow) {
-      padding: 20px 0 0 20px;
-    }
-  }
 
   .container a {
   }

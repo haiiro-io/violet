@@ -8,6 +8,10 @@ declare var process: {
   env: {
     baseUrl:  string;
     buildLocale: "en" | "ja";
+    productionUrl: {
+      en: string;
+      ja: string;
+    };
     orderedWorks: string[];
   },
   browser: boolean;
