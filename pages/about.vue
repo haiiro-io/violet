@@ -17,7 +17,7 @@
         <dd>Event planning and digital promotion</dd>
       </dl>
       <div class="supplementalLinks">
-        <haiiro-button>
+        <haiiro-button href="/resume.pdf">
           Download Resume
         </haiiro-button>
         <haiiro-button>
