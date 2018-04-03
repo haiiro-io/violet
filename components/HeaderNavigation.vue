@@ -3,7 +3,9 @@
     <nuxt-link to="/">
       <haiiro-icon :size="haiiroIconSize" />
     </nuxt-link>
-    <div id="headerLinks">
+    <div
+      :class="headerLinkClass"
+      id="headerLinks">
       <nuxt-link
         to="/"
         :class="{ active: $route.path == '/' }">
@@ -50,6 +52,10 @@
       this.haiiroIconSize = this.$el.clientWidth > 768 ? 30 : 22;
     }
 
+    get headerLinkClass (): string {
+      return this.$route.path === "/about" ? "bright" : "dark";
+    }
+
     get anotherLocale (): string {
       return process.env.productionUrl[process.env.buildLocale === "en" ? "ja" : "en"];
     }
@@ -77,10 +83,31 @@
       height: 25px;
       font-size: 16px;
       font-weight: bold;
-      color: var(--konezumi);
       text-decoration: none;
       display: block;
       margin-right: 20px;
+    }
+    & a:last-child {
+      margin-right: 0;
+    }
+  }
+  #headerLinks.bright {
+    & a {
+      color: white;
+    }
+    & a.active {
+      border-bottom: 2px solid white;
+    }
+    & a:hover {
+      color: var(--konezumi);
+    }
+    & a.active:hover {
+      border-bottom: 2px solid var(--konezumi);
+    }
+  }
+  #headerLinks.dark {
+    & a {
+      color: var(--konezumi);
     }
     & a.active {
       border-bottom: 2px solid var(--konezumi);
@@ -90,9 +117,6 @@
     }
     & a.active:hover {
       border-bottom: 2px solid var(--nibihai);
-    }
-    & a:last-child {
-      margin-right: 0;
     }
   }
 </style>
