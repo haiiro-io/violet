@@ -6,7 +6,7 @@
       <span class="name">Namika Hamasaki</span>
       <span class="title">Product Designer</span>
     </div>
-    <div class="outerMoat">
+    <div class="outerMoat tagline">
       <p>
         I’m a product designer with experience in web design and promotional planning at an advertising agency. I have designed user interfaces and brands for clients like Google, Sony Interactive Entertainment (PlayStation), and Sony Music Entertainment. And I love video games!
       </p>
@@ -17,7 +17,12 @@
         <dd>Event planning and digital promotion</dd>
       </dl>
       <div class="supplementalLinks">
-        Download Resume
+        <haiiro-button>
+          Download Resume
+        </haiiro-button>
+        <haiiro-button>
+          Contact Me
+        </haiiro-button>
       </div>
       <div class="careers">
         Experience
@@ -35,7 +40,11 @@
         <div
           :style="avatarImageStyle"
           class="avatar-icon" />
-        🙌 Say Hello
+        <haiiro-button
+          href="https://twitter.com/haiji505"
+          target="_blank">
+          <span class="emoji">🙌 </span>Say Hello
+        </haiiro-button>
       </div>
     </div>
   </section>
@@ -47,6 +56,7 @@
   import { Action, namespace } from "vuex-class";
 
   import PageBase from "~/lib/page-base";
+  import HaiiroButton from "~/components/HaiiroButton.vue";
 
   import { name as PixelsNamespace } from "~/store/modules/pixels";
   const PixelsAction = namespace(PixelsNamespace, Action);
@@ -54,7 +64,11 @@
   import banner from "~/assets/images/about_banner.jpg";
   import avatar from "~/assets/images/about_avatar.jpg";
 
-  @Component
+  @Component({
+    components: {
+      HaiiroButton
+    }
+  })
   export default class PageAbout extends PageBase {
     @PixelsAction setDefaultColors;
 
@@ -167,11 +181,44 @@
     color: var(--nibihai);
   }
 
+  .tagline {
+    margin-top: 120px;
+    & dl {
+      margin-top: 40px;
+      & dt {
+        color: var(--nibihai);
+        margin-bottom: 20px;
+      }
+      & dd {
+      }
+    }
+  }
+
+  .supplementalLinks {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    & .haiiroButton:last-child {
+      margin-left: 20px;
+    }
+  }
+
+  .careers {
+    margin-top: 120px;
+  }
+
   .avatar-icon {
     height: 100px;
     width: 100px;
     background-color: var(--soba);
     border-radius: 50px;
-    margin: 0 auto;
+    margin: 120px auto 0;
+  }
+
+  .avatar {
+    text-align: center;
+    & .haiiroButton {
+      margin-top: 40px;
+    }
   }
 </style>

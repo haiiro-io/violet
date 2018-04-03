@@ -1,18 +1,20 @@
 <template>
   <div class="workButton">
-    <a
+    <haiiro-button
       :href="link"
       target="_blank">
       {{ label }}
-    </a>
+    </haiiro-button>
   </div>
 </template>
 
 <script lang="ts">
   import Vue from "vue";
   import Component from "nuxt-class-component";
+  import HaiiroButton from "~/components/HaiiroButton.vue";
 
   @Component({
+    components: { HaiiroButton },
     props: {
       label: {
         type: String,
@@ -36,22 +38,6 @@
     margin: 120px auto 0;
     @media (--narrow) {
       margin-top: 70px;
-    }
-
-    & a {
-      display: inline-block;
-      line-height: 50px;
-      padding: 0 38px;
-      background-color: var(--skyhai);
-      color: var(--konezumi);
-      text-decoration: none;
-      border: 2px solid var(--konezumi);
-      border-radius: 2px;
-    }
-    & a:hover {
-      color: white;
-      background-color: var(--konezumi);
-      transition: ease 0.5s;
     }
   }
 </style>

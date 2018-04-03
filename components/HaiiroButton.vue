@@ -1,0 +1,35 @@
+<template>
+  <a class="haiiroButton">
+    <slot />
+  </a>
+</template>
+
+<script lang="ts">
+  import Vue from "vue";
+  import Component from "nuxt-class-component";
+
+  @Component
+  export default class HaiiroButton extends Vue {
+  }
+</script>
+
+<style lang="postcss" scoped>
+  a {
+    display: inline-block;
+    line-height: 50px;
+    padding: 0 30px;
+    background-color: var(--skyhai);
+    color: var(--konezumi);
+    text-decoration: none;
+    border: 2px solid var(--konezumi);
+    border-radius: 2px;
+  }
+  a:hover {
+    color: white;
+    background-color: var(--konezumi);
+    transition: ease 0.5s;
+  }
+  .emoji {
+    margin-right: 15px;
+  }
+</style>
