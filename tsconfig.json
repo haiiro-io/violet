@@ -26,7 +26,8 @@
       "~/store/*": ["./store/*"],
       "~/contents/works/*": ["./contents/works/*"],
       "~/types/*": ["./types/*"],
-      "~/lib/*": ["./lib/*"]
+      "~/lib/*": ["./lib/*"],
+      "~/assets/*": ["./assets/*"]
     }
   }
 }

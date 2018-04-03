@@ -101,7 +101,6 @@ module.exports = {
         test: /\.(png|jpe?g|gif)$/,
         loader: 'url-loader',
         query: {
-          limit: 1000, // 1KO
           name: 'img/[name].[hash:7].[ext]'
         }
       }, {

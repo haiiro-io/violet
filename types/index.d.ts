@@ -28,3 +28,8 @@ declare module "*.yaml" {
   const yamlToJsonToObject: any;
   export default yamlToJsonToObject;
 }
+
+declare module "*.jpg" {
+  const urlOrBase64: string;
+  export default urlOrBase64;
+}

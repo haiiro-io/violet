@@ -1,6 +1,8 @@
 <template>
   <section class="about">
-    <div class="banner">
+    <div
+      :style="bannerBackgroundStyle"
+      class="banner">
       <span class="name">Namika Hamasaki</span>
       <span class="title">Product Designer</span>
     </div>
@@ -30,7 +32,9 @@
         </div>
       </div>
       <div class="avatar">
-        <div class="avatar-icon" />
+        <div
+          :style="avatarImageStyle"
+          class="avatar-icon" />
         🙌 Say Hello
       </div>
     </div>
@@ -47,6 +51,9 @@
   import { name as PixelsNamespace } from "~/store/modules/pixels";
   const PixelsAction = namespace(PixelsNamespace, Action);
 
+  import banner from "~/assets/images/about_banner.jpg";
+  import avatar from "~/assets/images/about_avatar.jpg";
+
   @Component
   export default class PageAbout extends PageBase {
     @PixelsAction setDefaultColors;
@@ -57,6 +64,22 @@
 
     get pageTitle (): VueI18n.LocaleMessage {
       return this.$t("about.title");
+    }
+
+    get bannerBackgroundStyle () {
+      return {
+        background: `url(${banner})`,
+        "background-repeat": "no-repeat",
+        "background-size": "contain",
+      };
+    }
+
+    get avatarImageStyle () {
+      return {
+        background: `url(${avatar})`,
+        "background-repeat": "no-repeat",
+        "background-size": "contain"
+      };
     }
 
     get careers () {
@@ -149,5 +172,6 @@
     width: 100px;
     background-color: var(--soba);
     border-radius: 50px;
+    margin: 0 auto;
   }
 </style>
