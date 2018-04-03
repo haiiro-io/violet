@@ -16,9 +16,7 @@
         :class="{ active: $route.path == '/about' }">
         About
       </nuxt-link>
-      <a
-        :href="anotherLocale"
-        target="_blank">
+      <a :href="anotherLocale">
         A/あ
       </a>
     </div>
@@ -57,7 +55,7 @@
     }
 
     get anotherLocale (): string {
-      return process.env.productionUrl[process.env.buildLocale === "en" ? "ja" : "en"];
+      return process.env.productionUrl[process.env.buildLocale === "en" ? "ja" : "en"] + this.$route.path;
     }
   }
 </script>
