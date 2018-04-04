@@ -3,9 +3,7 @@
     <nuxt-link to="/">
       <haiiro-icon :size="haiiroIconSize" />
     </nuxt-link>
-    <div
-      :class="headerLinkClass"
-      id="headerLinks">
+    <nav id="headerLinks">
       <nuxt-link
         to="/"
         :class="{ active: $route.path == '/' }">
@@ -19,7 +17,7 @@
       <a :href="anotherLocale">
         A/あ
       </a>
-    </div>
+    </nav>
   </header>
 </template>
 
@@ -48,10 +46,6 @@
 
     updateHaiiroIconSize () {
       this.haiiroIconSize = this.$el.clientWidth > 768 ? 30 : 22;
-    }
-
-    get headerLinkClass (): string {
-      return this.$route.path === "/about" ? "bright" : "dark";
     }
 
     get anotherLocale (): string {
@@ -88,33 +82,11 @@
     & a:last-child {
       margin-right: 0;
     }
-  }
-  #headerLinks.bright {
-    & a {
-      color: white;
-    }
-    & a.active {
-      border-bottom: 2px solid white;
-    }
-    & a:hover {
-      color: var(--konezumi);
-    }
-    & a.active:hover {
-      border-bottom: 2px solid var(--konezumi);
-    }
-  }
-  #headerLinks.dark {
     & a {
       color: var(--konezumi);
     }
-    & a.active {
-      border-bottom: 2px solid var(--konezumi);
-    }
-    & a:hover {
+    & a.active, & a:hover {
       color: var(--nibihai);
-    }
-    & a.active:hover {
-      border-bottom: 2px solid var(--nibihai);
     }
   }
 </style>
