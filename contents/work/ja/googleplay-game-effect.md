@@ -19,7 +19,7 @@ description: |
   Google Playのキャンペーンの一環で、スマートフォンゲーム専用のハングアウトアプリケーションの企画・制作を行いました。ゲームキャラクターのコスチュームを着たり、喜怒哀楽をスタンプで表現しながら友だちや家族とマルチゲームを楽しむことが出来ます。
 ---
 
-<work-media name="hangout_screenshot_1.jpg" />
-<work-media name="hangout_screenshot_2.jpg" />
+<work-media name="hangout_screenshot_1.jpg" alt="Google Play Game Effectの画面" />
+<work-media name="hangout_screenshot_2.jpg" alt="Google Play Game Effectの画面" />
 
 [YouTube:https://www.youtube.com/watch?v=xOUtXJchtPk]

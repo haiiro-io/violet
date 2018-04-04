@@ -18,26 +18,26 @@ description: |
 
 ### Stimpacks
 
-<work-media name="stimpacks.png" />
+<work-media name="stimpacks.png" alt="Stimpacksロゴ" />
 
 Stimpacksはハードコアゲーマーをターゲットとするサンフランシスコの新しいお菓子のブランドです。ゲーム用語で、他のゲーマーと共に共闘しチームを作ることをクランと呼びますが、そうしたクランを象徴する「旗」と、ゲーマーを鼓舞する「稲妻」をモチーフとしました。
 
 ### Signifiant
 
-<work-media name="signifiant.png" />
+<work-media name="signifiant.png" alt="Signifiant" />
 
 フランス語で「意味しているもの」という意味を持つ哲学用語です。シニフィアンという企業が経営者にとって知覚させてくれるものを「空気」と捉えて、ビジュアルコンセプトに据えました。
 
 ### Remote Style
 
-<work-media name="remotestyle.png" />
+<work-media name="remotestyle.png" alt="Remote Styleロゴ" />
 
 Remote Styleはデザイナーとエンジニアにリモートなどの柔軟な働き方で働ける仕事を提供するサービスです。「自分の好きな環境で働こう」という言葉を据え、好きな風景を見ながら働くことが出来る窓をイメージしました。
 
 ### Dear Media
 
-<work-media name="dearmedia.png" />
+<work-media name="dearmedia.png" alt="Dear Mediaロゴ" />
 
 ### Weekend Creator
 
-<work-media name="weekend.png" />
+<work-media name="weekend.png" alt="週末クリエイターロゴ" />

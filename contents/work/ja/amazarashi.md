@@ -22,9 +22,9 @@ description: |
 
 アニメ・東京喰種トーキョーグールのエンディング曲にも使用されたこの楽曲のミュージックビデオでは、レーザーカッターで生の牛肉を歌詞の形で切り取る手法を用いました。そのレーザーカッターのUIデザインを担当しました。
 
-<work-media name="seasons_die_one_after_another_1.jpg" />
-<work-media name="seasons_die_one_after_another_2.jpg" />
-<work-media name="seasons_die_one_after_another_3.jpg" />
+<work-media name="seasons_die_one_after_another_1.jpg" alt="季節は次々死んでいく Music Video1" />
+<work-media name="seasons_die_one_after_another_2.jpg" alt="季節は次々死んでいく Music Video2" />
+<work-media name="seasons_die_one_after_another_3.jpg" alt="季節は次々死んでいく レーザーカッターのUIデザイン" />
 
 [YouTube:https://www.youtube.com/watch?v=wtJcLWeY114]
 
@@ -32,9 +32,9 @@ description: |
 
 ミュージックビデオ内に登場する、死にたいとつぶやかれたTwitterを樹海で印刷する「The Lonely Crowd System」のUIデザインを担当しました。
 
-<work-media name="digging_holes_1.jpg" />
-<work-media name="digging_holes_2.jpg" />
-<work-media name="digging_holes_3.jpg" />
-<work-media name="digging_holes_4.jpg" />
+<work-media name="digging_holes_1.jpg" alt="穴を掘っている Music Video1" />
+<work-media name="digging_holes_2.jpg" alt="穴を掘っている Music Video2" />
+<work-media name="digging_holes_3.jpg" alt="穴を掘っている Music Video3" />
+<work-media name="digging_holes_4.jpg" alt="穴を掘っている Music Video4" />
 
 [YouTube:https://www.youtube.com/watch?v=B2HsdgVQ-cc]

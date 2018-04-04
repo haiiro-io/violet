@@ -18,11 +18,7 @@ description: |
 ---
 
 <work-media name="logo.jpg" alt="週末クリエイターロゴ" />
-<work-media
-  name="stickers.jpg"
-  alt="課題：誰でも「#週末クリエイター」として活動を表明出来ることを表現した、中央の名前部分が差し替え可能なロゴ。"
-  caption="誰でも「#週末クリエイター」として活動を表明出来ることを表現した、中央の名前部分が差し替え可能なロゴ。"
-/>
+<work-media name="stickers.jpg" alt="課題：誰でも「#週末クリエイター」として活動を表明出来ることを表現した、中央の名前部分が差し替え可能なロゴ。" caption="誰でも「#週末クリエイター」として活動を表明出来ることを表現した、中央の名前部分が差し替え可能なロゴ。" />
 
 <work-media name="color.png" alt="週末クリエイターカラーパレット" />
 <work-media name="namecard.jpg" alt="週末クリエイター名刺デザイン" />
@@ -33,17 +29,9 @@ description: |
 
 YouTubeのエンドカードのアートディレクションでは、手書きの文字や、絵の具のテクスチャなどを合わせたコマアニメにしました。私の方で案を制作し、結花さんが最終的な仕上げを行いました。
 
-<work-media
-  name="endcard_initial.gif"
-  alt="週末クリエイターのエンドカード 初期案"
-  caption="初期案"
-/>
+<work-media name="endcard_initial.gif" alt="週末クリエイターのエンドカード 初期案" caption="初期案" full="false" />
 
-<work-media
-  name="endcard_final.gif"
-  alt="週末クリエイターのエンドカード 最終デザイン"
-  caption="最終デザイン"
-/>
+<work-media name="endcard_final.gif" alt="週末クリエイターのエンドカード 最終デザイン" caption="最終デザイン" full="false" />
 
 ## サムネイル
 

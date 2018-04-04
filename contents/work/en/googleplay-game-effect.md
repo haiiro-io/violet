@@ -19,7 +19,7 @@ description: |
   I planned and designed a Google hangout application for smartphone games as one of promotion activities of Google Play. It allows users to wear a costume of a game character or express emotions with a sticker in order to enjoy playing a game with their friends and family.
 ---
 
-<work-media name="hangout_screenshot_1.jpg" />
-<work-media name="hangout_screenshot_2.jpg" />
+<work-media name="hangout_screenshot_1.jpg" alt="UI design for Google Play Game Effect" />
+<work-media name="hangout_screenshot_2.jpg" alt="UI design for Google Play Game Effect" />
 
 [YouTube:https://www.youtube.com/watch?v=xOUtXJchtPk]

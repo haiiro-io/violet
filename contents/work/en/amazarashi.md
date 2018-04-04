@@ -22,9 +22,9 @@ description: |
 
 The song is the ending theme song of Tokyo Ghoul, a Japanese anime. In the music video, 20 kilograms of raw meat were cut by a laser cutter to form lyrics. I designed the user interface of the laser cutter.
 
-<work-media name="seasons_die_one_after_another_1.jpg" />
-<work-media name="seasons_die_one_after_another_2.jpg" />
-<work-media name="seasons_die_one_after_another_3.jpg" />
+<work-media name="seasons_die_one_after_another_1.jpg" alt="Seasons die one after another1" />
+<work-media name="seasons_die_one_after_another_2.jpg" alt="Seasons die one after another2" />
+<work-media name="seasons_die_one_after_another_3.jpg" alt="UI design for the laser cutter in the music video" />
 
 [YouTube:https://www.youtube.com/watch?v=wtJcLWeY114]
 
@@ -32,9 +32,9 @@ The song is the ending theme song of Tokyo Ghoul, a Japanese anime. In the music
 
 I designed the user interface of a printer that appears in the music video. It is called The Lonely Crowd System, prints tweets what tweeted "I want to die" in a sea of trees.
 
-<work-media name="digging_holes_1.jpg" />
-<work-media name="digging_holes_2.jpg" />
-<work-media name="digging_holes_3.jpg" />
-<work-media name="digging_holes_4.jpg" />
+<work-media name="digging_holes_1.jpg" alt="Digging Holes1" />
+<work-media name="digging_holes_2.jpg" alt="Digging Holes2" />
+<work-media name="digging_holes_3.jpg" alt="Digging Holes3" />
+<work-media name="digging_holes_4.jpg" alt="Digging Holes4" />
 
 [YouTube:https://www.youtube.com/watch?v=B2HsdgVQ-cc]

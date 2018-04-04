@@ -15,8 +15,8 @@ description: |
   I worked on Pokémon GO during my period at SIX, creative agency in Tokyo, Japan. I was in charge of writing the screenplay and creating the user interface for the Pokemon Go's global teaser movie.
 ---
 
-<work-media name="movie_screenshot_1.jpg" />
-<work-media name="movie_screenshot_2.jpg" />
-<work-media name="movie_screenshot_3.jpg" />
+<work-media name="movie_screenshot_1.jpg" alt="Pokémon Teaser Movie1" />
+<work-media name="movie_screenshot_2.jpg" alt="Pokémon Teaser Movie2" />
+<work-media name="movie_screenshot_3.jpg" alt="Pokémon Teaser Movie3" />
 
 [YouTube:https://www.youtube.com/watch?v=lKUwVYUKii4]

@@ -16,3 +16,11 @@ colors:
 description: |
 
 ---
+
+<work-media name="shop.jpg" alt="Disco Curly Fries shop page" />
+
+<work-media name="artist_profile.jpg" alt="Artist profile page" />
+
+<work-media name="artist_profile_all.jpg" alt="Artist profile page all" />
+
+<work-media name="mobile.jpg" alt="Disco Curly Fries mobile page" />

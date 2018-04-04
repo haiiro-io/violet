@@ -15,8 +15,8 @@ description: |
   クリエイティブエージェンシーSIX在籍時に、Pokémon GOのグローバルティザームービーの企画および、映像内で使用するインターフェースのデザインを担当しました。
 ---
 
-<work-media name="movie_screenshot_1.jpg" />
-<work-media name="movie_screenshot_2.jpg" />
-<work-media name="movie_screenshot_3.jpg" />
+<work-media name="movie_screenshot_1.jpg" alt="Pokémon Go ティザームービー1" />
+<work-media name="movie_screenshot_2.jpg" alt="Pokémon Go ティザームービー2" />
+<work-media name="movie_screenshot_3.jpg" alt="Pokémon Go ティザームービー3" />
 
 [YouTube:https://www.youtube.com/watch?v=lKUwVYUKii4]
