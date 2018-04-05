@@ -135,8 +135,18 @@
       padding-top: 70px;
       font-size: 16px;
     }
-    .workMedia + h2, .workMedia + h3 {
+    h3 {
+      padding-top: 40px;
+      padding-bottom: 20px;
+    }
+    .workMedia + h2,.workMedia + h3 {
       padding-top: 30px;
+    }
+    ol + h2, ul + h2 {
+      padding-top: 50px;
+    }
+    ol + h3, ul + h3 {
+      padding-top: 20px;
     }
   }
 </style>
