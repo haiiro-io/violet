@@ -1,24 +1,24 @@
 ---
 -
-  name: white-board-challenge
-  title: プロダクトデザインの訓練に、ホワイトボードチャレンジをしてみよう！
-  appear_on: Blog
-  url: http://blog.haiji.co/entry/whiteboard-challenge
-  locale: ja
-  colors:
-    - "#fdde0e"
-    - "#373737"
-    - "#717171"
--
   name: foursquare
   title: "Foursquare: A UX case study"
   appear_on: Medium
   url: https://medium.com/haiiro-io/foursquare-a-ux-case-study-f606d4757d9b
   locale: ja, en
   colors:
-    - "#fdde0e"
-    - "#373737"
-    - "#717171"
+    - "#D9CDB7"
+    - "#445386"
+    - "#C98F60"
+-
+  name: white-board-challenge
+  title: プロダクトデザインの訓練に、ホワイトボードチャレンジをしてみよう！
+  appear_on: Blog
+  url: http://blog.haiji.co/entry/whiteboard-challenge
+  locale: ja
+  colors:
+    - "#8D86C3"
+    - "#85C79E"
+    - "#DBA7B9"
 -
   name: sheis
   title: ハイカラシティで会いましょう
@@ -26,9 +26,9 @@
   url: https://sheishere.jp/voice/201712-haijihaiiro/
   locale: ja
   colors:
-    - "#fdde0e"
-    - "#373737"
-    - "#717171"
+    - "#DDD4E2"
+    - "#8A8A8A"
+    - "#2D2D2D"
 -
   name: listen
   title: 仕事と私生活、二つの“リモート”を経て感じた「信用の貯金」と「発信」の大切さ
@@ -36,9 +36,9 @@
   url: https://www.e-aidem.com/ch/listen/entry/2017/09/20/110000
   locale: ja
   colors:
-    - "#fdde0e"
-    - "#373737"
-    - "#717171"
+    - "#9A9FA8"
+    - "#253D4B"
+    - "#AF8F77"
 -
   name: brain
   title: 今月のブックマーク
@@ -46,9 +46,11 @@
   url: http://blog.haiji.co/entry/2016/04/05/183822
   locale: ja
   colors:
-    - "#fdde0e"
-    - "#373737"
-    - "#717171"
+    - "#F3F5F3"
+    - "#C8C9C4"
+    - "#FAFAF8"
+    - "#5B5F5B"
+    - "#242623"
 -
   name: creive
   title: 制作会社と事業会社のデザイナーの仕事の違いって？
@@ -56,9 +58,9 @@
   url: https://creive.me/archives/7517/
   locale: ja
   colors:
-    - "#fdde0e"
-    - "#373737"
-    - "#717171"
+    - "#B0C1BB"
+    - "#56565C"
+    - "#998E7E"
 -
   name: suumo
   title: キラキラしていない恵比寿の隅っこに暮らす
@@ -66,7 +68,7 @@
   url: https://suumo.jp/town/entry/ebisu-haiji505/
   locale: ja
   colors:
-    - "#fdde0e"
-    - "#373737"
-    - "#717171"
+    - "#94BE85"
+    - "#A6C1E6"
+    - "#C1D6D6"
 ---
