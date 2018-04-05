@@ -99,14 +99,14 @@
   h1 {
     text-align: center;
     font-size: 48px;
-    line-height: 1.4;
+    line-height: 1.7;
     font-weight: bold;
     margin: 120px auto 120px;
     color: var(--konezumi);
     & > .workSelected-year {
       font-size: 16px;
       font-weight: normal;
-      line-height: 24px;
+      line-height: 1.7;
       display: block;
       margin-top: 20px;
       text-align: center;
@@ -119,14 +119,14 @@
     width: 66.7%;
     margin: 0 auto;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.7;
   }
 
   dl {
     width: 66.7%;
     margin: 40px auto 120px;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.7;
     & > dt {
       color: var(--nibihai);
       margin-bottom: 5px;

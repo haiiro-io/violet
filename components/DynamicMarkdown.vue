@@ -37,7 +37,7 @@
     text-align: center;
     font-weight: bold;
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 1.7;
     color: var(--konezumi);
   }
   h3 {
@@ -47,7 +47,7 @@
     text-align: left;
     font-weight: normal;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.7;
     color: var(--nibihai);
   }
   p {
@@ -55,7 +55,7 @@
     width: 66.7%;
     font-weight: normal;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.7;
     color: var(--konezumi);
   }
   ol, ul {
@@ -67,7 +67,7 @@
   li {
     padding-left: 1em;
     text-indent: -1em;
-    line-height: 1.5;
+    line-height: 1.7;
   }
   li + li {
     margin-top: 1em;
