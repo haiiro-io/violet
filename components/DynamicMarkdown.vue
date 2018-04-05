@@ -104,11 +104,13 @@
     padding-top: 20px;
   }
 
-  ol + h2, ul + h2 {
+  ol + h2,
+  ul + h2 {
     padding-top: 100px;
   }
 
-  ol + h3, ul + h3 {
+  ol + h3,
+  ul + h3 {
     padding-top: 60px;
   }
 
@@ -151,13 +153,16 @@
     h3, p, ol, ul {
       font-size: 16px;
     }
-    .workMedia + h2,.workMedia + h3 {
+    .workMedia + h2,
+    .workMedia + h3 {
       padding-top: 30px;
     }
-    ol + h2, ul + h2 {
+    ol + h2,
+    ul + h2 {
       padding-top: 50px;
     }
-    ol + h3, ul + h3 {
+    ol + h3,
+    ul + h3 {
       padding-top: 20px;
     }
   }
