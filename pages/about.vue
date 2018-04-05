@@ -160,7 +160,7 @@
     flex-direction: column;
     width: 100%;
     background-color: var(--soba);
-    height: 50vw;
+    height: 56.25vw;
     align-items: center;
     justify-content: center;
     & span {
