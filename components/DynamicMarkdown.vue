@@ -44,6 +44,7 @@
     margin: 0 auto;
     padding: 80px 0 40px;
     width: 66.7%;
+    max-width: 793px;
     text-align: left;
     font-weight: normal;
     font-size: 18px;
@@ -53,6 +54,7 @@
   p {
     margin: 0 auto;
     width: 66.7%;
+    max-width: 793px;
     font-weight: normal;
     font-size: 18px;
     line-height: 1.7;
@@ -62,6 +64,7 @@
     margin: 0 auto;
     padding: 20px 0;
     width: 66.7%;
+    max-width: 793px;
     font-size: 18px;
     list-style-position: inside;
     -webkit-padding-start: 0;
@@ -127,6 +130,7 @@
     }
     p, h3, ol, ul {
       width: 83.3%;
+      max-width: 793px;
       font-size: 16px;
     }
   }

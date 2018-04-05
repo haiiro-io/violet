@@ -117,6 +117,7 @@
   p {
     color: var(--konezumi);
     width: 66.7%;
+    max-width: 793px;
     margin: 0 auto;
     font-size: 18px;
     line-height: 1.7;
@@ -124,6 +125,7 @@
 
   dl {
     width: 66.7%;
+    max-width: 793px;
     margin: 40px auto 120px;
     font-size: 18px;
     line-height: 1.7;
