@@ -120,6 +120,14 @@
     padding-top: 0;
   }
 
+  @media (--wide) {
+    h2 {
+      font-size: 20px;
+    }
+    h3, p, ol, ul {
+      font-size: 18px;
+    }
+  }
   @media (--medium) {
     p, h3, ol, ul {
       width: 83.3%;
