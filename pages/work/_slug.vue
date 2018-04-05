@@ -140,11 +140,6 @@
     }
   }
 
-  @media (--wide) {
-    p, dl {
-      font-size: 18px;
-    }
-  }
   @media (--medium) {
     p, dl {
       width: 83.3%;
