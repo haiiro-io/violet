@@ -104,7 +104,7 @@
     margin: 120px auto 120px;
     color: var(--konezumi);
     & > .workSelected-year {
-      font-size: 16px;
+      font-size: 18px;
       font-weight: normal;
       line-height: 1.7;
       display: block;
@@ -118,14 +118,14 @@
     color: var(--konezumi);
     width: 66.7%;
     margin: 0 auto;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.7;
   }
 
   dl {
     width: 66.7%;
     margin: 40px auto 120px;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.7;
     & > dt {
       color: var(--nibihai);
@@ -141,8 +141,14 @@
   }
 
   @media (--medium) {
+    h1 {
+      & > .workSelected-year {
+        font-size: 16px;
+      }
+    }
     p, dl {
       width: 83.3%;
+      font-size: 16px;
     }
   }
   @media (--narrow) {
@@ -155,10 +161,14 @@
       margin: 70px auto;
       & > .workSelected-year {
         margin-top: 10px;
+        font-size: 16px;
       }
     }
     dl {
       margin-bottom: 70px;
+    }
+    p, dl {
+      font-size: 16px;
     }
   }
 

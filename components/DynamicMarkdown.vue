@@ -36,7 +36,7 @@
     padding: 120px 0 40px;
     text-align: center;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.7;
     color: var(--konezumi);
   }
@@ -46,7 +46,7 @@
     width: 66.7%;
     text-align: left;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.7;
     color: var(--nibihai);
   }
@@ -54,7 +54,7 @@
     margin: 0 auto;
     width: 66.7%;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.7;
     color: var(--konezumi);
   }
@@ -62,6 +62,7 @@
     margin: 0 auto;
     padding: 20px 0;
     width: 66.7%;
+    font-size: 18px;
     list-style-position: inside;
     -webkit-padding-start: 0;
   }
@@ -121,8 +122,12 @@
   }
 
   @media (--medium) {
+    h2 {
+      font-size: 18px;
+    }
     p, h3, ol, ul {
       width: 83.3%;
+      font-size: 16px;
     }
   }
   @media (--narrow) {
@@ -138,6 +143,9 @@
     h3 {
       padding-top: 40px;
       padding-bottom: 20px;
+    }
+    h3, p, ol, ul {
+      font-size: 16px;
     }
     .workMedia + h2,.workMedia + h3 {
       padding-top: 30px;
