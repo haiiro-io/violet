@@ -72,4 +72,4 @@ Ver4: 最終的に決まったデザインです。
 
 私たちはユーザビリティ検証のため、多くの画面を頻繁に作成する必要がありました。私のチャレンジはSketchのシンボルを他のデザイナー達が簡単に、そして効率的に上書き出来る設計で組み立てることでした。
 
-<work-button label="プロトタイプを見る" link="https://invis.io/R8G0YLOWE3Y">
+<work-button label="プロトタイプを見る" link="https://invis.io/R8G0YLOWE3Y" />

@@ -74,4 +74,4 @@ I focused on mainly UI design, worked in Sketch, made the design system and bunc
 
 We had to make a lot of screens and iterate it frequently to validate usability. My challenge was making Sketch symbols that other designers can override the symbol easily and efficiently.
 
-<work-button label="View Prototype" link="https://invis.io/R8G0YLOWE3Y">
+<work-button label="View Prototype" link="https://invis.io/R8G0YLOWE3Y" />

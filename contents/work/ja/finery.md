@@ -113,6 +113,3 @@ Fineryが複雑な設計になっていた要因の1つが、カレンダーに�
 モバイルのヘッダーメニューがレスポンシブに対応しておらずタップしづらかった為、ハンバーガーメニューに変更しました。
 
 <work-media name="mobile_navigation.jpg" alt="モバイルナビゲーションのBefore/After" />
-
-<work-button label="モバイル版のプロトタイプを見る" link="https://invis.io/9XFJ0Z4FPYC">
-<work-button label="デスクトップ版のプロトタイプを見る" link="https://invis.io/NFFE6ZQS8MA">
