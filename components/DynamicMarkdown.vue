@@ -58,7 +58,20 @@
     line-height: 1.5;
     color: var(--konezumi);
   }
-
+  ol, ul {
+    margin: 20px auto;
+    width: 66.7%;
+    list-style-position: inside;
+    -webkit-padding-start: 0;
+  }
+  li {
+    padding-left: 1em;
+    text-indent: -1em;
+    line-height: 1.5;
+  }
+  li + li {
+    margin-top: 1em;
+  }
   .workMedia {
     padding: 40px 0;
   }
@@ -86,12 +99,12 @@
   }
 
   @media (--medium) {
-    p, h3 {
+    p, h3, ol, ul {
       width: 83.3%;
     }
   }
   @media (--narrow) {
-    h2, h3, p {
+    h2, h3, p, ol, ul {
       width: 100%;
       padding-right: 20px;
       padding-left: 20px;
