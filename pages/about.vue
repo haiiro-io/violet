@@ -84,7 +84,7 @@
       return {
         background: `url(${banner})`,
         "background-repeat": "no-repeat",
-        "background-size": "contain",
+        "background-size": "cover",
       };
     }
 
@@ -152,6 +152,8 @@
 </script>
 
 <style lang="postcss" scoped>
+  @import "../assets/styles/custom-properties.postcss";
+
   section.about {
   }
 
@@ -163,6 +165,9 @@
     height: 56.25vw;
     align-items: center;
     justify-content: center;
+    @media (--wide) {
+      height: 50.00vw;
+    }
     & span {
       display: block;
     }
