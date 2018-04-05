@@ -66,12 +66,12 @@
     -webkit-padding-start: 0;
   }
   li {
-    padding-left: 1em;
-    text-indent: -1em;
+    padding-left: 1.0em;
+    text-indent: -1.0em;
     line-height: 1.7;
   }
   li + li {
-    margin-top: 1em;
+    margin-top: 1.0em;
   }
   .workMedia {
     padding: 40px 0;
