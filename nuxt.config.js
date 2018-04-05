@@ -86,7 +86,7 @@ module.exports = {
       config.module.rules.push({
         test: /\.md$/,
         loader: 'frontmatter-markdown-loader',
-        include: path.resolve(__dirname, 'contents/work'),
+        include: path.resolve(__dirname, 'contents'),
         options: {
           vue: true
         }

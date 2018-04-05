@@ -1,16 +1,32 @@
 <template>
   <nuxt-link
+    v-if="isWork"
     class="card"
     :to="`/work/${work.name}`"
-    @mouseenter.native="onFocusWork"
+    @mouseenter.native="onFocusCard"
     @mouseleave.native="setDefaultColors">
     <img
-      class="workThumbnail"
-      :src="workImage"
+      class="cardThumbnail"
+      :src="cardImage"
     >
-    <span class="workTitle">{{ work.title }}</span>
-    <span class="workRole">{{ work.role }}</span>
+    <span class="cardTitle">{{ work.title }}</span>
+    <span class="cardRole">{{ work.role }}</span>
   </nuxt-link>
+  <a
+    v-else
+    class="card"
+    target="_blank"
+    :href="article.url"
+    @mouseenter.native="onFocusCard"
+    @mouseleave.native="setDefaultColors">
+    <img
+      class="cardThumbnail"
+      :src="cardImage"
+    >
+    <span class="cardTitle">{{ article.title }}</span>
+    <span class="cardRole">{{ article.appear_on }}</span>
+  </a>
+
 </template>
 
 <script lang="ts">
@@ -27,6 +43,9 @@
     props: {
       work: {
         type: Object,
+      },
+      article: {
+        type: Object
       }
     }
   })
@@ -35,13 +54,20 @@
     @PixelsAction setColors;
 
     work: Work;
+    article: any;
 
-    get workImage (): string {
-      return `/images/work/${this.work.name}_thumbnail.jpg`;
+    get isWork (): boolean {
+      return !!this.work;
     }
 
-    onFocusWork () {
-      this.setColors(this.work.colors);
+    get cardImage (): string {
+      return this.isWork ?
+        `/images/work/${this.work.name}_thumbnail.jpg` :
+        `/images/articles/${this.article.name}.jpg`;
+    }
+
+    onFocusCard () {
+      this.setColors((this.work && this.work.colors) || (this.article && this.article.colors));
     }
   }
 </script>
@@ -51,14 +77,14 @@
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    & img.workThumbnail {
+    & img.cardThumbnail {
       display: block;
       width: 100%;
     }
     & span {
       display: block;
     }
-    & span.workTitle {
+    & span.cardTitle {
       color: var(--konezumi);
       margin-top: 10px;
       font-weight: bold;
@@ -67,7 +93,7 @@
         font-size: 18px;
       }
     }
-    & span.workRole {
+    & span.cardRole {
       color: var(--nibihai);
       margin-top: 5px;
       font-weight: normal;
@@ -76,7 +102,7 @@
   }
 
   .card:hover {
-    & img.workThumbnail {
+    & img.cardThumbnail {
       opacity: .8;
     }
   }

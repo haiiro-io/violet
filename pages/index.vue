@@ -17,6 +17,12 @@
         :key="work.name"
         :work="work" />
     </div>
+    <div id="articles">
+      <card
+        v-for="article in articles"
+        :key="article.name"
+        :article="article" />
+    </div>
   </section>
 </template>
 
@@ -31,6 +37,7 @@
   const WorksGetter = namespace(WorksNamespace, Getter);
   const PixelsAction = namespace(PixelsNamespace, Action);
 
+  import articleSources from "~/contents/articles.md";
   import Card from "~/components/Card.vue";
 
   @Component({
@@ -47,6 +54,10 @@
 
     get list (): Work[] {
       return process.env.orderedWorks.map(name => this.pick(name));
+    }
+
+    get articles () {
+      return articleSources.attributes;
     }
   }
 </script>
@@ -86,7 +97,7 @@
     }
   }
 
-  #works {
+  #works, #articles {
     margin-bottom: 70px;
 
     display: grid;
