@@ -59,7 +59,8 @@
     color: var(--konezumi);
   }
   ol, ul {
-    margin: 20px auto;
+    margin: 0 auto;
+    padding: 20px 0;
     width: 66.7%;
     list-style-position: inside;
     -webkit-padding-start: 0;
@@ -94,7 +95,28 @@
     padding-top: 80px;
   }
 
-  h2 + .workMedia, h3 + .workMedia, h2 + h3 {
+  ol + .workMedia,
+  ul + .workMedia {
+    padding-top: 20px;
+  }
+
+  ol + h2, ul + h2 {
+    padding-top: 100px;
+  }
+
+  ol + h3, ul + h3 {
+    padding-top: 60px;
+  }
+
+  h2 + .workMedia,
+  h3 + .workMedia,
+  h2 + h3,
+  .workMedia + ol,
+  .workMedia + ul,
+  h3 + ol,
+  h3 + ul,
+  h2 + ol,
+  h2 + ul {
     padding-top: 0;
   }
 
