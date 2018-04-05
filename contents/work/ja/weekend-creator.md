@@ -33,7 +33,7 @@ YouTubeのエンドカードのアートディレクションでは、手書き�
 
 <work-media name="endcard_final.gif" alt="週末クリエイターのエンドカード 最終デザイン" caption="最終デザイン" full="false" />
 
-## サムネイル
+### サムネイル
 
 YouTubeのサムネイルのタイポグラフィや色などのディレクションを行いました。
 
