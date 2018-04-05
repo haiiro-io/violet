@@ -85,6 +85,7 @@
         background: `url(${banner})`,
         "background-repeat": "no-repeat",
         "background-size": "cover",
+        "background-position": "center",
       };
     }
 
