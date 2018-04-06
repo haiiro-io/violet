@@ -2,7 +2,7 @@
 title: Signifiant ブランディング
 year: 2017
 owner: シニフィアン株式会社
-role: Art Direction, Graphic Design, Web Design
+role: アートディレクション, グラフィック/ウェブデザイン
 related:
   - wonolo
   - finery

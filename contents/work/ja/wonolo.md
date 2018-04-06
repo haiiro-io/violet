@@ -2,7 +2,7 @@
 title: Wonolo
 year: 2018
 owner: Wonolo, Inc.
-role: Design Lead, UX/UI Design
+role: デザインリード, UX/UI デザイン
 related:
   - laughly
   - finery
@@ -12,5 +12,5 @@ colors:
   - "#1a1a1a"
   - "#ffffff"
 description: |
-  
+
 ---

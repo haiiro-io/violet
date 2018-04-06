@@ -2,7 +2,7 @@
 title: "#週末クリエイター"
 year: 2017
 owner: Yuka Ohishi
-role: Art Direction, Graphic Design, Printing Design
+role: アートディレクション, グラフィックデザイン
 related:
   - signifiant
   - stimpacks

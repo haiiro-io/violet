@@ -2,7 +2,7 @@
 title: LiBzCAREER
 year: 2017
 owner: 株式会社 LiB
-role: UX/UI Design
+role: UX/UI デザイン
 related:
   - wonolo
   - weekend-creator

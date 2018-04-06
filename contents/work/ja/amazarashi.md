@@ -2,7 +2,7 @@
 title: Amazarashi Music Video
 year: 2015
 owner: 株式会社ソニー・ミュージックエンタテインメント
-role: UI Design
+role: UI デザイン
 related:
   - pokemon-go
   - googleplay-game-effect

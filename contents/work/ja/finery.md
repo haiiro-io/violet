@@ -2,7 +2,7 @@
 title: Finery ダッシュボードリニューアル
 year: 2018
 owner: Finery, Inc.
-role: Creative Direction, UX/UI Design
+role: クリエイティブディレクション, UX/UI デザイン
 related:
   - weekend-creator
   - libzcareer

@@ -2,7 +2,7 @@
 title: Google Play Game Effect
 year: 2014
 owner: Google株式会社
-role: Interactive Planning, Design Direction
+role: 企画, デザインディレクション
 related:
   - laughly
   - amazarashi

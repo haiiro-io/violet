@@ -2,7 +2,7 @@
 title: Remote Style
 year: 2016
 owner: 株式会社キャスター
-role: Art Direction, Web Design
+role: アートディレクション, ウェブデザイン
 related:
   - signifiant
   - dcf
