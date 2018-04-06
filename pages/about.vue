@@ -166,6 +166,9 @@
     height: 56.25vw;
     align-items: center;
     justify-content: center;
+    @media (--narrow) {
+      height: 133.33vw;
+    }
     @media (--wide) {
       height: 50.00vw;
     }
