@@ -60,7 +60,7 @@
     }
 
     get articles () {
-      return articleSources.attributes;
+      return articleSources.attributes.filter(article => article.locale.includes(process.env.buildLocale));
     }
   }
 </script>
