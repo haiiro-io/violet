@@ -18,10 +18,13 @@
         :work="work" />
     </div>
     <div id="articles">
-      <card
-        v-for="article in articles"
-        :key="article.name"
-        :article="article" />
+      <span class="articlesTitle">Articles</span>
+      <div class="articleCards">
+        <card
+          v-for="article in articles"
+          :key="article.name"
+          :article="article" />
+      </div>
     </div>
   </section>
 </template>
@@ -97,9 +100,7 @@
     }
   }
 
-  #works, #articles {
-    margin-bottom: 70px;
-
+  #works, .articleCards {
     display: grid;
     grid-template-columns: repeat(3, 4fr);
     grid-column-gap: 1.66%;
@@ -113,5 +114,27 @@
       grid-column-gap: 0;
       grid-row-gap: 40px;
     }
+    align-content: center;
+  }
+  #works, #articles {
+    margin-bottom: 120px;
+    @media (--narrow)  {
+      margin-bottom: 70px;
+    }
+  }
+  .articlesTitle {
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--nibihai);
+    font-weight: bold;
+    font-size: 40px;
+    @media (--narrow)  {
+      font-size: 32px;
+    }
+  }
+  .card {
+    align-self: center;
+    justify-self: center;
   }
 </style>
