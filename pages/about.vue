@@ -191,6 +191,8 @@
   }
 
   .tagline {
+    font-size: 16px;
+    line-height: 1.5;
     margin-top: 120px;
     & dl {
       margin-top: 40px;
@@ -199,7 +201,18 @@
         margin-bottom: 20px;
       }
       & dd {
+        display: list-item;
+        list-style-position: inside;
+        -webkit-margin-start: 0;
       }
+      & dd + dd {
+        margin-top: 1.0em;
+      }
+    }
+    @media (--narrow) {
+      margin-top: 70px;
+      padding-right: 20px;
+      padding-left: 20px;
     }
   }
 
