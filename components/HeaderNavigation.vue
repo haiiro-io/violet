@@ -65,7 +65,7 @@
     display: flex;
     justify-content: space-between;
     @media (--narrow) {
-      padding: 20px 0 0 20px;
+      padding: 20px 20px 0 20px;
     }
   }
 
