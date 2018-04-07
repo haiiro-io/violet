@@ -14,7 +14,7 @@ colors:
   - "#cc4a37"
   - "#cc5889"
 description: |
-
+  Disco Curly Fries was founded with the collaboration between Planeta, an online creative platform based in New York, and spice life, a t-shirt production and sales service. DCF allows users to design and purchase any full-graphic printed t-shirts, using the artwork of modern artists from all over the world to customize graphics. I was responsible for the e-commerce web design and artist’s profiles.
 ---
 
 <work-media name="shop.jpg" alt="Disco Curly Fries shop page" />
