@@ -25,15 +25,18 @@
         </haiiro-button>
       </div>
       <div class="careers">
-        {{ $t("about.experience") }}
+        <span class="careersHeader">{{ $t("about.experience") }}</span>
         <div
           v-for="career in datas.attributes.careers"
           :key="career.employer"
           class="career">
-          <span class="career-employer">{{ career.employer }}</span>
-          <span class="career-title">{{ career.title }}</span>
-          <span class="career-location">{{ career.location }}</span>
-          <span class="career-period">{{ career.period }}</span>
+          <div class="career-left">
+            <span class="career-employer">{{ career.employer }}</span>
+            <span class="career-title">{{ career.title }}</span>
+          </div>
+          <div class="career-right">
+            {{ career.location }} / {{ career.period }}
+          </div>
         </div>
       </div>
       <div class="avatar">
@@ -170,18 +173,82 @@
     }
   }
 
+  .haiiroButton {
+    width: 240px;
+    text-align: center;
+  }
+
   .supplementalLinks {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    margin-top: 120px;
+    margin: 120px;
+    align-items: center;
     & .haiiroButton:last-child {
       margin-left: 20px;
+    }
+    @media (--narrow) {
+      margin-top: 70px;
+      flex-direction: column;
+      & .haiiroButton:last-child {
+        margin-top: 20px;
+        margin-left: 0;
+      }
     }
   }
 
   .careers {
     margin-top: 120px;
+    @media (--narrow) {
+      margin-top: 70px;
+    }
   }
+  .careersHeader {
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .career {
+    height: 46px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--soba);
+    @media (--narrow) {
+      height: unset;
+      flex-direction: column;
+    }
+  }
+  .career + .career {
+    margin-top: 20px;
+  }
+  .career-left {
+    display: flex;
+    flex-direction: row;
+    @media (--narrow) {
+      flex-direction: column;
+    }
+  }
+  .career-employer {
+    font-weight: bold;
+  }
+  .career-title {
+    margin-left: 40px;
+    @media (--narrow) {
+      margin: 5px 0;
+      margin-left: unset;
+    }
+  }
+  .career-left {
+    display: flex;
+  }
+  .career-right {
+    @media (--narrow) {
+      margin-bottom: 20px;
+    }
+  }
+
 
   .avatar-icon {
     height: 100px;
@@ -189,6 +256,9 @@
     background-color: var(--soba);
     border-radius: 50px;
     margin: 120px auto 0;
+    @media (--narrow) {
+      margin-top: 70px;
+    }
   }
 
   .avatar {
