@@ -3,29 +3,31 @@
     <div
       :style="bannerBackgroundStyle"
       class="banner">
-      <span class="name">Namika Hamasaki</span>
-      <span class="title">Product Designer</span>
+      <span class="name">{{ $t("index.author") }}</span>
+      <span class="title">{{ $t("about.job") }}</span>
     </div>
     <div class="outerMoat tagline">
-      <p>{{ tagline }}</p>
+      <span v-html="datas.html" />
       <dl>
         <dt>Specialities:</dt>
-        <dd>User interface design</dd>
-        <dd>Branding for startup companies</dd>
-        <dd>Event planning and digital promotion</dd>
+        <dd
+          v-for="speciality in datas.attributes.specialities"
+          :key="speciality">
+          {{ speciality }}
+        </dd>
       </dl>
       <div class="supplementalLinks">
         <haiiro-button href="/resume.pdf">
-          Download Resume
+          {{ $t("about.resume") }}
         </haiiro-button>
         <haiiro-button>
-          Contact Me
+          {{ $t("about.contact") }}
         </haiiro-button>
       </div>
       <div class="careers">
-        Experience
+        {{ $t("about.experience") }}
         <div
-          v-for="career in careers"
+          v-for="career in datas.attributes.careers"
           :key="career.employer"
           class="career">
           <span class="career-employer">{{ career.employer }}</span>
@@ -41,7 +43,7 @@
         <haiiro-button
           href="https://twitter.com/haiji505"
           target="_blank">
-          <span class="emoji">🙌 </span>Say Hello
+          <span class="emoji">🙌 </span>{{ $t("about.hello") }}
         </haiiro-button>
       </div>
     </div>
@@ -98,12 +100,8 @@
       };
     }
 
-    get tagline () {
-      return process.env.buildLocale === "ja" ? jaData.body : enData.body;
-    }
-
-    get careers () {
-      return process.env.buildLocale === "ja" ? jaData.attributes.careers : enData.attributes.careers;
+    get datas () {
+      return process.env.buildLocale === "ja" ? jaData : enData;
     }
   }
 </script>

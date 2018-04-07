@@ -1,4 +1,8 @@
 ---
+specialities:
+  - ユーザインタフェースデザイン
+  - スタートアップ企業のブランディング
+  - イベント企画やデジタルプロモーション
 careers:
   -
     employer: Tradecraft

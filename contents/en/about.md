@@ -1,4 +1,8 @@
 ---
+specialities:
+  - User interface design
+  - Branding for startup companies
+  - Event planning and digital promotion
 careers:
   -
     employer: Tradecraft
