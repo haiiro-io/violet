@@ -15,27 +15,27 @@ careers:
     location: 東京
     period: 2016 - 2017
   -
-    employer: 株式会社リブ
+    employer: LiB
     title: UX/UI デザイナー
     location: 東京
     period: 2016 - 2017
   -
-    employer: SIX INC.
+    employer: SIX
     title: インタラクティブプランナー、UIデザイナー
     location: 東京
     period: 2016 - 2017
   -
-    employer: 株式会社博報堂
+    employer: 博報堂
     title: インタラクティブプランナー
     location: 東京
     period: 2013
   -
-    employer: 株式会社博報堂アイ・スタジオ
+    employer: 博報堂アイ・スタジオ
     title: ウェブデザイナー
     location: 東京
     period: 2009 - 2013
   -
-    employer: 株式会社はてな
+    employer: はてな
     title: ウェブデザイナー、ディレクター
     location: 京都
     period: 2008
