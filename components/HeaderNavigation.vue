@@ -15,7 +15,7 @@
         About
       </nuxt-link>
       <a :href="anotherLocale">
-        A/あ
+        <locale-switcher />
       </a>
     </nav>
   </header>
@@ -26,8 +26,9 @@
   import Component from "nuxt-class-component";
 
   import HaiiroIcon from "~/components/HaiiroIcon.vue";
+  import LocaleSwitcher from "~/components/LocaleSwitcher.vue";
 
-  @Component({ components: { HaiiroIcon } })
+  @Component({ components: { HaiiroIcon, LocaleSwitcher } })
   export default class HeaderNavigation extends Vue {
     haiiroIconSize: number = 0;
 
@@ -61,19 +62,26 @@
     top: 0;
     width: 100%;
     position: fixed;
-    padding: 40px 40px 0 40px;
     display: flex;
     justify-content: space-between;
+  }
+  .haiiroIcon {
+    margin-top: 40px;
+    margin-left: 40px;
     @media (--narrow) {
-      padding: 20px 20px 0 20px;
+      margin-top: 20px;
+      margin-left: 20px;
     }
   }
 
   #headerLinks {
     display: flex;
+    margin-top: 20px;
+    margin-right: 20px;
     & a {
       height: 25px;
       font-size: 16px;
+      line-height: 36px;
       font-weight: bold;
       text-decoration: none;
       display: block;
