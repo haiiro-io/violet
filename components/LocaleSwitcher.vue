@@ -15,6 +15,7 @@
         height="24"
         rx="12" />
       <circle
+        :cx="initialPos"
         cy="12"
         r="10" />
       <path
@@ -38,6 +39,7 @@
   @Component
   export default class HeaderNavigation extends Vue {
     @State locale;
+    initialPos: number = process.env.buildLocale === "en" ? 12 : 30;
 
     get defaultPosClass () {
       return this.locale === "en" ? "localeSwitcher-defaultLeft" : "localeSwitcher-defaultRight";
@@ -54,6 +56,17 @@
 </script>
 
 <style lang="postcss" scoped>
+  circle {
+    transition: ease 0.5s;
+    fill: var(--nibihai);
+  }
+  rect {
+    fill: #F8F8F8;
+  }
+  path.char {
+    transition: ease 0.3s;
+  }
+
   .localeSwitcher-defaultLeft circle {
     cx: 12;
   }
@@ -66,31 +79,23 @@
   .localeSwitcher-defaultRight:hover circle {
     cx: 12;
   }
-  circle {
-    transition: ease 0.5s;
-    fill: var(--nibihai);
-  }
-  rect {
-    fill: #F8F8F8;
-  }
-  .char {
-    transition: ease 0.3s;
-  }
-  .char--selected {
+
+  path.char--selected {
     fill: white;
   }
-  .char--unselected {
+  path.char--unselected {
     fill: var(--konezumi);
   }
   .localeSwitcher:hover {
-    & .char--selected {
+    & path.char--selected {
       fill: var(--konezumi);
     }
-    & .char--unselected {
+    & path.char--unselected {
       fill: white;
     }
   }
-  svg:active {
+
+  .localeSwitcher:active {
     & rect {
       fill: var(--soba);
     }

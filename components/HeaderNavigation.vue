@@ -79,7 +79,7 @@
     margin-top: 20px;
     margin-right: 20px;
     & a {
-      height: 25px;
+      height: 36px;
       font-size: 16px;
       line-height: 36px;
       font-weight: bold;
