@@ -18,6 +18,7 @@ about:
   resume: Download Resume
   contact: Contact Me
   experience: Experience
+  specialities: "Specialities:"
 work:
   title: "%{name} — Namika Hamasaki"
   product_owner: "Product Owner:"

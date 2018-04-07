@@ -9,7 +9,7 @@
     <div class="outerMoat tagline">
       <span v-html="datas.html" />
       <dl>
-        <dt>Specialities:</dt>
+        <dt>{{ $t("about.specialities") }}</dt>
         <dd
           v-for="speciality in datas.attributes.specialities"
           :key="speciality">
