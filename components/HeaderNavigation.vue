@@ -64,6 +64,7 @@
     position: fixed;
     display: flex;
     justify-content: space-between;
+    backdrop-filter: blur(2px);
   }
   .haiiroIcon {
     margin-top: 40px;
