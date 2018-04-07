@@ -249,6 +249,9 @@
     & a {
       color: var(--konezumi);
     }
+    @media (--wide) {
+      width: 300px;
+    }
   }
   .career-title {
     text-overflow: ellipsis;
