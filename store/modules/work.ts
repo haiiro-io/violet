@@ -31,13 +31,14 @@ const importsByLang: {
   [lang: string]: ImportedFrontMatters
   } = { en: {}, ja: {} };
 
-const importAll = (resolve) => {
+const importAll = (resolve, lang) => {
   resolve.keys().forEach((key) => {
-    const [_, lang, name] = key.match(/^\.\/(..)\/(.+)\.md$/);
+    const [_, name] = key.match(/\/(.+)\.md$/);
     importsByLang[lang][name] = resolve(key);
   });
 };
-importAll(require.context("~/contents/work", true, /\.md$/));
+importAll(require.context("~/contents/en/work", true, /\.md$/), "en");
+importAll(require.context("~/contents/ja/work", true, /\.md$/), "ja");
 
 
 export const name = "work";
