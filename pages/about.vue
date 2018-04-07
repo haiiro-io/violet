@@ -31,7 +31,17 @@
           :key="career.employer"
           class="career">
           <div class="career-left">
-            <span class="career-employer">{{ career.employer }}</span>
+            <span class="career-employer">
+              <a
+                v-if="career.link"
+                :href="career.link"
+                target="_blank">
+                {{ career.employer }}
+              </a>
+              <span v-else>
+                {{ career.employer }}
+              </span>
+            </span>
             <span class="career-title">{{ career.title }}</span>
           </div>
           <div class="career-right">
@@ -233,6 +243,9 @@
   .career-employer {
     width: 175px;
     font-weight: bold;
+    & a {
+      color: var(--konezumi);
+    }
   }
   .career-title {
     @media (--narrow) {
