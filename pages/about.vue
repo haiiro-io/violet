@@ -184,7 +184,7 @@
   }
 
   .haiiroButton {
-    width: 240px;
+    min-width: 240px;
     text-align: center;
   }
 
@@ -241,13 +241,20 @@
     }
   }
   .career-employer {
-    width: 175px;
+    min-width: 175px;
     font-weight: bold;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
     & a {
       color: var(--konezumi);
     }
   }
   .career-title {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: 15px;
     @media (--narrow) {
       margin: 5px 0;
       margin-left: unset;
@@ -257,6 +264,9 @@
     display: flex;
   }
   .career-right {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
     @media (--narrow) {
       margin-bottom: 20px;
     }
