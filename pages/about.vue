@@ -231,10 +231,10 @@
     }
   }
   .career-employer {
+    width: 175px;
     font-weight: bold;
   }
   .career-title {
-    margin-left: 40px;
     @media (--narrow) {
       margin: 5px 0;
       margin-left: unset;
