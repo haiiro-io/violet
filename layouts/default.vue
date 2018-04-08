@@ -91,10 +91,8 @@
   @import "../assets/styles/custom-properties.postcss";
 
 * {
-  -webkit-touch-callout: none;
-  -webkit-text-size-adjust: none;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  user-select: text;
 }
 
   body {
