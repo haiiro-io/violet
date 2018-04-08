@@ -17,8 +17,8 @@
     class="card"
     target="_blank"
     :href="article.url"
-    @mouseenter.native="onFocusCard"
-    @mouseleave.native="setDefaultColors">
+    @mouseenter="onFocusCard"
+    @mouseleave="setDefaultColors">
     <img
       class="cardThumbnail"
       :src="cardImage"
@@ -67,7 +67,7 @@
     }
 
     onFocusCard () {
-      this.setColors((this.work && this.work.colors) || (this.article && this.article.colors));
+      this.setColors(this.isWork ? this.work.colors : this.article.colors);
     }
   }
 </script>
