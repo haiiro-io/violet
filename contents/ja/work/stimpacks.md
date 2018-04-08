@@ -42,3 +42,6 @@ description: |
 
 <work-media name="brandbook.jpg" alt="ブランドブック" />
 <work-media name="brandbook2.jpg" alt="ブランドガイドライン" />
+<work-media name="brandbook3.jpg" alt="横組みロゴのガイドライン" />
+<work-media name="brandbook4.jpg" alt="タイポグラフィ" />
+<work-media name="brandbook5.jpg" alt="パッケージの配色" />

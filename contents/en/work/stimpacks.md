@@ -42,3 +42,6 @@ In the future, other flavors of beef jerky will be launched and other types of c
 
 <work-media name="brandbook.jpg" alt="Brand book" />
 <work-media name="brandbook2.jpg" alt="Brand guidelines" />
+<work-media name="brandbook3.jpg" alt="Logomark horizontal typesetting" />
+<work-media name="brandbook4.jpg" alt="Typography" />
+<work-media name="brandbook5.jpg" alt="Color palette for future product lines" />
