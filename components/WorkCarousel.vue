@@ -4,7 +4,7 @@
       <carousel
         :per-page="1"
         :loop="true"
-        pagination-size="12"
+        :pagination-size="12"
         pagination-color="#999999"
         pagination-active-color="#555555">
         <slide
