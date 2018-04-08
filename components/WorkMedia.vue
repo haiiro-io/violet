@@ -60,16 +60,5 @@
 </script>
 
 <style lang="postcss" scoped>
-  @import "../assets/styles/custom-properties.postcss";
 
-  .workCarousel {
-    margin: 0 auto;
-    width: 83.3%;
-    max-width: 793px;
-    @media (--narrow) {
-      width: 100%;
-      padding-right: 20px;
-      padding-left: 20px;
-    }
-  }
 </style>

@@ -78,11 +78,14 @@
     margin-top: 1.0em;
   }
   .workMedia {
-    padding: 40px 0;
+    max-width: 1080px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 120px 0;
   }
 
   .workMedia + .workMedia {
-    margin-top: -60px;
+    margin-top: -220px;
   }
 
   p + p {
@@ -135,6 +138,12 @@
       max-width: 793px;
       font-size: 16px;
     }
+    .workMedia {
+      padding: 80px 0;
+    }
+    .workMedia + .workMedia {
+      margin-top: -140px;
+    }
   }
   @media (--narrow) {
     h2, h3, p, ol, ul {
@@ -152,6 +161,12 @@
     }
     h3, p, ol, ul {
       font-size: 16px;
+    }
+    .workMedia {
+      padding: 40px 0;
+    }
+    .workMedia + .workMedia {
+      margin-top: -60px;
     }
     .workMedia + h2,
     .workMedia + h3 {
