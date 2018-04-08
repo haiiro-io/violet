@@ -38,6 +38,7 @@
     "ts-loader": "^3.4.0",
     "typescript": "~2.7.1",
     "typescript-eslint-parser": "^13.0.0",
+    "vue-carousel": "^0.6.11",
     "vue-i18n": "^7.4.2",
     "vue-template-compiler": "2.5.13",
     "vue-template-es2015-compiler": "^1.6.0",

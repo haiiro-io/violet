@@ -1,7 +1,10 @@
 <template>
   <div class="workMedia">
+    <work-carousel
+      v-if="multipleFileNames.length > 0"
+      :names="multipleFileNames" />
     <work-video
-      v-if="isVideo"
+      v-else-if="isVideo"
       :path="mediaPath"
     />
     <work-img
@@ -18,9 +21,10 @@
 
   import WorkImg from "./WorkImg.vue";
   import WorkVideo from "./WorkVideo.vue";
+  import WorkCarousel from "./WorkCarousel.vue";
 
   @Component({
-    components: { WorkImg, WorkVideo },
+    components: { WorkImg, WorkVideo, WorkCarousel },
     props: {
       name: {
         type: String,
@@ -33,20 +37,39 @@
   })
   export default class WorkMedia extends Vue {
     name: string;
+    singleFileName: string;
+    multipleFileNames: string[] = [];
+
+    created () {
+      if (this.name.includes(",")) {
+        this.multipleFileNames = this.name.split(",");
+      } else {
+        this.singleFileName = this.name;
+      }
+    }
 
     get isVideo (): boolean {
-      return !!this.name.match(/\.mp4$/);
+      return !!this.singleFileName && !!this.singleFileName.match(/\.mp4$/);
     }
 
     get mediaPath (): string {
       const slug = this.$route.params.slug;
-      return `/images/work/${slug}_${this.name}`;
+      return `/images/work/${slug}_${this.singleFileName}`;
     }
   }
 </script>
 
 <style lang="postcss" scoped>
-  img.workMedia {
-    width: 100%;
+  @import "../assets/styles/custom-properties.postcss";
+
+  .workCarousel {
+    margin: 0 auto;
+    width: 83.3%;
+    max-width: 793px;
+    @media (--narrow) {
+      width: 100%;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
   }
 </style>
