@@ -5,7 +5,8 @@
     :height="totalHeight"
     :viewBox="viewBox"
     @mouseenter="hover"
-    @mouseleave="unhover">
+    @mouseleave="unhover"
+    @click="$emit('click')">
     <rect
       v-for="rect in rectangles"
       :key="rect.id"
@@ -78,7 +79,7 @@
     transition: ease 0.5s;
   }
   rect {
-    transition: fill ease 0.75s;
+    transition: fill 0.75s ease;
   }
 </style>
 

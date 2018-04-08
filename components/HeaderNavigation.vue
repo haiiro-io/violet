@@ -1,8 +1,9 @@
 <template>
   <header>
-    <nuxt-link to="/">
-      <haiiro-icon :size="haiiroIconSize" />
-    </nuxt-link>
+    <haiiro-icon
+      :size="haiiroIconSize"
+      @click="$router.push('/')"
+    />
     <nav id="headerLinks">
       <nuxt-link
         to="/"
@@ -67,6 +68,7 @@
     backdrop-filter: blur(2px);
   }
   .haiiroIcon {
+    cursor: pointer;
     margin-top: 40px;
     margin-left: 40px;
     @media (--narrow) {
