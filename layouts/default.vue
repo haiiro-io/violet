@@ -90,10 +90,10 @@
 <style lang="postcss">
   @import "../assets/styles/custom-properties.postcss";
 
-* {
-  -webkit-tap-highlight-color: transparent;
-  user-select: text;
-}
+  * {
+    -webkit-tap-highlight-color: transparent;
+    user-select: text;
+  }
 
   body {
     margin: 0;
