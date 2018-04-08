@@ -1,5 +1,5 @@
 ---
-title: Disco Curly Fries e-commerce
+title: Disco Curly Fries ECサイト
 year: 2016
 owner: Planeta / 株式会社spicelife
 role: ウェブデザイン
@@ -14,7 +14,7 @@ colors:
   - "#cc4a37"
   - "#cc5889"
 description: |
-  Disco Curly Friesは、ニューヨークのクリエイティブプラットフォームを運営するPlanetaと、Tシャツの制作・販売サービスを運営するspice lifeがタッグを組んで生まれた、世界で活躍する現代アーティストの作品をカスタマイズして購入できるサービスです。アーティストプロフィールと、E-commerceのウェブデザインを担当しました。
+  Disco Curly Friesは、ニューヨークのクリエイティブプラットフォームを運営するPlanetaと、Tシャツの制作・販売サービスを運営するspice lifeがタッグを組んで生まれた、世界で活躍する現代アーティストの作品をカスタマイズして購入できるサービスです。アーティストプロフィールと、ECのウェブデザインを担当しました。
 ---
 
 <work-media name="shop.jpg" alt="Disco Curly Fries ショップページ" />
