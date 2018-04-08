@@ -1,7 +1,7 @@
 <template>
   <svg
     class="localeSwitcher"
-    :class="defaultPosClass"
+    @click="changeLocale"
     width="63px"
     height="36px"
     viewBox="0 0 42 24"
@@ -15,7 +15,7 @@
         height="24"
         rx="12" />
       <circle
-        :cx="initialPos"
+        :cx="pos"
         cy="12"
         r="10" />
       <path
@@ -39,45 +39,48 @@
   @Component
   export default class HeaderNavigation extends Vue {
     @State locale;
-    initialPos: number = process.env.buildLocale === "en" ? 12 : 30;
-
-    get defaultPosClass () {
-      return this.locale === "en" ? "localeSwitcher-defaultLeft" : "localeSwitcher-defaultRight";
-    }
+    clicked: boolean = false;
+    pos: number = process.env.buildLocale === "en" ? 12 : 30;
 
     get jaCharClass () {
-      return this.locale === "ja" ? "char--selected" : "char--unselected";
+      return (this.locale === "ja" && !this.clicked) || (this.locale === "en" && this.clicked) ? "char--selected" : "char--unselected";
     }
 
     get enCharClass () {
-      return this.locale === "en" ? "char--selected" : "char--unselected";
+      return (this.locale === "en" && !this.clicked) || (this.locale === "ja" && this.clicked) ? "char--selected" : "char--unselected";
+    }
+
+    changeLocale () {
+      this.clicked = true;
+      this.$nextTick(() => {
+        this.pos = this.locale === "ja" ? 12 : 30;
+        setTimeout(() => {
+          this.goAnotherLocale();
+        }, 400);
+      });
+    }
+
+    goAnotherLocale () {
+      const anotherLocale = process.env.productionUrl[this.locale === "en" ? "ja" : "en"] + this.$route.path;
+      window.location.href = anotherLocale;
     }
   }
 </script>
 
 <style lang="postcss" scoped>
+  .localeSwitcher {
+    cursor: pointer;
+  }
   circle {
     transition: ease 0.5s;
     fill: var(--nibihai);
   }
   rect {
     fill: #F8F8F8;
+    transition: ease 0.25s;
   }
   path.char {
     transition: ease 0.3s;
-  }
-
-  .localeSwitcher-defaultLeft circle {
-    cx: 12;
-  }
-  .localeSwitcher-defaultLeft:hover circle {
-    cx: 30;
-  }
-  .localeSwitcher-defaultRight circle {
-    cx: 30;
-  }
-  .localeSwitcher-defaultRight:hover circle {
-    cx: 12;
   }
 
   path.char--selected {
@@ -86,18 +89,10 @@
   path.char--unselected {
     fill: var(--konezumi);
   }
-  .localeSwitcher:hover {
-    & path.char--selected {
-      fill: var(--konezumi);
-    }
-    & path.char--unselected {
-      fill: white;
-    }
-  }
 
-  .localeSwitcher:active {
+  .localeSwitcher:hover {
     & rect {
-      fill: var(--soba);
+      fill: #EEEEEE;
     }
   }
 </style>

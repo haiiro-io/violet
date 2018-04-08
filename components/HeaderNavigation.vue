@@ -15,9 +15,7 @@
         :class="{ active: $route.path == '/about' }">
         About
       </nuxt-link>
-      <a :href="anotherLocale">
-        <locale-switcher />
-      </a>
+      <locale-switcher />
     </nav>
   </header>
 </template>
@@ -48,10 +46,6 @@
 
     updateHaiiroIconSize () {
       this.haiiroIconSize = this.$el.clientWidth > 768 ? 30 : 22;
-    }
-
-    get anotherLocale (): string {
-      return process.env.productionUrl[process.env.buildLocale === "en" ? "ja" : "en"] + this.$route.path;
     }
   }
 </script>
