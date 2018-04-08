@@ -100,6 +100,13 @@
     background-color: var(--skyhai);
   }
 
+  .medium-zoom-overlay {
+    z-index: 15;
+  }
+  .medium-zoom-image {
+    z-index: 20;
+  }
+
   .container {
     font-family: "objektiv-mk2", "ryo-gothic-plusn", sans-serif;
     color: var(--konezumi);
