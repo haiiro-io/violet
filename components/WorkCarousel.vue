@@ -3,7 +3,10 @@
     <no-ssr>
       <carousel
         :per-page="1"
-        :loop="true">
+        :loop="true"
+        pagination-size="15"
+        pagination-color="#999999"
+        pagination-active-color="#555555">
         <slide
           v-for="mediaPathFromArray in mediaPaths"
           :key="mediaPathFromArray">
@@ -32,7 +35,7 @@
   })
   export default class WorkCarousel extends Vue {
     names: string[];
-
+ 
     get mediaPaths (): string[] {
       const slug= this.$route.params.slug;
       return this.names.map(n => `/images/work/${slug}_${n}`);
@@ -41,5 +44,10 @@
 </script>
 
 <style lang="postcss" scoped>
-
+  .workCarousel >>> .VueCarousel-dot-button {
+    border-radius: 0;
+  }
+  .workCarousel >>> .VueCarousel-dot-button:focus {
+    outline: none;
+  }
 </style>
