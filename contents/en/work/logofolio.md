@@ -12,6 +12,7 @@ colors:
   - "#717171"
   - "#484848"
   - "#252525"
+  - "#717171"
 description: |
   These are my logo design collection for a variety of clients.  It is always challenging and fun for me to express worldview of brands with typography, metaphor.
 ---

@@ -8,11 +8,12 @@ related:
   - logofolio
   - pokemon-go
 colors:
+  - "#e8c129"
+  - "#ffffff"
   - "#000000"
-  - "#FFFFFF"
-  - "#CD1226"
-  - "#E8C129"
-  - "#9729E5"
+  - "#9729e5"
+  - "#cd1226"
+  - "#000000"
 description: |
   I designed the logo and packaging for Stimpacks,a San Francisco based snack company. The company targeted hardcore gamers with recovery items called Stimpack for games like FPS, etc. Although most of the visuals were of syringes and other medical supplies, I was very careful not make it too serious because I was aware that the company was a snack brand. I was told that they planned to develop other confections in the future so I designed the first product, beef jerky, with an idea/concept that would be consistent even if the product line expanded in the future.
 ---

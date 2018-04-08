@@ -10,9 +10,9 @@ related:
 colors:
   - "#d06150"
   - "#f2efed"
-  - "#e4e6c8"
-  - "#000000"
-  - "#d5e1e6"
+  - "#d5dcae"
+  - "#abdccc"
+  - "#d5dcae"
 description: |
   I created the visual identity and website for Remote Style, a service that introduces remote employment opportunities to designers and engineers. I aimed to give the entire site the appearance of a travel magazine including the logo with a window motif that sends the message to users that they can work wherever they wish.
 ---
