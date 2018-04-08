@@ -134,7 +134,6 @@
     }
   }
   .card {
-    align-self: center;
     justify-self: center;
   }
 </style>

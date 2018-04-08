@@ -80,6 +80,7 @@
     & img.cardThumbnail {
       display: block;
       width: 100%;
+      transition: opacity ease 0.25s;
     }
     & span {
       display: block;
@@ -89,9 +90,11 @@
       margin-top: 10px;
       font-weight: bold;
       font-size: 16px;
+      line-height: 1.5;
       @media (--wide) {
         font-size: 18px;
       }
+      transition: color ease 0.25s;
     }
     & span.cardRole {
       color: var(--nibihai);
@@ -104,6 +107,9 @@
   .card:hover {
     & img.cardThumbnail {
       opacity: .8;
+    }
+    & span.cardTitle {
+      color: color(var(--konezumi) alpha(80%));
     }
   }
 </style>
