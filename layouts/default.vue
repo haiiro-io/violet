@@ -90,6 +90,13 @@
 <style lang="postcss">
   @import "../assets/styles/custom-properties.postcss";
 
+* {
+  -webkit-touch-callout: none;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-user-select: none;
+}
+
   body {
     margin: 0;
     background-color: var(--skyhai);
