@@ -93,7 +93,9 @@
   @import "../../assets/styles/custom-properties.postcss";
 
   section.workSelected {
-    padding-top: 170px;
+    @media (--narrow) {
+      padding-top: 170px;
+    }
   }
 
   h1 {
