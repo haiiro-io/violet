@@ -60,6 +60,7 @@
   @import "../assets/styles/custom-properties.postcss";
 
   header {
+    z-index: 10;
     top: 0;
     width: 100%;
     position: fixed;
