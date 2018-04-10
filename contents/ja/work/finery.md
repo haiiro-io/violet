@@ -51,38 +51,37 @@ Fineryにはカレンダー機能の他に「返品アラート」「セール�
 
 ### After: 色のルールを整備
 
-<work-media name="new_colors.png" alt="" />
-
 これまでモーダルなどで「Yes/No」といった2択を表示する際に同じ色が使われており、ユーザーを迷わせてしまう要因となっていました。また、緑色や水色などさまざまな色が使われていましたが、ファッショナブルなFineryの世界観とは異なるものでした。そこで、使用色を制限し、Fineryのブランディングに沿う橙色、ヌードカラーと黒のみで、ボタンなどのコンポーネント色を構成することにしました。
 
+<work-media name="new_colors.png" alt="" />
 
 ### After: 書体やアイコンのサイズを統一
 
-<work-media name="design_system.png" alt="" />
-
 色の他にも、書体やアイコンのサイズがバラバラだったため、ルールを改たに定めてガイドライン資料にまとめました。
 
-## カレンダー
+<work-media name="design_system.png" alt="" />
+
+## カレンダービュー
 
 新しいダッシュボードのコアとなるカレンダー機能をどのようにモバイルとデスクトップに対応させるレスポンシブデザインにするかがこのプロジェクトにおける重要な課題でした。ユーザーは「Week」「Month」「Day」の異なるカレンダーの表示の仕方を好みに合わせて切り替えることが出来ます。
 
-### Week View
-
-<work-media name="calendar_responsive_week.jpg" alt="" />
+### 1週間ごとの表示
 
 調査の結果、コーディネートを考えるのは週ごとに行うという意見が多かったため、Weekカレンダーをデフォルトで表示するカレンダーとしました。モバイルではスワイプしないと1週間すべてのカレンダーを確認することが出来ないため、一番左に常に今日のコーディネートが来るようにデザインしています。
 
-### Month View
+<work-media name="calendar_responsive_week_mobile.jpg,calendar_responsive_week_desktop.jpg" />
 
-<work-media name="calendar_responsive_month.jpg" alt="" />
+### 月ごとの表示
 
 「旅行のために少し先の日程のコーディネートを考えたい」といったユーザーのニーズにMonthカレンダーは役立ちます。デスクトップでは毎月のコーディネートが一覧で確認することが出来ますが、モバイルにおいては、どの日にコーディネートが登録されているか？と素早く知ることが重要な役割だと考え、日付の一覧と、コーディネートが登録された日に目印を付けたシンプルなデザインにしました。
 
-### Day View
+<work-media name="calendar_responsive_month_desktop.jpg,calendar_responsive_month_mobile.jpg" />
 
-<work-media name="calendar_responsive_day.jpg" alt="" />
+### 1日ごとの表示
 
 Dayカレンダーは、他のカレンダーよりも詳細な情報を得ることが出来るレイアウトです。大きめのコーディネート写真に加えて、その日のスケジュールも確認することが出来ます。
+
+<work-media name="calendar_responsive_day_mobile.jpg,calendar_responsive_day_desktop.jpg" />
 
 ### カレンダーにコーディネートが登録されていない時
 
