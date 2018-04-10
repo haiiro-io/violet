@@ -4,7 +4,17 @@
   title: "Foursquare: A UX case study"
   appear_on: Medium
   url: https://medium.com/haiiro-io/foursquare-a-ux-case-study-f606d4757d9b
-  locale: ja, en
+  locale: en
+  colors:
+    - "#D9CDB7"
+    - "#445386"
+    - "#C98F60"
+-
+  name: foursquare
+  title: "Foursquare: A UX case study"
+  appear_on: Blog
+  url: http://blog.haiji.co/entry/foursquare_ux_case_study
+  locale: ja
   colors:
     - "#D9CDB7"
     - "#445386"
