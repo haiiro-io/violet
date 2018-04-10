@@ -9,8 +9,10 @@ related:
   - libzcareer
 colors:
   - "#f9dd00"
-  - "#1a1a1a"
+  - "#a5a5a5"
   - "#ffffff"
+  - "#f8f8f8"
+  - "#5b5b5b"
 description: |
 
 ---
