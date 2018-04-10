@@ -2,7 +2,7 @@
   import Vue from "vue";
   import Component from "nuxt-class-component";
 
-  import HaiiroIcon from "./HaiiroIcon.vue";
+  import HaiiroIcon from "../HaiiroIcon.vue";
   import WorkMedia from "./WorkMedia.vue";
   import WorkButton from "./WorkButton.vue";
 

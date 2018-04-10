@@ -38,8 +38,8 @@
   import Component from "nuxt-class-component";
   import { Getter, Action, namespace } from "vuex-class";
 
-  import DynamicMarkdown from "~/components/DynamicMarkdown.vue";
-  import WorkMedia from "~/components/WorkMedia.vue";
+  import DynamicMarkdown from "~/components/work/DynamicMarkdown.vue";
+  import WorkMedia from "~/components/work/WorkMedia.vue";
   import Card from "~/components/Card.vue";
 
   import { Work } from "~/store/modules/work";
