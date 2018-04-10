@@ -19,12 +19,5 @@
     "paths": {
       "~/*": ["./*"],
     }
-  },
-  "include": [
-    "components/**/*",
-    "types/**/*",
-    "lib/**/*",
-    "layouts/*",
-    "store/**/*"
-  ]
+  }
 }
