@@ -17,17 +17,7 @@
     "baseUrl": ".",
     "allowJs": true,
     "paths": {
-      "~/": ["./"],
-      "~/components/*": ["./components/*"],
-      "~/middleware/*": ["./middleware/*"],
-      "~/pages/*": ["./pages/*"],
-      "~/plugins/*": ["./plugins/*"],
-      "~/static/*": ["./static/*"],
-      "~/store/*": ["./store/*"],
-      "~/contents/works/*": ["./contents/works/*"],
-      "~/types/*": ["./types/*"],
-      "~/lib/*": ["./lib/*"],
-      "~/assets/*": ["./assets/*"]
+      "~/*": ["./*"],
     }
   }
 }
