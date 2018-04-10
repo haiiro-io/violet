@@ -66,7 +66,7 @@
 </script>
 
 <style lang="postcss">
-  @import "../assets/styles/custom-properties.postcss";
+  @import "~/assets/styles/custom-properties.postcss";
 
   .pageIndex {
     padding: 0 20px;

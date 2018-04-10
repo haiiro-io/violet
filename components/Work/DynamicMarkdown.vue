@@ -29,7 +29,7 @@
 </script>
 
 <style lang="postcss" scoped>
-  @import "../assets/styles/custom-properties.postcss";
+  @import "~/assets/styles/custom-properties.postcss";
 
   h2 {
     margin: 0 auto;

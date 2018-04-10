@@ -112,7 +112,11 @@ module.exports = {
     },
     postcss: {
       plugins: {
-        'postcss-import': {},
+        'postcss-import': {
+          resolve (id, baseDir) {
+            return (/^~/.test(id)) ? path.resolve(__dirname, id.replace("~", ".")) : path.resolve(baseDir, id);
+          }
+        },
         'postcss-cssnext': {
           features: {
             customProperties: {

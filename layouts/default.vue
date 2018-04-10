@@ -88,7 +88,7 @@
 </script>
 
 <style lang="postcss">
-  @import "../assets/styles/custom-properties.postcss";
+  @import "~/assets/styles/custom-properties.postcss";
 
   * {
     -webkit-tap-highlight-color: transparent;

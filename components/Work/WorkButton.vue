@@ -31,7 +31,7 @@
 </script>
 
 <style lang="postcss" scoped>
-  @import "../assets/styles/custom-properties.postcss";
+  @import "~/assets/styles/custom-properties.postcss";
 
   .workButton {
     text-align: center;
