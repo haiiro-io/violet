@@ -58,3 +58,5 @@ Signifiantはフェルディナン・ド・ソシュールによって定義さ�
 <work-media name="media_mobile.jpg" alt="Signifiantメディアのモバイル版のウェブデザイン" />
 
 *ウェブ開発: Kengo Hamasaki*
+
+<work-button label="ウェブサイトを見る" link="http://signifiant.jp/" />

@@ -53,3 +53,5 @@ As a result of the research, I realized that older Japanese fund companies are o
 <work-media name="media_mobile.jpg" alt="Mobile web design for Signifiant media "/>
 
 *Engineer: Kengo Hamasaki*
+
+<work-button label="See the website" link="http://signifiant.jp/" />
