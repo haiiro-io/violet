@@ -48,11 +48,11 @@
   })
   export default class PageIndex extends PageBase {
     @WorksGetter pick;
-    @PixelsAction setDefaultColors;
+    @PixelsAction updateDefaultColors;
     @PixelsAction setColors;
 
     mounted () {
-      this.setDefaultColors();
+      this.updateDefaultColors();
     }
 
     get list (): Work[] {

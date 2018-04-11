@@ -53,10 +53,10 @@
   })
   export default class PageSelectedWork extends PageBase {
     @WorksGetter pick;
-    @PixelsAction setColors;
+    @PixelsAction updateDefaultColors;
 
     mounted () {
-      this.setColors(this.work.colors);
+      this.updateDefaultColors(this.work.colors);
       mediumZoom(".outerMoat .workImg", {
         background: "#DFE0E0"
       });

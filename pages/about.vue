@@ -86,10 +86,10 @@
     }
   })
   export default class PageAbout extends PageBase {
-    @PixelsAction setDefaultColors;
+    @PixelsAction updateDefaultColors;
 
     mounted () {
-      this.setDefaultColors();
+      this.updateDefaultColors();
     }
 
     get pageTitle (): VueI18n.LocaleMessage {
