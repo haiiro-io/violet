@@ -77,7 +77,7 @@ module.exports = {
     { src: 'node_modules/modern-normalize/modern-normalize.css', lang: 'css' }
   ],
   build: {
-    vendor: ['axios', 'vuex-class', 'nuxt-class-component', 'vue-i18n'],
+    vendor: ['vuex-class', 'nuxt-class-component', 'vue-i18n'],
     extend (config, { isDev, isClient }) {
       // remove existing url-loader settings once, for giving svg specific loader
       const rule = config.module.rules.find(r => r.test.toString() === '/\\.(png|jpe?g|gif|svg)$/');
