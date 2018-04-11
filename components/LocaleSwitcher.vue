@@ -51,8 +51,16 @@
     }
 
     changeLocale () {
+      this.$nuxt.$loading.start();
       this.clicked = true;
       this.$nextTick(() => {
+        const increaseLoadingBar = (num: number = 4) => {
+          setTimeout(() => {
+            this.$nuxt.$loading.increase(num);
+            increaseLoadingBar(num + 4);
+          }, 25);
+        };
+        increaseLoadingBar();
         this.pos = this.locale === "ja" ? 12 : 30;
         setTimeout(() => {
           this.goAnotherLocale();
