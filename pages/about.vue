@@ -74,9 +74,6 @@
   import { name as PixelsNamespace } from "~/store/modules/pixels";
   const PixelsAction = namespace(PixelsNamespace, Action);
 
-  import banner from "~/assets/images/about_banner.jpg";
-  import avatar from "~/assets/images/about_avatar.jpg";
-
   import enData from "~/contents/en/about.md";
   import jaData from "~/contents/ja/about.md";
 
@@ -98,7 +95,7 @@
 
     get bannerBackgroundStyle () {
       return {
-        background: `url(${banner})`,
+        background: "url('/images/about/banner.jpg')",
         "background-repeat": "no-repeat",
         "background-size": "cover",
         "background-position": "center",
@@ -107,7 +104,7 @@
 
     get avatarImageStyle () {
       return {
-        background: `url(${avatar})`,
+        background: "url('/images/about/avatar.jpg')",
         "background-repeat": "no-repeat",
         "background-size": "contain"
       };
