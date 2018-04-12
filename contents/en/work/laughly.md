@@ -64,7 +64,7 @@ Users found that the Write Review button was too hidden, which would deter them 
 
 ## Design System
 
-<work-media name="design_system_1.png,design_system_2.jpg,design_system_3.jpg,design_system_4.jpg,design_system_5.jpg,design_system_6.jpg" />
+<work-media name="design_system_1.png,design_system_2.png,design_system_3.png,design_system_4.png,design_system_5.png,design_system_6.png" />
 
 I focused on mainly UI design, worked in Sketch, made the design system and bunch of components to allow 8 designers to design consistently.
 

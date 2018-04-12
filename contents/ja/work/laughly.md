@@ -62,7 +62,7 @@ Ver4: 最終的に決まったデザインです。
 
 ## デザインシステム
 
-<work-media name="design_system_1.png,design_system_2.jpg,design_system_3.jpg,design_system_4.jpg,design_system_5.jpg,design_system_6.jpg" />
+<work-media name="design_system_1.png,design_system_2.png,design_system_3.png,design_system_4.png,design_system_5.png,design_system_6.png" />
 
 このプロジェクトではUIデザインが私の主な取り組みでした。8人のデザイナーが参加しており、複数人で一貫性を持ってデザインをするため、Design Systemを作り多くのコンポーネントをSketchで作成しました。
 
