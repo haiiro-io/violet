@@ -32,13 +32,10 @@ We kicked off the project by interviewing people who use Laughly or love comedy.
 On top of video, Laughly has several types of other content to keep in mind which include albums, podcasts, playlists. My design focused on how to organize the different type of contents to cater to an audience.
 I designed and iterated channel navigation. The design decision was prioritizing to separate types of content into ALL, AUDIO and VIDEO based on the user insight.
 
-Ver1: The initial design was to align with all type of contents, but that made it harder to navigated between the two content types
-
-Ver2: Added filter feature instead, but this design for the filtering might not scale well in the future.
-
-Ver3: Changed filter UI, and tested it for usability. Users felt the filter option was inconspicuous and some users thought this filter button was a search box.
-
-Ver4: The final design, modified the filter button.
+- **Ver1:** The initial design was to align with all type of contents, but that made it harder to navigated between the two content types
+- **Ver2:** Added filter feature instead, but this design for the filtering might not scale well in the future.
+- **Ver3:** Changed filter UI, and tested it for usability. Users felt the filter option was inconspicuous and some users thought this filter button was a search box.
+- **Ver4:** The final design, modified the filter button.
 
 ## Thumbnail
 
