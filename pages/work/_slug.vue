@@ -57,7 +57,7 @@
 
     mounted () {
       this.updateDefaultColors(this.work.colors);
-      mediumZoom(".outerMoat > div > .workMedia > .workImg", {
+      mediumZoom(".outerMoat > .dynamicMarkdown > .workMedia > .workImg", {
         background: "#DFE0E0"
       });
     }

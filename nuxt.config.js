@@ -94,7 +94,9 @@ module.exports = {
         loader: 'frontmatter-markdown-loader',
         include: path.resolve(__dirname, 'contents'),
         options: {
-          vue: true
+          vue: {
+            root: "dynamicMarkdown"
+          }
         }
       }, {
         test: /\.yaml$/,
