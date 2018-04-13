@@ -13,7 +13,6 @@
     "vue": "2.5.13",
     "vue-carousel": "^0.6.12",
     "vue-class-component": "^6.1.2",
-    "vue-property-decorator": "^6.0.0",
     "vuex": "^3.0.1",
     "vuex-class": "^0.3.0"
   },
@@ -39,8 +38,6 @@
     "typescript": "~2.7.1",
     "typescript-eslint-parser": "^13.0.0",
     "vue-i18n": "^7.4.2",
-    "vue-template-compiler": "2.5.13",
-    "vue-template-es2015-compiler": "^1.6.0",
     "yaml-loader": "^0.5.0"
   }
 }
