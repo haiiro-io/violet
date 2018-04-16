@@ -36,7 +36,7 @@ Wonoloは毎週ユーザーミートアップを開催しており、私たち�
 1. プロフィールの入力を完了させる目的が分からない
 1. Wonoloを再び使う魅力を感じない
 
-<work-media name="research_deck_01.png,research_deck_02.png,research_deck_03.png,research_deck_04.png,research_deck_05.png" />
+<work-media name="research_deck_01.png,research_deck_02.jpg,research_deck_03.jpg,research_deck_04.jpg,research_deck_05.jpg" />
 
 ## アイデアスケッチ
 

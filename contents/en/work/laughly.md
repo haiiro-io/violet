@@ -67,7 +67,7 @@ I focused on mainly UI design, worked in Sketch, made the design system and bunc
 
 ### Sketch symbol
 
-<work-media name="sketch.png" alt="Sketch symbol" />
+<work-media name="sketch.jpg" alt="Sketch symbol" />
 
 We had to make a lot of screens and iterate it frequently to validate usability. My challenge was making Sketch symbols that other designers can override the symbol easily and efficiently.
 

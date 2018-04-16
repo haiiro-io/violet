@@ -65,7 +65,7 @@ Laughlyはアルバム、Podcast、プレイリストなどさまざまなフォ
 
 ### Sketch シンボル
 
-<work-media name="sketch.png" alt="Sketch シンボル" />
+<work-media name="sketch.jpg" alt="Sketch シンボル" />
 
 私たちはユーザビリティ検証のため、多くの画面を頻繁に作成する必要がありました。私のチャレンジはSketchのシンボルを他のデザイナー達が簡単に、そして効率的に上書き出来る設計で組み立てることでした。
 
