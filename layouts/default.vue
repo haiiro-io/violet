@@ -91,12 +91,12 @@
   @import "~/assets/styles/custom-properties.postcss";
 
   * {
+    box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
     user-select: text;
   }
 
   body {
-    margin: 0;
     background-color: var(--skyhai);
   }
 
