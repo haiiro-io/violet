@@ -7,6 +7,10 @@
       v-else-if="isVideo"
       :path="mediaPath"
     />
+    <work-youtube
+      v-else-if="isYoutube"
+      :path="singleFileName"
+    />
     <work-img
       v-else
       :path="mediaPath"
@@ -22,9 +26,10 @@
   import WorkImg from "./WorkImg.vue";
   import WorkVideo from "./WorkVideo.vue";
   import WorkCarousel from "./WorkCarousel.vue";
+  import WorkYoutube from "./WorkYoutube.vue";
 
   @Component({
-    components: { WorkImg, WorkVideo, WorkCarousel },
+    components: { WorkImg, WorkVideo, WorkCarousel, WorkYoutube },
     props: {
       name: {
         type: String,
@@ -50,6 +55,10 @@
 
     get isVideo (): boolean {
       return !!this.singleFileName && !!this.singleFileName.match(/\.mp4$/);
+    }
+
+    get isYoutube (): boolean {
+      return !!this.singleFileName.match("https://www.youtube.com");
     }
 
     get mediaPath (): string {
