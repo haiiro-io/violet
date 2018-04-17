@@ -21,7 +21,7 @@ description: |
 
 ## 課題とゴール
 
-<work-media name="current_dashboard.jpg" alt="リニューアル前のFineryのダッシュボード" caption="リニューアル前のFineryのダッシュボード" />
+<work-media name="current_dashboard.jpg" caption="リニューアル前のFineryのダッシュボード" />
 
 ユーザーのアクションの起点となるダッシュボードには6つのメニューが並んでおり、メインの体験が分かりづらいものとなっていました。結果、ユーザーのアクションが減少傾向にあり、エンゲージメントを高めることが課題でした。ユーザーの関心を持続させ、メインのアクションであるコーディネートの作成頻度をあげるために、操作性のあるダッシュボードを設計する必要がありました。
 
@@ -53,7 +53,7 @@ Fineryにはカレンダー機能の他に「返品アラート」「セール�
 
 ### Before: Fineryにあったコンポーネントの一部
 
-<work-media name="audit_component.jpg" alt="コンポーネントの一部" caption="ボタンの色や形状に一貫性がなくマチマチであることが分かる。" />
+<work-media name="audit_component.jpg" alt="コンポーネントの一部" caption="ボタンの色や形状に一貫性がなくマチマチであることが分かる" />
 
 ### After: 色などのデザインルールを整備
 

@@ -27,7 +27,7 @@ description: |
 <work-media name="concept2.jpg" alt="ロゴコンセプト" />
 <work-media name="logo.jpg" alt="ロゴ" />
 
-<work-media name="badge.jpg" alt="ピンバッジ" caption="ソーシャルメディアのプロフィール用に、ロゴの稲妻部分のみを用いたバージョンも提供し、アイコンサイズが小さな場合でも、視認性が高く、印象づけることが出来るようにしました。" />
+<work-media name="badge.jpg" alt="ピンバッジ" caption="ソーシャルメディアのプロフィール用に、ロゴの稲妻部分のみを用いたバージョンも提供し、アイコンサイズが小さな場合でも、視認性が高く、印象づけることが出来るようにしました" />
 
 ## パッケージ
 
