@@ -83,6 +83,7 @@ module.exports = {
       'vue-carousel',
       'vue-i18n',
       'vuex-class',
+      'youtube-player'
     ],
     extend (config, { isDev, isClient }) {
       // remove existing url-loader settings once, for giving svg specific loader
