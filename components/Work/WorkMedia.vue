@@ -15,6 +15,7 @@
       v-else
       :path="mediaPath"
       :alt="alt"
+      :caption="caption"
     />
   </div>
 </template>
@@ -36,6 +37,9 @@
         required: true
       },
       alt: {
+        type: String
+      },
+      caption: {
         type: String
       }
     }
