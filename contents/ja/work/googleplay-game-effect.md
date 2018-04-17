@@ -22,4 +22,4 @@ description: |
 <work-media name="hangout_screenshot_1.jpg" alt="Google Play Game Effectの画面" />
 <work-media name="hangout_screenshot_2.jpg" alt="Google Play Game Effectの画面" />
 
-[YouTube:https://www.youtube.com/watch?v=xOUtXJchtPk]
+<work-media name="https://www.youtube.com/watch?v=xOUtXJchtPk" />

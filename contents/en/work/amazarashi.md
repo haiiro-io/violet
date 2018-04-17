@@ -26,7 +26,7 @@ The song is the ending theme song of Tokyo Ghoul, a Japanese anime. In the music
 <work-media name="seasons_die_one_after_another_2.jpg" alt="Seasons die one after another2" />
 <work-media name="seasons_die_one_after_another_3.jpg" alt="UI design for the laser cutter in the music video" />
 
-[YouTube:https://www.youtube.com/watch?v=wtJcLWeY114]
+<work-media name="https://www.youtube.com/watch?v=wtJcLWeY114" />
 
 ## Digging Holes
 
@@ -37,4 +37,4 @@ I designed the user interface of a printer that appears in the music video. It i
 <work-media name="digging_holes_3.jpg" alt="Digging Holes3" />
 <work-media name="digging_holes_4.jpg" alt="Digging Holes4" />
 
-[YouTube:https://www.youtube.com/watch?v=B2HsdgVQ-cc]
+<work-media name="https://www.youtube.com/watch?v=B2HsdgVQ-cc" />

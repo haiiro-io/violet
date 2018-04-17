@@ -22,4 +22,4 @@ description: |
 <work-media name="hangout_screenshot_1.jpg" alt="UI design for Google Play Game Effect" />
 <work-media name="hangout_screenshot_2.jpg" alt="UI design for Google Play Game Effect" />
 
-[YouTube:https://www.youtube.com/watch?v=xOUtXJchtPk]
+<work-media name="https://www.youtube.com/watch?v=xOUtXJchtPk" />

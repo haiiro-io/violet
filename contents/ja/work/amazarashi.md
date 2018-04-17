@@ -26,7 +26,7 @@ description: |
 <work-media name="seasons_die_one_after_another_2.jpg" alt="季節は次々死んでいく Music Video2" />
 <work-media name="seasons_die_one_after_another_3.jpg" alt="季節は次々死んでいく レーザーカッターのUIデザイン" />
 
-[YouTube:https://www.youtube.com/watch?v=wtJcLWeY114]
+<work-media name="https://www.youtube.com/watch?v=wtJcLWeY114" />
 
 ## 穴を掘っている
 
@@ -37,4 +37,4 @@ description: |
 <work-media name="digging_holes_3.jpg" alt="穴を掘っている Music Video3" />
 <work-media name="digging_holes_4.jpg" alt="穴を掘っている Music Video4" />
 
-[YouTube:https://www.youtube.com/watch?v=B2HsdgVQ-cc]
+<work-media name="https://www.youtube.com/watch?v=B2HsdgVQ-cc" />

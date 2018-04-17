@@ -19,4 +19,4 @@ description: |
 <work-media name="movie_screenshot_2.jpg" alt="Pokémon Teaser Movie2" />
 <work-media name="movie_screenshot_3.jpg" alt="Pokémon Teaser Movie3" />
 
-[YouTube:https://www.youtube.com/watch?v=lKUwVYUKii4]
+<work-media name="https://www.youtube.com/watch?v=lKUwVYUKii4" />
