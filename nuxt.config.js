@@ -74,7 +74,7 @@ module.exports = {
   ** Build configuration
   */
   css: [
-    { src: 'node_modules/modern-normalize/modern-normalize.css', lang: 'css' }
+    { src: 'node_modules/normalize.css/normalize.css', lang: 'css' }
   ],
   build: {
     vendor: [
