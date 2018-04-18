@@ -62,7 +62,7 @@
     & a {
       color: var(--konezumi);
     }
-    & a.active, & a:hover {
+    & a:active, & a:hover {
       color: var(--nibihai);
     }
   }
