@@ -23,6 +23,8 @@ description: |
 
 We kicked off the project by interviewing people who use Laughly or love comedy. Users said that if Laughly started providing video content, they would gladly watch. Users also told us that they usually listened to the audio in the background while performing other actions such as while driving during their commute.
 
+**Issue: How can users switch between consuming video and audio easily?**
+
 <work-media name="scene.jpg" caption="Issue: How can users switch between consuming video and audio easily?" />
 
 ## Channel Navigation
