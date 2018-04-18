@@ -42,7 +42,7 @@
     background-color: var(--konezumi);
     transition: ease 0.5s;
   }
-  .emoji {
+  >>> .emoji {
     margin-right: 15px;
   }
 </style>
