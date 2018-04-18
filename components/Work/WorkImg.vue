@@ -44,12 +44,14 @@
 
   .workImg-caption {
     margin-top: 20px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.7;
     display: block;
     text-align: center;
+    color: var(--nibihai);
     @media (--narrow) {
-      font-size: 14px;
+      padding-right: 20px;
+      padding-left: 20px;
     }
   }
 </style>
