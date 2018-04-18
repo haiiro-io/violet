@@ -15,6 +15,10 @@
 <script lang="ts">
   import VueI18n from "vue-i18n";
   import Component from "nuxt-class-component";
+  import { Action, namespace } from "vuex-class";
+
+  import { name as PixelsNamespace } from "~/store/modules/pixels";
+  const PixelsAction = namespace(PixelsNamespace, Action);
 
   import PageBase from "~/lib/page-base";
   import HaiiroButton from "~/components/HaiiroButton.vue";
@@ -23,6 +27,13 @@
     components: { HaiiroButton }
   })
   export default class PageContact extends PageBase {
+    @PixelsAction updateDefaultColors;
+
+    mounted () {
+      this.updateDefaultColors(
+        ["#A7A7A7", "#CFCFCF","#D4D4D4", "#D4D4D4","#CFCFCF","#A7A7A7","#D4D4D4"]
+      );
+    }
   }
 </script>
 
