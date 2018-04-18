@@ -20,7 +20,7 @@
         <haiiro-button href="/resume.pdf">
           {{ $t("about.resume") }}
         </haiiro-button>
-        <haiiro-button>
+        <haiiro-button router-href="/contact">
           {{ $t("about.contact") }}
         </haiiro-button>
       </div>
@@ -53,9 +53,7 @@
         <div
           :style="avatarImageStyle"
           class="avatar-icon" />
-        <haiiro-button
-          href="https://twitter.com/haiji505"
-          target="_blank">
+        <haiiro-button router-href="/contact">
           <span class="emoji">🙌 </span>{{ $t("about.hello") }}
         </haiiro-button>
       </div>

@@ -1,5 +1,13 @@
 <template>
-  <a class="haiiroButton">
+  <nuxt-link
+    v-if="routerHref"
+    class="haiiroButton"
+    :to="routerHref">
+    <slot />
+  </nuxt-link>
+  <a
+    v-else
+    class="haiiroButton">
     <slot />
   </a>
 </template>
@@ -8,7 +16,11 @@
   import Vue from "vue";
   import Component from "nuxt-class-component";
 
-  @Component
+  @Component({
+    props: {
+      routerHref: String
+    }
+  })
   export default class HaiiroButton extends Vue {
   }
 </script>
