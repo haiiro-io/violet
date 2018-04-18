@@ -155,8 +155,10 @@
   }
 
   .tagline {
+    width: 66.7%;
+    max-width: 793px;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.7;
     margin-top: 120px;
     & dl {
       margin-top: 40px;
@@ -174,6 +176,7 @@
       }
     }
     @media (--narrow) {
+      width: 100%;
       margin-top: 70px;
       padding-right: 20px;
       padding-left: 20px;
