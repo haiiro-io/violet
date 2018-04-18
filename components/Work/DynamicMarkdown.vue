@@ -59,6 +59,12 @@
     font-size: 18px;
     line-height: 1.7;
     color: var(--konezumi);
+    & a {
+      color: var(--konezumi);
+    }
+    & a.active, & a:hover {
+      color: var(--nibihai);
+    }
   }
   ol, ul {
     margin: 0 auto;
