@@ -25,7 +25,7 @@ We kicked off the project by interviewing people who use Laughly or love comedy.
 
 **Issue: How can users switch between consuming video and audio easily?**
 
-<work-media name="scene.jpg" caption="Issue: How can users switch between consuming video and audio easily?" />
+<work-media name="scene.jpg" alt="Issue: How can users switch between consuming video and audio easily?" />
 
 ## Channel Navigation
 
