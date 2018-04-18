@@ -249,6 +249,9 @@
     & a {
       color: var(--konezumi);
     }
+    & a.active, & a:hover {
+      color: var(--nibihai);
+    }
     @media (--wide) {
       width: 300px;
     }
