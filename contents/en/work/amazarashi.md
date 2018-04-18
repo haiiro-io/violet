@@ -26,7 +26,7 @@ The song is the ending theme song of Tokyo Ghoul, a Japanese anime. In the music
 <work-media name="seasons_die_one_after_another_2.jpg" alt="Seasons die one after another2" />
 <work-media name="seasons_die_one_after_another_3.jpg" alt="UI design for the laser cutter in the music video" />
 
-<work-media name="https://www.youtube.com/watch?v=wtJcLWeY114" />
+<work-media name="https://www.youtube.com/watch?v=Upvuj6GhAa4" />
 
 ## Digging Holes
 
