@@ -147,6 +147,7 @@ module.exports = {
     fallback: true,
     routes: [
       '/about',
+      '/contact',
     ].concat(orderedWorks.map(w => `/work/${w}`))
   }
 }
