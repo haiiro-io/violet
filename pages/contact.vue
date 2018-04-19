@@ -4,8 +4,33 @@
       Contact Me
       <span class="workSelected-year">Say hello. Reaching out to me ☺</span>
     </h1>
-    <form>
-      <haiiro-button>
+    <form
+      ref="contactForm"
+      method="POST"
+      netlify>
+      <p>
+        <label>
+          Your Name:
+          <input
+            type="text"
+            name="name">
+        </label>   
+      </p>
+      <p>
+        <label>
+          Your Email:
+          <input
+            type="email"
+            name="email">
+        </label>
+      </p>
+      <p>
+        <label>
+          Message:
+          <textarea name="message" />
+        </label>
+      </p>
+      <haiiro-button @click.native="sendForm">
         Send
       </haiiro-button>
     </form>
@@ -27,12 +52,19 @@
     components: { HaiiroButton }
   })
   export default class PageContact extends PageBase {
+    $refs: {
+      contactForm: HTMLFormElement;
+    }
     @PixelsAction updateDefaultColors;
 
     mounted () {
       this.updateDefaultColors(
         ["#A7A7A7", "#CFCFCF","#D4D4D4", "#D4D4D4","#CFCFCF","#A7A7A7","#D4D4D4"]
       );
+    }
+
+    sendForm () {
+      this.$refs.contactForm.submit();
     }
   }
 </script>
@@ -67,6 +99,8 @@
   form {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .haiiroButton {
