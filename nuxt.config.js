@@ -145,6 +145,7 @@ module.exports = {
   modules: ['~/modules/typescript'],
   generate: {
     fallback: true,
+    subFolders: false,
     routes: [
       '/about',
       '/contact',
