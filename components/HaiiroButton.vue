@@ -36,6 +36,7 @@
     border: 2px solid var(--konezumi);
     border-radius: 2px;
     font-weight: bold;
+    cursor: pointer;
   }
   a:hover {
     color: white;
