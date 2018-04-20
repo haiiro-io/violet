@@ -1,0 +1,3 @@
+/about/ /about.html 200
+/contact/ /contact.html 200
+/work/:name/ /work/:name.html 200
