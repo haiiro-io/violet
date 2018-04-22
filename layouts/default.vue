@@ -1,6 +1,28 @@
 <template>
   <div class="container">
     <header-navigation />
+    <form
+      netlify
+      name="contact"
+      netlify-honeypot="bot-field"
+      style="display: none">
+      <input
+        type="hidden"
+        name="form-name"
+        value="contact">
+      <input
+        type="text"
+        name="sender">
+      <input
+        type="email"
+        name="email">
+      <textarea
+        id="hiddenTextArea"
+        name="message" />
+      <div
+        netlify-recaptcha
+        ref="recaptcha" />
+    </form>
     <nuxt/>
     <footer>
       <div id="exposures">

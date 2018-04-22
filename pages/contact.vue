@@ -26,8 +26,8 @@
       <label for="message">Message:</label>
       <textarea
         id="message"
+        ref="messageTextArea"
         name="message" />
-      <div data-netlify-recaptcha />
       <haiiro-button @click.native="sendForm">
         Send
       </haiiro-button>
@@ -52,6 +52,7 @@
   export default class PageContact extends PageBase {
     $refs: {
       contactForm: HTMLFormElement;
+      messageTextArea: HTMLTextAreaElement;
     }
     @PixelsAction updateDefaultColors;
 
@@ -59,6 +60,18 @@
       this.updateDefaultColors(
         ["#A7A7A7", "#CFCFCF","#D4D4D4", "#D4D4D4","#CFCFCF","#A7A7A7","#D4D4D4"]
       );
+      const recaptchaBlock = document.querySelector(".g-recaptcha");
+      if (recaptchaBlock) {
+        this.$refs.messageTextArea.insertAdjacentElement("afterend", recaptchaBlock);
+      }
+    }
+
+    beforeDestroy () {
+      const recaptcha = document.querySelector(".g-recaptcha");
+      const textArea = document.getElementById("hiddenTextArea");
+      if (recaptcha && textArea) {
+        textArea.insertAdjacentElement("afterend", recaptcha);
+      }
     }
 
     sendForm () {
@@ -140,7 +153,7 @@
   input + label {
     margin-top: 40px;
   }
-  input[type=text], input[type=email], textarea {
+  input, textarea {
     color: var(--konezumi);
     padding: 20px;
     width: 100%;
@@ -148,7 +161,7 @@
     outline: none;
     background-color: #f9f9f9;
   }
-  input[type=text], input[type=email] {
+  input {
     height: 60px;
   }
   input:focus, textarea:focus, textarea:focus {
@@ -163,11 +176,11 @@
   }
 
   >>> .g-recaptcha {
-    margin-top: 40px;
+    margin-top: 35px;
   }
 
   .haiiroButton {
-    margin: 70px auto;
+    margin-top: 35px;
     width: 304px;
     text-align: center;
   }
