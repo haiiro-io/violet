@@ -1,5 +1,15 @@
 ---
 -
+  name: switch-language
+  title: 言語切替のUIデザインについて考えてみる
+  appear_on: 灰色ハイジのデザインノート
+  url: https://note.mu/haiji505/n/nacc55037c71b
+  locale: ja
+  colors:
+    - "#3058ff"
+    - "#f4bcca"
+    - "#3032d1"
+-
   name: foursquare
   title: "Foursquare: A UX case study"
   appear_on: Medium
