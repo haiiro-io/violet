@@ -82,7 +82,7 @@
       contactForm: HTMLFormElement;
       sender: HTMLInputElement;
       email: HTMLInputElement;
-      message: HTMLTextAreaElement;
+      textarea: HTMLTextAreaElement;
     };
 
     @PixelsAction updateDefaultColors;
@@ -101,13 +101,13 @@
       );
       const recaptchaBlock = document.querySelector(".g-recaptcha");
       if (recaptchaBlock) {
-        this.$refs.message.insertAdjacentElement("afterend", recaptchaBlock);
+        this.$refs.textarea.insertAdjacentElement("afterend", recaptchaBlock);
       }
     }
 
     beforeDestroy () {
       const recaptcha = document.querySelector(".g-recaptcha");
-      const textarea = this.$refs.message;
+      const textarea = this.$refs.textarea;
       if (recaptcha && textarea) {
         textarea.insertAdjacentElement("afterend", recaptcha);
       }
