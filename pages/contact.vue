@@ -4,34 +4,49 @@
       Contact Me
       <span class="workSelected-year">Say hello. Reaching out to me ☺</span>
     </h1>
-    <form
-      netlify
-      name="contact"
-      netlify-honeypot="bot-field"
-      ref="contactForm">
-      <input
-        type="hidden"
-        name="form-name"
-        value="contact">
-      <label for="sender">Name:</label>
-      <input
-        id="sender"
-        type="text"
-        name="sender">
-      <label for="email">Email:</label>
-      <input
-        id="email"
-        type="email"
-        name="email">
-      <label for="message">Message:</label>
-      <textarea
-        id="message"
-        ref="messageTextArea"
-        name="message" />
-      <haiiro-button @click.native="sendForm">
-        Send
-      </haiiro-button>
-    </form>
+    <transition name="fade">
+      <form
+        netlify
+        v-if="editable"
+        name="contact"
+        class="pageContact-form"
+        netlify-honeypot="bot-field"
+        ref="contactForm">
+        <input
+          type="hidden"
+          name="form-name"
+          value="contact">
+        <label for="sender">Name:</label>
+        <input
+          id="sender"
+          type="text"
+          ref="sender"
+          v-model="message.sender"
+          name="sender">
+        <label for="email">Email:</label>
+        <input
+          id="email"
+          type="email"
+          ref="email"
+          v-model="message.email"
+          name="email">
+        <label for="message">Message:</label>
+        <textarea
+          id="message"
+          ref="textarea"
+          v-model="message.textarea"
+          name="message" />
+        <haiiro-button @click.native="validateAndSend">
+          {{ sending ? "Sending" : "Send" }}
+        </haiiro-button>
+      </form>
+      <div
+        v-else
+        class="pageContact-sent">
+        <h2>送信しました</h2>
+        <p>お便りありがとうございます。お返事を差し上げられない場合があることをご容赦下さい。</p>
+      </div>
+    </transition>
   </section>
 </template>
 
@@ -46,15 +61,39 @@
   import PageBase from "~/lib/page-base";
   import HaiiroButton from "~/components/HaiiroButton.vue";
 
+  enum SendingState {
+    NO_YET,
+    HAPPENING,
+    HAPPENED
+  }
+
   @Component({
     components: { HaiiroButton }
   })
   export default class PageContact extends PageBase {
+    sendingState: SendingState = SendingState.NO_YET;
+    message = {
+      sender: "",
+      email: "",
+      textarea: ""
+    };
+
     $refs: {
       contactForm: HTMLFormElement;
-      messageTextArea: HTMLTextAreaElement;
-    }
+      sender: HTMLInputElement;
+      email: HTMLInputElement;
+      message: HTMLTextAreaElement;
+    };
+
     @PixelsAction updateDefaultColors;
+
+    get editable (): boolean {
+      return this.sendingState !== SendingState.HAPPENED;
+    }
+
+    get sending (): boolean {
+      return this.sendingState === SendingState.HAPPENING;
+    }
 
     mounted () {
       this.updateDefaultColors(
@@ -62,7 +101,7 @@
       );
       const recaptchaBlock = document.querySelector(".g-recaptcha");
       if (recaptchaBlock) {
-        this.$refs.messageTextArea.insertAdjacentElement("afterend", recaptchaBlock);
+        this.$refs.message.insertAdjacentElement("afterend", recaptchaBlock);
       }
     }
 
@@ -71,6 +110,27 @@
       const textArea = document.getElementById("hiddenTextArea");
       if (recaptcha && textArea) {
         textArea.insertAdjacentElement("afterend", recaptcha);
+      }
+    }
+
+    validateAndSend () {
+      if (this.sendingState !== SendingState.NO_YET) {
+        return;
+      }
+      this.sendingState = SendingState.HAPPENING;
+      const invalid = Object.keys(this.message).map((field) => {
+        if ((this.message[field] as string).trim().length === 0) {
+          (this.$refs[field] as HTMLElement).classList.add("error");
+          return false;
+        } else {
+          (this.$refs[field] as HTMLElement).classList.remove("error");
+          return true;
+        }
+      }).some(result => !result);
+      if (!invalid) {
+        this.sendForm();
+      } else {
+        this.sendingState = SendingState.NO_YET;
       }
     }
 
@@ -91,13 +151,12 @@
       xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
       xhr.onreadystatechange = () => {
-        console.log("state", xhr.readyState); // eslint-disable-line
-        console.log("status", xhr.status); // eslint-disable-line
-        if(xhr.readyState == xhr.HEADERS_RECEIVED) {
-          console.log(xhr.getAllResponseHeaders()); // eslint-disable-line
-        }
-        if (xhr.readyState == xhr.DONE) {
-          console.log(xhr.responseURL); // eslint-disable-line
+        if (xhr.readyState === xhr.DONE) {
+          if (xhr.status === 200 && xhr.responseURL.endsWith("/thanks")) {
+            this.sendingState = SendingState.HAPPENED;
+          } else {
+            this.sendingState = SendingState.NO_YET;
+          }
         }
       };
 
@@ -119,6 +178,7 @@
       padding-left: 20px;
       padding-top: 170px;
     }
+    transition: height .4s;
   }
 
   h1 {
@@ -160,12 +220,15 @@
     border: none;
     outline: none;
     background-color: #f9f9f9;
+    transition: all ease 0.4s;
+    &.error {
+      background-color: pink;
+    }
   }
   input {
     height: 60px;
   }
   input:focus, textarea:focus, textarea:focus {
-    transition: all ease 0.4s;
     box-shadow: 0 2px 0 0 var(--nibihai);
   }
   input:hover, textarea:hover, textarea:hover {
@@ -185,4 +248,23 @@
     text-align: center;
   }
 
+  .pageContact-sent {
+    text-align: center;
+    & h2 {
+      margin-bottom: 40px;
+    }
+  }
+
+.fade-enter-active, .fade-leave-active {
+  transition-property: opacity;
+  transition-duration: .25s;
+}
+
+.fade-enter-active {
+  transition-delay: .50s;
+}
+
+.fade-enter, .fade-leave-active {
+  opacity: 0
+}
 </style>
