@@ -107,7 +107,7 @@
 
     beforeDestroy () {
       const recaptcha = document.querySelector(".g-recaptcha");
-      const textarea = this.$refs.textarea;
+      const textarea = document.getElementById("hiddenTextArea");
       if (recaptcha && textarea) {
         textarea.insertAdjacentElement("afterend", recaptcha);
       }
