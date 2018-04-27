@@ -49,6 +49,7 @@
   export default class PageIndex extends PageBase {
     @WorksGetter pick;
     @PixelsAction updateDefaultColors;
+    @PixelsAction setDefaultColors;
     @PixelsAction setColors;
 
     mounted () {
