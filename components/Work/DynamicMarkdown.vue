@@ -88,6 +88,10 @@
     margin-right: auto;
     margin-left: auto;
     padding: 120px 0;
+    &.workMedia--shrink {
+      width: 66.7%;
+      max-width: 793px;
+    }
   }
 
   .workMedia + .workMedia {

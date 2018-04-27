@@ -1,5 +1,7 @@
 <template>
-  <div class="workMedia">
+  <div
+    class="workMedia"
+    :class="{ 'workMedia--shrink': full === 'false' }">
     <work-carousel
       v-if="multipleFileNames.length > 0"
       :names="multipleFileNames" />
@@ -41,6 +43,9 @@
       },
       caption: {
         type: String
+      },
+      full: {
+        type: String
       }
     }
   })
@@ -73,5 +78,4 @@
 </script>
 
 <style lang="postcss" scoped>
-
 </style>
