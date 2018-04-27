@@ -1,8 +1,8 @@
 <template>
   <section class="contact outerMoat">
     <h1>
-      Contact Me
-      <span class="workSelected-year">Say hello. Reaching out to me ☺</span>
+      {{ $t("contact.title") }}
+      <span class="workSelected-year">{{ $t("contact.subtitle") }} &#128075;</span>
     </h1>
     <transition name="fade">
       <form
@@ -16,35 +16,35 @@
           type="hidden"
           name="form-name"
           value="contact">
-        <label for="sender">Name:</label>
+        <label for="sender">{{ $t("contact.sender") }}</label>
         <input
           id="sender"
           type="text"
           ref="sender"
           v-model="message.sender"
           name="sender">
-        <label for="email">Email:</label>
+        <label for="email">{{ $t("contact.email") }}</label>
         <input
           id="email"
           type="email"
           ref="email"
           v-model="message.email"
           name="email">
-        <label for="message">Message:</label>
+        <label for="message">{{ $t("contact.message") }}</label>
         <textarea
           id="message"
           ref="textarea"
           v-model="message.textarea"
           name="message" />
         <haiiro-button @click.native="validateAndSend">
-          {{ sending ? "Sending" : "Send" }}
+          {{ sending ? $t("contact.sending") : $t("contact.send") }}
         </haiiro-button>
       </form>
       <div
         v-else
         class="pageContact-sent">
-        <h2>送信しました</h2>
-        <p>お便りありがとうございます。お返事を差し上げられない場合があることをご容赦下さい。</p>
+        <h2>{{ $t("contact.happened") }}</h2>
+        <p>{{ $t("contact.happened_message") }}</p>
       </div>
     </transition>
   </section>

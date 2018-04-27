@@ -24,4 +24,12 @@ work:
   role: "担当"
   see_more: "他のも見る"
 contact:
-  title: 灰色ハイジへの問い合わせ
+  title: メッセージを送る
+  subtitle: 感想やフィードバックを貰えると嬉しいです
+  sender: お名前：
+  email: ご連絡先：
+  message: メッセージ：
+  happened: メッセージを送信しました
+  happened_message: お便りありがとうございます。お返事を差し上げられない場合があることをご容赦下さい。
+  sending: 送信しています
+  send: 送信する

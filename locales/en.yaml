@@ -25,4 +25,12 @@ work:
   role: "Role:"
   see_more: "See More"
 contact:
-  title: Contact — Namika Hamasaki
+  title: Contact Me
+  subtitle: "Say Hi! Reaching out to me"
+  sender: "Name:"
+  email: "Email:"
+  message: "Message:"
+  happened: "Sent successfully"
+  happened_message: "Thanks for your message. I'll reply occasionally"
+  sending: "Sending..."
+  send: "Send"
