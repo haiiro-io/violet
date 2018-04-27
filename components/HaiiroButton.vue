@@ -43,6 +43,11 @@
     background-color: var(--konezumi);
     transition: ease 0.5s;
   }
+  a:active {
+    border-color: var(--nibihai);
+    background-color: var(--nibihai);
+  }
+
   >>> .emoji {
     margin-right: 15px;
   }
