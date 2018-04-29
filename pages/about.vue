@@ -1,8 +1,8 @@
 <template>
   <section class="about">
     <div
-      :style="bannerBackgroundStyle"
-      class="banner">
+      class="banner"
+      v-lazy:background-image="'/images/about/banner.jpg'">
       <span class="name">{{ $t("index.author") }}</span>
       <span class="title">{{ $t("about.job") }}</span>
     </div>
@@ -94,9 +94,6 @@
     get bannerBackgroundStyle () {
       return {
         background: "url('/images/about/banner.jpg')",
-        "background-repeat": "no-repeat",
-        "background-size": "cover",
-        "background-position": "center",
       };
     }
 
@@ -128,6 +125,10 @@
     height: 56.25vw;
     align-items: center;
     justify-content: center;
+    transition: all ease .5s;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     @media (--narrow) {
       height: 133.33vw;
     }
