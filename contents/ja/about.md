@@ -25,7 +25,7 @@ careers:
     employer: SIX
     title: インタラクティブプランナー、UIデザイナー
     location: 東京
-    period: 2016 - 2017
+    period: 2013 - 2015
     link: http://sixinc.jp/
   -
     employer: 博報堂
@@ -49,7 +49,7 @@ careers:
     employer: 京都造形芸術大学
     title: 芸術学部 情報デザイン学科
     location: 京都
-    period: 2005 - 2008
+    period: 2005 - 2009
     link: https://www.kyoto-art.ac.jp/
 ---
 
