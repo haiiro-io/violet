@@ -1,8 +1,8 @@
 <template>
   <section class="workSelected">
-    <work-media
-      class="horizon"
-      :name="mainImageName" />
+    <div
+      class="workSelected-horizontalImage"
+      v-lazy:background-image="mainImageUrl" />
     <div class="outerMoat">
       <h1>
         {{ work.title }}
@@ -75,8 +75,8 @@
       return this.pick(slug);
     }
 
-    get mainImageName (): string {
-      return this.work.image.main || "main.jpg";
+    get mainImageUrl (): string {
+      return `/images/work/${this.$route.params.slug}_${this.work.image.main || "main.jpg"}`;
     }
 
     get relatedWorks (): Work[] {
@@ -95,6 +95,20 @@
   section.workSelected {
     @media (--narrow) {
       padding-top: 170px;
+    }
+  }
+
+  .workSelected-horizontalImage {
+    width: 100%;
+    position: relative;
+    height: 0;
+    padding-bottom: 50%;
+    background-size: contain, cover;
+    background-repeat: no-repeat;
+    background-color: var(--soba);
+    transition: all ease .75s;
+    &[lazy='loaded'] {
+      background-color: unset;
     }
   }
 
