@@ -145,7 +145,7 @@ module.exports = {
   modules: [
     '~/modules/typescript',
     ['@nuxtjs/google-analytics', {
-      id: process.env.GOOGLE_ANALYTICS_TRACKING_ID
+      id: process.env.GOOGLE_ANALYTICS_TRACKING_ID || 'UA-XXXXXXXX-X'
     }]
   ],
   generate: {
