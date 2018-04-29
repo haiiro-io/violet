@@ -145,12 +145,20 @@
     font-size: 30px;
     line-height: 1.8;
     font-weight: bold;
+    @media (--not-narrow) {
+      font-size: 42px;
+      line-height: 72px;
+    }
   }
   span.title {
     font-size: 14px;
     line-height: 24px;
     font-weight: normal;
     color: var(--nibihai);
+    @media (--not-narrow) {
+      font-size: 20px;
+      line-height: 34px;
+    }
   }
 
   .tagline {
