@@ -3,7 +3,7 @@
 Pre-rendered portofolio website for Haiiro Haiji / Namika Hamasaki.
 
 - Japanese build: https://new.haiji.co/
-- English build: https://nmk.hmsk.co/
+- English build: https://namika.hmsk.co/
 
 ## Setup / Update installed packages
 

@@ -2,7 +2,7 @@ const builtAt = new Date().toISOString();
 const path = require('path');
 
 const productionUrl = {
-  en: "https://nmk.hmsk.co",
+  en: "https://namika.hmsk.co",
   ja: "https://new.haiji.co"
 };
 
