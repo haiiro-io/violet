@@ -1,8 +1,8 @@
 <template>
-  <section class="contact outerMoat">
+  <section class="pageContact outerMoat">
     <h1>
       {{ $t("contact.title") }}
-      <span class="workSelected-year">{{ $t("contact.subtitle") }} &#128075;</span>
+      <span class="pageContact-subtitle">{{ $t("contact.subtitle") }} &#128075;</span>
     </h1>
     <transition name="fade">
       <form
@@ -168,30 +168,32 @@
 <style lang="postcss" scoped>
   @import "~/assets/styles/custom-properties.postcss";
 
-  section.contact {
+  section.pageContact {
     max-width: 793px;
     margin: 0 auto;
     width: 66.7%;
+    transition: height .4s;
     @media (--narrow) {
       width: 100%;
       padding-right: 20px;
       padding-left: 20px;
       padding-top: 170px;
     }
-    transition: height .4s;
   }
 
   h1 {
     text-align: center;
-    font-size: 48px;
+    font-size: 36px;
     line-height: 1.7;
     font-weight: bold;
-    margin: 120px auto 120px;
+    margin: 120px auto 80px;
     color: var(--konezumi);
-    & > .workSelected-year {
+    @media (--narrow) {
+      font-size: 30px;
+    }
+    & > .pageContact-subtitle {
       font-size: 18px;
       font-weight: normal;
-      line-height: 1.7;
       display: block;
       margin-top: 20px;
       text-align: center;
