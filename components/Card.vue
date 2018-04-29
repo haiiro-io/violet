@@ -87,6 +87,11 @@
       padding-bottom: 56.25%;
       background-size: contain, cover;
       background-repeat: no-repeat;
+      background-color: var(--soba);
+      transition: all ease .75s;
+      &[lazy='loaded'] {
+        background-color: unset;
+      }
     }
     & span {
       display: block;
@@ -100,7 +105,6 @@
       @media (--wide) {
         font-size: 18px;
       }
-      transition: color ease 0.25s;
     }
     & span.cardRole {
       color: var(--nibihai);
