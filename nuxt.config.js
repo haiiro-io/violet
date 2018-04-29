@@ -141,7 +141,7 @@ module.exports = {
       }
     }
   },
-  plugins: ['~/plugins/i18n'],
+  plugins: ['~/plugins/i18n', '~/plugins/lazyload'],
   modules: ['~/modules/typescript'],
   generate: {
     fallback: true,
