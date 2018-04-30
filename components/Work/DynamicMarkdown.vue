@@ -74,6 +74,11 @@
     font-size: 18px;
     list-style-position: inside;
     -webkit-padding-start: 0;
+    & > li > ol, & > li > ul {
+      width: 100%;
+      margin: 0;
+      padding-left: 20px;
+    }
   }
   li {
     padding-left: 1.0em;
