@@ -1,5 +1,15 @@
 ---
 -
+  name: nintendo-design
+  title: How Nintendo designed Switch and Splatoon
+  appear_on: Medium
+  url: https://medium.com/haiiro-io/how-nintendo-designed-switch-and-splatoon-d1a14b9cc2de
+  locale: en
+  colors:
+    - "#C43046"
+    - "#367980"
+    - "#1E1E1E"
+-
   name: switch-language
   title: 言語切替のUIデザインについて考えてみる
   appear_on: 灰色ハイジのデザインノート
