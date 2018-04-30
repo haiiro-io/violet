@@ -107,7 +107,9 @@
     background-repeat: no-repeat;
     background-color: var(--soba);
     transition: all ease .75s;
+    opacity: .7;
     &[lazy='loaded'] {
+      opacity: 1;
       background-color: unset;
     }
   }

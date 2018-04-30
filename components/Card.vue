@@ -5,10 +5,11 @@
     :to="`/work/${work.name}`"
     @mouseenter.native="onFocusCard"
     @mouseleave.native="setDefaultColors">
-    <div
-      class="cardThumbnail"
-      v-lazy:background-image="cardImage"
-    />
+    <div class="cardThumbnail-container">
+      <div
+        class="cardThumbnail"
+        v-lazy:background-image="cardImage"/>
+    </div>
     <span class="cardTitle">{{ work.title }}</span>
     <span class="cardRole">{{ work.role }}</span>
   </nuxt-link>
@@ -19,10 +20,11 @@
     :href="article.url"
     @mouseenter="onFocusCard"
     @mouseleave="setDefaultColors">
-    <div
-      class="cardThumbnail"
-      v-lazy:background-image="cardImage"
-    />
+    <div class="cardThumbnail-container">
+      <div
+        class="cardThumbnail"
+        v-lazy:background-image="cardImage"/>
+    </div>
     <span class="cardTitle">{{ article.title }}</span>
     <span class="cardRole">{{ article.appear_on }}</span>
   </a>
@@ -78,7 +80,10 @@
     flex-direction: column;
     text-decoration: none;
     width: 100%;
-    transition: opacity ease 0.4s;
+    transition: all ease 0.4s;
+    & .cardThubnail-container {
+      position: absolute;
+    }
     & .cardThumbnail {
       display: block;
       width: 100%;
@@ -89,7 +94,9 @@
       background-repeat: no-repeat;
       background-color: var(--soba);
       transition: all ease .75s;
+      opacity: .7;
       &[lazy='loaded'] {
+        opacity: 1;
         background-color: unset;
       }
     }

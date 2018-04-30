@@ -129,6 +129,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    opacity: .7;
+    &[lazy='loaded'] {
+      opacity: 1;
+      background-color: unset;
+    }
     @media (--narrow) {
       height: 133.33vw;
     }
