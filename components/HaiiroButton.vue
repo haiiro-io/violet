@@ -37,6 +37,7 @@
     border-radius: 2px;
     font-weight: bold;
     cursor: pointer;
+    word-break: keep-all;
   }
   a:hover {
     color: white;
