@@ -119,6 +119,7 @@
     font-weight: bold;
     margin: 120px auto 120px;
     color: var(--konezumi);
+    word-break: keep-all;
     & > .workSelected-year {
       font-size: 18px;
       font-weight: normal;
