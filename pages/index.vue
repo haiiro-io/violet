@@ -21,10 +21,17 @@
       <span class="articlesTitle">Articles</span>
       <div class="articleCards">
         <card
-          v-for="article in articles"
+          v-for="article in articles.slice(0, articlesLimit)"
           :key="article.name"
           :article="article" />
       </div>
+      <a
+        href="#"
+        v-if="articles.length > articlesLimit"
+        @click.prevent="articlesLimit = articles.length"
+        class="articles-seeMore">
+        See More
+      </a>
     </div>
   </section>
 </template>
@@ -51,6 +58,7 @@
     @PixelsAction updateDefaultColors;
     @PixelsAction setDefaultColors;
     @PixelsAction setColors;
+    articlesLimit = 3;
 
     mounted () {
       this.updateDefaultColors();
@@ -132,7 +140,23 @@
       font-size: 32px;
     }
   }
+  a.articles-seeMore {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    text-decoration: none;
+    color: var(--konezumi);
+    font-weight: bold;
+    font-size: 18px;
+    @media (--narrow)  {
+      font-size: 16px;
+    }
+  }
+  a.articles-seeMore:hover {
+    color: var(--nibihai);
+  }
   .card {
+    transition: all .75s ease;
     justify-self: center;
   }
 </style>
