@@ -77,12 +77,11 @@
     color: var(--konezumi);
     font-size: 36px;
     font-weight: bold;
-    line-height: 54px;
+    line-height: 1.7;
     margin-top: 300px;
     margin-bottom: 170px;
     @media (--narrow) {
       font-size: 30px;
-      line-height: 48px;
       margin-top: 150px;
       margin-bottom: 85px;
     }
@@ -90,7 +89,6 @@
       color: var(--konezumi);
       display:inline;
       border-bottom: 4px dashed var(--nibihai);
-      padding-bottom: 5px;
       text-decoration: none;
       transition: ease 0.5s;
     }
