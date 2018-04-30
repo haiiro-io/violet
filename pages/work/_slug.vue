@@ -201,6 +201,8 @@
 
   .relatedWorks-header {
     font-size: 40px;
+    margin-bottom: 40px;
+    line-height: 1.7;
     font-weight: bold;
     display: block;
     text-align: center;
@@ -211,7 +213,6 @@
   }
 
   .relatedWorks-cards {
-    margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(3, 4fr);
     grid-column-gap: 1.66%;

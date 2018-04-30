@@ -133,6 +133,7 @@
     display: block;
     text-align: center;
     margin-bottom: 40px;
+    line-height: 1.7;
     color: var(--nibihai);
     font-weight: bold;
     font-size: 40px;

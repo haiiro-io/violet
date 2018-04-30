@@ -22,7 +22,7 @@ work:
   title: "%{name} — 灰色ハイジ"
   product_owner: "プロダクトオーナー"
   role: "担当"
-  see_more: "他のも見る"
+  see_more: "他にも見る"
 contact:
   title: メッセージを送る
   subtitle: 感想やフィードバックを貰えると嬉しいです
