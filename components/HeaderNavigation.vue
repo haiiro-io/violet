@@ -68,11 +68,9 @@
   }
   .haiiroIcon {
     cursor: pointer;
-    margin-top: 40px;
-    margin-left: 40px;
+    margin: 40px;
     @media (--narrow) {
-      margin-top: 20px;
-      margin-left: 20px;
+      margin: 20px;
     }
   }
 
