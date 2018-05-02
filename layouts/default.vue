@@ -46,7 +46,13 @@
         </div>
       </div>
       <div id="copyright">
-        <span v-t="{ path: 'root.copyright', args: { year: new Date().getFullYear() } }" />
+        <span>{{ $t('root.copyright', { year: new Date().getFullYear() }) }} /
+          <a
+            target="_blank"
+            href="https://github.com/haiiro-io/violet">
+            Source and Licenses
+          </a>
+        </span>
         <i18n
           path="root.made_by.message"
           tag="span">
