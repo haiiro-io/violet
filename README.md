@@ -2,7 +2,7 @@
 
 Pre-rendered portofolio website for Haiiro Haiji / Namika Hamasaki.
 
-- Japanese build: https://new.haiji.co/
+- Japanese build: https://haiji.co/
 - English build: https://namika.hmsk.co/
 
 ## Setup / Update installed packages
@@ -72,7 +72,7 @@ description: |
   - `<work-media name="something.png">` (don't need "work name" part)
   - If you put `mp4`, rendered with video player automatically 😉
 
-## License
+## Licenses
 
 - [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) for [SVG icons](/assets/icons) excepting `hatenablog.svg` by [FontAwesome](https://fontawesome.com/license)
 - Each author of [depending NPM modules](/package.json) which are published under the "MIT" or "ISC" reserve all their copyright
