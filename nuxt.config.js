@@ -3,7 +3,7 @@ const path = require('path');
 
 const productionUrl = {
   en: "https://namika.hmsk.co",
-  ja: "https://new.haiji.co"
+  ja: "https://haiji.co"
 };
 
 const orderedWorks = [
