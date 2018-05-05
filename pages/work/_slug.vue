@@ -178,7 +178,7 @@
       padding: 0 20px;
     }
     h1 {
-      font-size: 30px;
+      font-size: 26px;
       margin: 70px auto;
       & > .workSelected-year {
         margin-top: 10px;

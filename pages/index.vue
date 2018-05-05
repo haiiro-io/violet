@@ -89,7 +89,7 @@
     margin-top: 300px;
     margin-bottom: 170px;
     @media (--narrow) {
-      font-size: 30px;
+      font-size: 26px;
       margin-top: 150px;
       margin-bottom: 85px;
     }
