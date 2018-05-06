@@ -18,7 +18,7 @@ description: |
 ---
 
 <work-media name="logo.jpg" alt="週末クリエイターロゴ" />
-<work-media name="stickers.jpg" caption="誰でも「#週末クリエイター」として活動を表明出来ることを表現した、中央の名前部分が差し替え可能なロゴ" />
+<work-media name="stickers.jpg" caption="誰でも「#週末クリエイター」として活動を表明できることを表現した、中央の名前部分が差し替え可能なロゴ" />
 
 <work-media name="color.png" alt="週末クリエイターカラーパレット" />
 <work-media name="namecard.jpg" alt="週末クリエイター名刺デザイン" />
