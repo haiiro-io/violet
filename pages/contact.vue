@@ -87,6 +87,10 @@
 
     @PixelsAction updateDefaultColors;
 
+    get ogUrl (): string {
+      return `${process.env.baseUrl}/contact`;
+    }
+
     get editable (): boolean {
       return this.sendingState !== SendingState.HAPPENED;
     }

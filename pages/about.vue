@@ -91,6 +91,10 @@
       return this.$t("about.title");
     }
 
+    get ogUrl (): string {
+      return `${process.env.baseUrl}/about`;
+    }
+
     get bannerBackgroundStyle () {
       return {
         background: "url('/images/about/banner.jpg')",

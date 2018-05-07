@@ -70,6 +70,10 @@
       return `${process.env.baseUrl}/images/work/${this.work.image.og || this.work.name + "_og.jpg"}`;
     }
 
+    get ogUrl (): string {
+      return `${process.env.baseUrl}/work/${this.$route.params.slug}`;
+    }
+
     get work (): Work {
       const slug = this.$route.params.slug;
       return this.pick(slug);
