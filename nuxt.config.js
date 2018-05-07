@@ -1,10 +1,12 @@
 const builtAt = new Date().toISOString();
 const path = require('path');
 
+const buildLocale = process.env.BUILD_LOCALE || 'en';
 const productionUrl = {
   en: "https://namika.hmsk.co",
   ja: "https://haiji.co"
 };
+const baseUrl = productionUrl[buildLocale];
 
 const orderedWorks = [
   "laughly",
@@ -24,8 +26,8 @@ const orderedWorks = [
 
 module.exports = {
   env: {
-    baseUrl: process.env.BASE_URL || 'http://localhost:3000',
-    buildLocale: process.env.BUILD_LOCALE || 'en',
+    baseUrl,
+    buildLocale,
     productionUrl,
     orderedWorks
   },
@@ -44,7 +46,7 @@ module.exports = {
       { name: 'twitter:site', content: '@haiji505' },
     ],
     link: [
-      { rel: 'canonical', href: productionUrl[process.env.BUILD_LOCALE || 'en'] },
+      { rel: 'canonical', href: baseUrl },
       { rel: 'icon', type: 'image/png', href: '/favicons/favicon-16x16.png', sizes: '16x16' },
       { rel: 'icon', type: 'image/png', href: '/favicons/favicon-32x32.png', sizes: '32x32' },
       { rel: 'icon', type: 'image/png', href: '/favicons/favicon-48x48.png', sizes: '48x48' },
