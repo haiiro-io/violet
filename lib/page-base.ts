@@ -9,12 +9,11 @@ export default class PageBase extends Vue {
       title: this.pageTitle,
       meta: [
         { name: "author", content: this.$t("index.author") },
-        { name: "og:title", content: this.pageTitle },
-        { name: "og:url", content: process.env.baseUrl },
-        { name: "description", content: this.pageDescription, hid: "description" },
-        { name: "og:description", content: this.pageDescription },
+        { name: "description", property: "og:description", content: this.pageDescription, hid: "description" },
+        { property: "og:title", content: this.pageTitle },
+        { property: "og:url", content: process.env.baseUrl },
+        { property: "og:image", content: this.ogImage },
         { name: "twitter:description", content: this.pageDescription },
-        { name: "og:image", content: this.ogImage },
         { name: "twitter:image", content: this.ogImage }
       ]
     };

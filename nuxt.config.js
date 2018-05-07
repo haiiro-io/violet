@@ -40,10 +40,10 @@ module.exports = {
       { name: 'msapplication-TileImage', content: '/favicons/mstile-144x144.png' },
       { name: 'theme-color', content: '#c1c1c1' },
       { name: 'robots', content: 'noindex nofollow' }, // switch after launch
-      { name: 'og:type', content: 'profile' },
-      { name: 'og:updated_time', content: builtAt },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:site', content: '@haiji505' },
+      { property: 'og:type', content: 'profile' },
+      { property: 'og:updated_time', content: builtAt }
     ],
     link: [
       { rel: 'canonical', href: baseUrl },
