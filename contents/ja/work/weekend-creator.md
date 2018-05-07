@@ -44,3 +44,5 @@ YouTubeのサムネイルのタイポグラフィや色などのディレクシ�
 <work-media name="enamelpin.jpg" alt="エナメルピン" />
 <work-media name="pillow.jpg" alt="クッション" />
 <work-media name="charger.jpg" alt="モバイルバッテリー" />
+
+<work-button label="YouTubeチャンネルを見る" link="https://www.youtube.com/channel/UC1JMhM9TJT7yMLx8ZtbDO8g" />
