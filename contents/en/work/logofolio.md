@@ -33,7 +33,7 @@ Signifiant is a French philosophical term, which is a signifier that is the vehi
 
 ### Remote Style
 
-Remote Style provides an opportunity to work flexibly like remote working to designers and engineers. The logo concept was "Let's work in your favorite environment and while seeing your favorite scene".
+Remote Style is a service that introduces remote employment opportunities to designers and engineers. The logo with a window motif sends the message to users that they can work wherever they wish.
 
 <work-media name="dearmedia.png" alt="Dear Media Logo" />
 
@@ -41,4 +41,8 @@ Remote Style provides an opportunity to work flexibly like remote working to des
 
 <work-media name="weekend.png" alt="Weekend Creator Logo" />
 
-### Weekend Creator
+As people used to navigate around the world using only the stars in olden times, the logo with star signs motif was designed in the hope that it becomes a signpost in the information society.
+
+### #weekendcreator
+
+Yuka Ohishi is a video creator, delivers helpful tips for a creative activity for both digital and analog on YouTube. #weekendcreator is her movement to support anyone in their weekend creative work. The logo was inspired by a pencil and pen tools in Adobe products.
