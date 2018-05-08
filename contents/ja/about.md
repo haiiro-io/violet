@@ -6,7 +6,7 @@ specialities:
 careers:
   -
     employer: Tradecraft
-    title: Product Desginer
+    title: プロダクトデザイナー
     location: サンフランシスコ
     period: 2017 - 2018
     link: http://tradecraft.com/

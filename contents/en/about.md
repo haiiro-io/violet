@@ -23,7 +23,7 @@ careers:
     link: https://www.libinc.co.jp/
   -
     employer: SIX
-    title: Interactive Planner & UI Designer
+    title: Interactive Planner & Designer
     location: Tokyo, Japan
     period: 2013 - 2015
     link: http://sixinc.jp/
@@ -34,7 +34,7 @@ careers:
     period: 2013
     link: http://www.hakuhodo.jp/
   -
-    employer: Hakuhodo I-Studio
+    employer: Hakuhodo i-studio
     title: Web Designer
     location: Tokyo, Japan
     period: 2009 - 2013
