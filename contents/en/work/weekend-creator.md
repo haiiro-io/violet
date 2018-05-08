@@ -14,18 +14,19 @@ colors:
   - "#bcdad4"
   - "#6a6666"
 description: |
-  I created an identity for Yuka Ohishi, a video creator. #weekendcreator is her movement to support anyone in their weekend creative work. I designed the logo and artwork for that.
+  Yuka Ohishi is a video creator, delivers helpful tips for a creative activity for both digital and analog on YouTube. #weekendcreator is her movement to support anyone in their weekend creative work. I created the visual identity, logo and artwork for the project. The logo was inspired by a physical pencil, paired with the pen tool in Adobe products.
 ---
 
 <work-media name="logo.jpg" alt="The logo for #weekendcreator" />
-<work-media name="stickers.jpg" alt="The logo" />
-
+<work-media name="stickers.jpg" caption="The names in the central part of the logo can be replaced, where anyone can express to take part as a #weekendcreator." />
 <work-media name="color.png" alt="The color scheme of #weekendcreator" />
 <work-media name="namecard.jpg" alt="A name card" />
 
 ## YouTube
 
-### End card
+### End Card
+
+As art direction for end card of YouTube, I created stop motion animation by handwritten letter and texture of paint. I provided the initial design, and Yuka made the final polishes.
 
 <work-media name="endcard_initial.gif" alt="The initial design of end card for #weekendcreator" caption="Initial Design" full="false" />
 
@@ -33,7 +34,7 @@ description: |
 
 ### Thumbnail
 
-YouTubeのサムネイルのタイポグラフィや色などのディレクションを行いました。
+I decided the direction the typography and colors for the thumbnail of her YouTube channel.
 
 <work-media name="youtube_thumbnail.jpg" alt="Thumbnails of the YouTube channel" />
 
