@@ -39,10 +39,10 @@ Remote Style is a service that introduces remote employment opportunities to des
 
 ### Dear Media
 
-<work-media name="weekend.png" alt="Weekend Creator Logo" />
-
 As people used to navigate around the world using only the stars in olden times, the logo with star signs motif was designed in the hope that it becomes a signpost in the information society.
 
-### #weekendcreator
+<work-media name="weekend.png" alt="Weekend Creator Logo" />
+
+### Weekend Creator
 
 Yuka Ohishi is a video creator, delivers helpful tips for a creative activity for both digital and analog on YouTube. #weekendcreator is her movement to support anyone in their weekend creative work. The logo was inspired by a pencil and pen tools in Adobe products.
