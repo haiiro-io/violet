@@ -27,7 +27,7 @@ contact:
   title: メッセージを送る
   subtitle: 感想やフィードバックを貰えると嬉しいです
   sender: お名前：
-  email: ご連絡先：
+  email: メールアドレス：
   message: メッセージ：
   happened: メッセージを送信しました
   happened_message: お便りありがとうございます。お返事を差し上げられない場合があることをご容赦下さい。
