@@ -22,7 +22,7 @@ description: |
 
 There are many hardcore gamers who play video games for very long periods of time and confection items are the best way to replenish energy during a game. I thought it was important not to interrupt the immersive feeling of users so I created an item that would give users a real world feel.
 
-I got the motif idea from the game term clan, which is used to describe a group of users who come together to complete a mission. I created the logo with the letter S representing a lightning bolt because it gives users the impression that their energy will be replenished in a flash of light.The shape of the logo resembles the shape of flags used in the game to express different clans. These are thought to bind users who eat Stimpacks together as friends to join in on a struggle/battle.
+I got the motif idea from the game term clan, which is used to describe a group of users who come together to complete a mission. I created the logo with the letter S representing a lightning bolt because it gives users the impression that their energy will be replenished in a flash of light. The shape of the logo resembles the shape of flags used in the game to express different clans. These are thought to bind users who eat Stimpacks together as friends to join in on a struggle/battle.
 
 <work-media name="concept2.jpg" alt="Concept" />
 <work-media name="logo.jpg" alt="Logo design" />
