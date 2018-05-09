@@ -12,7 +12,7 @@ colors:
   - "#1a1a1a"
   - "#ffffff"
 description: |
-  Wonolo is a convenient online staffing service that connects job seekers with companies who are looking to fill part-time or temporary positions in warehouse operations, delivery positions, general labor, merchandising, administration, event staffing, etc.  A special feature of using Wonolo is that job seekers (Wonoloers) can earn badges and receive special rewards from working hard and doing a good job. The goal of this project was to redesign the profile screen in order to convey this more clearly and to increase the profile input rate as well as the job application rate. I was employed as a joint leader of an 11-person team consisting of researchers and designers that led design information and the Android app prototype production.
+  Wonolo is a convenient online staffing service that connects job seekers with companies who are looking to fill part-time or temporary positions in warehouse operations, delivery positions, general labor, merchandising, administration, event staffing, etc.  A special feature of using Wonolo is that job seekers (Wonoloers) can earn badges and receive special rewards from working hard and doing a good job. The goal of this project was to redesign the profile screen in order to convey this more clearly and to increase the profile input rate as well as the job application rate. I was employed as a joint leader of an 12-person team consisting of researchers and designers that led design information and the Android app prototype production.
 ---
 
 <work-media name="overview.jpg" alt="The project's final design that I designed." />
