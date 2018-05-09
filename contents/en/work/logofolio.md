@@ -45,4 +45,4 @@ As people used to navigate around the world using only the stars in olden times,
 
 ### Weekend Creator
 
-Yuka Ohishi is a video creator, delivers helpful tips for a creative activity for both digital and analog on YouTube. #weekendcreator is her movement to support anyone in their weekend creative work. The logo was inspired by a pencil and pen tools in Adobe products.
+Yuka Ohishi is a video creator, delivers helpful tips for a creative activity for both digital and analog on YouTube. #weekendcreator is her movement to support anyone in their weekend creative work. The logo was inspired by a physical pencil, paired with the pen tool in Adobe products.
