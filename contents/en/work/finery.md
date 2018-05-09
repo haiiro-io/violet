@@ -23,7 +23,7 @@ description: |
 
 <work-media name="current_dashboard.jpg" caption="Finery’s Dashboard Prior to Renewal" />
 
-The main user experience was difficult to understand because there was a menu consisting of 6 options on the main screen of the dashboard. As a result, there was a trend showing a decline in user actions and increasing user engagement was a problem. Therefore, it was necessary to design the operability of the dashboard in order to increase the frequency of the coordination function and keep users interested.
+The main user experience was difficult to understand because there was a menu consisting of 6 options on the main screen of the dashboard. As a result, there was a decline in user actions, so increasing user engagement was a problem. Therefore, it was necessary to design the functional dashboard in a way that would increase the usage frequency of the coordination feature to keep users interested.
 
 ### We set our project goals as follows:
 
@@ -39,7 +39,7 @@ At first, I performed several UI sketching workshops called Design Studio. In th
 
 Other than Finery’s calendar function, the company also has other important functions such as, the Returned Goods Alert, the Sales Alert, and the Referral Introduction. At first, I designed the new dashboard with a direction of including these functions.
 
-However, while I was repeating the sketching process, I noticed that these functions were not a core part of the user experience that focuses on shopping although these functions are important from a business viewpoint. Therefore, I defined Finery’s main experience as managing a personal wardrobe that is useful for inspiring daily clothing coordination. Since I defined the main experience in this way, I decided to redesigned the dashboard to include the calendar function only.
+However, while I was repeating the sketching process, I noticed that these functions were not a core part of the user experience that focuses on shopping although these functions are important from a business viewpoint. Therefore, I defined Finery’s main experience as managing a personal wardrobe that is useful for inspiring daily clothing coordination. Since I defined the main experience in this way, I decided to redesign the dashboard to include the calendar function only.
 
 ## New Dashboard Design: Calendar Function
 
@@ -91,7 +91,7 @@ Users can confirm the entire day schedule, add plans, and can also view the item
 
 ### When there isn’t any registered coordination on the calendar
 
-When there isn’t any registered coordination on a user’s calendar, a slightly playful comment, “You’re Naked”, is displayed to urge users to register a coordination.
+When there isn’t any information on a user’s calendar yet, a slightly playful comment (“You’re Naked”) is displayed to invite users to register a coordination.
 
 <work-media name="calendar_empty.jpg" alt="The empty design" />
 
@@ -117,4 +117,4 @@ Users can choose multiple items and register them on the calendar and My Looks. 
 
 ## Wrap Up
 
-I not only changed the layout of the dashboard, but I also redesigned the website by making the calendar the starting point of the user experience because the original website was confusing for users. In addition, as a personal challenge, I led the project with <a href="https://www.mallorywatkins.com/" target="_blank">Mallory Watkins</a> (Design Led) as the Creative Director and I was responsible for making all the decisions on the visual side.
+I not only changed the layout of the dashboard, but I also redesigned the website by making the calendar the starting point of the user experience because the original website was confusing for users. In addition, as a personal challenge, I was responsible for making all the decisions on the visual side as the Creative Director.
