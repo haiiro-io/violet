@@ -23,14 +23,14 @@ work:
   title: "%{name} — Namika Hamasaki"
   product_owner: "Product Owner:"
   role: "Role:"
-  see_more: "See More"
+  see_more: See More
 contact:
   title: Contact Me
-  subtitle: "Say Hi! Reaching out to me"
+  subtitle: Say Hi! Reaching out to me
   sender: "Name:"
   email: "Email:"
   message: "Message:"
   happened: "Sent successfully"
-  happened_message: "Thanks for your message. I'll reply occasionally"
-  sending: "Sending..."
-  send: "Send"
+  happened_message: Thanks for your message. I'll reply occasionally
+  sending: Sending...
+  send: Send

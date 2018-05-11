@@ -20,9 +20,9 @@ about:
   specialities: 得意分野
 work:
   title: "%{name} — 灰色ハイジのポートフォリオ"
-  product_owner: "プロダクトオーナー"
-  role: "担当"
-  see_more: "他にも見る"
+  product_owner: プロダクトオーナー
+  role: 担当
+  see_more: 他にも見る
 contact:
   title: メッセージを送る
   subtitle: 感想やフィードバックを貰えると嬉しいです
