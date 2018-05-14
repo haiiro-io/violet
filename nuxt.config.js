@@ -118,7 +118,6 @@ module.exports = {
         loader: 'svg-sprite-loader',
         include: path.resolve(__dirname, 'assets/icons')
       });
-      config.resolve.extensions.push('.md');
     },
     postcss: {
       plugins: {
