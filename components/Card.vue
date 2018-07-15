@@ -64,7 +64,7 @@
 
     get cardImage (): string {
       return this.isWork ?
-        `/images/work/${this.work.name}_thumbnail.jpg` :
+        `/images/work/${this.work.name}/_thumbnail.jpg` :
         `/images/articles/${this.article.name}.jpg`;
     }
 

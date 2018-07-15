@@ -72,7 +72,7 @@
 
     get mediaPath (): string {
       const slug = this.$route.params.slug;
-      return `/images/work/${slug}_${this.singleFileName}`;
+      return `/images/work/${slug}/${this.singleFileName}`;
     }
   }
 </script>

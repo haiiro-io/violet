@@ -67,7 +67,7 @@
     }
 
     get ogImage (): string {
-      return `${process.env.baseUrl}/images/work/${this.work.image.og || this.work.name + "_og.jpg"}`;
+      return `${process.env.baseUrl}/images/work/${this.work.image.og || this.work.name + "/_og.jpg"}`;
     }
 
     get ogUrl (): string {
@@ -80,7 +80,7 @@
     }
 
     get mainImageUrl (): string {
-      return `/images/work/${this.$route.params.slug}_${this.work.image.main || "main.jpg"}`;
+      return `/images/work/${this.$route.params.slug}/${this.work.image.main || "_main.jpg"}`;
     }
 
     get relatedWorks (): Work[] {

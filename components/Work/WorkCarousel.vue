@@ -38,7 +38,7 @@
  
     get mediaPaths (): string[] {
       const slug= this.$route.params.slug;
-      return this.names.map(n => `/images/work/${slug}_${n}`);
+      return this.names.map(n => `/images/work/${slug}/${n}`);
     }
   }
 </script>
