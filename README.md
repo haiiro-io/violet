@@ -67,10 +67,11 @@ description: |
 
 #### Show multimedia files
 
-1. Put the file to `/static/images/works` as `[work name]_something.png`
+1. Put the file to `/static/images/works/[work name]` as `something.png`
 2. Call with `<work-media>` custom element in the markdown file for same work
   - `<work-media name="something.png">` (don't need "work name" part)
   - If you put `mp4`, rendered with video player automatically 😉
+  - If you put the URL of `youtube.com`, rendered as embed player of YouTube
 
 ## Licenses
 
