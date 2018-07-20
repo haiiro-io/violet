@@ -53,10 +53,10 @@
 <script lang="ts">
   import VueI18n from "vue-i18n";
   import Component from "nuxt-class-component";
-  import { Action, namespace } from "vuex-class";
+  import { namespace } from "vuex-class";
 
   import { name as PixelsNamespace } from "~/store/modules/pixels";
-  const PixelsAction = namespace(PixelsNamespace, Action);
+  const PixelsStore = namespace(PixelsNamespace);
 
   import PageBase from "~/lib/page-base";
   import HaiiroButton from "~/components/HaiiroButton.vue";
@@ -85,7 +85,7 @@
       textarea: HTMLTextAreaElement;
     };
 
-    @PixelsAction updateDefaultColors;
+    @PixelsStore.Action updateDefaultColors;
 
     get ogUrl (): string {
       return `${process.env.baseUrl}/contact`;

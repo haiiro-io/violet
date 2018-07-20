@@ -64,13 +64,13 @@
 <script lang="ts">
   import VueI18n from "vue-i18n";
   import Component from "nuxt-class-component";
-  import { Action, namespace } from "vuex-class";
+  import { namespace } from "vuex-class";
 
   import PageBase from "~/lib/page-base";
   import HaiiroButton from "~/components/HaiiroButton.vue";
 
   import { name as PixelsNamespace } from "~/store/modules/pixels";
-  const PixelsAction = namespace(PixelsNamespace, Action);
+  const PixelsStore = namespace(PixelsNamespace);
 
   import enData from "~/contents/en/about.md";
   import jaData from "~/contents/ja/about.md";
@@ -81,7 +81,7 @@
     }
   })
   export default class PageAbout extends PageBase {
-    @PixelsAction updateDefaultColors;
+    @PixelsStore.Action updateDefaultColors;
 
     mounted () {
       this.updateDefaultColors();

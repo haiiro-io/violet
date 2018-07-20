@@ -22,11 +22,10 @@
 <script lang="ts">
   import Vue from "vue";
   import Component from "nuxt-class-component";
-  import { State, Action, namespace } from "vuex-class";
+  import { namespace } from "vuex-class";
 
   import { name as PixelsNamespace } from "~/store/modules/pixels";
-  const PixelsState = namespace(PixelsNamespace, State);
-  const PixelsAction = namespace(PixelsNamespace, Action);
+  const PixelsStore = namespace(PixelsNamespace);
 
   @Component({
     props: {
@@ -37,9 +36,9 @@
     }
   })
   export default class HaiiroIcon extends Vue {
-    @PixelsState currentColors;
-    @PixelsAction hover;
-    @PixelsAction unhover;
+    @PixelsStore.State currentColors;
+    @PixelsStore.Action hover;
+    @PixelsStore.Action unhover;
     size: number;
     width: number;
     height: number;

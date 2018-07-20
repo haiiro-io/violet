@@ -36,7 +36,7 @@
   import VueI18n from "vue-i18n";
   import PageBase from "~/lib/page-base";
   import Component from "nuxt-class-component";
-  import { Getter, Action, namespace } from "vuex-class";
+  import { namespace } from "vuex-class";
 
   import DynamicMarkdown from "~/components/Work/DynamicMarkdown.vue";
   import WorkMedia from "~/components/Work/WorkMedia.vue";
@@ -45,15 +45,15 @@
   import { Work } from "~/store/modules/work";
   import { name as WorksNamespace } from "~/store/modules/work";
   import { name as PixelsNamespace } from "~/store/modules/pixels";
-  const WorksGetter = namespace(WorksNamespace, Getter);
-  const PixelsAction = namespace(PixelsNamespace, Action);
+  const WorksStore = namespace(WorksNamespace);
+  const PixelsStore = namespace(PixelsNamespace);
 
   @Component({
     components: { DynamicMarkdown, WorkMedia, Card }
   })
   export default class PageSelectedWork extends PageBase {
-    @WorksGetter pick;
-    @PixelsAction updateDefaultColors;
+    @WorksStore.Getter pick;
+    @PixelsStore.Action updateDefaultColors;
 
     mounted () {
       this.updateDefaultColors(this.work.colors);

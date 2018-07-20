@@ -41,11 +41,11 @@
   import PageBase from "~/lib/page-base";
   import { Work } from "~/store/modules/work";
 
-  import { Getter, Action, namespace } from "vuex-class";
+  import { namespace } from "vuex-class";
   import { name as WorksNamespace } from "~/store/modules/work";
   import { name as PixelsNamespace } from "~/store/modules/pixels";
-  const WorksGetter = namespace(WorksNamespace, Getter);
-  const PixelsAction = namespace(PixelsNamespace, Action);
+  const WorksStore = namespace(WorksNamespace);
+  const PixelsStore = namespace(PixelsNamespace);
 
   import articleSources from "~/contents/articles.md";
   import Card from "~/components/Card.vue";
@@ -54,10 +54,10 @@
     components: { Card }
   })
   export default class PageIndex extends PageBase {
-    @WorksGetter pick;
-    @PixelsAction updateDefaultColors;
-    @PixelsAction setDefaultColors;
-    @PixelsAction setColors;
+    @WorksStore.Getter pick;
+    @PixelsStore.Action updateDefaultColors;
+    @PixelsStore.Action setDefaultColors;
+    @PixelsStore.Action setColors;
     articlesLimit = 3;
 
     mounted () {

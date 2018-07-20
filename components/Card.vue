@@ -35,9 +35,9 @@
   import Vue from "vue";
   import Component from "nuxt-class-component";
 
-  import { Action, namespace } from "vuex-class";
+  import { namespace } from "vuex-class";
   import { name as PixelsNamespace } from "~/store/modules/pixels";
-  const PixelsAction = namespace(PixelsNamespace, Action);
+  const PixelsStore = namespace(PixelsNamespace);
 
   import { Work } from "~/store/modules/work";
 
@@ -52,8 +52,8 @@
     }
   })
   export default class Card extends Vue {
-    @PixelsAction setDefaultColors;
-    @PixelsAction setColors;
+    @PixelsStore.Action setDefaultColors;
+    @PixelsStore.Action setColors;
 
     work: Work;
     article: any;
