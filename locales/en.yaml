@@ -5,15 +5,15 @@ root:
     namika: Namika
     message: Lovingly made by {namika} and {kengo}
 index:
-  title: Namika Hamasaki — Digital Product Designer
+  title: Namika Hamasaki — Brand and Product Designer
   author: Namika Hamasaki
-  description: Namika is a digital product designer based in San Francisco. She focuses on UI design and branding.
+  description: Namika is a Brand and Product Designer based in San Francisco. Born and rised in Japan.
   greeting:
     name: Namika
-    message: Hello, I’m {0}, Product Designer based in San Francisco.
+    message: I’m {0}, a Brand and Product Designer based in San Francisco. Born and raised in Japan.
 about:
   title: About — Namika Hamasaki
-  job: Product Designer
+  job: Brand and Product Designer
   hello: Say Hello
   resume: Download Resume
   contact: Contact Me
