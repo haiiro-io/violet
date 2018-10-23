@@ -13,7 +13,7 @@
     "nuxt": "^1.4.2",
     "nuxt-class-component": "^1.2.1",
     "vue": "^2.5.17",
-    "vue-carousel": "^0.10.0",
+    "vue-carousel": "^0.15.0",
     "vue-class-component": "^6.2.0",
     "vue-template-compiler": "2.5.17",
     "vue-lazyload": "^1.2.6",
