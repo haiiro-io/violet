@@ -116,7 +116,7 @@ module.exports = {
           'json-loader',
           'yaml-loader'
         ],
-        include: path.resolve(__dirname, 'locales')
+        include: path.resolve(__dirname, 'assets/locales')
       }, {
         test: /\.(png|jpe?g|gif)$/,
         loader: 'url-loader',
