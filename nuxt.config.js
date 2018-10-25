@@ -117,27 +117,6 @@ module.exports = {
         loader: 'svg-sprite-loader',
         include: path.resolve(__dirname, 'assets/icons')
       });
-    },
-    postcss: {
-      plugins: {
-        'postcss-import': {
-          resolve (id, baseDir) {
-            return (/^~/.test(id)) ? path.resolve(__dirname, id.replace("~", ".")) : path.resolve(baseDir, id);
-          }
-        },
-        'postcss-cssnext': {
-          features: {
-            customProperties: {
-              variables: {
-                'skyhai': '#DFE0E0',
-                'soba': '#D8D8D8',
-                'konezumi': '#555555',
-                'nibihai': '#999999'
-              }
-            }
-          }
-        }
-      }
     }
   },
   plugins: ['~/plugins/i18n', '~/plugins/lazyload'],
