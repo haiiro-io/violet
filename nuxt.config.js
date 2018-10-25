@@ -91,6 +91,17 @@ module.exports = {
       config.module.rules.splice(config.module.rules.indexOf(rule), 1);
 
       config.module.rules.push({
+        test: /\.postcss$/,
+        use: [
+          'vue-style-loader',
+          {
+            loader: 'css-loader',
+            options: { importLoaders: 1 }
+          },
+          'postcss-loader'
+        ]
+      },
+      {
         test: /\.md$/,
         loader: 'frontmatter-markdown-loader',
         include: path.resolve(__dirname, 'contents'),
