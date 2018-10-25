@@ -121,7 +121,7 @@ module.exports = {
   },
   plugins: ['~/plugins/i18n', '~/plugins/lazyload'],
   modules: [
-    '~/modules/typescript',
+    'nuxt-ts',
     ['@nuxtjs/google-analytics', {
       id: process.env.GOOGLE_ANALYTICS_TRACKING_ID || 'UA-XXXXXXXX-X'
     }]
