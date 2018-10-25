@@ -38,7 +38,7 @@
     "markdown-it": "^8.4.0",
     "nuxt-ts": "0.0.3",
     "svg-sprite-loader": "^4.1.2",
-    "ts-loader": "^3.4.0",
+    "ts-loader": "^5.2.2",
     "typescript": "~2.9.2",
     "typescript-eslint-parser": "^13.0.0",
     "vue-i18n": "^7.4.2",
