@@ -1,5 +1,7 @@
 const builtAt = new Date().toISOString();
 const path = require('path');
+const ja = require('./locales/ja.json');
+const en = require('./locales/en.json');
 
 const buildLocale = process.env.BUILD_LOCALE || 'en';
 const productionUrl = {
@@ -91,6 +93,17 @@ module.exports = {
       config.module.rules.splice(config.module.rules.indexOf(rule), 1);
 
       config.module.rules.push({
+        test: /\.postcss$/,
+        use: [
+          'vue-style-loader',
+          {
+            loader: 'css-loader',
+            options: { importLoaders: 1 }
+          },
+          'postcss-loader'
+        ]
+      },
+      {
         test: /\.md$/,
         loader: 'frontmatter-markdown-loader',
         include: path.resolve(__dirname, 'contents'),
@@ -99,13 +112,6 @@ module.exports = {
             root: "dynamicMarkdown"
           }
         }
-      }, {
-        test: /\.yaml$/,
-        loaders: [
-          'json-loader',
-          'yaml-loader'
-        ],
-        include: path.resolve(__dirname, 'locales')
       }, {
         test: /\.(png|jpe?g|gif)$/,
         loader: 'url-loader',
@@ -117,34 +123,26 @@ module.exports = {
         loader: 'svg-sprite-loader',
         include: path.resolve(__dirname, 'assets/icons')
       });
-    },
-    postcss: {
-      plugins: {
-        'postcss-import': {
-          resolve (id, baseDir) {
-            return (/^~/.test(id)) ? path.resolve(__dirname, id.replace("~", ".")) : path.resolve(baseDir, id);
-          }
-        },
-        'postcss-cssnext': {
-          features: {
-            customProperties: {
-              variables: {
-                'skyhai': '#DFE0E0',
-                'soba': '#D8D8D8',
-                'konezumi': '#555555',
-                'nibihai': '#999999'
-              }
-            }
-          }
-        }
-      }
     }
   },
-  plugins: ['~/plugins/i18n', '~/plugins/lazyload'],
+  plugins: ['~/plugins/lazyload'],
   modules: [
-    '~/modules/typescript',
+    'nuxt-ts',
     ['@nuxtjs/google-analytics', {
       id: process.env.GOOGLE_ANALYTICS_TRACKING_ID || 'UA-XXXXXXXX-X'
+    }],
+    ['nuxt-i18n', {
+      seo: false,
+      parsePages: false,
+      locales: ['en', 'ja'],
+      defaultLocale: process.env.BUILD_LOCALE,
+      vueI18n: {
+        fallbackLocale: 'en',
+        messages: {
+          en, ja
+        }
+      },
+      silentTranslationWarn: true
     }]
   ],
   generate: {
