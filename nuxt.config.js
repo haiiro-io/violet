@@ -132,6 +132,7 @@ module.exports = {
       id: process.env.GOOGLE_ANALYTICS_TRACKING_ID || 'UA-XXXXXXXX-X'
     }],
     ['nuxt-i18n', {
+      seo: false,
       parsePages: false,
       locales: ['en', 'ja'],
       defaultLocale: 'en',
