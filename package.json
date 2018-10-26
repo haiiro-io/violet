@@ -12,9 +12,11 @@
     "normalize.css": "^8.0.0",
     "nuxt": "^2.2.0",
     "nuxt-class-component": "^1.2.1",
+    "nuxt-i18n": "^5.4.4",
     "vue": "^2.5.17",
     "vue-carousel": "^0.11.0",
     "vue-class-component": "^6.2.0",
+    "vue-i18n": "^8.2.1",
     "vue-lazyload": "^1.2.6",
     "vue-template-compiler": "2.5.17",
     "vuex-class": "^0.3.1",
@@ -41,7 +43,6 @@
     "ts-loader": "^5.2.2",
     "typescript": "~2.9.2",
     "typescript-eslint-parser": "^13.0.0",
-    "vue-i18n": "^7.4.2",
     "yaml-loader": "^0.5.0"
   }
 }

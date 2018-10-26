@@ -1,5 +1,7 @@
 const builtAt = new Date().toISOString();
 const path = require('path');
+const ja = require('./locales/ja.json');
+const en = require('./locales/en.json');
 
 const buildLocale = process.env.BUILD_LOCALE || 'en';
 const productionUrl = {
@@ -111,13 +113,6 @@ module.exports = {
           }
         }
       }, {
-        test: /\.yaml$/,
-        loaders: [
-          'json-loader',
-          'yaml-loader'
-        ],
-        include: path.resolve(__dirname, 'assets/locales')
-      }, {
         test: /\.(png|jpe?g|gif)$/,
         loader: 'url-loader',
         query: {
@@ -130,11 +125,23 @@ module.exports = {
       });
     }
   },
-  plugins: ['~/plugins/i18n', '~/plugins/lazyload'],
+  plugins: ['~/plugins/lazyload'],
   modules: [
     'nuxt-ts',
     ['@nuxtjs/google-analytics', {
       id: process.env.GOOGLE_ANALYTICS_TRACKING_ID || 'UA-XXXXXXXX-X'
+    }],
+    ['nuxt-i18n', {
+      parsePages: false,
+      locales: ['en', 'ja'],
+      defaultLocale: 'en',
+      vueI18n: {
+        fallbackLocale: 'en',
+        messages: {
+          en, ja
+        }
+      },
+      silentTranslationWarn: true
     }]
   ],
   generate: {
