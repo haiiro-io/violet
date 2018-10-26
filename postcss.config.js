@@ -9,18 +9,15 @@ module.exports = ({ file, options, env }) => ({
     },
     'postcss-preset-env': {
       stage: 0,
-      importFrom: [
-        () => {
-          return {
-            customProperties: {
-              '--skyhai': '#DFE0E0',
-              '--soba': '#D8D8D8',
-              '--konezumi': '#555555',
-              '--nibihai': '#999999'
-            }
-          };
+      preserve: false,
+      importFrom: [{
+        customProperties: {
+          '--skyhai': '#DFE0E0',
+          '--soba': '#D8D8D8',
+          '--konezumi': '#555555',
+          '--nibihai': '#999999'
         }
-      ]
+      }]
     }
   }
 })
