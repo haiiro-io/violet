@@ -135,7 +135,7 @@ module.exports = {
       seo: false,
       parsePages: false,
       locales: ['en', 'ja'],
-      defaultLocale: process.env.BUILD_LOCALE,
+      defaultLocale: buildLocale,
       vueI18n: {
         fallbackLocale: 'en',
         messages: {
