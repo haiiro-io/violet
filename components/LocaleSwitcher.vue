@@ -36,6 +36,8 @@
 
   import { State } from "vuex-class";
 
+  declare var process: NuxtProcess;
+
   @Component
   export default class HeaderNavigation extends Vue {
     @State locale;

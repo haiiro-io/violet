@@ -4,7 +4,7 @@ interface FrontMatterContent {
   vue: any;
 }
 
-declare var process: {
+interface NuxtProcess extends NodeJS.Process {
   env: {
     baseUrl:  string;
     buildLocale: "en" | "ja";
@@ -13,9 +13,9 @@ declare var process: {
       ja: string;
     };
     orderedWorks: string[];
-  },
+  };
   browser: boolean;
-};
+}
 
 type AvailableLocale = "en" | "ja";
 

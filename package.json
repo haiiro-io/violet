@@ -33,7 +33,7 @@
     "format": "eslint './!(node_modules)/**/*.+(ts|vue)' --fix"
   },
   "devDependencies": {
-    "@types/webpack-env": "^1.13.5",
+    "@types/webpack-env": "^1.13.6",
     "eslint": "^4.16.0",
     "eslint-plugin-typescript": "^0.8.1",
     "eslint-plugin-vue": "^4.2.2",
