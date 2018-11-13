@@ -132,9 +132,21 @@ module.exports = {
       id: process.env.GOOGLE_ANALYTICS_TRACKING_ID || 'UA-XXXXXXXX-X'
     }],
     ['nuxt-i18n', {
-      seo: false,
+      differentDomains: process.env.NODE_ENV === 'production',
+      seo: true,
       parsePages: false,
-      locales: ['en', 'ja'],
+      locales: [
+        {
+          code: 'en',
+          iso: 'en-US',
+          domain: 'namika.hmsk.co'
+        },
+        {
+          code: 'ja',
+          iso: 'ja-JP',
+          domain: 'haiji.co'
+        }
+      ],
       defaultLocale: buildLocale,
       vueI18n: {
         fallbackLocale: 'en',
