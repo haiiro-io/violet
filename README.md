@@ -21,7 +21,7 @@ $ npm i
 $ npm run dev
 ```
 
-Then open localhost:8000 in your browser.
+Then open `localhost:8000` in your browser.
 
 ### Run as Japanese locale
 
@@ -35,7 +35,7 @@ $ npm run dev:ja
 
 1. Create new markdown file to under `/contents/works/:locale`
   - file name is used for URL. e.g. `/contents/works/ja/amazarashi.md` -> `https://domain/works/mazarashi`
-1. Add filename to `orderedWorks` Array on `/nuxt.config.js`
+2. Add filename to `orderedWorks` Array on `/nuxt.config.js`
   - This data is used for index page's list and configured as pre-rendering target
 
 ### Markdown format
