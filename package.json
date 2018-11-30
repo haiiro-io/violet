@@ -10,7 +10,7 @@
     "frontmatter-markdown-loader": "^1.4.0",
     "medium-zoom": "^0.4.0",
     "normalize.css": "^8.0.0",
-    "nuxt": "^2.2.0",
+    "nuxt": "^2.3.4",
     "nuxt-class-component": "^1.2.1",
     "nuxt-i18n": "^5.4.4",
     "vue": "^2.5.17",
