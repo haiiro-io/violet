@@ -1,5 +1,25 @@
 ---
 -
+  name: dailyui
+  title: 100日続けたDaily UIの記録
+  appear_on: 灰色ハイジのデザインノート
+  url: https://note.mu/haiji505/n/n4c58da2f6154
+  locale: ja
+  colors:
+    - "#eec267"
+    - "#4e57f5"
+    - "#f07160"
+-
+  name: portfolio-renewal
+  title: ポートフォリオをリニューアルした
+  appear_on: 灰色ハイジのデザインノート
+  url: https://note.mu/haiji505/n/n8037ca0b4f93
+  locale: ja
+  colors:
+    - "#a7a7a7"
+    - "#d4d4d4"
+    - "#cfcfcf"
+-
   name: nintendo-design
   title: How Nintendo designed Switch and Splatoon
   appear_on: Medium
