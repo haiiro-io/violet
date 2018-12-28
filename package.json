@@ -9,7 +9,7 @@
     "@nuxtjs/google-analytics": "^2.0.2",
     "frontmatter-markdown-loader": "^1.5.0",
     "medium-zoom": "^0.4.0",
-    "normalize.css": "^8.0.0",
+    "normalize.css": "^8.0.1",
     "nuxt": "^2.3.4",
     "nuxt-class-component": "^1.2.1",
     "nuxt-i18n": "^5.4.4",
@@ -20,7 +20,7 @@
     "vue-lazyload": "^1.2.6",
     "vue-template-compiler": "2.5.17",
     "vuex-class": "^0.3.1",
-    "youtube-player": "^5.5.0"
+    "youtube-player": "^5.5.1"
   },
   "scripts": {
     "dev": "nuxt",
