@@ -5,25 +5,31 @@
       netlify
       name="contact"
       netlify-honeypot="bot-field"
-      style="display: none">
+      style="display: none"
+    >
       <input
         type="hidden"
         name="form-name"
-        value="contact">
+        value="contact"
+      >
       <input
         type="text"
-        name="sender">
+        name="sender"
+      >
       <input
         type="email"
-        name="email">
+        name="email"
+      >
       <textarea
         id="hiddenTextArea"
-        name="message" />
+        name="message"
+      />
       <div
+        ref="recaptcha"
         netlify-recaptcha
-        ref="recaptcha" />
+      />
     </form>
-    <nuxt/>
+    <nuxt />
     <footer>
       <div id="exposures">
         <div class="mainExposures">
@@ -31,7 +37,8 @@
             v-for="exp in mainExposures"
             :key="exp[0]"
             :href="exp[1]"
-            target="_blank">
+            target="_blank"
+          >
             <svg-icon :name="exp[0]" />
           </a>
         </div>
@@ -40,31 +47,37 @@
             v-for="exp in additionalExposures"
             :key="exp[0]"
             :href="exp[1]"
-            target="_blank">
+            target="_blank"
+          >
             <svg-icon :name="exp[0]" />
           </a>
         </div>
       </div>
       <div id="copyright">
-        <span>{{ $t('root.copyright', { year: new Date().getFullYear() }) }} /
+        <span>
+          {{ $t('root.copyright', { year: new Date().getFullYear() }) }} /
           <a
             target="_blank"
-            href="https://github.com/haiiro-io/violet">
+            href="https://github.com/haiiro-io/violet"
+          >
             Source and Licenses
           </a>
         </span>
         <i18n
           path="root.made_by.message"
-          tag="span">
+          tag="span"
+        >
           <nuxt-link
             to="/about"
-            place="namika">
+            place="namika"
+          >
             {{ $t("root.made_by.namika") }}
           </nuxt-link>
           <a
             href="https://hmsk.me"
             target="_blank"
-            place="kengo">
+            place="kengo"
+          >
             {{ $t("root.made_by.kengo") }}
           </a>
         </i18n>
@@ -74,8 +87,7 @@
 </template>
 
 <script lang="ts">
-  import Vue from "vue";
-  import Component from "nuxt-class-component";
+  import { Component, Vue } from "nuxt-property-decorator";
 
   import HeaderNavigation from "~/components/HeaderNavigation.vue";
   import SvgIcon from "~/components/SvgIcon.vue";

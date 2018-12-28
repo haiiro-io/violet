@@ -1,18 +1,24 @@
 <template>
   <section class="about">
     <div
+      v-lazy:background-image="'/images/about/banner.jpg'"
       class="banner"
-      v-lazy:background-image="'/images/about/banner.jpg'">
-      <span class="name">{{ $t("index.author") }}</span>
-      <span class="title">{{ $t("about.job") }}</span>
+    >
+      <span class="name">
+        {{ $t("index.author") }}
+      </span>
+      <span class="title">
+        {{ $t("about.job") }}
+      </span>
     </div>
     <div class="outerMoat tagline">
-      <span v-html="datas.html" />
+      <span v-html="datas.html" /><!-- eslint-disable-line vue/no-v-html -->
       <dl>
         <dt>{{ $t("about.specialities") }}</dt>
         <dd
           v-for="speciality in datas.attributes.specialities"
-          :key="speciality">
+          :key="speciality"
+        >
           {{ speciality }}
         </dd>
       </dl>
@@ -25,24 +31,30 @@
         </haiiro-button>
       </div>
       <div class="careers">
-        <span class="careersHeader">{{ $t("about.experience") }}</span>
+        <span class="careersHeader">
+          {{ $t("about.experience") }}
+        </span>
         <div
           v-for="career in datas.attributes.careers"
           :key="career.employer"
-          class="career">
+          class="career"
+        >
           <div class="career-left">
             <span class="career-employer">
               <a
                 v-if="career.link"
                 :href="career.link"
-                target="_blank">
+                target="_blank"
+              >
                 {{ career.employer }}
               </a>
               <span v-else>
                 {{ career.employer }}
               </span>
             </span>
-            <span class="career-title">{{ career.title }}</span>
+            <span class="career-title">
+              {{ career.title }}
+            </span>
           </div>
           <div class="career-right">
             {{ career.location }} / {{ career.period }}
@@ -52,9 +64,12 @@
       <div class="avatar">
         <div
           :style="avatarImageStyle"
-          class="avatar-icon" />
+          class="avatar-icon"
+        />
         <haiiro-button router-href="/contact">
-          <span class="emoji">🙌 </span>{{ $t("about.hello") }}
+          <span class="emoji">
+            🙌
+          </span>{{ $t("about.hello") }}
         </haiiro-button>
       </div>
     </div>
@@ -63,7 +78,7 @@
 
 <script lang="ts">
   import VueI18n from "vue-i18n";
-  import Component from "nuxt-class-component";
+  import { Component } from "nuxt-property-decorator";
   import { namespace } from "vuex-class";
 
   import PageBase from "~/lib/page-base";

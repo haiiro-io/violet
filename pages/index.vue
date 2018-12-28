@@ -3,11 +3,13 @@
     <i18n
       path="index.greeting.message"
       tag="h1"
-      for="index.greeting.name">
+      for="index.greeting.name"
+    >
       <nuxt-link
         to="/about"
         @mouseenter.native="setColors(['#555'])"
-        @mouseleave.native="setDefaultColors">
+        @mouseleave.native="setDefaultColors"
+      >
         {{ $t("index.greeting.name") }}
       </nuxt-link>
     </i18n>
@@ -15,21 +17,26 @@
       <card
         v-for="work in list"
         :key="work.name"
-        :work="work" />
+        :work="work"
+      />
     </div>
     <div id="articles">
-      <span class="articlesTitle">Articles</span>
+      <span class="articlesTitle">
+        Articles
+      </span>
       <div class="articleCards">
         <card
           v-for="article in articles.slice(0, articlesLimit)"
           :key="article.name"
-          :article="article" />
+          :article="article"
+        />
       </div>
       <a
-        href="#"
         v-if="articles.length > articlesLimit"
+        href="#"
+        class="articles-seeMore"
         @click.prevent="articlesLimit = articles.length"
-        class="articles-seeMore">
+      >
         See More
       </a>
     </div>
@@ -37,7 +44,7 @@
 </template>
 
 <script lang="ts">
-  import Component from "nuxt-class-component";
+  import { Component } from "nuxt-property-decorator";
   import PageBase from "~/lib/page-base";
   import { Work } from "~/store/modules/work";
 

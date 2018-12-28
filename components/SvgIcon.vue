@@ -5,8 +5,7 @@
 </template>
 
 <script lang="ts">
-  import Vue from "vue";
-  import Component from "nuxt-class-component";
+  import { Component, Vue } from "nuxt-property-decorator";
 
   const files = require.context("assets/icons", true, /\.svg$/);
   files.keys().forEach(files);

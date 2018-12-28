@@ -1,20 +1,21 @@
 <template>
   <nuxt-link
     v-if="routerHref"
+    :to="routerHref"
     class="haiiroButton"
-    :to="routerHref">
+  >
     <slot />
   </nuxt-link>
   <a
     v-else
-    class="haiiroButton">
+    class="haiiroButton"
+  >
     <slot />
   </a>
 </template>
 
 <script lang="ts">
-  import Vue from "vue";
-  import Component from "nuxt-class-component";
+  import { Component, Vue } from "nuxt-property-decorator";
 
   @Component({
     props: {

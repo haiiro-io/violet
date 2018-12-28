@@ -1,29 +1,30 @@
 <template>
   <svg
-    class="haiiroIcon"
     :width="totalWidth"
     :height="totalHeight"
     :viewBox="viewBox"
+    class="haiiroIcon"
     @mouseenter="hover"
     @mouseleave="unhover"
-    @click="$emit('click')">
+    @click="$emit('click')"
+  >
     <rect
       v-for="rect in rectangles"
-      :key="rect.id"
       :id="rect.id"
+      :key="rect.id"
       :x="rect.x"
       :y="rect.y"
       :width="rect.width"
       :height="rect.height"
-      :fill="rect.color" />
+      :fill="rect.color"
+    />
   </svg>
 </template>
 
 <script lang="ts">
-  import Vue from "vue";
-  import Component from "nuxt-class-component";
-  import { namespace } from "vuex-class";
+  import { Component, Vue } from "nuxt-property-decorator";
 
+  import { namespace } from "vuex-class";
   import { name as PixelsNamespace } from "~/store/modules/pixels";
   const PixelsStore = namespace(PixelsNamespace);
 

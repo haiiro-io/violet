@@ -1,10 +1,12 @@
 <template>
   <div
+    :class="{ 'workMedia--shrink': full === 'false' }"
     class="workMedia"
-    :class="{ 'workMedia--shrink': full === 'false' }">
+  >
     <work-carousel
       v-if="multipleFileNames.length > 0"
-      :names="multipleFileNames" />
+      :names="multipleFileNames"
+    />
     <work-video
       v-else-if="isVideo"
       :path="mediaPath"
@@ -23,8 +25,7 @@
 </template>
 
 <script lang="ts">
-  import Vue from "vue";
-  import Component from "nuxt-class-component";
+  import { Component, Vue } from "nuxt-property-decorator";
 
   import WorkImg from "./WorkImg.vue";
   import WorkVideo from "./WorkVideo.vue";

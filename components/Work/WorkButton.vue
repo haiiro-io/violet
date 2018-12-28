@@ -2,15 +2,16 @@
   <div class="workButton">
     <haiiro-button
       :href="link"
-      target="_blank">
+      target="_blank"
+    >
       {{ label }}
     </haiiro-button>
   </div>
 </template>
 
 <script lang="ts">
-  import Vue from "vue";
-  import Component from "nuxt-class-component";
+  import { Component, Vue } from "nuxt-property-decorator";
+
   import HaiiroButton from "~/components/HaiiroButton.vue";
 
   @Component({

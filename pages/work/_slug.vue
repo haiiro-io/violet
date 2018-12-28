@@ -1,12 +1,15 @@
 <template>
   <section class="workSelected">
     <div
+      v-lazy:background-image="mainImageUrl"
       class="workSelected-horizontalImage"
-      v-lazy:background-image="mainImageUrl" />
+    />
     <div class="outerMoat">
       <h1>
         {{ work.title }}
-        <span class="workSelected-year">{{ work.year }}</span>
+        <span class="workSelected-year">
+          {{ work.year }}
+        </span>
       </h1>
       <p>{{ work.description }}</p>
       <dl class="workSelected-meta">
@@ -17,14 +20,18 @@
       </dl>
       <dynamic-markdown
         :render-func="work.renderFunc"
-        :static-render-funcs="work.staticRenderFuncs" />
+        :static-render-funcs="work.staticRenderFuncs"
+      />
       <div id="relatedWorks">
-        <span class="relatedWorks-header">{{ $t("work.see_more") }}</span>
+        <span class="relatedWorks-header">
+          {{ $t("work.see_more") }}
+        </span>
         <div class="relatedWorks-cards">
           <card
             v-for="relatedWork in relatedWorks"
             :key="relatedWork.name"
-            :work="relatedWork" />
+            :work="relatedWork"
+          />
         </div>
       </div>
     </div>
@@ -35,7 +42,7 @@
   import mediumZoom from "medium-zoom";
   import VueI18n from "vue-i18n";
   import PageBase from "~/lib/page-base";
-  import Component from "nuxt-class-component";
+  import { Component } from "nuxt-property-decorator";
   import { namespace } from "vuex-class";
 
   import DynamicMarkdown from "~/components/Work/DynamicMarkdown.vue";

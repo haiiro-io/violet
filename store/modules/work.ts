@@ -28,8 +28,8 @@ interface FrontMatterContentWithRender extends FrontMatterContent {
 const LANGS: AvailableLocale[] = ["en", "ja"];
 type ImportedFrontMatters = { [name: string]: FrontMatterContentWithRender };
 const importsByLang: {
-  [lang: string]: ImportedFrontMatters
-  } = { en: {}, ja: {} };
+  [lang: string]: ImportedFrontMatters;
+} = { en: {}, ja: {} };
 
 const importAll = (resolve, lang) => {
   resolve.keys().forEach((key) => {
@@ -67,11 +67,8 @@ export const getters: GetterTree<State, RootState> = {
       return state[locale].find(work => work.name === name);
     };
     return pickFromLocale(preferedLocale) ||
-      LANGS.filter(
-        lang => lang != preferedLocale
-      ).reduce(
-        (res, fallbackLocale) => res || pickFromLocale(fallbackLocale), undefined
-      );
+      LANGS.filter(lang => lang != preferedLocale)
+        .reduce((res, fallbackLocale) => res || pickFromLocale(fallbackLocale), undefined);
   }
 };
 
@@ -111,7 +108,7 @@ export const actions: Actions<State, RootState> = {
 };
 
 export const mutations: MutationTree<State> = {
-  [types.INITIALIZE](state, payload: { works: Work[], lang: string }) {
+  [types.INITIALIZE](state, payload: { works: Work[]; lang: string }) {
     state[payload.lang] = payload.works;
   }
 };

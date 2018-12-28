@@ -6,13 +6,15 @@
     />
     <nav id="headerLinks">
       <nuxt-link
+        :class="{ active: $route.path == '/', hide: !showNavigation }"
         to="/"
-        :class="{ active: $route.path == '/', hide: !showNavigation }">
+      >
         Work
       </nuxt-link>
       <nuxt-link
+        :class="{ active: $route.path == '/about', hide: !showNavigation }"
         to="/about"
-        :class="{ active: $route.path == '/about', hide: !showNavigation }">
+      >
         About
       </nuxt-link>
       <locale-switcher />
@@ -21,8 +23,7 @@
 </template>
 
 <script lang="ts">
-  import Vue from "vue";
-  import Component from "nuxt-class-component";
+  import { Component, Vue } from "nuxt-property-decorator";
 
   import HaiiroIcon from "~/components/HaiiroIcon.vue";
   import LocaleSwitcher from "~/components/LocaleSwitcher.vue";

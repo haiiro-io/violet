@@ -1,5 +1,4 @@
-import Vue from "vue";
-import Component from "nuxt-class-component";
+import { Component, Vue } from "nuxt-property-decorator";
 import VueI18n from "vue-i18n";
 
 @Component

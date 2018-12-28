@@ -6,10 +6,12 @@
         :loop="true"
         :pagination-size="12"
         pagination-color="#999999"
-        pagination-active-color="#555555">
+        pagination-active-color="#555555"
+      >
         <slide
           v-for="mediaPathFromArray in mediaPaths"
-          :key="mediaPathFromArray">
+          :key="mediaPathFromArray"
+        >
           <work-img :path="mediaPathFromArray" />
         </slide>
       </carousel>
@@ -18,8 +20,7 @@
 </template>
 
 <script lang="ts">
-  import Vue from "vue";
-  import Component from "nuxt-class-component";
+  import { Component, Vue } from "nuxt-property-decorator";
   import { Carousel, Slide } from "vue-carousel";
 
   import WorkImg from "./WorkImg.vue";

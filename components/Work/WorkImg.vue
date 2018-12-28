@@ -1,21 +1,21 @@
 <template>
   <div class="workImg">
     <img
-      class="workImg-image"
       :alt="alt || caption"
       :src="path"
+      class="workImg-image"
     >
     <span
+      v-if="caption"
       class="workImg-caption"
-      v-if="caption">
+    >
       {{ caption }}
     </span>
   </div>
 </template>
 
 <script lang="ts">
-  import Vue from "vue";
-  import Component from "nuxt-class-component";
+  import { Component, Vue } from "nuxt-property-decorator";
 
   @Component({
     props: {

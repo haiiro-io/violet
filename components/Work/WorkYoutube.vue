@@ -2,15 +2,15 @@
   <div class="workYoutubeParent">
     <div class="workYoutube">
       <div
+        ref="player"
         class="workYoutube-player"
-        ref="player" />
+      />
     </div>
   </div>
 </template>
 
 <script lang="ts">
-  import Vue from "vue";
-  import Component from "nuxt-class-component";
+  import { Component, Vue } from "nuxt-property-decorator";
   import YouTubePlayer from "youtube-player";
 
   @Component({

@@ -2,47 +2,61 @@
   <section class="pageContact outerMoat">
     <h1>
       {{ $t("contact.title") }}
-      <span class="pageContact-subtitle">{{ $t("contact.subtitle") }} &#128075;</span>
+      <span class="pageContact-subtitle">
+        {{ $t("contact.subtitle") }} &#128075;
+      </span>
     </h1>
     <transition name="fade">
       <form
-        netlify
         v-if="editable"
+        ref="contactForm"
+        netlify
         name="contact"
         class="pageContact-form"
         netlify-honeypot="bot-field"
-        ref="contactForm">
+      >
         <input
           type="hidden"
           name="form-name"
-          value="contact">
-        <label for="sender">{{ $t("contact.sender") }}</label>
+          value="contact"
+        >
+        <label for="sender">
+          {{ $t("contact.sender") }}
+        </label>
         <input
           id="sender"
-          type="text"
           ref="sender"
           v-model="message.sender"
-          name="sender">
-        <label for="email">{{ $t("contact.email") }}</label>
+          type="text"
+          name="sender"
+        >
+        <label for="email">
+          {{ $t("contact.email") }}
+        </label>
         <input
           id="email"
-          type="email"
           ref="email"
           v-model="message.email"
-          name="email">
-        <label for="message">{{ $t("contact.message") }}</label>
+          type="email"
+          name="email"
+        >
+        <label for="message">
+          {{ $t("contact.message") }}
+        </label>
         <textarea
           id="message"
           ref="textarea"
           v-model="message.textarea"
-          name="message" />
+          name="message"
+        />
         <haiiro-button @click.native="validateAndSend">
           {{ sending ? $t("contact.sending") : $t("contact.send") }}
         </haiiro-button>
       </form>
       <div
         v-else
-        class="pageContact-sent">
+        class="pageContact-sent"
+      >
         <h2>{{ $t("contact.happened") }}</h2>
         <p>{{ $t("contact.happened_message") }}</p>
       </div>
@@ -52,7 +66,7 @@
 
 <script lang="ts">
   import VueI18n from "vue-i18n";
-  import Component from "nuxt-class-component";
+  import { Component } from "nuxt-property-decorator";
   import { namespace } from "vuex-class";
 
   import { name as PixelsNamespace } from "~/store/modules/pixels";
