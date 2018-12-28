@@ -20,10 +20,9 @@
 </template>
 
 <script lang="ts">
-  import Vue from "vue";
-  import Component from "nuxt-class-component";
-  import { namespace } from "vuex-class";
+  import { Component, Vue } from "nuxt-property-decorator";
 
+  import { namespace } from "vuex-class";
   import { name as PixelsNamespace } from "~/store/modules/pixels";
   const PixelsStore = namespace(PixelsNamespace);
 

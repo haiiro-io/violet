@@ -23,8 +23,7 @@
 </template>
 
 <script lang="ts">
-  import Vue from "vue";
-  import Component from "nuxt-class-component";
+  import { Component, Vue } from "nuxt-property-decorator";
 
   import WorkImg from "./WorkImg.vue";
   import WorkVideo from "./WorkVideo.vue";

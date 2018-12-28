@@ -1,6 +1,5 @@
 <script lang="ts">
-  import Vue from "vue";
-  import Component from "nuxt-class-component";
+  import { Component, Vue } from "nuxt-property-decorator";
 
   import HaiiroIcon from "../HaiiroIcon.vue";
   import WorkMedia from "./WorkMedia.vue";

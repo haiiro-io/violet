@@ -37,7 +37,7 @@
 </template>
 
 <script lang="ts">
-  import Component from "nuxt-class-component";
+  import { Component } from "nuxt-property-decorator";
   import PageBase from "~/lib/page-base";
   import { Work } from "~/store/modules/work";
 

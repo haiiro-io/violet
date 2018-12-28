@@ -52,7 +52,7 @@
 
 <script lang="ts">
   import VueI18n from "vue-i18n";
-  import Component from "nuxt-class-component";
+  import { Component } from "nuxt-property-decorator";
   import { namespace } from "vuex-class";
 
   import { name as PixelsNamespace } from "~/store/modules/pixels";

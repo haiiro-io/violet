@@ -74,8 +74,7 @@
 </template>
 
 <script lang="ts">
-  import Vue from "vue";
-  import Component from "nuxt-class-component";
+  import { Component, Vue } from "nuxt-property-decorator";
 
   import HeaderNavigation from "~/components/HeaderNavigation.vue";
   import SvgIcon from "~/components/SvgIcon.vue";

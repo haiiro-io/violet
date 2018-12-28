@@ -18,8 +18,7 @@
 </template>
 
 <script lang="ts">
-  import Vue from "vue";
-  import Component from "nuxt-class-component";
+  import { Component, Vue } from "nuxt-property-decorator";
   import { Carousel, Slide } from "vue-carousel";
 
   import WorkImg from "./WorkImg.vue";

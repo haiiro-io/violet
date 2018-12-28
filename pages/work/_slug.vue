@@ -35,7 +35,7 @@
   import mediumZoom from "medium-zoom";
   import VueI18n from "vue-i18n";
   import PageBase from "~/lib/page-base";
-  import Component from "nuxt-class-component";
+  import { Component } from "nuxt-property-decorator";
   import { namespace } from "vuex-class";
 
   import DynamicMarkdown from "~/components/Work/DynamicMarkdown.vue";
