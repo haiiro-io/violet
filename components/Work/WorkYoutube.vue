@@ -2,8 +2,8 @@
   <div class="workYoutubeParent">
     <div class="workYoutube">
       <div
-        class="workYoutube-player"
-        ref="player" />
+        ref="player"
+        class="workYoutube-player" />
     </div>
   </div>
 </template>

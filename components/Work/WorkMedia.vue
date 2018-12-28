@@ -1,7 +1,7 @@
 <template>
   <div
-    class="workMedia"
-    :class="{ 'workMedia--shrink': full === 'false' }">
+    :class="{ 'workMedia--shrink': full === 'false' }"
+    class="workMedia">
     <work-carousel
       v-if="multipleFileNames.length > 0"
       :names="multipleFileNames" />

@@ -1,9 +1,9 @@
 <template>
   <svg
-    class="haiiroIcon"
     :width="totalWidth"
     :height="totalHeight"
     :viewBox="viewBox"
+    class="haiiroIcon"
     @mouseenter="hover"
     @mouseleave="unhover"
     @click="$emit('click')">

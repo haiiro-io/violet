@@ -1,8 +1,8 @@
 <template>
   <section class="workSelected">
     <div
-      class="workSelected-horizontalImage"
-      v-lazy:background-image="mainImageUrl" />
+      v-lazy:background-image="mainImageUrl"
+      class="workSelected-horizontalImage" />
     <div class="outerMoat">
       <h1>
         {{ work.title }}

@@ -1,29 +1,29 @@
 <template>
   <nuxt-link
     v-if="isWork"
-    class="card"
     :to="`/work/${work.name}`"
+    class="card"
     @mouseenter.native="onFocusCard"
     @mouseleave.native="setDefaultColors">
     <div class="cardThumbnail-container">
       <div
-        class="cardThumbnail"
-        v-lazy:background-image="cardImage"/>
+        v-lazy:background-image="cardImage"
+        class="cardThumbnail"/>
     </div>
     <span class="cardTitle">{{ work.title }}</span>
     <span class="cardRole">{{ work.role }}</span>
   </nuxt-link>
   <a
     v-else
+    :href="article.url"
     class="card"
     target="_blank"
-    :href="article.url"
     @mouseenter="onFocusCard"
     @mouseleave="setDefaultColors">
     <div class="cardThumbnail-container">
       <div
-        class="cardThumbnail"
-        v-lazy:background-image="cardImage"/>
+        v-lazy:background-image="cardImage"
+        class="cardThumbnail"/>
     </div>
     <span class="cardTitle">{{ article.title }}</span>
     <span class="cardRole">{{ article.appear_on }}</span>

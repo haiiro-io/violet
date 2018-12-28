@@ -1,13 +1,13 @@
 <template>
   <div class="workImg">
     <img
-      class="workImg-image"
       :alt="alt || caption"
       :src="path"
+      class="workImg-image"
     >
     <span
-      class="workImg-caption"
-      v-if="caption">
+      v-if="caption"
+      class="workImg-caption">
       {{ caption }}
     </span>
   </div>

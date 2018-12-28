@@ -1,8 +1,8 @@
 <template>
   <nuxt-link
     v-if="routerHref"
-    class="haiiroButton"
-    :to="routerHref">
+    :to="routerHref"
+    class="haiiroButton">
     <slot />
   </nuxt-link>
   <a

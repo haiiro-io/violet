@@ -20,8 +20,8 @@
         id="hiddenTextArea"
         name="message" />
       <div
-        netlify-recaptcha
-        ref="recaptcha" />
+        ref="recaptcha"
+        netlify-recaptcha />
     </form>
     <nuxt/>
     <footer>

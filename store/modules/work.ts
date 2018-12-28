@@ -29,7 +29,7 @@ const LANGS: AvailableLocale[] = ["en", "ja"];
 type ImportedFrontMatters = { [name: string]: FrontMatterContentWithRender };
 const importsByLang: {
   [lang: string]: ImportedFrontMatters
-  } = { en: {}, ja: {} };
+} = { en: {}, ja: {} };
 
 const importAll = (resolve, lang) => {
   resolve.keys().forEach((key) => {
@@ -67,11 +67,8 @@ export const getters: GetterTree<State, RootState> = {
       return state[locale].find(work => work.name === name);
     };
     return pickFromLocale(preferedLocale) ||
-      LANGS.filter(
-        lang => lang != preferedLocale
-      ).reduce(
-        (res, fallbackLocale) => res || pickFromLocale(fallbackLocale), undefined
-      );
+      LANGS.filter(lang => lang != preferedLocale)
+        .reduce((res, fallbackLocale) => res || pickFromLocale(fallbackLocale), undefined);
   }
 };
 

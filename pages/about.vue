@@ -1,8 +1,8 @@
 <template>
   <section class="about">
     <div
-      class="banner"
-      v-lazy:background-image="'/images/about/banner.jpg'">
+      v-lazy:background-image="'/images/about/banner.jpg'"
+      class="banner">
       <span class="name">{{ $t("index.author") }}</span>
       <span class="title">{{ $t("about.job") }}</span>
     </div>

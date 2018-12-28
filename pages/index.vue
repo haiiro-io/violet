@@ -26,10 +26,10 @@
           :article="article" />
       </div>
       <a
-        href="#"
         v-if="articles.length > articlesLimit"
-        @click.prevent="articlesLimit = articles.length"
-        class="articles-seeMore">
+        href="#"
+        class="articles-seeMore"
+        @click.prevent="articlesLimit = articles.length">
         See More
       </a>
     </div>

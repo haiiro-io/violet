@@ -6,13 +6,13 @@
     />
     <nav id="headerLinks">
       <nuxt-link
-        to="/"
-        :class="{ active: $route.path == '/', hide: !showNavigation }">
+        :class="{ active: $route.path == '/', hide: !showNavigation }"
+        to="/">
         Work
       </nuxt-link>
       <nuxt-link
-        to="/about"
-        :class="{ active: $route.path == '/about', hide: !showNavigation }">
+        :class="{ active: $route.path == '/about', hide: !showNavigation }"
+        to="/about">
         About
       </nuxt-link>
       <locale-switcher />

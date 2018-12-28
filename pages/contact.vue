@@ -6,12 +6,12 @@
     </h1>
     <transition name="fade">
       <form
-        netlify
         v-if="editable"
+        ref="contactForm"
+        netlify
         name="contact"
         class="pageContact-form"
-        netlify-honeypot="bot-field"
-        ref="contactForm">
+        netlify-honeypot="bot-field">
         <input
           type="hidden"
           name="form-name"
@@ -19,16 +19,16 @@
         <label for="sender">{{ $t("contact.sender") }}</label>
         <input
           id="sender"
-          type="text"
           ref="sender"
           v-model="message.sender"
+          type="text"
           name="sender">
         <label for="email">{{ $t("contact.email") }}</label>
         <input
           id="email"
-          type="email"
           ref="email"
           v-model="message.email"
+          type="email"
           name="email">
         <label for="message">{{ $t("contact.message") }}</label>
         <textarea
