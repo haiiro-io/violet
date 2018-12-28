@@ -6,16 +6,18 @@
     class="haiiroIcon"
     @mouseenter="hover"
     @mouseleave="unhover"
-    @click="$emit('click')">
+    @click="$emit('click')"
+  >
     <rect
       v-for="rect in rectangles"
-      :key="rect.id"
       :id="rect.id"
+      :key="rect.id"
       :x="rect.x"
       :y="rect.y"
       :width="rect.width"
       :height="rect.height"
-      :fill="rect.color" />
+      :fill="rect.color"
+    />
   </svg>
 </template>
 

@@ -1,10 +1,12 @@
 <template>
   <div
     :class="{ 'workMedia--shrink': full === 'false' }"
-    class="workMedia">
+    class="workMedia"
+  >
     <work-carousel
       v-if="multipleFileNames.length > 0"
-      :names="multipleFileNames" />
+      :names="multipleFileNames"
+    />
     <work-video
       v-else-if="isVideo"
       :path="mediaPath"

@@ -2,11 +2,14 @@
   <section class="workSelected">
     <div
       v-lazy:background-image="mainImageUrl"
-      class="workSelected-horizontalImage" />
+      class="workSelected-horizontalImage"
+    />
     <div class="outerMoat">
       <h1>
         {{ work.title }}
-        <span class="workSelected-year">{{ work.year }}</span>
+        <span class="workSelected-year">
+          {{ work.year }}
+        </span>
       </h1>
       <p>{{ work.description }}</p>
       <dl class="workSelected-meta">
@@ -17,14 +20,18 @@
       </dl>
       <dynamic-markdown
         :render-func="work.renderFunc"
-        :static-render-funcs="work.staticRenderFuncs" />
+        :static-render-funcs="work.staticRenderFuncs"
+      />
       <div id="relatedWorks">
-        <span class="relatedWorks-header">{{ $t("work.see_more") }}</span>
+        <span class="relatedWorks-header">
+          {{ $t("work.see_more") }}
+        </span>
         <div class="relatedWorks-cards">
           <card
             v-for="relatedWork in relatedWorks"
             :key="relatedWork.name"
-            :work="relatedWork" />
+            :work="relatedWork"
+          />
         </div>
       </div>
     </div>

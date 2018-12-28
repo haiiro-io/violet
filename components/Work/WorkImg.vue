@@ -7,7 +7,8 @@
     >
     <span
       v-if="caption"
-      class="workImg-caption">
+      class="workImg-caption"
+    >
       {{ caption }}
     </span>
   </div>

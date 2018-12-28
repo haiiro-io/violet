@@ -4,14 +4,20 @@
     :to="`/work/${work.name}`"
     class="card"
     @mouseenter.native="onFocusCard"
-    @mouseleave.native="setDefaultColors">
+    @mouseleave.native="setDefaultColors"
+  >
     <div class="cardThumbnail-container">
       <div
         v-lazy:background-image="cardImage"
-        class="cardThumbnail"/>
+        class="cardThumbnail"
+      />
     </div>
-    <span class="cardTitle">{{ work.title }}</span>
-    <span class="cardRole">{{ work.role }}</span>
+    <span class="cardTitle">
+      {{ work.title }}
+    </span>
+    <span class="cardRole">
+      {{ work.role }}
+    </span>
   </nuxt-link>
   <a
     v-else
@@ -19,16 +25,21 @@
     class="card"
     target="_blank"
     @mouseenter="onFocusCard"
-    @mouseleave="setDefaultColors">
+    @mouseleave="setDefaultColors"
+  >
     <div class="cardThumbnail-container">
       <div
         v-lazy:background-image="cardImage"
-        class="cardThumbnail"/>
+        class="cardThumbnail"
+      />
     </div>
-    <span class="cardTitle">{{ article.title }}</span>
-    <span class="cardRole">{{ article.appear_on }}</span>
+    <span class="cardTitle">
+      {{ article.title }}
+    </span>
+    <span class="cardRole">
+      {{ article.appear_on }}
+    </span>
   </a>
-
 </template>
 
 <script lang="ts">

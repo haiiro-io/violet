@@ -2,7 +2,8 @@
   <div class="workButton">
     <haiiro-button
       :href="link"
-      target="_blank">
+      target="_blank"
+    >
       {{ label }}
     </haiiro-button>
   </div>

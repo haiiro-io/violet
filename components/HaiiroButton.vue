@@ -2,12 +2,14 @@
   <nuxt-link
     v-if="routerHref"
     :to="routerHref"
-    class="haiiroButton">
+    class="haiiroButton"
+  >
     <slot />
   </nuxt-link>
   <a
     v-else
-    class="haiiroButton">
+    class="haiiroButton"
+  >
     <slot />
   </a>
 </template>

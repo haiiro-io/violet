@@ -2,7 +2,9 @@
   <section class="pageContact outerMoat">
     <h1>
       {{ $t("contact.title") }}
-      <span class="pageContact-subtitle">{{ $t("contact.subtitle") }} &#128075;</span>
+      <span class="pageContact-subtitle">
+        {{ $t("contact.subtitle") }} &#128075;
+      </span>
     </h1>
     <transition name="fade">
       <form
@@ -11,38 +13,50 @@
         netlify
         name="contact"
         class="pageContact-form"
-        netlify-honeypot="bot-field">
+        netlify-honeypot="bot-field"
+      >
         <input
           type="hidden"
           name="form-name"
-          value="contact">
-        <label for="sender">{{ $t("contact.sender") }}</label>
+          value="contact"
+        >
+        <label for="sender">
+          {{ $t("contact.sender") }}
+        </label>
         <input
           id="sender"
           ref="sender"
           v-model="message.sender"
           type="text"
-          name="sender">
-        <label for="email">{{ $t("contact.email") }}</label>
+          name="sender"
+        >
+        <label for="email">
+          {{ $t("contact.email") }}
+        </label>
         <input
           id="email"
           ref="email"
           v-model="message.email"
           type="email"
-          name="email">
-        <label for="message">{{ $t("contact.message") }}</label>
+          name="email"
+        >
+        <label for="message">
+          {{ $t("contact.message") }}
+        </label>
         <textarea
           id="message"
           ref="textarea"
           v-model="message.textarea"
-          name="message" />
+          name="message"
+        />
         <haiiro-button @click.native="validateAndSend">
           {{ sending ? $t("contact.sending") : $t("contact.send") }}
         </haiiro-button>
       </form>
       <div
         v-else
-        class="pageContact-sent">
+        class="pageContact-sent"
+      >
         <h2>{{ $t("contact.happened") }}</h2>
         <p>{{ $t("contact.happened_message") }}</p>
       </div>

@@ -3,7 +3,8 @@
     <div class="workYoutube">
       <div
         ref="player"
-        class="workYoutube-player" />
+        class="workYoutube-player"
+      />
     </div>
   </div>
 </template>

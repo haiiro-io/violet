@@ -7,12 +7,14 @@
     <nav id="headerLinks">
       <nuxt-link
         :class="{ active: $route.path == '/', hide: !showNavigation }"
-        to="/">
+        to="/"
+      >
         Work
       </nuxt-link>
       <nuxt-link
         :class="{ active: $route.path == '/about', hide: !showNavigation }"
-        to="/about">
+        to="/about"
+      >
         About
       </nuxt-link>
       <locale-switcher />
