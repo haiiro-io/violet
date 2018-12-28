@@ -37,7 +37,7 @@
     "eslint": "^4.16.0",
     "eslint-plugin-typescript": "^0.8.1",
     "eslint-plugin-vue": "^4.2.2",
-    "fork-ts-checker-webpack-plugin": "^0.4.13",
+    "fork-ts-checker-webpack-plugin": "^0.5.2",
     "markdown-it": "^8.4.0",
     "nuxt-ts": "0.1.0",
     "svg-sprite-loader": "^4.1.3",
