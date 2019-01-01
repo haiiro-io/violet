@@ -16,7 +16,7 @@
     "vue-carousel": "0.17.0",
     "vue-lazyload": "1.2.6",
     "vuex-class": "0.3.1",
-    "youtube-player": "5.5.1"
+    "youtube-player": "5.5.2"
   },
   "scripts": {
     "dev": "nuxt",
