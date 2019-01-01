@@ -17,13 +17,9 @@ export const state = (): State => ({
 export const getters: GetterTree<State, RootState> = {};
 
 export interface Actions<S, R> extends ActionTree<S, R> {
-  nuxtServerInit(context: ActionContext<S, R>);
 }
 
 export const actions: Actions<State, RootState> = {
-  async nuxtServerInit({ dispatch }) {
-    dispatch("work/initializeWorksFromAttributes", {laughly: "laughly"});
-  }
 };
 
 export const mutations: MutationTree<State> = {

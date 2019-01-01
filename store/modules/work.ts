@@ -54,10 +54,31 @@ export interface State {
 
 export const namespaced = true;
 
-export const state = (): State => ({
-  en: [],
-  ja: []
-});
+export const state = (): State => {
+  return LANGS.reduce((s, lang) => ({
+    ...s,
+    [lang]: Object.keys(importsByLang[lang]).map((key): Work => {
+      const frontmatter = importsByLang[lang][key];
+      const attr = frontmatter.attributes;
+      return {
+        name: key,
+        title: attr.title,
+        year: attr.year,
+        owner: attr.owner,
+        colors: attr.colors,
+        role: attr.role,
+        description: attr.description,
+        related: attr.related,
+        renderFunc: frontmatter.vue.render,
+        staticRenderFuncs: frontmatter.vue.staticRenderFns,
+        image: {
+          main: attr.image && attr.image.main,
+          og: attr.image && attr.image.og
+        }
+      };
+    })
+  }), { en: [], ja: [] });
+};
 
 export const getters: GetterTree<State, RootState> = {
   pick: (state, _getters, rootState) => (name: string): Work | undefined => {
@@ -73,42 +94,10 @@ export const getters: GetterTree<State, RootState> = {
 };
 
 export interface Actions<S, R> extends ActionTree<S, R> {
-  initializeWorksFromAttributes (context: ActionContext<S, R>): void;
 }
 
 export const actions: Actions<State, RootState> = {
-  initializeWorksFromAttributes ({ commit }) {
-    LANGS.forEach((lang) => {
-      const works = Object.keys(importsByLang[lang]).map((key): Work => {
-        const frontmatter = importsByLang[lang][key];
-        const attr = frontmatter.attributes;
-        return {
-          name: key,
-          title: attr.title,
-          year: attr.year,
-          owner: attr.owner,
-          colors: attr.colors,
-          role: attr.role,
-          description: attr.description,
-          related: attr.related,
-          renderFunc: frontmatter.vue.render,
-          staticRenderFuncs: frontmatter.vue.staticRenderFns,
-          image: {
-            main: attr.image && attr.image.main,
-            og: attr.image && attr.image.og
-          }
-        };
-      });
-      commit(
-        types.INITIALIZE,
-        { works, lang }
-      );
-    });
-  }
 };
 
 export const mutations: MutationTree<State> = {
-  [types.INITIALIZE](state, payload: { works: Work[]; lang: string }) {
-    state[payload.lang] = payload.works;
-  }
 };
