@@ -1,6 +1,5 @@
-import { ActionTree, MutationTree, GetterTree, ActionContext } from "vuex";
+import { ActionTree, MutationTree, GetterTree } from "vuex";
 import { RootState } from "store";
-import { VNode, CreateElement } from "vue";
 
 export interface Work {
   name: string;
@@ -83,7 +82,6 @@ export const state = (): State => {
 export const getters: GetterTree<State, RootState> = {
   pick: (state, _getters, rootState) => (name: string): Work | undefined => {
     const preferedLocale = rootState.locale;
-    let picked: Work | undefined;
     const pickFromLocale = (locale: AvailableLocale) => {
       return state[locale].find(work => work.name === name);
     };
