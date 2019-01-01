@@ -27,6 +27,7 @@ const orderedWorks = [
 ];
 
 module.exports = {
+  mode: 'spa',
   env: {
     baseUrl,
     buildLocale,
