@@ -127,7 +127,11 @@ module.exports = {
     ['nuxt-i18n', {
       seo: false,
       parsePages: false,
-      locales: ['en', 'ja'],
+      locales: [
+        { code: 'en', domain: 'namika.hmsk.co' },
+        { code: 'ja', domain: 'haiji.co' },
+      ],
+      differentDomains: true,
       defaultLocale: buildLocale,
       vueI18n: {
         fallbackLocale: 'en',
