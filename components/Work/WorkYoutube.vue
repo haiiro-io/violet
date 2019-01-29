@@ -30,12 +30,12 @@
     mounted () {
       const videoId = this.path.match(/v=(.+)$/);
       if (videoId) {
-        const player = YouTubePlayer(
+        YouTubePlayer(
           this.$refs.player,
           {
             videoId: videoId[1],
-            width: this.$el.offsetWidth,
-            height: this.$el.offsetHeight
+            width: (this.$el as HTMLDivElement).offsetWidth,
+            height: (this.$el as HTMLDivElement).offsetHeight
           }
         );
       }

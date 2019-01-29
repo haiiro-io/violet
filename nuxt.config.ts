@@ -5,11 +5,10 @@ const ja = require("./locales/ja.json");
 const en = require("./locales/en.json");
 
 const buildLocale = process.env.BUILD_LOCALE || "en";
-const productionUrl = {
-  en: "https://namika.hmsk.co",
-  ja: "https://haiji.co"
-};
-const baseUrl = productionUrl[buildLocale];
+const productionUrlEn = "https://namika.hmsk.co";
+const productionUrlJa = " https://haiji.co";
+
+const baseUrl = buildLocale === "en" ? productionUrlEn : productionUrlJa;
 
 const orderedWorks = [
   "laughly",
@@ -25,14 +24,15 @@ const orderedWorks = [
   "dcf",
   "googleplay-game-effect",
   "logofolio"
-];
+].join(",");
 
 const config = {
   mode: "spa",
   env: {
     baseUrl,
     buildLocale,
-    productionUrl,
+    productionUrlEn,
+    productionUrlJa,
     orderedWorks
   },
   head: {
@@ -159,17 +159,6 @@ const config = {
 
       config.module.rules.push(
         {
-          test: /\.postcss$/,
-          use: [
-            "vue-style-loader",
-            {
-              loader: "css-loader",
-              options: { importLoaders: 1 }
-            },
-            "postcss-loader"
-          ]
-        },
-        {
           test: /\.md$/,
           loader: "frontmatter-markdown-loader",
           include: path.resolve(__dirname, "contents"),
@@ -227,7 +216,7 @@ const config = {
   generate: {
     fallback: true,
     subFolders: false,
-    routes: ["/about", "/contact"].concat(orderedWorks.map(w => `/work/${w}`))
+    routes: ["/about", "/contact"].concat(orderedWorks.split(",").map(w => `/work/${w}`))
   }
 };
 

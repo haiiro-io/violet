@@ -72,7 +72,7 @@
     }
 
     get list (): Work[] {
-      return process.env.orderedWorks.map(name => this.pick(name));
+      return process.env.orderedWorks.split(",").map(name => this.pick(name));
     }
 
     get articles () {

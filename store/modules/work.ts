@@ -32,7 +32,7 @@ const importsByLang: {
 
 const importAll = (resolve, lang) => {
   resolve.keys().forEach((key) => {
-    const [_, name] = key.match(/\/(.+)\.md$/);
+    const [, name] = key.match(/\/(.+)\.md$/);
     importsByLang[lang][name] = resolve(key);
   });
 };
@@ -85,9 +85,13 @@ export const getters: GetterTree<State, RootState> = {
     const pickFromLocale = (locale: AvailableLocale) => {
       return state[locale].find(work => work.name === name);
     };
-    return pickFromLocale(preferedLocale) ||
-      LANGS.filter(lang => lang != preferedLocale)
-        .reduce((res, fallbackLocale) => res || pickFromLocale(fallbackLocale), undefined);
+
+    if (pickFromLocale(preferedLocale)) {
+      return pickFromLocale(preferedLocale);
+    } else {
+      const anotherLocale = LANGS.find(lang => lang != preferedLocale);
+      return pickFromLocale(anotherLocale);
+    }
   }
 };
 

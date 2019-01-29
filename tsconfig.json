@@ -5,9 +5,11 @@
     "allowSyntheticDefaultImports": true,
     "noImplicitAny": false,
     "baseUrl": ".",
+    "strict": false,
     "allowJs": true,
     "types": [
       "@types/node",
+      "@types/webpack-env",
       "@nuxt/vue-app"
     ]
   }
