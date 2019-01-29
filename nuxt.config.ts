@@ -152,9 +152,7 @@ const config = {
   build: {
     extend(config) {
       // remove existing url-loader settings once, for giving svg specific loader
-      const rule = config.module.rules.find(
-        r => r.test.toString() === "/\\.(png|jpe?g|gif|svg|webp)$/"
-      );
+      const rule = config.module.rules.find(r => r.test.toString().includes("(png|jpe?g|gif|svg|webp)"));
       config.module.rules.splice(config.module.rules.indexOf(rule), 1);
 
       config.module.rules.push(
@@ -169,11 +167,8 @@ const config = {
           }
         },
         {
-          test: /\.(png|jpe?g|gif)$/,
-          loader: "url-loader",
-          query: {
-            name: "img/[name].[hash:7].[ext]"
-          }
+          ...rule,
+          test: /\.(png|jpe?g|gif|webp)$/
         },
         {
           test: /\.svg$/,
