@@ -29,10 +29,10 @@
     "format": "eslint './!(node_modules)/**/*.+(ts|vue)' --fix"
   },
   "devDependencies": {
-    "@nuxt/cli": "^2.4.0",
-    "@nuxt/vue-app": "^2.4.0",
-    "@nuxt/webpack": "^2.4.0",
-    "@types/node": "^10.12.19",
+    "@nuxt/cli": "2.4.0",
+    "@nuxt/vue-app": "2.4.0",
+    "@nuxt/webpack": "2.4.0",
+    "@types/node": "10.12.19",
     "@types/webpack-env": "1.13.6",
     "eslint": "5.12.1",
     "eslint-plugin-typescript": "0.14.0",
