@@ -72,7 +72,7 @@
     }
 
     goAnotherLocale () {
-      const anotherLocale = `${process.env[this.locale === "en" ? "productionUrlEn" : "productionUrlJa"]}${this.$route.path}`;
+      const anotherLocale = `${this.locale === "en" ? process.env.productionUrlJa : process.env.productionUrlEn }${this.$route.path}`;
       window.location.href = anotherLocale;
     }
   }
