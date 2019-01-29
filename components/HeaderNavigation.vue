@@ -28,8 +28,6 @@
   import HaiiroIcon from "~/components/HaiiroIcon.vue";
   import LocaleSwitcher from "~/components/LocaleSwitcher.vue";
 
-  declare var process: NuxtProcess;
-
   @Component({ components: { HaiiroIcon, LocaleSwitcher } })
   export default class HeaderNavigation extends Vue {
     haiiroIconSize: number = 0;

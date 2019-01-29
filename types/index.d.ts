@@ -4,19 +4,6 @@ interface FrontMatterContent {
   vue: any;
 }
 
-interface NuxtProcess extends NodeJS.Process {
-  env: {
-    baseUrl:  string;
-    buildLocale: "en" | "ja";
-    productionUrl: {
-      en: string;
-      ja: string;
-    };
-    orderedWorks: string[];
-  };
-  browser: boolean;
-}
-
 type AvailableLocale = "en" | "ja";
 
 declare module "*.md" {

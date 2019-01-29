@@ -1,3 +1,16 @@
 {
-  "extends": "./node_modules/nuxt-ts/tsconfig.nuxt-ts.json"
+  "extends": "@nuxt/typescript",
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": false,
+    "baseUrl": ".",
+    "strict": false,
+    "allowJs": true,
+    "types": [
+      "@types/node",
+      "@types/webpack-env",
+      "@nuxt/vue-app"
+    ]
+  }
 }

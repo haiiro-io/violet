@@ -39,8 +39,6 @@
   import { Component, Vue } from "nuxt-property-decorator";
   import { State } from "vuex-class";
 
-  declare var process: NuxtProcess;
-
   @Component
   export default class HeaderNavigation extends Vue {
     @State locale;
@@ -74,7 +72,7 @@
     }
 
     goAnotherLocale () {
-      const anotherLocale = process.env.productionUrl[this.locale === "en" ? "ja" : "en"] + this.$route.path;
+      const anotherLocale = `${process.env[this.locale === "en" ? "productionUrlEn" : "productionUrlJa"]}${this.$route.path}`;
       window.location.href = anotherLocale;
     }
   }
