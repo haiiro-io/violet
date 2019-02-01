@@ -34,7 +34,7 @@
     "@nuxt/webpack": "2.4.2",
     "@types/node": "10.12.21",
     "@types/webpack-env": "1.13.7",
-    "eslint": "5.12.1",
+    "eslint": "5.13.0",
     "eslint-plugin-typescript": "0.14.0",
     "eslint-plugin-vue": "5.1.0",
     "svg-sprite-loader": "4.1.3",
