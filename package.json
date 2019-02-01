@@ -2,8 +2,8 @@
   "version": "0.0.1",
   "private": true,
   "engines": {
-    "node": ">=8.0.0",
-    "npm": ">=5.0.0"
+    "node": "^10.15.0",
+    "npm": "^6.7.0"
   },
   "dependencies": {
     "@nuxtjs/google-analytics": "2.0.2",
