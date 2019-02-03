@@ -1,12 +1,14 @@
 {
   "parser": "vue-eslint-parser",
   "parserOptions": {
-    "parser": "typescript-eslint-parser"
+    "parser": "@typescript-eslint/parser",
+    "project": "./tsconfig.json"
   },
   "plugins": [
-    "typescript"
+    "@typescript-eslint"
   ],
   "extends": [
+    "plugin:@typescript-eslint/recommended",
     "plugin:vue/recommended"
   ],
   "rules": {
@@ -22,23 +24,10 @@
     "require-jsdoc": "off",
     "no-console": ["error", { "allow": ["warn", "error"] }],
     "quotes": ["error", "double", { "avoidEscape": true }],
-    "typescript/no-namespace": ["error", { "allowDeclarations": true }],
-    "typescript/interface-name-prefix": "error",
-    "typescript/member-delimiter-style": "error",
-    "typescript/type-annotation-spacing": "error",
-    "typescript/no-triple-slash-reference": "error",
-    "typescript/adjacent-overload-signatures": "error",
-    "typescript/no-angle-bracket-type-assertion": "error",
-    "typescript/member-ordering": ["error", { "default": [
-      "static-field",
-      "private-field",
-      "protected-field",
-      "public-field",
-      "constructor",
-      "public-method",
-      "protected-method",
-      "private-method"
-    ]}],
+    "@typescript-eslint/indent": "off",
+    "@typescript-eslint/camelcase": ["error", { "properties": "never" }],
+    "@typescript-eslint/explicit-member-accessibility": "off",
+    "@typescript-eslint/no-explicit-any": "off",
     "vue/script-indent": ["error", 2, { "baseIndent": 1 } ],
     "vue/component-name-in-template-casing": ["error", "kebab-case"]
   }
