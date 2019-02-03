@@ -3,7 +3,7 @@ import VueI18n from "vue-i18n";
 
 @Component
 export default class PageBase extends Vue {
-  head () {
+  head (): { [key: string]: any } {
     return {
       title: this.pageTitle,
       meta: [

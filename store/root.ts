@@ -1,7 +1,6 @@
 import { GetterTree, ActionTree, MutationTree } from "vuex";
 import { RootState } from "store";
 
-
 export const types = {
   SET_LOCALE: "SET_LOCALE"
 };
@@ -16,11 +15,7 @@ export const state = (): State => ({
 
 export const getters: GetterTree<State, RootState> = {};
 
-export interface Actions<S, R> extends ActionTree<S, R> {
-}
-
-export const actions: Actions<State, RootState> = {
-};
+export const actions: ActionTree<State, RootState> = {};
 
 export const mutations: MutationTree<State> = {
   [types.SET_LOCALE](state, locale: AvailableLocale) {

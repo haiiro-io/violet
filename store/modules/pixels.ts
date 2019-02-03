@@ -3,6 +3,15 @@ import { RootState } from "store";
 
 const initialDefaultColors = ["#D4D4D4", "#A7A7A7","#CFCFCF","#D4D4D4","#A7A7A7","#CFCFCF","#D4D4D4"];
 
+const shuffle = (array: string[]): string[] => {
+  const old = [...array];
+  let shuffled = [];
+  while (old.length) {
+    shuffled = shuffled.concat(old.splice(Math.floor(Math.random() * old.length), 1));
+  }
+  return shuffled;
+};
+
 export interface State {
   defaultColors: string[];
   currentColors: string[];
@@ -71,13 +80,4 @@ export const mutations: MutationTree<State> = {
   [types.UPDATE_DEFAULT_COLORS](state, colors: string[]) {
     state.defaultColors = colors;
   }
-};
-
-const shuffle = (array: string[]): string[] => {
-  const old = [...array];
-  let shuffled = new Array();
-  while (old.length) {
-    shuffled = shuffled.concat(old.splice(Math.floor(Math.random() * old.length), 1));
-  }
-  return shuffled;
 };
