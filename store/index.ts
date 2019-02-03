@@ -1,4 +1,4 @@
-import Vuex from "vuex";
+import Vuex, { Store } from "vuex";
 import * as root from "./root";
 import * as work from "./modules/work";
 import * as pixels from "./modules/pixels";
@@ -10,17 +10,15 @@ interface ModulesStates {
 
 export type RootState = root.State & ModulesStates;
 
-const createStore = () => {
-  return new Vuex.Store({
-    state: root.state(),
-    getters: root.getters,
-    mutations: root.mutations,
-    actions: root.actions,
-    modules: {
-      [work.name]: work,
-      [pixels.name]: pixels
-    }
-  });
-};
+const createStore: () => Store<root.State> = (): Store<root.State> => new Vuex.Store<root.State>({
+  state: root.state(),
+  getters: root.getters,
+  mutations: root.mutations,
+  actions: root.actions,
+  modules: {
+    [work.name]: work,
+    [pixels.name]: pixels
+  }
+});
 
 export default createStore;

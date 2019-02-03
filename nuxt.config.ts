@@ -1,8 +1,8 @@
 import path from "path";
 
 const builtAt = new Date().toISOString();
-const ja = require("./locales/ja.json");
-const en = require("./locales/en.json");
+import ja from "./locales/ja.json";
+import en from "./locales/en.json";
 
 const buildLocale = process.env.BUILD_LOCALE || "en";
 const productionUrlEn = "https://namika.hmsk.co";

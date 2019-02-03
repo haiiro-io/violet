@@ -25,12 +25,14 @@ interface FrontMatterContentWithRender extends FrontMatterContent {
 }
 
 const LANGS: AvailableLocale[] = ["en", "ja"];
-type ImportedFrontMatters = { [name: string]: FrontMatterContentWithRender };
+interface ImportedFrontMatters {
+  [name: string]: FrontMatterContentWithRender;
+};
 const importsByLang: {
   [lang: string]: ImportedFrontMatters;
 } = { en: {}, ja: {} };
 
-const importAll = (resolve, lang) => {
+const importAll = (resolve, lang): void => {
   resolve.keys().forEach((key) => {
     const [, name] = key.match(/\/(.+)\.md$/);
     importsByLang[lang][name] = resolve(key);
@@ -82,7 +84,7 @@ export const state = (): State => {
 export const getters: GetterTree<State, RootState> = {
   pick: (state, _getters, rootState) => (name: string): Work | undefined => {
     const preferedLocale = rootState.locale;
-    const pickFromLocale = (locale: AvailableLocale) => {
+    const pickFromLocale = (locale: AvailableLocale): Work => {
       return state[locale].find(work => work.name === name);
     };
 
@@ -95,10 +97,7 @@ export const getters: GetterTree<State, RootState> = {
   }
 };
 
-export interface Actions<S, R> extends ActionTree<S, R> {
-}
-
-export const actions: Actions<State, RootState> = {
+export const actions: ActionTree<State, RootState> = {
 };
 
 export const mutations: MutationTree<State> = {
