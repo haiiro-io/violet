@@ -29,7 +29,7 @@
     "format": "eslint '**/*.+(ts|vue)' --fix"
   },
   "devDependencies": {
-    "@nuxt/cli": "2.4.2",
+    "@nuxt/cli": "2.4.3",
     "@nuxt/vue-app": "2.4.2",
     "@nuxt/webpack": "2.4.2",
     "@types/node": "10.12.21",
