@@ -301,6 +301,7 @@
     display: flex;
   }
   .career-right {
+    font-size: 14px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
