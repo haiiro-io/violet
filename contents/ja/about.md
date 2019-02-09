@@ -1,9 +1,16 @@
 ---
 specialities:
-  - ユーザインタフェースデザイン
   - スタートアップ企業のブランディング
-  - イベント企画やデジタルプロモーション
+  - ユーザー体験のデザイン（UXデザイン）
+  - ユーザーインタフェースデザイン
+  - プロトタイプ
 careers:
+  -
+    employer: All Turtles
+    title: シニアデザイナー
+    location: サンフランシスコ
+    period: 2019 - Current
+    link: https://www.all-turtles.com/
   -
     employer: Tradecraft
     title: プロダクトデザイナー
@@ -13,8 +20,8 @@ careers:
   -
     employer: フリーランス
     title: UX/UIデザイナー
-    location: 東京
-    period: 2016 - 2017
+    location: リモート
+    period: 2016 - 2018
   -
     employer: LiB
     title: UX/UI デザイナー
@@ -41,7 +48,7 @@ careers:
     link: https://www.i-studio.co.jp/
   -
     employer: はてな
-    title: ウェブデザイナー、ディレクター
+    title: ウェブデザイナー
     location: 京都
     period: 2008
     link: http://hatenacorp.jp/
@@ -53,4 +60,6 @@ careers:
     link: https://www.kyoto-art.ac.jp/
 ---
 
-サンフランシスコ在住。博報堂グループでウェブデザイナーを経験後、クリエイティブエージェンシーSIXでプランナーに転身。グーグルやソニー・コンピュータエンタテインメントといったクライアントのデジタル施策の企画を中心に、インターフェースのデザインも手がける。主な仕事にPokémon GOのトレーラー映像や、AmazarashiのMV内のUIデザインなど。2015年に独立後、サンフランシスコのプロダクトデザイナー養成所Tradecraftに所属し、米スタートアップのプロダクトの改善やパッケージデザインを数点手がけ、現在は個人として活動中。好きなものはスプラトゥーンと、お米と緑茶。
+サンフランシスコ在住。スタートアップスタジオ・All Turtles所属のデザイナー。
+
+大学卒業後にウェブデザイナーを経験後、クリエイティブエージェンシーSIXでプランナーに転身。デジタル施策の企画を中心に、映像内のインターフェースのデザインにも携わる。アメリカに移住後は、米スタートアップのプロダクトの改善やパッケージデザインを手がける。好きなものはスプラトゥーンと、お米と緑茶。

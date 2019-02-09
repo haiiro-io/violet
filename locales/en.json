@@ -8,17 +8,17 @@
     }
   },
   "index": {
-    "title": "Namika Hamasaki — Brand and Product Designer",
+    "title": "Namika Hamasaki — Product Designer",
     "author": "Namika Hamasaki",
-    "description": "Namika is a Brand and Product Designer based in San Francisco. Born and rised in Japan.",
+    "description": "Namika is a Product Designer based in San Francisco.",
     "greeting": {
       "name": "Namika",
-      "message": "I’m {0}, a Brand and Product Designer based in San Francisco. Born and raised in Japan."
+      "message": "I’m {0}, a Product Designer based in San Francisco."
     }
   },
   "about": {
     "title": "About — Namika Hamasaki",
-    "job": "Brand and Product Designer",
+    "job": "Product Designer",
     "hello": "Say Hello",
     "resume": "Download Resume",
     "contact": "Contact Me",
@@ -38,7 +38,7 @@
     "email": "Email:",
     "message": "Message:",
     "happened": "Sent successfully",
-    "happened_message": "Thanks for your message. I'll reply occasionally",
+    "happened_message": "Thanks for your message. I'll reply occasionally.",
     "sending": "Sending...",
     "send": "Send"
   }

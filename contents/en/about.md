@@ -1,21 +1,27 @@
 ---
 specialities:
   - Branding for startup companies
-  - User experience design (UX)
-  - Interaction design for web and mobile app
-  - Prototype
+  - User experience design
+  - User interface design
+  - Interactive Prototype
 careers:
   -
-    employer: Freelance
-    title: Brand & Product Designer
-    location: Remote
-    period: 2016 - 2018
+    employer: All Turtles
+    title: Senior Designer
+    location: San Francisco, CA
+    period: 2019 - Current
+    link: https://www.all-turtles.com/
   -
     employer: Tradecraft
     title: Product Designer
     location: San Francisco, CA
     period: 2017 - 2018
     link: http://tradecraft.com/
+  -
+    employer: Freelance
+    title: Brand & Product Designer
+    location: Remote
+    period: 2016 - 2018
   -
     employer: LiB
     title: UX/UI Designer
@@ -54,8 +60,4 @@ careers:
     link: https://www.kyoto-art.ac.jp/en/
 ---
 
-I'm a product designer with 10 years of experience working closely with startups to create and foster brands through end to end experience design. When I worked for a creative agency as an interactive planner and UI designer, I had created promotional videos for Google Japan, Niantic, and PlayStation to connect brand and users.
-
-Generally, marketing and product are separately but I would love to design user experience consistently.
-
-In my spare time, I like playing video game, watching anime and drinking green tea.
+I'm a Product Designer with 10 years of experience working closely with startups to create and foster brands through end to end experience design. In my spare time, I like playing video game, watching anime and drinking green tea.
