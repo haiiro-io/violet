@@ -32,7 +32,7 @@
     "@nuxt/cli": "2.4.2",
     "@nuxt/vue-app": "2.4.2",
     "@nuxt/webpack": "2.4.2",
-    "@types/node": "10.12.24",
+    "@types/node": "10.12.25",
     "@types/webpack-env": "1.13.7",
     "@typescript-eslint/eslint-plugin": "latest",
     "@typescript-eslint/parser": "latest",
