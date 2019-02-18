@@ -12,7 +12,7 @@
     "normalize.css": "8.0.1",
     "nuxt-i18n": "5.8.3",
     "nuxt-property-decorator": "2.0.1",
-    "nuxt-ts": "2.4.2",
+    "nuxt-ts": "2.4.3",
     "vue-carousel": "0.17.0",
     "vue-lazyload": "1.2.6",
     "vuex-class": "0.3.1",
