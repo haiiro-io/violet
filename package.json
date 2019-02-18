@@ -29,7 +29,7 @@
     "format": "eslint '**/*.+(ts|vue)' --fix"
   },
   "devDependencies": {
-    "@nuxt/vue-app": "2.4.2",
+    "@nuxt/vue-app": "2.4.3",
     "@types/node": "10.12.26",
     "@types/webpack-env": "1.13.7",
     "@typescript-eslint/eslint-plugin": "latest",
