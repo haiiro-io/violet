@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@nuxt/vue-app": "2.4.3",
-    "@types/node": "10.12.27",
+    "@types/node": "10.12.29",
     "@types/webpack-env": "1.13.8",
     "@typescript-eslint/eslint-plugin": "latest",
     "@typescript-eslint/parser": "latest",
