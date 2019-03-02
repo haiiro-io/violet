@@ -2,5 +2,11 @@
   "extends": [
     "config:base"
   ],
-  "assignees": ["hmsk"]
+  "assignees": ["hmsk"],
+  "packageRules": [
+    {
+      "packageNames": ["nuxt-ts", "@nuxt/vue-app"],
+      "groupName": "nuxt-ts monorepo"
+    }
+  ]
 }
