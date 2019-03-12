@@ -1,8 +1,7 @@
 {
   "parser": "vue-eslint-parser",
   "parserOptions": {
-    "parser": "@typescript-eslint/parser",
-    "project": "./tsconfig.json"
+    "parser": "@typescript-eslint/parser"
   },
   "plugins": [
     "@typescript-eslint"
@@ -24,11 +23,19 @@
     "require-jsdoc": "off",
     "no-console": ["error", { "allow": ["warn", "error"] }],
     "quotes": ["error", "double", { "avoidEscape": true }],
-    "@typescript-eslint/indent": "off",
+    "@typescript-eslint/indent": ["error", 2],
     "@typescript-eslint/camelcase": ["error", { "properties": "never" }],
     "@typescript-eslint/explicit-member-accessibility": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "vue/script-indent": ["error", 2, { "baseIndent": 1 } ],
     "vue/component-name-in-template-casing": ["error", "kebab-case"]
-  }
+  },
+  "overrides": [
+    {
+      "files": ["*.vue"],
+      "rules": {
+        "@typescript-eslint/indent": "off"
+      }
+    }
+  ]
 }

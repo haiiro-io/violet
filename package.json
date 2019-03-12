@@ -25,8 +25,8 @@
     "generate": "nuxt-ts generate",
     "generate:en": "BUILD_LOCALE=en nuxt-ts generate",
     "generate:ja": "BUILD_LOCALE=ja nuxt-ts generate",
-    "lint": "eslint '**/*.+(ts|vue)'",
-    "format": "eslint '**/*.+(ts|vue)' --fix"
+    "lint": "eslint --ext .ts,.vue .",
+    "format": "npm run lint -- --fix"
   },
   "devDependencies": {
     "@nuxt/vue-app": "2.4.5",
