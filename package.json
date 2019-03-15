@@ -15,7 +15,7 @@
     "nuxt-ts": "2.4.5",
     "vue-carousel": "0.17.0",
     "vue-lazyload": "1.2.6",
-    "vuex-class": "0.3.1",
+    "vuex-class": "0.3.2",
     "youtube-player": "5.5.2"
   },
   "scripts": {
