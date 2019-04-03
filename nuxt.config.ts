@@ -6,7 +6,7 @@ import en from "./locales/en.json";
 
 const buildLocale = process.env.BUILD_LOCALE || "en";
 const productionUrlEn = "https://namika.hmsk.co";
-const productionUrlJa = " https://haiji.co";
+const productionUrlJa = "https://haiji.co";
 
 const baseUrl = buildLocale === "en" ? productionUrlEn : productionUrlJa;
 
