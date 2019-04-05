@@ -20,12 +20,12 @@
     "youtube-player": "5.5.2"
   },
   "scripts": {
-    "dev": "nuxt-ts",
-    "dev:en": "BUILD_LOCALE=en nuxt-ts",
-    "dev:ja": "BUILD_LOCALE=ja nuxt-ts",
-    "generate": "nuxt-ts generate",
-    "generate:en": "BUILD_LOCALE=en nuxt-ts generate",
-    "generate:ja": "BUILD_LOCALE=ja nuxt-ts generate",
+    "dev": "nuxt",
+    "dev:en": "BUILD_LOCALE=en nuxt",
+    "dev:ja": "BUILD_LOCALE=ja nuxt",
+    "generate": "nuxt generate",
+    "generate:en": "BUILD_LOCALE=en nuxt generate",
+    "generate:ja": "BUILD_LOCALE=ja nuxt generate",
     "lint": "eslint --ext .ts,.vue .",
     "format": "npm run lint -- --fix"
   },
