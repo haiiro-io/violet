@@ -189,6 +189,7 @@ const config = {
     [
       "nuxt-i18n",
       {
+        detectBrowserLanguage: false,
         seo: false,
         parsePages: false,
         locales: [
