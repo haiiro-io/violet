@@ -1,0 +1,46 @@
+{
+  "root": {
+    "copyright": "© Namika Hamasaki 2014-%{year}",
+    "made_by": {
+      "kengo": "Kengo",
+      "namika": "Namika",
+      "message": "Amorosamente hecho por {namika} y {kengo}"
+    }
+  },
+  "index": {
+    "title": "Namika Hamasaki — Diseñador de producto",
+    "author": "Namika Hamasaki",
+    "description": "Namika es un Diseñador de Producto con sede en 
+   San Francisco.",
+    "greeting": {
+      "name": "Namika",
+      "message": "Soy {0}, un Diseñador de Producto con sede en San Francisco."
+    }
+  },
+  "about": {
+    "title": "Acerca — Namika Hamasaki",
+    "job": "Diseñador de Producto",
+    "hello": "Di Hola",
+    "resume": "Descargar curriculum",
+    "contact": "Contáctame",
+    "experience": "Experiencia",
+    "specialities": "Especialidades:"
+  },
+  "work": {
+    "title": "%{name} — Namika Hamasaki",
+    "product_owner": "Propietario del producto:",
+    "role": "Rol:",
+    "see_more": "Ver más"
+  },
+  "contact": {
+    "title": "Contáctame",
+    "subtitle": "Di Hola! Contáctame",
+    "sender": "Nombre:",
+    "email": "Correo electrónico:",
+    "message": "Mensaje:",
+    "happened": "Enviado exitosamente",
+    "happened_message": "Gracias por tu mensaje. Responderé cada tanto.",
+    "sending": "Enviando...",
+    "send": "Enviar"
+  }
+}
