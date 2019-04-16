@@ -5,8 +5,8 @@
   "assignees": ["hmsk"],
   "packageRules": [
     {
-      "packageNames": ["nuxt-ts", "@nuxt/vue-app"],
-      "groupName": "nuxt-ts monorepo"
+      "packageNames": ["nuxt", "@nuxt/typescript"],
+      "groupName": "nuxt typescript monorepo"
     }
   ]
 }
