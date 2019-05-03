@@ -150,7 +150,7 @@ const config = {
    */
   css: [{ src: "node_modules/normalize.css/normalize.css", lang: "css" }],
   build: {
-    extend(config) {
+    extend(config): void {
       // remove existing url-loader settings once, for giving svg specific loader
       const rule = config.module.rules.find(r => r.test.toString().includes("(png|jpe?g|gif|svg|webp)"));
       config.module.rules.splice(config.module.rules.indexOf(rule), 1);
@@ -176,6 +176,27 @@ const config = {
           include: path.resolve(__dirname, "assets/icons")
         }
       );
+    },
+    postcss: {
+      plugins: {
+        "postcss-import": {
+          resolve (id: string, baseDir: string): string {
+            return (/^~/.test(id)) ? path.resolve(__dirname, id.replace("~", ".")) : path.resolve(baseDir, id);
+          }
+        },
+        "postcss-preset-env": {
+          stage: 0,
+          preserve: false,
+          importFrom: [{
+            customProperties: {
+              "--skyhai": "#DFE0E0",
+              "--soba": "#D8D8D8",
+              "--konezumi": "#555555",
+              "--nibihai": "#999999"
+            }
+          }]
+        }
+      }
     }
   },
   plugins: ["~/plugins/lazyload"],
