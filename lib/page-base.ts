@@ -1,9 +1,8 @@
 import { Component, Vue } from "nuxt-property-decorator";
 import VueI18n from "vue-i18n";
 
-@Component
-export default class PageBase extends Vue {
-  head (): { [key: string]: any } {
+@Component({
+  head (this: PageBase): { [key: string]: any } {
     return {
       title: this.pageTitle,
       meta: [
@@ -17,7 +16,8 @@ export default class PageBase extends Vue {
       ]
     };
   }
-
+})
+export default class PageBase extends Vue {
   get ogUrl (): string {
     return process.env.baseUrl;
   }
