@@ -53,7 +53,13 @@ const config = {
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@haiji505" },
       { property: "og:type", content: "profile" },
-      { property: "og:updated_time", content: builtAt }
+      { property: "og:updated_time", content: builtAt },
+      { hid: "author", name: "author", content: "will be replaced" },
+      { hid: "description", name: "description", content: "will be replaced" },
+      { hid: "twitter:description", name: "twitter:description", content: "will be replaced" },
+      { hid: "twitter:image", name: "twitter:image", content: "will be replaced" },
+      { hid: "og:title", property: "og:title", content: "will be replaced" },
+      { hid: "og:image", property: "og:image", content: "will be replaced" }
     ],
     link: [
       {
