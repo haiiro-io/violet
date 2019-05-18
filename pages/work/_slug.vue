@@ -49,9 +49,9 @@
   import WorkMedia from "~/components/Work/WorkMedia.vue";
   import Card from "~/components/Card.vue";
 
-  import { Work } from "~/store/modules/work";
-  import { name as WorksNamespace } from "~/store/modules/work";
-  import { name as PixelsNamespace } from "~/store/modules/pixels";
+  import { Work } from "~/store/work";
+  import { name as WorksNamespace } from "~/store/work";
+  import { name as PixelsNamespace } from "~/store/pixels";
   const WorksStore = namespace(WorksNamespace);
   const PixelsStore = namespace(PixelsNamespace);
 

@@ -1,5 +1,5 @@
 import { ActionTree, MutationTree, GetterTree } from "vuex";
-import { RootState } from "store";
+import { State as RootState } from "./index";
 
 export interface Work {
   name: string;
@@ -97,7 +97,7 @@ export const getters: GetterTree<State, RootState> = {
   }
 };
 
-export const actions: ActionTree<State, RootState> = {
+export const actions: ActionTree<State, {}> = {
 };
 
 export const mutations: MutationTree<State> = {

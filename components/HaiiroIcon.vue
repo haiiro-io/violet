@@ -25,7 +25,7 @@
   import { Component, Vue } from "nuxt-property-decorator";
 
   import { namespace } from "vuex-class";
-  import { name as PixelsNamespace } from "~/store/modules/pixels";
+  import { name as PixelsNamespace } from "~/store/pixels";
   const PixelsStore = namespace(PixelsNamespace);
 
   @Component({

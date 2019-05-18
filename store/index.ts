@@ -1,24 +1,23 @@
-import Vuex, { Store } from "vuex";
-import * as root from "./root";
-import * as work from "./modules/work";
-import * as pixels from "./modules/pixels";
+import { GetterTree, ActionTree, MutationTree } from "vuex";
 
-interface ModulesStates {
-  people: work.State;
-  pixels: pixels.State;
+export const types = {
+  SET_LOCALE: "SET_LOCALE"
+};
+
+export interface State {
+  locale: AvailableLocale;
 }
 
-export type RootState = root.State & ModulesStates;
-
-const createStore: () => Store<root.State> = (): Store<root.State> => new Vuex.Store<root.State>({
-  state: root.state(),
-  getters: root.getters,
-  mutations: root.mutations,
-  actions: root.actions,
-  modules: {
-    [work.name]: work,
-    [pixels.name]: pixels
-  }
+export const state = (): State => ({
+  locale: process.env.buildLocale
 });
 
-export default createStore;
+export const getters: GetterTree<State, {}> = {};
+
+export const actions: ActionTree<State, {}> = {};
+
+export const mutations: MutationTree<State> = {
+  [types.SET_LOCALE] (state, locale: AvailableLocale): void {
+    state.locale = locale;
+  }
+};

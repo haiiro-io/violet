@@ -46,10 +46,10 @@
   import { Component, Vue } from "nuxt-property-decorator";
 
   import { namespace } from "vuex-class";
-  import { name as PixelsNamespace } from "~/store/modules/pixels";
+  import { name as PixelsNamespace } from "~/store/pixels";
   const PixelsStore = namespace(PixelsNamespace);
 
-  import { Work } from "~/store/modules/work";
+  import { Work } from "~/store/work";
 
   @Component({
     props: {

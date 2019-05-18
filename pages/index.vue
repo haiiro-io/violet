@@ -46,11 +46,11 @@
 <script lang="ts">
   import { Component } from "nuxt-property-decorator";
   import PageBase from "~/lib/page-base";
-  import { Work } from "~/store/modules/work";
+  import { Work } from "~/store/work";
 
   import { namespace } from "vuex-class";
-  import { name as WorksNamespace } from "~/store/modules/work";
-  import { name as PixelsNamespace } from "~/store/modules/pixels";
+  import { name as WorksNamespace } from "~/store/work";
+  import { name as PixelsNamespace } from "~/store/pixels";
   const WorksStore = namespace(WorksNamespace);
   const PixelsStore = namespace(PixelsNamespace);
 
