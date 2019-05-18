@@ -1,5 +1,5 @@
 import { ActionTree, MutationTree, GetterTree, ActionContext } from "vuex";
-import { RootState } from "store";
+import { State as RootState } from "./index";
 
 const initialDefaultColors = ["#D4D4D4", "#A7A7A7","#CFCFCF","#D4D4D4","#A7A7A7","#CFCFCF","#D4D4D4"];
 
