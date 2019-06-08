@@ -2,3 +2,4 @@ node_modules
 .nuxt
 dist
 yarn.lock
+.netlify
