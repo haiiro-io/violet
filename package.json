@@ -13,7 +13,7 @@
     "nuxt": "2.8.1",
     "nuxt-i18n": "5.12.4",
     "nuxt-property-decorator": "2.3.0",
-    "ts-node": "8.2.0",
+    "ts-node": "8.3.0",
     "vue-carousel": "0.18.0",
     "vue-lazyload": "1.2.6",
     "vuex-class": "0.3.2",
