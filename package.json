@@ -11,7 +11,7 @@
     "medium-zoom": "1.0.4",
     "normalize.css": "8.0.1",
     "nuxt": "2.8.1",
-    "nuxt-i18n": "5.12.4",
+    "nuxt-i18n": "5.12.5",
     "nuxt-property-decorator": "2.3.0",
     "ts-node": "8.3.0",
     "vue-carousel": "0.18.0",
