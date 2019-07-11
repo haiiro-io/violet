@@ -32,7 +32,7 @@
   "devDependencies": {
     "@nuxt/typescript": "2.8.1",
     "@types/node": "10.14.12",
-    "@types/webpack-env": "1.13.9",
+    "@types/webpack-env": "1.14.0",
     "@typescript-eslint/eslint-plugin": "latest",
     "@typescript-eslint/parser": "latest",
     "eslint": "latest",
