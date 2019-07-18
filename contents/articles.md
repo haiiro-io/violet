@@ -1,6 +1,65 @@
 ---
 articles:
   -
+    name: podcast
+    title: ポッドキャストを始めました
+    appear_on: 灰色ハイジのデザインノート
+    url: https://note.mu/haiji505/n/n93e21e7f651d
+    locale: ja
+    colors:
+      - "#7AC3CA"
+      - "#3A3846"
+      - "#DEB4D7"
+      - "#FF9AC2"
+  -
+    name: english-for-designers
+    title: デザイナーの英語帳はじめます
+    appear_on: 灰色ハイジのデザインノート
+    url: https://note.mu/haiji505/n/ne4aabd94db45
+    locale: ja
+    colors:
+      - "#F1D8E4"
+      - "#0061EE"
+      - "#F1D8E4"
+  -
+    name: dailypattern
+    title: 30 Days of Daily Pattern
+    appear_on: Medium
+    url: https://medium.com/haiiro-io/30-days-of-daily-pattern-aaf304970b62
+    locale: en
+    colors:
+      - "#FAE7AD"
+      - "#FF6100"
+      - "#FF0202"
+      - "#FAE7AD"
+      - "#84CBC0"
+      - "#038C9E"
+      - "#001E53"
+  -
+    name: dailypattern
+    title: Daily Patternを始めて、作った模様が30枚を超えた
+    appear_on: 灰色ハイジのデザインノート
+    url: https://note.mu/haiji505/n/n0b316585cefc
+    locale: ja
+    colors:
+      - "#FAE7AD"
+      - "#FF6100"
+      - "#FF0202"
+      - "#FAE7AD"
+      - "#84CBC0"
+      - "#038C9E"
+      - "#001E53"
+  -
+    name: dailyui
+    title: The journey of my Daily UI for 100 days
+    appear_on: Medium
+    url: https://medium.com/haiiro-io/the-journey-of-my-daily-ui-for-100-days-22411f152d85
+    locale: en
+    colors:
+      - "#eec267"
+      - "#4e57f5"
+      - "#f07160"
+  -
     name: dailyui
     title: 100日続けたDaily UIの記録
     appear_on: 灰色ハイジのデザインノート
@@ -20,16 +79,6 @@ articles:
       - "#a7a7a7"
       - "#d4d4d4"
       - "#cfcfcf"
-  -
-    name: nintendo-design
-    title: How Nintendo designed Switch and Splatoon
-    appear_on: Medium
-    url: https://medium.com/haiiro-io/how-nintendo-designed-switch-and-splatoon-d1a14b9cc2de
-    locale: en
-    colors:
-      - "#C43046"
-      - "#367980"
-      - "#1E1E1E"
   -
     name: switch-language
     title: 言語切替のUIデザインについて考えてみる
@@ -60,6 +109,16 @@ articles:
       - "#D9CDB7"
       - "#445386"
       - "#C98F60"
+  -
+    name: nintendo-design
+    title: How Nintendo designed Switch and Splatoon
+    appear_on: Medium
+    url: https://medium.com/haiiro-io/how-nintendo-designed-switch-and-splatoon-d1a14b9cc2de
+    locale: en
+    colors:
+      - "#C43046"
+      - "#367980"
+      - "#1E1E1E"
   -
     name: white-board-challenge
     title: プロダクトデザインの訓練に、ホワイトボードチャレンジをしてみよう！
