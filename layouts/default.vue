@@ -68,15 +68,15 @@
           tag="span"
         >
           <nuxt-link
+            slot="namika"
             to="/about"
-            place="namika"
           >
             {{ $t("root.made_by.namika") }}
           </nuxt-link>
           <a
+            slot="kengo"
             href="https://hmsk.me"
             target="_blank"
-            place="kengo"
           >
             {{ $t("root.made_by.kengo") }}
           </a>
