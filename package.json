@@ -33,9 +33,9 @@
     "@nuxt/typescript": "2.8.1",
     "@types/node": "10.14.15",
     "@types/webpack-env": "1.14.0",
-    "@typescript-eslint/eslint-plugin": "latest",
-    "@typescript-eslint/parser": "latest",
-    "eslint": "latest",
+    "@typescript-eslint/eslint-plugin": "1.13.0",
+    "@typescript-eslint/parser": "1.13.0",
+    "eslint": "5.16.0",
     "eslint-plugin-vue": "latest",
     "svg-sprite-loader": "4.1.6",
     "yaml-loader": "0.5.0"
