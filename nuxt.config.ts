@@ -27,6 +27,7 @@ const orderedWorks = [
 ].join(",");
 
 const config = {
+  buildModules: ['@nuxt/typescript-build'],
   mode: "spa",
   env: {
     baseUrl,

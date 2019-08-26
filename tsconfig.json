@@ -25,7 +25,7 @@
     "types": [
       "@types/node",
       "@types/webpack-env",
-      "@nuxt/vue-app"
+      "@nuxt/types"
     ]
   }
 }
