@@ -14,6 +14,7 @@
     "nuxt": "2.9.2",
     "nuxt-i18n": "6.1.1",
     "nuxt-property-decorator": "2.3.0",
+    "typescript": "3.6.2",
     "vue-carousel": "0.18.0",
     "vue-lazyload": "1.3.2",
     "vuex-class": "0.3.2",
