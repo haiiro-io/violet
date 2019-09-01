@@ -1,4 +1,5 @@
 import path from "path";
+import Mode from "frontmatter-markdown-loader/mode";
 
 const builtAt = new Date().toISOString();
 import ja from "./locales/ja.json";
@@ -170,6 +171,7 @@ const config = {
           loader: "frontmatter-markdown-loader",
           include: path.resolve(__dirname, "contents"),
           options: {
+            mode: [Mode.VUE_RENDER_FUNCTIONS],
             vue: {
               root: "dynamicMarkdown"
             }
