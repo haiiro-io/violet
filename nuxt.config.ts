@@ -171,7 +171,7 @@ const config = {
           loader: "frontmatter-markdown-loader",
           include: path.resolve(__dirname, "contents"),
           options: {
-            mode: [Mode.VUE_RENDER_FUNCTIONS],
+            mode: [Mode.HTML, Mode.VUE_RENDER_FUNCTIONS],
             vue: {
               root: "dynamicMarkdown"
             }
