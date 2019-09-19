@@ -61,4 +61,5 @@ careers:
 ---
 
 I am a Brand & Product Designer with ten years of experience based in San Francisco, currently working at All Turtles, a technology company that develops AI products. My current focus is on creating and fostering brands through visual and interaction design. In the past, I worked at a creative agency and have worked on making promotional content for companies such as Google Japan, Niantic, and PlayStation.
+
 To explore new inspirations, I’m working on a side project called Daily Pattern, which involves creating seamless patterns. In my spare time, I play video games, watch anime, and drink green tea.
