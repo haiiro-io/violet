@@ -16,7 +16,7 @@
     "nuxt-property-decorator": "2.4.0",
     "typescript": "3.6.2",
     "vue-carousel": "0.18.0",
-    "vue-lazyload": "1.3.2",
+    "vue-lazyload": "1.3.3",
     "vuex-class": "0.3.2",
     "youtube-player": "5.5.2"
   },
