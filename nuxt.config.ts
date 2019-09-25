@@ -231,7 +231,6 @@ const config = {
           { code: "en", domain: "namika.hmsk.co" },
           { code: "ja", domain: "haiji.co" }
         ],
-        differentDomains: true,
         defaultLocale: buildLocale,
         vueI18n: {
           fallbackLocale: "en",
