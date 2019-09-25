@@ -28,8 +28,8 @@ const orderedWorks = [
 ].join(",");
 
 const config = {
-  buildModules: ['@nuxt/typescript-build'],
-  mode: "spa",
+  buildModules: ["@nuxt/typescript-build"],
+  mode: "universal",
   env: {
     baseUrl,
     buildLocale,
@@ -56,14 +56,6 @@ const config = {
       { name: "twitter:site", content: "@haiji505" },
       { property: "og:type", content: "profile" },
       { property: "og:updated_time", content: builtAt },
-
-      // Remove the chunk below after Nuxt's problem is cleared
-      { hid: "author", name: "author", content: buildLocale === "en" ? "Namika Hamasaki" : "灰色ハイジ" },
-      { hid: "description", name: "description", property: "og:description", content: buildLocale === "en" ? "Namika is a Product Designer based in San Francisco." : "サンフランシスコを拠点とするプロダクトデザイナーのポートフォリオです。" },
-      { hid: "og:title", property: "og:title", content: buildLocale === "en" ? "Namika Hamasaki — Product Designer" : "灰色ハイジのポートフォリオ" },
-      { hid: "og:image", property: "og:image", content: `${baseUrl}/images/ogp_1200x630.jpg` },
-      { hid: "twitter:description", name: "twitter:description", content: buildLocale === "en" ? "Namika is a Product Designer based in San Francisco." : "サンフランシスコを拠点とするプロダクトデザイナーのポートフォリオです。" },
-      { hid: "twitter:image", name: "twitter:image", content: `${baseUrl}/images/ogp_1200x630.jpg` }
     ],
     link: [
       {
@@ -210,7 +202,10 @@ const config = {
       }
     }
   },
-  plugins: ["~/plugins/lazyload"],
+  plugins: [
+    "~/plugins/lazyload.js",
+    "~/plugins/carousel.client.js"
+  ],
   modules: [
     [
       "@nuxtjs/google-analytics",
@@ -228,7 +223,6 @@ const config = {
           { code: "en", domain: "namika.hmsk.co" },
           { code: "ja", domain: "haiji.co" }
         ],
-        differentDomains: true,
         defaultLocale: buildLocale,
         vueI18n: {
           fallbackLocale: "en",

@@ -21,12 +21,11 @@
 
 <script lang="ts">
   import { Component, Vue } from "nuxt-property-decorator";
-  import { Carousel, Slide } from "vue-carousel";
 
   import WorkImg from "./WorkImg.vue";
 
   @Component({
-    components: { Carousel, Slide, WorkImg },
+    components: { WorkImg },
     props: {
       names: {
         type: Array,
@@ -36,7 +35,7 @@
   })
   export default class WorkCarousel extends Vue {
     names: string[];
- 
+
     get mediaPaths (): string[] {
       const slug= this.$route.params.slug;
       return this.names.map(n => `/images/work/${slug}/${n}`);
