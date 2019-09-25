@@ -210,7 +210,10 @@ const config = {
       }
     }
   },
-  plugins: ["~/plugins/lazyload"],
+  plugins: [
+    "~/plugins/lazyload.js",
+    "~/plugins/carousel.client.js"
+  ],
   modules: [
     [
       "@nuxtjs/google-analytics",
