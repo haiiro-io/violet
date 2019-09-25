@@ -28,8 +28,8 @@ const orderedWorks = [
 ].join(",");
 
 const config = {
-  buildModules: ['@nuxt/typescript-build'],
-  mode: "spa",
+  buildModules: ["@nuxt/typescript-build"],
+  mode: "universal",
   env: {
     baseUrl,
     buildLocale,
