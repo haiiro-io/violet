@@ -12,7 +12,7 @@
     "medium-zoom": "1.0.4",
     "normalize.css": "8.0.1",
     "nuxt": "2.9.2",
-    "nuxt-i18n": "6.2.1",
+    "nuxt-i18n": "6.3.0",
     "nuxt-property-decorator": "2.4.0",
     "vue-carousel": "0.18.0",
     "vue-lazyload": "1.3.3",
