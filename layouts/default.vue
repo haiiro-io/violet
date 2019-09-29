@@ -4,13 +4,12 @@
     <form
       netlify
       name="contact"
-      netlify-honeypot="bot-field"
       style="display: none"
     >
       <input
         type="hidden"
         name="form-name"
-        value="contact"
+        value="contact-page"
       >
       <input
         type="text"
