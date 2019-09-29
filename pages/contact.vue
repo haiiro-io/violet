@@ -13,7 +13,6 @@
         netlify
         name="contact-page"
         class="pageContact-form"
-        netlify-honeypot="bot-field"
       >
         <input
           type="hidden"
