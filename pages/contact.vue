@@ -11,14 +11,14 @@
         v-if="editable"
         ref="contactForm"
         netlify
-        name="contact"
+        name="contact-page"
         class="pageContact-form"
         netlify-honeypot="bot-field"
       >
         <input
           type="hidden"
           name="form-name"
-          value="contact"
+          value="contact-page"
         >
         <label for="sender">
           {{ $t("contact.sender") }}
@@ -158,7 +158,6 @@
       ).map((field: HTMLTextAreaElement | HTMLInputElement) => {
         return `${field.name}=${field.value}`;
       }).join("&").replace(/%20/g, "+");
-        
 
       xhr.addEventListener("error", (event) => {
         console.error("Failed form sending", event); // eslint-disable-line
