@@ -6,7 +6,7 @@
     "npm": "^6.9.0"
   },
   "dependencies": {
-    "@nuxt/typescript-runtime": "0.2.1",
+    "@nuxt/typescript-runtime": "0.2.2",
     "@nuxtjs/google-analytics": "2.2.0",
     "frontmatter-markdown-loader": "2.3.0",
     "medium-zoom": "1.0.4",
