@@ -1,6 +1,19 @@
 ---
 articles:
   -
+    name: figma-blog
+    title: How a designer makes background patterns to push her creativity
+    appear_on: Figma Blog
+    url: https://www.figma.com/blog/how-a-designer-makes-background-patterns-to-push-her-creativity/
+    locale: en
+    colors:
+      - "#000000"
+      - "#404040"
+      - "#c4c4c4"
+      - "#7da7ff"
+      - "#000000"
+      - "#404040"
+  -
     name: podcast
     title: ポッドキャストを始めました
     appear_on: 灰色ハイジのデザインノート
