@@ -1,6 +1,6 @@
 <template>
   <div class="workCarousel">
-    <no-ssr>
+    <client-only>
       <carousel
         :per-page="1"
         :loop="true"
@@ -15,7 +15,7 @@
           <work-img :path="mediaPathFromArray" />
         </slide>
       </carousel>
-    </no-ssr>
+    </client-only>
   </div>
 </template>
 
