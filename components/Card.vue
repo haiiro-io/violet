@@ -78,7 +78,7 @@
         `/images/articles/${this.article.name}.jpg`;
     }
 
-    onFocusCard () {
+    onFocusCard (): void {
       this.setColors(this.isWork ? this.work.colors : this.article.colors);
     }
   }

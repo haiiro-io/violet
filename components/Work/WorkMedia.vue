@@ -55,7 +55,7 @@
     singleFileName: string;
     multipleFileNames: string[] = [];
 
-    created () {
+    created (): void {
       if (this.name.includes(",")) {
         this.multipleFileNames = this.name.split(",");
       } else {

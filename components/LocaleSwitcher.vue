@@ -39,25 +39,27 @@
   import { Component, Vue } from "nuxt-property-decorator";
   import { State } from "vuex-class";
 
+  type CharClass = "char--selected" | "char--unselected";
+
   @Component
   export default class HeaderNavigation extends Vue {
     @State locale;
-    clicked: boolean = false;
+    clicked = false;
     pos: number = process.env.buildLocale === "en" ? 12 : 30;
 
-    get jaCharClass () {
+    get jaCharClass (): CharClass {
       return (this.locale === "ja" && !this.clicked) || (this.locale === "en" && this.clicked) ? "char--selected" : "char--unselected";
     }
 
-    get enCharClass () {
+    get enCharClass (): CharClass {
       return (this.locale === "en" && !this.clicked) || (this.locale === "ja" && this.clicked) ? "char--selected" : "char--unselected";
     }
 
-    changeLocale () {
+    changeLocale (): void {
       this.$nuxt.$loading.start();
       this.clicked = true;
       this.$nextTick(() => {
-        const increaseLoadingBar = (num: number = 4) => {
+        const increaseLoadingBar = (num = 4): void => {
           setTimeout(() => {
             this.$nuxt.$loading.increase(num);
             increaseLoadingBar(num + 4);
@@ -71,7 +73,7 @@
       });
     }
 
-    goAnotherLocale () {
+    goAnotherLocale (): void {
       const anotherLocale = `${this.locale === "en" ? process.env.productionUrlJa : process.env.productionUrlEn }${this.$route.path}`;
       window.location.href = anotherLocale;
     }

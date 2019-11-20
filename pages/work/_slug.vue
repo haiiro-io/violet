@@ -62,7 +62,7 @@
     @WorksStore.Getter pick;
     @PixelsStore.Action updateDefaultColors;
 
-    mounted () {
+    mounted (): void {
       this.updateDefaultColors(this.work.colors);
       mediumZoom(".workImg-image", {
         background: "#DFE0E0"
