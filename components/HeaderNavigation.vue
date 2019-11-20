@@ -65,7 +65,7 @@
     position: fixed;
     display: flex;
     justify-content: space-between;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(1px);
   }
   .haiiroIcon {
     cursor: pointer;
