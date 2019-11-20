@@ -111,7 +111,7 @@
       return this.sendingState === SendingState.HAPPENING;
     }
 
-    mounted () {
+    mounted (): void {
       this.updateDefaultColors(
         ["#A7A7A7", "#CFCFCF","#D4D4D4", "#D4D4D4","#CFCFCF","#A7A7A7","#D4D4D4"]
       );
@@ -121,7 +121,7 @@
       }
     }
 
-    beforeDestroy () {
+    beforeDestroy (): void {
       const recaptcha = document.querySelector(".g-recaptcha");
       const textarea = document.getElementById("hiddenTextArea");
       if (recaptcha && textarea) {
@@ -129,7 +129,7 @@
       }
     }
 
-    validateAndSend () {
+    validateAndSend (): void {
       if (this.sendingState !== SendingState.NO_YET) {
         return;
       }
@@ -150,7 +150,7 @@
       }
     }
 
-    sendForm () {
+    sendForm (): void {
       const xhr = new XMLHttpRequest();
       const formData = Array.from(
         this.$refs.contactForm.querySelectorAll("input, textarea")
@@ -165,7 +165,7 @@
       xhr.open("POST", "/thanks");
       xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
-      xhr.onreadystatechange = () => {
+      xhr.onreadystatechange = (): void => {
         if (xhr.readyState === xhr.DONE) {
           if (xhr.status === 200 && xhr.responseURL.endsWith("/thanks")) {
             this.sendingState = SendingState.HAPPENED;

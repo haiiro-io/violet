@@ -37,7 +37,7 @@
     }
   })
   export default class HaiiroIcon extends Vue {
-    @PixelsStore.State currentColors;
+    @PixelsStore.State currentColors: string[];
     @PixelsStore.Action hover;
     @PixelsStore.Action unhover;
     size: number;
@@ -56,7 +56,14 @@
       return this.size * 3;
     }
 
-    get rectangles () {
+    get rectangles (): {
+      width: number;
+      height: number;
+      id: string;
+      x: string | number;
+      y: string | number;
+      color: string;
+    }[] {
       const base =  { width: this.size, height: this.size };
       const rightColX = this.size * 2.1;
       const bottomRowY = this.size * 2;

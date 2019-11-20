@@ -16,11 +16,11 @@
     renderFunc: string;
     staticRenderFuncs: string;
 
-    render (h) {
+    render (h): any {
       return this.templateRender ? this.templateRender() : h("div", "Rendering");
     }
 
-    created () {
+    created (): void {
       this.templateRender = new Function(this.renderFunc)();
       this.$options.staticRenderFns = new Function(this.staticRenderFuncs)();
     }

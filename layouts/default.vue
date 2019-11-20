@@ -96,14 +96,14 @@
   @Component({ components: { HeaderNavigation, SvgIcon } })
   export default class RootLayout extends Vue {
 
-    beforeCreate () {
+    beforeCreate (): void {
       try {
         Typekit.load({ async: true });
       } catch (e) {
       }
     }
 
-    get mainExposures () {
+    get mainExposures (): string[][] {
       return [
         ["dribbble", "https://dribbble.com/haiji505"],
         ["instagram", "https://www.instagram.com/haiji505/"],
@@ -113,7 +113,7 @@
       ];
     }
 
-    get additionalExposures () {
+    get additionalExposures (): string[][] {
       return [
         ["500px", "https://500px.com/haiji505"],
         ["behance", "https://www.behance.net/haiji505"],

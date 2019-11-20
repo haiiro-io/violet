@@ -67,7 +67,7 @@
     @PixelsStore.Action setColors;
     articlesLimit = 3;
 
-    mounted () {
+    mounted (): void {
       this.updateDefaultColors();
     }
 
@@ -75,7 +75,7 @@
       return process.env.orderedWorks.split(",").map(name => this.pick(name));
     }
 
-    get articles () {
+    get articles (): any {
       return articleSources.attributes.articles.filter(article => article.locale.includes(process.env.buildLocale));
     }
   }

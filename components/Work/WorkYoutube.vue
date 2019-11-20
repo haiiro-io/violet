@@ -27,7 +27,7 @@
       player: HTMLDivElement;
     }
 
-    mounted () {
+    mounted (): void {
       const videoId = this.path.match(/v=(.+)$/);
       if (videoId) {
         YouTubePlayer(

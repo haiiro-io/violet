@@ -98,7 +98,7 @@
   export default class PageAbout extends PageBase {
     @PixelsStore.Action updateDefaultColors;
 
-    mounted () {
+    mounted (): void {
       this.updateDefaultColors();
     }
 
@@ -110,13 +110,13 @@
       return `${process.env.baseUrl}/about`;
     }
 
-    get bannerBackgroundStyle () {
+    get bannerBackgroundStyle (): { background: string } {
       return {
         background: "url('/images/about/banner.jpg')",
       };
     }
 
-    get avatarImageStyle () {
+    get avatarImageStyle (): { [property: string]: string } {
       return {
         background: "url('/images/about/avatar.jpg')",
         "background-repeat": "no-repeat",
@@ -124,7 +124,7 @@
       };
     }
 
-    get datas () {
+    get datas (): FrontMatterContent {
       return process.env.buildLocale === "ja" ? jaData : enData;
     }
   }

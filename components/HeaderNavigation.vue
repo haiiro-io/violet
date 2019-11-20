@@ -30,10 +30,10 @@
 
   @Component({ components: { HaiiroIcon, LocaleSwitcher } })
   export default class HeaderNavigation extends Vue {
-    haiiroIconSize: number = 0;
-    showNavigation: boolean = false;
+    haiiroIconSize = 0;
+    showNavigation = false;
 
-    mounted () {
+    mounted (): void {
       this.updateHaiiroIconSize();
       if (process.browser) {
         window.addEventListener("resize", this.updateHaiiroIconSize);
@@ -43,13 +43,13 @@
       }, 1000);
     }
 
-    beforeDestroy () {
+    beforeDestroy (): void {
       if (process.browser) {
         window.removeEventListener("resize", this.updateHaiiroIconSize);
       }
     }
 
-    updateHaiiroIconSize () {
+    updateHaiiroIconSize (): void {
       this.haiiroIconSize = this.$el.clientWidth > 768 ? 30 : 22;
     }
   }
