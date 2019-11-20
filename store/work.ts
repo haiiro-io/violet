@@ -10,8 +10,7 @@ export interface Work {
   colors: string[];
   description: string;
   related: string[];
-  renderFunc: string;
-  staticRenderFuncs: string;
+  lang: string;
   image: {
     main: string;
     og: string;
@@ -41,7 +40,6 @@ const importAll = (resolve, lang): void => {
 importAll(require.context("~/contents/en/work", true, /\.md$/), "en");
 importAll(require.context("~/contents/ja/work", true, /\.md$/), "ja");
 
-
 export const name = "work";
 
 export const types = {
@@ -70,8 +68,7 @@ export const state = (): State => {
         role: attr.role,
         description: attr.description,
         related: attr.related,
-        renderFunc: frontmatter.vue.render,
-        staticRenderFuncs: frontmatter.vue.staticRenderFns,
+        lang,
         image: {
           main: attr.image && attr.image.main,
           og: attr.image && attr.image.og

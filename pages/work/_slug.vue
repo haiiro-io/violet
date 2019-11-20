@@ -19,8 +19,8 @@
         <dd>{{ work.role }}</dd>
       </dl>
       <dynamic-markdown
-        :render-func="work.renderFunc"
-        :static-render-funcs="work.staticRenderFuncs"
+        :name="work.name"
+        :lang="work.lang"
       />
       <div id="relatedWorks">
         <span class="relatedWorks-header">

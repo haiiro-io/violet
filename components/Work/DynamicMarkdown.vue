@@ -1,28 +1,31 @@
+<template>
+  <component :is="markdownContent" />
+</template>
+
 <script lang="ts">
   import { Component, Vue } from "nuxt-property-decorator";
 
-  import HaiiroIcon from "../HaiiroIcon.vue";
   import WorkMedia from "./WorkMedia.vue";
   import WorkButton from "./WorkButton.vue";
 
   @Component({
-    props: ["renderFunc", "staticRenderFuncs"],
-    components: {
-      HaiiroIcon, WorkMedia, WorkButton
+    props: {
+      name: String,
+      lang: String
     }
   })
   export default class DynamicMarkdown extends Vue {
-    templateRender;
-    renderFunc: string;
-    staticRenderFuncs: string;
-
-    render (h): any {
-      return this.templateRender ? this.templateRender() : h("div", "Rendering");
-    }
+    lang: string;
+    name: string;
+    markdownContent = null;
 
     created (): void {
-      this.templateRender = new Function(this.renderFunc)();
-      this.$options.staticRenderFns = new Function(this.staticRenderFuncs)();
+      this.markdownContent = (): Promise<any> => import(`~/contents/${this.lang}/work/${this.name}.md`).then((fmd) => {
+        return {
+          extends: fmd.vue.component,
+          components: { WorkMedia, WorkButton }
+        };
+      });
     }
   }
 </script>
@@ -30,7 +33,7 @@
 <style lang="postcss" scoped>
   @import "~/assets/styles/custom-properties.postcss";
 
-  h2 {
+  .dmd >>> h2 {
     margin: 0 auto;
     padding: 120px 0 40px;
     text-align: center;
@@ -39,7 +42,8 @@
     line-height: 1.7;
     color: var(--konezumi);
   }
-  h3 {
+
+  .dmd >>> h3 {
     margin: 0 auto;
     padding: 80px 0 40px;
     width: 66.7%;
@@ -50,7 +54,8 @@
     line-height: 1.7;
     color: var(--nibihai);
   }
-  p {
+
+  .dmd >>> p {
     margin: 0 auto;
     width: 66.7%;
     max-width: 793px;
@@ -58,14 +63,18 @@
     font-size: 18px;
     line-height: 1.7;
     color: var(--konezumi);
+
     & a {
       color: var(--konezumi);
     }
-    & a:active, & a:hover {
+
+    & a:active,
+    & a:hover {
       color: var(--nibihai);
     }
   }
-  ol, ul {
+
+  .dmd >>> ol, .dmd >>> ul {
     margin: 0 auto;
     padding: 20px 0;
     width: 66.7%;
@@ -73,125 +82,152 @@
     font-size: 18px;
     list-style-position: inside;
     -webkit-padding-start: 0;
-    & > li > ol, & > li > ul {
+
+    & > li > ol,
+    & > li > ul {
       width: 100%;
       margin: 0;
       padding-left: 20px;
     }
+
+    & > li {
+      padding-left: 1.0em;
+      text-indent: -1.0em;
+      line-height: 1.7;
+    }
+
+    & > li + li {
+      margin-top: 1.0em;
+    }
   }
-  li {
-    padding-left: 1.0em;
-    text-indent: -1.0em;
-    line-height: 1.7;
-  }
-  li + li {
-    margin-top: 1.0em;
-  }
-  .workMedia {
+
+  .dmd >>> .workMedia {
     max-width: 1080px;
     margin-right: auto;
     margin-left: auto;
     padding: 120px 0;
+
     &.workMedia--shrink {
       width: 66.7%;
       max-width: 793px;
     }
   }
 
-  .workMedia + .workMedia {
+  .dmd >>> .workMedia + .dmd >>> .workMedia {
     margin-top: -220px;
   }
 
-  p + p {
+  .dmd >>> p + .dmd >>> p {
     margin-top: 24px;
   }
 
-  h2:first-child,
-  p:first-child,
-  .workMedia:first-child {
+  .dmd >>> h2:first-child,
+  .dmd >>> p:first-child,
+  .dmd >>> .workMedia:first-child {
     padding-top: 0;
   }
 
-  .workMedia + h2 {
+  .dmd >>> .workMedia + .dmd >>> h2 {
     padding-top: 80px;
   }
 
-  ol + .workMedia,
-  ul + .workMedia {
+  .dmd >>> ol + .dmd >>> .workMedia,
+  .dmd >>> ul + .dmd >>> .workMedia {
     padding-top: 20px;
   }
 
-  ol + h2,
-  ul + h2 {
+  .dmd >>> ol + .dmd >>> h2,
+  .dmd >>> ul + .dmd >>> h2 {
     padding-top: 100px;
   }
 
-  ol + h3,
-  ul + h3 {
+  .dmd >>> ol + .dmd >>> h3,
+  .dmd >>> ul + .dmd >>> h3 {
     padding-top: 60px;
   }
 
-  h2 + .workMedia,
-  h3 + .workMedia,
-  h2 + h3,
-  .workMedia + ol,
-  .workMedia + ul,
-  h3 + ol,
-  h3 + ul,
-  h2 + ol,
-  h2 + ul {
+  .dmd >>> h2 + .dmd >>> .workMedia,
+  .dmd >>> h3 + .dmd >>> .workMedia,
+  .dmd >>> h2 + .dmd >>> h3,
+  .dmd >>> .workMedia + .dmd >>> ol,
+  .dmd >>> .workMedia + .dmd >>> ul,
+  .dmd >>> h3 + .dmd >>> ol,
+  .dmd >>> h3 + .dmd >>> ul,
+  .dmd >>> h2 + .dmd >>> ol,
+  .dmd >>> h2 + .dmd >>> ul {
     padding-top: 0;
   }
 
   @media (--medium) {
-    h2 {
+    .dmd >>> h2 {
       font-size: 18px;
     }
-    p, h3, ol, ul {
+
+    .dmd >>> p,
+    .dmd >>> h3,
+    .dmd >>> ol,
+    .dmd >>> ul {
       width: 83.3%;
       max-width: 793px;
       font-size: 16px;
     }
-    .workMedia {
+
+    .dmd >>> .workMedia {
       padding: 80px 0;
     }
-    .workMedia + .workMedia {
+
+    .dmd >>> .workMedia + .dmd >>> .workMedia {
       margin-top: -140px;
     }
   }
+
   @media (--narrow) {
-    h2, h3, p, ol, ul {
+    .dmd >>> h2,
+    .dmd >>> h3,
+    .dmd >>> p,
+    .dmd >>> ol,
+    .dmd >>> ul {
       width: 100%;
       padding-right: 20px;
       padding-left: 20px;
     }
-    h2 {
+
+    .dmd >>> h2 {
       padding-top: 70px;
       font-size: 16px;
     }
-    h3 {
+
+    .dmd >>> h3 {
       padding-top: 40px;
       padding-bottom: 20px;
     }
-    h3, p, ol, ul {
+
+    .dmd >>> h3,
+    .dmd >>> p,
+    .dmd >>> ol,
+    .dmd >>> ul {
       font-size: 16px;
     }
-    .workMedia {
+
+    .dmd >>> .workMedia {
       padding: 40px 0;
     }
-    .workMedia + .workMedia {
+
+    .dmd >>> .workMedia + .dmd >>> .workMedia {
       margin-top: -60px;
     }
-    .workMedia + h2,
-    .workMedia + h3 {
+
+    .dmd >>> .workMedia + .dmd >>> h2,
+    .dmd >>> .workMedia + .dmd >>> h3 {
       padding-top: 30px;
     }
-    ol + h2,
-    ul + h2 {
+
+    .dmd >>> ol + .dmd >>> h2,
+    .dmd >>> ul + .dmd >>> h2 {
       padding-top: 50px;
     }
-    ol + h3,
-    ul + h3 {
+    .dmd >>> ol + .dmd >>> h3,
+    .dmd >>> ul + .dmd >>> h3 {
       padding-top: 20px;
     }
   }
