@@ -5,8 +5,12 @@
   "assignees": ["hmsk"],
   "packageRules": [
     {
-      "packageNames": ["nuxt", "@nuxt/typescript"],
-      "groupName": "nuxt typescript monorepo"
+      "packageNames": ["nuxt", "@nuxt/typescript-build", "@nuxt/typescript-runtime"],
+      "groupName": "Nuxt typescript monorepo"
+    },
+    {
+      "packageNames": ["eslint", "eslint-plugin-vue", "@typescript-eslint/eslint-plugin", "@typescript-eslint/parser"],
+      "groupName": "ESLint family"
     }
   ]
 }
