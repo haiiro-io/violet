@@ -36,7 +36,7 @@
     "@typescript-eslint/parser": "2.26.0",
     "eslint": "6.8.0",
     "eslint-plugin-vue": "latest",
-    "svg-sprite-loader": "4.2.1",
+    "svg-sprite-loader": "4.2.2",
     "yaml-loader": "0.6.0"
   }
 }
