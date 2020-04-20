@@ -32,8 +32,8 @@
   "devDependencies": {
     "@nuxt/typescript-build": "0.6.5",
     "@types/webpack-env": "1.15.1",
-    "@typescript-eslint/eslint-plugin": "2.28.0",
-    "@typescript-eslint/parser": "2.28.0",
+    "@typescript-eslint/eslint-plugin": "2.29.0",
+    "@typescript-eslint/parser": "2.29.0",
     "eslint": "6.8.0",
     "eslint-plugin-vue": "latest",
     "svg-sprite-loader": "4.2.5",
