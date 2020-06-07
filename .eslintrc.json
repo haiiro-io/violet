@@ -26,7 +26,6 @@
     "no-console": ["error", { "allow": ["warn", "error"] }],
     "quotes": ["error", "double", { "avoidEscape": true }],
     "@typescript-eslint/indent": ["error", 2],
-    "@typescript-eslint/camelcase": ["error", { "properties": "never" }],
     "@typescript-eslint/explicit-member-accessibility": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "vue/script-indent": ["error", 2, { "baseIndent": 1 } ],
