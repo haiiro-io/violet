@@ -26,7 +26,7 @@ interface FrontMatterContentWithRender extends FrontMatterContent {
 const LANGS: AvailableLocale[] = ["en", "ja"];
 interface ImportedFrontMatters {
   [name: string]: FrontMatterContentWithRender;
-};
+}
 const importsByLang: {
   [lang: string]: ImportedFrontMatters;
 } = { en: {}, ja: {} };
@@ -94,7 +94,7 @@ export const getters: GetterTree<State, RootState> = {
   }
 };
 
-export const actions: ActionTree<State, {}> = {
+export const actions: ActionTree<State, RootState> = {
 };
 
 export const mutations: MutationTree<State> = {

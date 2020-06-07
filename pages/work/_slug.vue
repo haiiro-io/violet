@@ -41,6 +41,7 @@
 <script lang="ts">
   import mediumZoom from "medium-zoom";
   import VueI18n from "vue-i18n";
+  import { Context } from "@nuxt/types";
   import PageBase from "~/lib/page-base";
   import { Component } from "nuxt-property-decorator";
   import { namespace } from "vuex-class";
@@ -94,7 +95,7 @@
       return this.work.related.map(related => this.pick(related)).filter(w => !!w);
     }
 
-    validate ({ store, params }): boolean {
+    validate ({ store, params }: Context): boolean {
       return !!(store.getters["work/pick"](params.slug));
     }
   }
