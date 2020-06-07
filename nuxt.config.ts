@@ -1,4 +1,5 @@
 import { Configuration } from "@nuxt/types";
+import { Configuration as WebpackConfiguration } from "webpack";
 import path from "path";
 import Mode from "frontmatter-markdown-loader/mode";
 
@@ -153,7 +154,7 @@ const config: Configuration = {
    */
   css: ["node_modules/normalize.css/normalize.css"],
   build: {
-    extend(config): void {
+    extend (config: WebpackConfiguration): void {
       // remove existing url-loader settings once, for giving svg specific loader
       const rule = config.module.rules.find(r => r.test.toString().includes("(png|jpe?g|gif|svg|webp)"));
       config.module.rules.splice(config.module.rules.indexOf(rule), 1);
