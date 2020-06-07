@@ -12,9 +12,9 @@ export const state = (): State => ({
   locale: process.env.buildLocale
 });
 
-export const getters: GetterTree<State, {}> = {};
+export const getters: GetterTree<State, State> = {};
 
-export const actions: ActionTree<State, {}> = {};
+export const actions: ActionTree<State, State> = {};
 
 export const mutations: MutationTree<State> = {
   [types.SET_LOCALE] (state, locale: AvailableLocale): void {

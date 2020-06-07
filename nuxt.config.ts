@@ -1,3 +1,5 @@
+import { Configuration } from "@nuxt/types";
+import { Configuration as WebpackConfiguration } from "webpack";
 import path from "path";
 import Mode from "frontmatter-markdown-loader/mode";
 
@@ -27,7 +29,7 @@ const orderedWorks = [
   "logofolio"
 ].join(",");
 
-const config = {
+const config: Configuration = {
   buildModules: ["@nuxt/typescript-build"],
   mode: "universal",
   env: {
@@ -150,9 +152,9 @@ const config = {
   /*
    ** Build configuration
    */
-  css: [{ src: "node_modules/normalize.css/normalize.css", lang: "css" }],
+  css: ["node_modules/normalize.css/normalize.css"],
   build: {
-    extend(config): void {
+    extend (config: WebpackConfiguration): void {
       // remove existing url-loader settings once, for giving svg specific loader
       const rule = config.module.rules.find(r => r.test.toString().includes("(png|jpe?g|gif|svg|webp)"));
       config.module.rules.splice(config.module.rules.indexOf(rule), 1);
@@ -191,14 +193,14 @@ const config = {
       preset: {
         stage: 0,
         preserve: false,
-        importFrom: [{
+        importFrom: {
           customProperties: {
             "--skyhai": "#DFE0E0",
             "--soba": "#D8D8D8",
             "--konezumi": "#555555",
             "--nibihai": "#999999"
           }
-        }]
+        }
       }
     }
   },
