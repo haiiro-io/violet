@@ -23,9 +23,9 @@
     "dev": "nuxt-ts",
     "dev:en": "BUILD_LOCALE=en nuxt-ts",
     "dev:ja": "BUILD_LOCALE=ja nuxt-ts",
-    "generate": "nuxt-ts generate",
-    "generate:en": "BUILD_LOCALE=en nuxt-ts generate",
-    "generate:ja": "BUILD_LOCALE=ja nuxt-ts generate",
+    "generate": "nuxt-ts build && nuxt-ts export",
+    "generate:en": "BUILD_LOCALE=en npm run generate",
+    "generate:ja": "BUILD_LOCALE=ja npm run generate",
     "lint": "eslint --ext .ts,.vue .",
     "format": "npm run lint -- --fix"
   },

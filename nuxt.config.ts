@@ -32,6 +32,7 @@ const orderedWorks = [
 const config: Configuration = {
   buildModules: ["@nuxt/typescript-build"],
   mode: "universal",
+  target: "static",
   env: {
     baseUrl,
     buildLocale,
