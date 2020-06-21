@@ -10,7 +10,7 @@
         @mouseenter.native="setColors(['#555'])"
         @mouseleave.native="setDefaultColors"
       >
-        {{ $t("index.greeting.name") }}
+        <span>{{ $t("index.greeting.name") }}</span>
       </nuxt-link>
     </i18n>
     <div id="works">
