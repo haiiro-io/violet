@@ -7,7 +7,8 @@ Pre-rendered portfolio websites for Haiiro Haiji / Namika Hamasaki.
 
 ## Setup / Update installed packages
 
-Using Node v8.6+
+With Node v12
+
 
 ```
 $ npm i
