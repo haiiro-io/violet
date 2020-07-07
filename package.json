@@ -6,7 +6,7 @@
     "npm": "^6.9.0"
   },
   "dependencies": {
-    "@nuxt/typescript-runtime": "0.4.10",
+    "@nuxt/typescript-runtime": "1.0.0",
     "@nuxtjs/google-analytics": "2.3.0",
     "frontmatter-markdown-loader": "3.6.0",
     "medium-zoom": "1.0.5",
@@ -30,7 +30,7 @@
     "format": "npm run lint -- --fix"
   },
   "devDependencies": {
-    "@nuxt/typescript-build": "1.0.3",
+    "@nuxt/typescript-build": "2.0.0",
     "@types/webpack-env": "1.15.2",
     "@typescript-eslint/eslint-plugin": "3.6.0",
     "@typescript-eslint/parser": "3.6.0",
