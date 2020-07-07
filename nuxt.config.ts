@@ -1,5 +1,5 @@
-import { Configuration } from "@nuxt/types";
-import { Configuration as WebpackConfiguration } from "webpack";
+import type { NuxtConfig } from "@nuxt/types";
+import type { Configuration as WebpackConfiguration } from "webpack";
 import path from "path";
 import Mode from "frontmatter-markdown-loader/mode";
 
@@ -29,7 +29,7 @@ const orderedWorks = [
   "logofolio"
 ].join(",");
 
-const config: Configuration = {
+const config: NuxtConfig = {
   buildModules: ["@nuxt/typescript-build"],
   mode: "universal",
   target: "static",

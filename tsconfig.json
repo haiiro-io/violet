@@ -17,6 +17,7 @@
     "noEmit": true,
     "baseUrl": ".",
     "resolveJsonModule": true,
+    "importsNotUsedAsValues": "preserve",
     "paths": {
       "~/*": [
         "./*"
