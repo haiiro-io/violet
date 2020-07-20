@@ -1,6 +1,32 @@
 ---
 articles:
   -
+    name: note-creator-file
+    title: 灰色ハイジさんが「どこにもないから始めた」マガジン『デザイナーの英語帳』が書籍化されるまで
+    appear_on: note編集部 クリエイターファイル
+    url: https://note.com/notemag/n/n720ec7ce87db
+    locale: ja
+    colors:
+      - "#ead9c9"
+      - "#17a8cf"
+      - "#dbac92"
+      - "#fd9776"
+      - "#101013"
+      - "#7d5a35"
+  -
+    name: published-english-for-designers
+    title: この本は、私が3年前に欲しかったものでもある − 『デザイナーの英語帳』 出版にあたって
+    appear_on: note
+    url: https://note.com/haiji505/n/n3bd45dadbad5
+    locale: ja
+    colors:
+      - "#14179f"
+      - "#c55e89"
+      - "#a4aebd"
+      - "#d93409"
+      - "#238ed3"
+      - "#d29db2"
+  -
     name: figma-blog
     title: How a designer makes background patterns to push her creativity
     appear_on: Figma Blog
@@ -16,7 +42,7 @@ articles:
   -
     name: podcast
     title: ポッドキャストを始めました
-    appear_on: 灰色ハイジのデザインノート
+    appear_on: note
     url: https://note.mu/haiji505/n/n93e21e7f651d
     locale: ja
     colors:
@@ -27,7 +53,7 @@ articles:
   -
     name: english-for-designers
     title: デザイナーの英語帳はじめます
-    appear_on: 灰色ハイジのデザインノート
+    appear_on: note
     url: https://note.mu/haiji505/n/ne4aabd94db45
     locale: ja
     colors:
@@ -51,7 +77,7 @@ articles:
   -
     name: dailypattern
     title: Daily Patternを始めて、作った模様が30枚を超えた
-    appear_on: 灰色ハイジのデザインノート
+    appear_on: note
     url: https://note.mu/haiji505/n/n0b316585cefc
     locale: ja
     colors:
@@ -75,7 +101,7 @@ articles:
   -
     name: dailyui
     title: 100日続けたDaily UIの記録
-    appear_on: 灰色ハイジのデザインノート
+    appear_on: note
     url: https://note.mu/haiji505/n/n4c58da2f6154
     locale: ja
     colors:
@@ -85,7 +111,7 @@ articles:
   -
     name: portfolio-renewal
     title: ポートフォリオをリニューアルした
-    appear_on: 灰色ハイジのデザインノート
+    appear_on: note
     url: https://note.mu/haiji505/n/n8037ca0b4f93
     locale: ja
     colors:
@@ -95,7 +121,7 @@ articles:
   -
     name: switch-language
     title: 言語切替のUIデザインについて考えてみる
-    appear_on: 灰色ハイジのデザインノート
+    appear_on: note
     url: https://note.mu/haiji505/n/nacc55037c71b
     locale: ja
     colors:
