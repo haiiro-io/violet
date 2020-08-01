@@ -30,7 +30,7 @@
     "format": "npm run lint -- --fix"
   },
   "devDependencies": {
-    "@nuxt/types": "2.13.3",
+    "@nuxt/types": "2.14.0",
     "@nuxt/typescript-build": "2.0.2",
     "@types/webpack-env": "1.15.2",
     "@typescript-eslint/eslint-plugin": "3.7.1",
