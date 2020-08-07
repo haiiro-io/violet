@@ -5,7 +5,7 @@
   "assignees": ["hmsk"],
   "packageRules": [
     {
-      "packageNames": ["nuxt", "@nuxt/typescript-build", "@nuxt/typescript-runtime"],
+      "packageNames": ["nuxt", "@nuxt/typescript-build", "@nuxt/typescript-runtime", "@nuxt/types"],
       "groupName": "Nuxt typescript monorepo"
     },
     {
