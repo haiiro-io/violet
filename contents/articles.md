@@ -1,6 +1,29 @@
 ---
 articles:
   -
+    name: adobe-blog-english-for-creators
+    title: クリエイターの英語との関わり方：発信を続けることで掴むチャンス
+    appear_on: Adobe Blog
+    url: https://blogs.adobe.com/japan/cc-community-haiji-haiiro-english-for-creators/
+    locale: ja
+    colors:
+      - "#7778f5"
+      - "#f2e8d7"
+      - "#4d8175"
+      - "#c34825"
+      - "#7f7e80"
+      - "#245bd3"
+  -
+    name: what-i-do-now
+    title: 今やっていること
+    appear_on: note
+    url: https://note.com/haiji505/n/ne8d29d4922b6
+    locale: ja
+    colors:
+      - "#f3ecda"
+      - "#fcc1ef"
+      - "#0a00bc"
+  -
     name: note-creator-file
     title: 灰色ハイジさんが「どこにもないから始めた」マガジン『デザイナーの英語帳』が書籍化されるまで
     appear_on: note編集部 クリエイターファイル
