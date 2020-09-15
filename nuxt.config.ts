@@ -156,7 +156,7 @@ const config: NuxtConfig = {
   build: {
     extend (config: WebpackConfiguration): void {
       // remove existing url-loader settings once, for giving svg specific loader
-      const rule = config.module.rules.find(r => r.test.toString().includes("(png|jpe?g|gif|svg|webp)"));
+      const rule = config.module.rules.find(r => r.test.toString().includes("(png|jpe?g|gif|svg|webp|avif)"));
       config.module.rules.splice(config.module.rules.indexOf(rule), 1);
 
       config.module.rules.push(
@@ -173,7 +173,7 @@ const config: NuxtConfig = {
         },
         {
           ...rule,
-          test: /\.(png|jpe?g|gif|webp)$/
+          test: /\.(png|jpe?g|gif|webp|avif)$/
         },
         {
           test: /\.svg$/,
