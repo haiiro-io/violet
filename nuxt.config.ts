@@ -31,7 +31,6 @@ const orderedWorks = [
 
 const config: NuxtConfig = {
   buildModules: ["@nuxt/typescript-build"],
-  mode: "universal",
   target: "static",
   env: {
     baseUrl,
