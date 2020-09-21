@@ -11,7 +11,7 @@
     "frontmatter-markdown-loader": "3.6.0",
     "medium-zoom": "1.0.6",
     "normalize.css": "8.0.1",
-    "nuxt": "2.14.5",
+    "nuxt": "2.14.6",
     "nuxt-i18n": "6.15.1",
     "nuxt-property-decorator": "2.8.3",
     "vue-carousel": "0.18.0",
@@ -30,7 +30,7 @@
     "format": "npm run lint -- --fix"
   },
   "devDependencies": {
-    "@nuxt/types": "2.14.5",
+    "@nuxt/types": "2.14.6",
     "@nuxt/typescript-build": "2.0.3",
     "@types/webpack-env": "1.15.3",
     "@typescript-eslint/eslint-plugin": "4.1.1",
