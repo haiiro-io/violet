@@ -155,10 +155,6 @@ const config: NuxtConfig = {
   css: ["node_modules/normalize.css/normalize.css"],
   build: {
     extend (config: WebpackConfiguration): void {
-      // remove existing url-loader settings once, for giving svg specific loader
-      const rule = config.module.rules.find(r => r.test.toString().includes("(png|jpe?g|gif|svg|webp|avif)"));
-      config.module.rules.splice(config.module.rules.indexOf(rule), 1);
-
       config.module.rules.push(
         {
           test: /\.md$/,
@@ -170,15 +166,6 @@ const config: NuxtConfig = {
               root: "dmd"
             }
           }
-        },
-        {
-          ...rule,
-          test: /\.(png|jpe?g|gif|webp|avif)$/
-        },
-        {
-          test: /\.svg$/,
-          loader: "svg-sprite-loader",
-          include: path.resolve(__dirname, "assets/icons")
         }
       );
     },
@@ -209,6 +196,7 @@ const config: NuxtConfig = {
     "~/plugins/carousel.client.js"
   ],
   modules: [
+    "@nuxtjs/svg-sprite",
     [
       "@nuxtjs/google-analytics",
       {

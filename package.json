@@ -6,6 +6,7 @@
     "npm": "^6.9.0"
   },
   "dependencies": {
+    "@nuxtjs/svg-sprite": "0.4.12",
     "@nuxt/typescript-runtime": "2.0.0",
     "@nuxtjs/google-analytics": "2.4.0",
     "frontmatter-markdown-loader": "3.6.0",
@@ -37,7 +38,6 @@
     "@typescript-eslint/parser": "4.2.0",
     "eslint": "7.9.0",
     "eslint-plugin-vue": "latest",
-    "svg-sprite-loader": "5.0.0",
     "yaml-loader": "0.6.0"
   }
 }

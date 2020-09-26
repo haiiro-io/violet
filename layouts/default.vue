@@ -89,11 +89,10 @@
   import { Component, Vue } from "nuxt-property-decorator";
 
   import HeaderNavigation from "~/components/HeaderNavigation.vue";
-  import SvgIcon from "~/components/SvgIcon.vue";
 
   declare const Typekit: any;
 
-  @Component({ components: { HeaderNavigation, SvgIcon } })
+  @Component({ components: { HeaderNavigation } })
   export default class RootLayout extends Vue {
 
     beforeCreate (): void {
@@ -204,13 +203,13 @@
     }
   }
 
-  svg.svgIcon {
+  svg {
     width: 30px;
     height: 30px;
     fill: var(--nibihai);
-  }
 
-  svg.svgIcon:hover {
-    fill: var(--konezumi);
+    &:hover {
+      fill: var(--konezumi);
+    }
   }
 </style>
