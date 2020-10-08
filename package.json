@@ -6,7 +6,7 @@
     "npm": "^6.9.0"
   },
   "dependencies": {
-    "@nuxtjs/svg-sprite": "0.4.12",
+    "@nuxtjs/svg-sprite": "0.5.0",
     "@nuxt/typescript-runtime": "2.0.0",
     "@nuxtjs/google-analytics": "2.4.0",
     "frontmatter-markdown-loader": "3.6.1",
