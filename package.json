@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "@nuxtjs/svg-sprite": "0.5.2",
-    "@nuxt/typescript-runtime": "2.0.0",
+    "@nuxt/typescript-runtime": "2.0.1",
     "@nuxtjs/google-analytics": "2.4.0",
     "frontmatter-markdown-loader": "3.6.2",
     "medium-zoom": "1.0.6",
@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@nuxt/types": "2.14.12",
-    "@nuxt/typescript-build": "2.0.3",
+    "@nuxt/typescript-build": "2.0.4",
     "@types/webpack-env": "1.16.0",
     "@typescript-eslint/eslint-plugin": "4.12.0",
     "@typescript-eslint/parser": "4.12.0",
