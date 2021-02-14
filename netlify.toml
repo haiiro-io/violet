@@ -11,3 +11,13 @@
   to = "https://note.com/haiji505/m/mdb25dc32167f"
   status = 302
   force = true
+[[redirects]]
+  from = "https://summary.haiji.co"
+  to = "https://www.notion.so/Namika-04502cb250a940f7bd67aebb0937370b"
+  status = 302
+  force = true
+[[redirects]]
+  from = "https://haiiro.haiji.co"
+  to = "https://haiji.co/about"
+  status = 302
+  force = true
