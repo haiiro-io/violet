@@ -6,3 +6,8 @@
   to = "https://note.com/haiji505/m/mdb25dc32167f"
   status = 302
   force = true
+[[redirects]]
+  from = "https://eigo.haiji.co"
+  to = "https://note.com/haiji505/m/mdb25dc32167f"
+  status = 302
+  force = true
