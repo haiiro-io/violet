@@ -6,13 +6,12 @@
     "npm": "^7.0.0"
   },
   "dependencies": {
-    "@nuxt/typescript-runtime": "2.0.1",
     "@nuxtjs/google-analytics": "2.4.0",
     "@nuxtjs/svg-sprite": "0.5.2",
     "frontmatter-markdown-loader": "3.6.2",
     "medium-zoom": "1.0.6",
     "normalize.css": "8.0.1",
-    "nuxt": "2.14.12",
+    "nuxt": "2.15.2",
     "nuxt-i18n": "6.20.3",
     "nuxt-property-decorator": "2.9.1",
     "vue-carousel": "0.18.0",
@@ -21,18 +20,18 @@
     "youtube-player": "5.5.2"
   },
   "scripts": {
-    "dev": "nuxt-ts",
-    "dev:en": "BUILD_LOCALE=en nuxt-ts",
-    "dev:ja": "BUILD_LOCALE=ja nuxt-ts",
-    "generate": "nuxt-ts build && nuxt-ts export",
+    "dev": "nuxt",
+    "dev:en": "BUILD_LOCALE=en nuxt",
+    "dev:ja": "BUILD_LOCALE=ja nuxt",
+    "generate": "nuxt generate",
     "generate:en": "BUILD_LOCALE=en npm run generate",
     "generate:ja": "BUILD_LOCALE=ja npm run generate",
     "lint": "eslint --ext .ts,.vue .",
     "format": "npm run lint -- --fix"
   },
   "devDependencies": {
-    "@nuxt/types": "2.14.12",
-    "@nuxt/typescript-build": "2.0.4",
+    "@nuxt/types": "2.15.2",
+    "@nuxt/typescript-build": "2.0.6",
     "@types/webpack-env": "1.16.0",
     "@typescript-eslint/eslint-plugin": "4.15.2",
     "@typescript-eslint/parser": "4.15.2",
