@@ -6,7 +6,6 @@
     "npm": "^7.0.0"
   },
   "dependencies": {
-    "@nuxt/typescript-runtime": "2.0.2",
     "@nuxtjs/google-analytics": "2.4.0",
     "@nuxtjs/svg-sprite": "0.5.2",
     "frontmatter-markdown-loader": "3.6.2",
@@ -21,10 +20,10 @@
     "youtube-player": "5.5.2"
   },
   "scripts": {
-    "dev": "nuxt-ts",
-    "dev:en": "BUILD_LOCALE=en nuxt-ts",
-    "dev:ja": "BUILD_LOCALE=ja nuxt-ts",
-    "generate": "nuxt-ts build && nuxt-ts export",
+    "dev": "nuxt",
+    "dev:en": "BUILD_LOCALE=en nuxt",
+    "dev:ja": "BUILD_LOCALE=ja nuxt",
+    "generate": "nuxt build && nuxt export",
     "generate:en": "BUILD_LOCALE=en npm run generate",
     "generate:ja": "BUILD_LOCALE=ja npm run generate",
     "lint": "eslint --ext .ts,.vue .",
