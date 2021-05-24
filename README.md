@@ -76,7 +76,7 @@ description: |
 
 ## Licenses
 
-- [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) for [SVG icons](/assets/icons) excepting `hatenablog.svg` by [FontAwesome](https://fontawesome.com/license)
+- [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) for [SVG icons](https://github.com/haiiro-io/violet/tree/master/assets/sprite/svg) excepting `hatenablog.svg` by [FontAwesome](https://fontawesome.com/license)
 - Each author of [depending NPM modules](/package.json) which are published under the "MIT" or "ISC" reserve all their copyright
 - Namika Hamasaki / Haiji Haiiro reserves all copyright for [Markdown documents](/contents)
 - Namika Hamasaki / Haiji Haiiro or the each product owners reserve copyright for [Image or Video files](/static/images) of their content
