@@ -3,7 +3,7 @@
   "private": true,
   "engines": {
     "node": "^15.8.0",
-    "npm": "^7.0.0"
+    "npm": "^8.0.0"
   },
   "dependencies": {
     "@nuxtjs/google-analytics": "2.4.0",
