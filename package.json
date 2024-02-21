@@ -37,6 +37,6 @@
     "@typescript-eslint/parser": "4.15.2",
     "eslint": "7.21.0",
     "eslint-plugin-vue": "latest",
-    "yaml-loader": "0.6.0"
+    "yaml-loader": "0.8.1"
   }
 }
